@@ -94,7 +94,7 @@ function flip(){if(!current())return;revealed=!revealed;renderStudy();}
 function rate(rating){
  if(!current()||!revealed||mode!=='review'||externalChange)return;
  const b=current(),k=keyFor(b.id,state.settings.direction),prev=state.progress[k]?{...state.progress[k]}:null,now=Date.now();
- lastUndo={key:k,previous:prev,historyLength:state.history.length,id:b.id,direction:state.settings.direction};
+ lastUndo={key:k,previous:prev,historyLength:state.history.length,id:b.id,direction:state.settings.direction,deck:state.settings.deck};
  state.progress[k]=schedule(prev,rating,now);state.history.push({id:b.id,direction:state.settings.direction,rating,at:now,wasNew:!prev?.reviews});
  saveState();currentId=null;revealed=false;renderStudy();toast(`${b.chinese} · next review in ${fmtInterval(state.progress[k].interval)}`);
 }
@@ -107,7 +107,7 @@ function nextBird(delta=1){
 function undo(){
  if(!lastUndo||externalChange)return;const u=lastUndo;
  if(u.previous)state.progress[u.key]=u.previous;else delete state.progress[u.key];
- state.history.splice(u.historyLength);state.settings.direction=u.direction;$('direction').value=u.direction;lastUndo=null;
+ state.history.splice(u.historyLength);state.settings.deck=u.deck;$('deck').value=u.deck;setDeckControls();state.settings.direction=u.direction;$('direction').value=u.direction;lastUndo=null;
  currentId=u.id;skipped.delete(u.id);revealed=false;saveState();renderStudy();toast('Last review undone.');
 }
 function renderLibrary(){
