@@ -6,6 +6,13 @@ A runnable, local-first prototype for learning bird names in Simplified Chinese,
 
 **Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the 38 cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
 
+## What's new in v0.4 (18 November 2026)
+
+- **Names checked against the latest lists.** Every card was checked against AviList v2026 (October 2026) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 and IOC 15.2 Chinese names. 46 cards whose names belonged to another bird were corrected, for example 喜鹊 is now Oriental Magpie (*Pica serica*) and 牛背鹭 is Eastern Cattle Egret (*Ardea coromanda*). Card IDs are unchanged, so saved progress carries over. See [Name corrections](#name-corrections-avilist-v2026).
+- **Place names and set words read as whole words.** The Name guide reads 48 words as units, so 日本松雀鹰 is Japan + sparrowhawk, 四川 is Sichuan, 喜山 is the Himalayas, 八哥 is myna and 孔雀 is peafowl. A character before 氏 is shown as part of a person's name.
+- **Clearer name notes.** The ten naming notes state each meaning and its source directly.
+- **eBird links follow the corrected names**, including the populations recorded in China for broad species.
+
 ## Open on a phone or iPad
 
 The public GitHub Pages edition is https://songpon123.github.io/china-bird-flashcards/. Open it directly in Safari or another modern browser; no Node.js is needed on the phone or tablet. On iPad/iPhone, Safari’s Share → View More (or More) → Add to Home Screen can create a shortcut. Enable Open as Web App if offered. See [Apple’s iPad guide](https://support.apple.com/en-gb/guide/ipad/ipad8f1f7a29/27/ipados/27). The site needs a connection to load; this release does not promise offline caching.
