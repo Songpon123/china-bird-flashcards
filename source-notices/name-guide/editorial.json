@@ -1,5 +1,5 @@
 {
-  "version": "name-guide-2026-11-18-v1",
+  "version": "name-guide-2026-11-18-v2",
   "thaiGlosses": {
     "白": "ขาว",
     "黑": "ดำ",
@@ -170,7 +170,7 @@
     "噪": "ส่งเสียงดัง",
     "喜": "ยินดี / ความสุข",
     "戴": "สวม / สวมไว้บนศีรษะ",
-    "胜": "ชัยชนะ / ชนะ; ชื่อ戴胜มีบริบทเฉพาะ ดูคำอธิบายชื่อ",
+    "胜": "ชัยชนะ / ชนะ; ชื่อ戴胜 (dài shèng)มีบริบทเฉพาะ ดูคำอธิบายชื่อ",
     "氏": "สกุล / คำต่อท้ายชื่อบุคคล",
     "拟": "คล้าย / เลียนแบบ",
     "类": "ประเภท / กลุ่ม",
@@ -220,167 +220,216 @@
     "牛": "วัว",
     "马": "ม้า",
     "犀": "แรด",
-    "琵": "ส่วนของคำว่า琵琶 เครื่องดนตรีผีผา",
-    "鹡": "ใช้ร่วมกับ鸰เป็น鹡鸰 ชื่อนกเด้าลม",
-    "鸰": "ใช้ร่วมกับ鹡เป็น鹡鸰 ชื่อนกเด้าลม",
-    "䴙": "ใช้ร่วมกับ䴘เป็น䴙䴘 ชื่อนกเป็ดผี",
-    "䴘": "ใช้ร่วมกับ䴙เป็น䴙䴘 ชื่อนกเป็ดผี",
+    "琵": "ส่วนของคำว่า琵琶 (pí pá) เครื่องดนตรีผีผา",
+    "鹡": "ใช้ร่วมกับ鸰 (líng)เป็น鹡鸰 (jí líng) ชื่อนกเด้าลม",
+    "鸰": "ใช้ร่วมกับ鹡 (jí)เป็น鹡鸰 (jí líng) ชื่อนกเด้าลม",
+    "䴙": "ใช้ร่วมกับ䴘 (tī)เป็น䴙䴘 (pì tī) ชื่อนกเป็ดผี",
+    "䴘": "ใช้ร่วมกับ䴙 (pì)เป็น䴙䴘 (pì tī) ชื่อนกเป็ดผี",
     "鸳": "เป็ดแมนดารินตัวผู้ ตามการใช้ในพจนานุกรม",
     "鸯": "เป็ดแมนดารินตัวเมีย ตามการใช้ในพจนานุกรม",
-    "伯": "ลุงฝ่ายพ่อ / ผู้เป็นใหญ่; ใน伯劳ต้องอ่านเป็นคำประสม",
-    "劳": "แรงงาน / ความเหนื่อย; ใน伯劳ต้องอ่านเป็นคำประสม",
+    "伯": "ลุงฝ่ายพ่อ / ผู้เป็นใหญ่; ใน伯劳 (bó láo)ต้องอ่านเป็นคำประสม",
+    "劳": "แรงงาน / ความเหนื่อย; ใน伯劳 (bó láo)ต้องอ่านเป็นคำประสม",
     "佛": "พระพุทธเจ้า / พุทธศาสนา (fó)",
     "法": "กฎหมาย / วิธี / ธรรมะ ตามบริบท",
     "僧": "พระสงฆ์",
-    "杜": "ชื่อสกุลตู้ / ต้นแพร์ชนิดหนึ่ง; ใน杜鹃เป็นส่วนของชื่อนก"
+    "杜": "ชื่อสกุลตู้ / ต้นแพร์ชนิดหนึ่ง; ใน杜鹃 (dù juān)เป็นส่วนของชื่อนก"
   },
   "compoundGlosses": {
     "白鹭": {
-      "thai": "นกยางขาว (Little Egret); 白=ขาว และ 鹭=นกยาง"
+      "thai": "นกยางขาว (Little Egret); 白 (bái)=ขาว และ 鹭 (lù)=นกยาง",
+      "pinyin": "bái lù"
     },
     "啄木鸟": {
-      "thai": "นกหัวขวาน; 啄=จิก 木=ไม้ 鸟=นก"
+      "thai": "นกหัวขวาน; 啄 (zhuó)=จิก 木 (mù)=ไม้ 鸟 (niǎo)=นก",
+      "pinyin": "zhuó mù niǎo"
     },
     "伯劳": {
-      "thai": "นกอีเสือ (shrike); ใช้เป็นคำประสม ไม่แปลว่า “ลุง+แรงงาน”"
+      "thai": "นกอีเสือ (shrike); ใช้เป็นคำประสม ไม่แปลว่า “ลุง+แรงงาน”",
+      "pinyin": "bó láo"
     },
     "鸳鸯": {
-      "thai": "เป็ดแมนดาริน; เป็นคำประสม และใช้เปรียบคู่รักได้"
+      "thai": "เป็ดแมนดาริน; เป็นคำประสม และใช้เปรียบคู่รักได้",
+      "pinyin": "yuān yāng"
     },
     "戴胜": {
-      "thai": "นกกะรางหัวขวาน (hoopoe); ดูคำอธิบายเรื่องเครื่องประดับศีรษะ"
+      "thai": "นกกะรางหัวขวาน (hoopoe); ดูคำอธิบายเรื่องเครื่องประดับศีรษะ",
+      "pinyin": "dài shèng"
     },
     "喜鹊": {
-      "thai": "นกสาลิกากลุ่ม magpie; 喜=ความยินดี และ 鹊=magpie"
+      "thai": "นกสาลิกากลุ่ม magpie; 喜 (xǐ)=ความยินดี และ 鹊 (què)=magpie",
+      "pinyin": "xǐ què"
     },
     "杜鹃": {
-      "thai": "นกคัคคู; ชื่อเดียวกันยังใช้เรียกกุหลาบพันปีในอีกบริบท"
+      "thai": "นกคัคคู; ชื่อเดียวกันยังใช้เรียกกุหลาบพันปีในอีกบริบท",
+      "pinyin": "dù juān"
     },
     "䴙䴘": {
-      "thai": "นกเป็ดผี (grebe); เป็นคำสองพยางค์ ไม่แปลแยกเป็นสองความหมาย"
+      "thai": "นกเป็ดผี (grebe); เป็นคำสองพยางค์ ไม่แปลแยกเป็นสองความหมาย",
+      "pinyin": "pì tī"
     },
     "鹡鸰": {
-      "thai": "นกเด้าลม (wagtail); เป็นคำสองพยางค์"
+      "thai": "นกเด้าลม (wagtail); เป็นคำสองพยางค์",
+      "pinyin": "jí líng"
     },
     "鸬鹚": {
-      "thai": "นกกาน้ำ (cormorant)"
+      "thai": "นกกาน้ำ (cormorant)",
+      "pinyin": "lú cí"
     },
     "鹦鹉": {
-      "thai": "นกแก้ว (parrot)"
+      "thai": "นกแก้ว (parrot)",
+      "pinyin": "yīng wǔ"
     },
     "鹌鹑": {
-      "thai": "นกกระทา (quail)"
+      "thai": "นกกระทา (quail)",
+      "pinyin": "ān chún"
     },
     "鹧鸪": {
-      "thai": "นกกระทากลุ่ม partridge"
+      "thai": "นกกระทากลุ่ม partridge",
+      "pinyin": "zhè gū"
     },
     "鹪鹩": {
-      "thai": "นกกระจ้อยกลุ่ม wren"
+      "thai": "นกกระจ้อยกลุ่ม wren",
+      "pinyin": "jiāo liáo"
     },
     "鹈鹕": {
-      "thai": "นกกระทุง (pelican)"
+      "thai": "นกกระทุง (pelican)",
+      "pinyin": "tí hú"
     },
     "天鹅": {
-      "thai": "หงส์ (swan); อ่านเป็นคำประสม ไม่ใช่คำยืนยันถิ่นอาศัยบนท้องฟ้า"
+      "thai": "หงส์ (swan); อ่านเป็นคำประสม ไม่ใช่คำยืนยันถิ่นอาศัยบนท้องฟ้า",
+      "pinyin": "tiān é"
     },
     "麻雀": {
-      "thai": "นกกระจอก (sparrow)"
+      "thai": "นกกระจอก (sparrow)",
+      "pinyin": "má què"
     },
     "翠鸟": {
-      "thai": "นกกระเต็น (kingfisher)"
+      "thai": "นกกระเต็น (kingfisher)",
+      "pinyin": "cuì niǎo"
     },
     "鸠鸽": {
-      "thai": "นกเขาและนกพิราบ (doves and pigeons)"
+      "thai": "นกเขาและนกพิราบ (doves and pigeons)",
+      "pinyin": "jiū gē"
     },
     "斑鸠": {
-      "thai": "นกเขากลุ่ม turtledove"
+      "thai": "นกเขากลุ่ม turtledove",
+      "pinyin": "bān jiū"
     },
     "山雀": {
-      "thai": "นกติ๊ดกลุ่ม tit / chickadee"
+      "thai": "นกติ๊ดกลุ่ม tit / chickadee",
+      "pinyin": "shān què"
     },
     "百灵": {
-      "thai": "นกจาบฝนกลุ่ม lark"
+      "thai": "นกจาบฝนกลุ่ม lark",
+      "pinyin": "bǎi líng"
     },
     "喜马拉雅": {
-      "thai": "หิมาลัย เป็นชื่อภูมิศาสตร์ถอดเสียง; อย่าแปล 喜 马 拉 雅 แยกกันเป็นที่มาของชื่อ"
+      "thai": "หิมาลัย เป็นชื่อภูมิศาสตร์ถอดเสียง; อย่าแปล 喜 (xǐ) 马 (mǎ) 拉 (lā) 雅 (yǎ) แยกกันเป็นที่มาของชื่อ",
+      "pinyin": "xǐ mǎ lā yǎ"
     },
     "西伯利亚": {
-      "thai": "ไซบีเรีย เป็นชื่อภูมิศาสตร์ถอดเสียง"
+      "thai": "ไซบีเรีย เป็นชื่อภูมิศาสตร์ถอดเสียง",
+      "pinyin": "xī bó lì yà"
     },
     "尼泊尔": {
-      "thai": "เนปาล เป็นชื่อประเทศถอดเสียง"
+      "thai": "เนปาล เป็นชื่อประเทศถอดเสียง",
+      "pinyin": "ní bó ěr"
     },
     "阿尔泰": {
-      "thai": "อัลไต เป็นชื่อภูมิศาสตร์ถอดเสียง"
+      "thai": "อัลไต เป็นชื่อภูมิศาสตร์ถอดเสียง",
+      "pinyin": "ā ěr tài"
     },
     "蒙古": {
-      "thai": "มองโกเลีย / มองโกล"
+      "thai": "มองโกเลีย / มองโกล",
+      "pinyin": "měng gǔ"
     },
     "印度": {
-      "thai": "อินเดีย"
+      "thai": "อินเดีย",
+      "pinyin": "yìn dù"
     },
     "爪哇": {
-      "thai": "ชวา เป็นชื่อเกาะถอดเสียง"
+      "thai": "ชวา เป็นชื่อเกาะถอดเสียง",
+      "pinyin": "zhǎo wā"
     },
     "菲律宾": {
-      "thai": "ฟิลิปปินส์ เป็นชื่อประเทศถอดเสียง"
+      "thai": "ฟิลิปปินส์ เป็นชื่อประเทศถอดเสียง",
+      "pinyin": "fēi lǜ bīn"
     },
     "加拿大": {
-      "thai": "แคนาดา เป็นชื่อประเทศถอดเสียง"
+      "thai": "แคนาดา เป็นชื่อประเทศถอดเสียง",
+      "pinyin": "jiā ná dà"
     },
     "琉球": {
-      "thai": "ริวกิว เป็นชื่อหมู่เกาะ"
+      "thai": "ริวกิว เป็นชื่อหมู่เกาะ",
+      "pinyin": "liú qiú"
     },
     "欧亚": {
-      "thai": "ยูเรเชีย / ยุโรปและเอเชีย"
+      "thai": "ยูเรเชีย / ยุโรปและเอเชีย",
+      "pinyin": "ōu yà"
     },
     "美洲": {
-      "thai": "ทวีปอเมริกา"
+      "thai": "ทวีปอเมริกา",
+      "pinyin": "měi zhōu"
     },
     "澳洲": {
-      "thai": "ออสเตรเลีย"
+      "thai": "ออสเตรเลีย",
+      "pinyin": "ào zhōu"
     },
     "台湾": {
-      "thai": "ไต้หวัน"
+      "thai": "ไต้หวัน",
+      "pinyin": "tái wān"
     },
     "西藏": {
-      "thai": "ทิเบต"
+      "thai": "ทิเบต",
+      "pinyin": "xī zàng"
     },
     "中华": {
-      "thai": "จีน / จีนในบริบทชื่อภูมิศาสตร์หรือวัฒนธรรม"
+      "thai": "จีน / จีนในบริบทชื่อภูมิศาสตร์หรือวัฒนธรรม",
+      "pinyin": "zhōng huá"
     },
     "普通": {
-      "thai": "ทั่วไป / สามัญ"
+      "thai": "ทั่วไป / สามัญ",
+      "pinyin": "pǔ tōng"
     },
     "东方": {
-      "thai": "ตะวันออก"
+      "thai": "ตะวันออก",
+      "pinyin": "dōng fāng"
     },
     "凤头": {
-      "thai": "หัวมีหงอน / หงอนแบบนกเฟิ่ง ตามการอ่านชื่อ"
+      "thai": "หัวมีหงอน / หงอนแบบนกเฟิ่ง ตามการอ่านชื่อ",
+      "pinyin": "fèng tóu"
     },
     "红嘴": {
-      "thai": "ปากแดง"
+      "thai": "ปากแดง",
+      "pinyin": "hóng zuǐ"
     },
     "白眉": {
-      "thai": "คิ้วขาว"
+      "thai": "คิ้วขาว",
+      "pinyin": "bái méi"
     },
     "长尾": {
-      "thai": "หางยาว"
+      "thai": "หางยาว",
+      "pinyin": "cháng wěi"
     },
     "黑颈": {
-      "thai": "คอดำ"
+      "thai": "คอดำ",
+      "pinyin": "hēi jǐng"
     },
     "红胸": {
-      "thai": "อกแดง"
+      "thai": "อกแดง",
+      "pinyin": "hóng xiōng"
     },
     "白腹": {
-      "thai": "ท้องขาว"
+      "thai": "ท้องขาว",
+      "pinyin": "bái fù"
     },
     "黄喉": {
-      "thai": "คอเหลือง"
+      "thai": "คอเหลือง",
+      "pinyin": "huáng hóu"
     },
     "佛法僧": {
-      "thai": "ชื่อกลุ่มนกที่ใช้ในภาษาจีน; ความหมายตามตัวอักษรเชื่อมกับพุทธ พระธรรม พระสงฆ์ แต่ยังไม่มีที่มาของชื่อนี้ที่ตรวจสอบในแอป"
+      "thai": "ชื่อกลุ่มนกที่ใช้ในภาษาจีน; ความหมายตามตัวอักษรเชื่อมกับพุทธ พระธรรม พระสงฆ์ แต่ยังไม่มีที่มาของชื่อนี้ที่ตรวจสอบในแอป",
+      "pinyin": "fó fǎ sēng"
     }
   },
   "extraWords": [
@@ -436,8 +485,8 @@
       "match": "白鹭",
       "kind": "literal",
       "title": "White + egret",
-      "thai": "白 หมายถึงขาว และ 鹭 หมายถึงนกยาง จึงอ่านชื่อได้ว่า “นกยางขาว” นี่คือการอธิบายส่วนประกอบของคำ ไม่ใช่หลักฐานว่าใครเป็นผู้ตั้งชื่อครั้งแรก",
-      "english": "白 means white and 鹭 means heron/egret. This is a literal reading, not a documented naming history.",
+      "thai": "白 (bái) หมายถึงขาว และ 鹭 (lù) หมายถึงนกยาง จึงอ่านชื่อได้ว่า “นกยางขาว” นี่คือการอธิบายส่วนประกอบของคำ ไม่ใช่หลักฐานว่าใครเป็นผู้ตั้งชื่อครั้งแรก",
+      "english": "白 (bái) means white and 鹭 (lù) means heron/egret. This is a literal reading, not a documented naming history.",
       "sources": [
         "cedict"
       ]
@@ -446,8 +495,8 @@
       "match": "红嘴蓝鹊",
       "kind": "literal",
       "title": "A colour + body-part pattern",
-      "thai": "แยกเป็น 红嘴 = ปากแดง, 蓝 = น้ำเงิน และ 鹊 = magpie ชื่อชนิดจึงอ่านได้ว่า “นกสาลิกาสีน้ำเงินปากแดง” เป็นตัวอย่างการอ่านคำบอกสีและส่วนของร่างกาย",
-      "english": "Read 红嘴 as red-billed, 蓝 as blue, and 鹊 as magpie. This explains the name’s wording, not who coined it.",
+      "thai": "แยกเป็น 红嘴 (hóng zuǐ) = ปากแดง, 蓝 (lán) = น้ำเงิน และ 鹊 (què) = magpie ชื่อชนิดจึงอ่านได้ว่า “นกสาลิกาสีน้ำเงินปากแดง” เป็นตัวอย่างการอ่านคำบอกสีและส่วนของร่างกาย",
+      "english": "Read 红嘴 (hóng zuǐ) as red-billed, 蓝 (lán) as blue, and 鹊 (què) as magpie. This explains the name’s wording, not who coined it.",
       "sources": [
         "cedict"
       ]
@@ -456,8 +505,8 @@
       "match": "啄木鸟",
       "kind": "literal",
       "title": "Peck + wood + bird",
-      "thai": "啄 = จิก, 木 = ไม้ และ 鸟 = นก รวมเป็นนกที่จิกไม้ ใช้ช่วยจำความหมายของคำว่า woodpecker ได้ตรงตัว",
-      "english": "啄 = peck, 木 = wood, 鸟 = bird: literally a bird that pecks wood.",
+      "thai": "啄 (zhuó) = จิก, 木 (mù) = ไม้ และ 鸟 (niǎo) = นก รวมเป็นนกที่จิกไม้ ใช้ช่วยจำความหมายของคำว่า woodpecker ได้ตรงตัว",
+      "english": "啄 (zhuó) = peck, 木 (mù) = wood, 鸟 (niǎo) = bird: literally a bird that pecks wood.",
       "sources": [
         "cedict"
       ]
@@ -467,8 +516,8 @@
       "kind": "cultural",
       "exact": true,
       "title": "The magpie as a happy omen",
-      "thai": "พจนานุกรมกระทรวงศึกษาธิการไต้หวันอธิบายว่า คนในอดีตเชื่อว่าเสียงนกสาลิกาเป็นลางของข่าวดี จึงใช้ 喜 ซึ่งแปลว่าความยินดีในชื่อ เรื่องนี้เป็นความเชื่อทางวัฒนธรรม",
-      "english": "The MOE dictionary explains 喜鹊 through the traditional belief that its call foretells happy news. This is a cultural belief.",
+      "thai": "พจนานุกรมกระทรวงศึกษาธิการไต้หวันอธิบายว่า คนในอดีตเชื่อว่าเสียงนกสาลิกาเป็นลางของข่าวดี จึงใช้ 喜 (xǐ) ซึ่งแปลว่าความยินดีในชื่อ เรื่องนี้เป็นความเชื่อทางวัฒนธรรม",
+      "english": "The MOE dictionary explains 喜鹊 (xǐ què) through the traditional belief that its call foretells happy news. This is a cultural belief.",
       "sources": [
         "moe-magpie"
       ]
@@ -477,8 +526,8 @@
       "match": "鸳鸯",
       "kind": "usage",
       "title": "A whole word, with two traditional sex terms",
-      "thai": "พจนานุกรมใช้ 鸳 เรียกตัวผู้ และ 鸯 เรียกตัวเมีย เมื่อรวมกันเป็นชื่อเป็ดแมนดาริน คำนี้ยังใช้เปรียบคู่สามีภรรยาได้ การเปรียบทางภาษาไม่ได้ยืนยันพฤติกรรมจับคู่ตลอดชีวิตของนก",
-      "english": "In the MOE dictionary 鸳 denotes the male and 鸯 the female Mandarin Duck. The compound also figuratively means a married couple.",
+      "thai": "พจนานุกรมใช้ 鸳 (yuān) เรียกตัวผู้ และ 鸯 (yāng) เรียกตัวเมีย เมื่อรวมกันเป็นชื่อเป็ดแมนดาริน คำนี้ยังใช้เปรียบคู่สามีภรรยาได้ การเปรียบทางภาษาไม่ได้ยืนยันพฤติกรรมจับคู่ตลอดชีวิตของนก",
+      "english": "In the MOE dictionary 鸳 (yuān) denotes the male and 鸯 (yāng) the female Mandarin Duck. The compound also figuratively means a married couple.",
       "sources": [
         "moe-mandarin"
       ]
@@ -487,8 +536,8 @@
       "match": "杜鹃",
       "kind": "folklore",
       "title": "The legend of Emperor Wang",
-      "thai": "ชื่อ杜鹃เชื่อมกับตำนานกษัตริย์วั่งตี้แห่งรัฐสู่ ซึ่งวิญญาณกลายเป็นนกคัคคูหลังสิ้นพระชนม์ นี่เป็นเรื่องเล่าทางวรรณกรรมที่พจนานุกรมบันทึกไว้ ไม่ใช่หลักฐานยืนยันการกำเนิดของชื่อทุกชนิดที่มีคำว่า杜鹃",
-      "english": "A recorded legend tells of Emperor Wang of Shu becoming a cuckoo after death. It is folklore, not proof of the naming origin of every 杜鹃 species.",
+      "thai": "ชื่อ杜鹃 (dù juān)เชื่อมกับตำนานกษัตริย์วั่งตี้แห่งรัฐสู่ ซึ่งวิญญาณกลายเป็นนกคัคคูหลังสิ้นพระชนม์ นี่เป็นเรื่องเล่าทางวรรณกรรมที่พจนานุกรมบันทึกไว้ ไม่ใช่หลักฐานยืนยันการกำเนิดของชื่อทุกชนิดที่มีคำว่า杜鹃 (dù juān)",
+      "english": "A recorded legend tells of Emperor Wang of Shu becoming a cuckoo after death. It is folklore, not proof of the naming origin of every 杜鹃 (dù juān) species.",
       "sources": [
         "moe-cuckoo"
       ]
@@ -497,8 +546,8 @@
       "match": "戴胜",
       "kind": "interpretation",
       "title": "An old head ornament, rather than “victory”",
-      "thai": "戴 อ่านได้ว่า “สวม” ส่วน 勝/胜 มีความหมายเก่าว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายชื่อ戴胜ผ่านหงอนที่เด่นเหมือนเครื่องประดับ จึงไม่ควรใช้ความหมายทั่วไปว่า “ชนะ” มาแปลชื่อนี้",
-      "english": "戴 means to wear; 勝/胜 also has an old head-ornament sense. The cited article explains the hoopoe’s name by its conspicuous crest. This is a source explanation, not a traced first coinage.",
+      "thai": "戴 (dài) อ่านได้ว่า “สวม” ส่วน 勝 (shèng)/胜 (shèng) มีความหมายเก่าว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายชื่อ戴胜 (dài shèng)ผ่านหงอนที่เด่นเหมือนเครื่องประดับ จึงไม่ควรใช้ความหมายทั่วไปว่า “ชนะ” มาแปลชื่อนี้",
+      "english": "戴 (dài) means to wear; 勝 (shèng)/胜 (shèng) also has an old head-ornament sense. The cited article explains the hoopoe’s name by its conspicuous crest. This is a source explanation, not a traced first coinage.",
       "sources": [
         "kinmen-hoopoe"
       ]
@@ -507,8 +556,8 @@
       "match": "伯劳",
       "kind": "usage",
       "title": "A bird-name compound",
-      "thai": "伯劳 เป็นคำประสมหมายถึงนกอีเสือ (shrike) แม้ 伯 และ 劳 จะมีความหมายเดี่ยวในพจนานุกรม ก็ไม่ควรนำมาต่อเป็นที่มาของชื่อนก",
-      "english": "伯劳 is the word for shrike. The independent senses of 伯 and 劳 do not establish the origin of this bird name.",
+      "thai": "伯劳 (bó láo) เป็นคำประสมหมายถึงนกอีเสือ (shrike) แม้ 伯 (bó) และ 劳 (láo) จะมีความหมายเดี่ยวในพจนานุกรม ก็ไม่ควรนำมาต่อเป็นที่มาของชื่อนก",
+      "english": "伯劳 (bó láo) is the word for shrike. The independent senses of 伯 (bó) and 劳 (láo) do not establish the origin of this bird name.",
       "sources": [
         "cedict"
       ]
@@ -517,8 +566,8 @@
       "match": "鹡鸰",
       "kind": "usage",
       "title": "Two characters, one bird word",
-      "thai": "鹡鸰 เป็นคำประสมชื่อนกเด้าลม พจนานุกรมอธิบายตัวอักษรแต่ละตัวโดยชี้กลับไปยังคำนี้ จึงไม่จำเป็นต้องฝืนแปลแต่ละตัวเป็นวัตถุสองอย่าง",
-      "english": "鹡 and 鸰 are defined through the compound 鹡鸰, wagtail. They are not two separate descriptive objects.",
+      "thai": "鹡鸰 (jí líng) เป็นคำประสมชื่อนกเด้าลม พจนานุกรมอธิบายตัวอักษรแต่ละตัวโดยชี้กลับไปยังคำนี้ จึงไม่จำเป็นต้องฝืนแปลแต่ละตัวเป็นวัตถุสองอย่าง",
+      "english": "鹡 (jí) and 鸰 (líng) are defined through the compound 鹡鸰 (jí líng), wagtail. They are not two separate descriptive objects.",
       "sources": [
         "cedict"
       ]
@@ -527,8 +576,8 @@
       "match": "䴙䴘",
       "kind": "usage",
       "title": "Two characters, one bird word",
-      "thai": "䴙䴘 เป็นชื่อกลุ่มนกเป็ดผี (grebe) ตัวอักษรทั้งสองใช้ร่วมกันในคำนี้ พินอินคือ pì tī",
-      "english": "䴙䴘 (pì tī) means grebe. Its characters are used together in this lexical item.",
+      "thai": "䴙䴘 (pì tī) เป็นชื่อกลุ่มนกเป็ดผี (grebe) ตัวอักษรทั้งสองใช้ร่วมกันในคำนี้ พินอินคือ pì tī",
+      "english": "䴙䴘 (pì tī) (pì tī) means grebe. Its characters are used together in this lexical item.",
       "sources": [
         "cedict"
       ]
@@ -762,10 +811,10 @@
     "牛": "cattle; ox",
     "马": "horse",
     "犀": "rhinoceros",
-    "鹡": "used with 鸰 in 鹡鸰, wagtail",
-    "鸰": "used with 鹡 in 鹡鸰, wagtail",
-    "䴙": "used with 䴘 in 䴙䴘, grebe",
-    "䴘": "used with 䴙 in 䴙䴘, grebe",
+    "鹡": "used with 鸰 (líng) in 鹡鸰 (jí líng), wagtail",
+    "鸰": "used with 鹡 (jí) in 鹡鸰 (jí líng), wagtail",
+    "䴙": "used with 䴘 (tī) in 䴙䴘 (pì tī), grebe",
+    "䴘": "used with 䴙 (pì) in 䴙䴘 (pì tī), grebe",
     "鸳": "male Mandarin Duck in dictionary usage",
     "鸯": "female Mandarin Duck in dictionary usage",
     "佛": "Buddha; Buddhism (fó)",

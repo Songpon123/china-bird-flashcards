@@ -96,6 +96,7 @@ def main():
     compounds = {w:{'entries':rows, 'thai':editorial['compoundGlosses'].get(w, {}).get('thai', '')} for w, rows in entries.items() if len(w)>1}
     for w, gloss in editorial['compoundGlosses'].items():
         compounds.setdefault(w, {'entries':[], 'thai':''})['thai'] = gloss['thai']
+        compounds[w]['pinyin'] = gloss['pinyin']
     out = {
         'schemaVersion':1,
         'meta':{

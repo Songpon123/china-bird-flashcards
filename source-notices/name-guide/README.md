@@ -8,6 +8,8 @@ The generated `data/name-guide.json` is a separate language pack. It does not ch
 
 Only explicitly curated word units are shown as compounds. Generic dictionary substring matches are not treated as meaningful name parts. Dictionary bird names may use older taxonomies and are not substituted for the app's source checklist. Transliterated place names, personal names, bound forms and compounds should not be read as literal naming histories. Ten selected notes distinguish literal readings, usage, cultural explanations, source explanations and folklore. They do not claim that all naming origins have been verified.
 
+Guide edition v2 adds parenthesized, tone-marked Pinyin to Chinese references in the authored explanations and explicit whole-word readings to all 49 curated compounds. Alternate readings are selected for the stated lexical context (for example 鸟 is niǎo in the woodpecker explanation); the original dictionary entries and checklist Pinyin are preserved.
+
 The name guide is shipped with the app; it is not included in notebook backups. Backups preserve the bird/group datasets, settings and progress. Restored or imported names use the bundled guide and explicitly identify any uncovered character. Download the language JSON and this directory if preserving the exact guide edition matters.
 
 Rebuild with Python 3, without dependencies or network access:

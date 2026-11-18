@@ -59,6 +59,8 @@ All menus and controls use English. The **Name guide** explains all **474 distin
 
 Search a Chinese name, English bird name, Pinyin, or a character. Example buttons open 白鹭, 喜鹊, 鸳鸯, 戴胜 and 杜鹃. The guide distinguishes **literal reading, word usage, cultural explanation, source explanation and folklore**. There are **10 selected notes**, not a complete history of all bird names. Names without a sourced note say so. Curated word units preserve compounds such as 伯劳, 鹡鸰 and 䴙䴘 and place-name transliterations; a dictionary substring is never automatically asserted to explain a naming origin. 氏 prompts a personal-name caution without inventing the commemorated person's identity.
 
+Authored explanations show tone-marked Pinyin directly after Chinese references, for example **白 (bái)** and **鹭 (lù)**. All 49 curated word units also display a complete-word reading. These readings are retained explicitly in the editorial source; they are not produced by concatenating arbitrary character readings at runtime.
+
 After revealing a flashcard, expand **Understand this name · meanings & story**. Definitions are hidden while the answer is hidden, in both study directions. Library and family/group details also include the guide. The language pack changes no bird IDs, schedules, dataset membership or saved progress. Imported/restored names use the bundled guide and explicitly identify any uncovered characters. Notebook backups retain datasets and progress; the app-bundled language pack is not copied into backups. Preserve `data/name-guide.json` and `source-notices/name-guide/` separately to keep an exact guide edition.
 
 Rebuild the guide without downloads or third-party Python packages:
