@@ -1,0 +1,646 @@
+{
+  "retrieved": "2026-11-18",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+  "method": "Exact P225 scientific-name match; selected labels only, not Wikipedia page text.",
+  "families": {
+    "Accipitridae": {
+      "id": "Q25510",
+      "scientific": "Accipitridae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鹰科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Accipitridae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์เหยี่ยวและอินทรี"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹰科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25510"
+    },
+    "Anatidae": {
+      "id": "Q7556",
+      "scientific": "Anatidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Anatidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鸭科"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกเป็ดน้ำ"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鴨科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鸭科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7556"
+    },
+    "Charadriidae": {
+      "id": "Q28449",
+      "scientific": "Charadriidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鸻科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Charadriidae"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鸻科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鸻科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28449"
+    },
+    "Columbidae": {
+      "id": "Q10856",
+      "scientific": "Columbidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Columbidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกพิราบและนกเขา"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鸠鸽科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鸠鸽科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鸠鸽科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10856"
+    },
+    "Corvidae": {
+      "id": "Q25565",
+      "scientific": "Corvidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鸦科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Corvidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกกา"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鸦科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鸦科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25565"
+    },
+    "Emberizidae": {
+      "id": "Q28486",
+      "scientific": "Emberizidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Emberizidae"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹀科"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鹀科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹀科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28486"
+    },
+    "Falconidae": {
+      "id": "Q21744",
+      "scientific": "Falconidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Falconidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์เหยี่ยวปีกแหลม"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "隼科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "隼科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "隼科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21744"
+    },
+    "Fringillidae": {
+      "id": "Q160835",
+      "scientific": "Fringillidae",
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "燕雀科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "燕雀科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Fringillidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "燕雀科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q160835"
+    },
+    "Ardeidae": {
+      "id": "Q18789",
+      "scientific": "Ardeidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鹭科"
+        },
+        "en": {
+          "language": "en",
+          "value": "heron"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกยาง"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹭科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹭科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18789"
+    },
+    "Alcedinidae": {
+      "id": "Q8154335",
+      "scientific": "Alcedinidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Alcedinidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "翠鸟科"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกกระเต็นน้อย"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "翠鸟科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "翠鸟科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8154335"
+    },
+    "Ciconiidae": {
+      "id": "Q28507",
+      "scientific": "Ciconiidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "stork"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกกระสา"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鹳科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹳科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹳科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28507"
+    },
+    "Apodidae": {
+      "id": "Q26617",
+      "scientific": "Apodidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "雨燕科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Apodidae"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "雨燕科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "雨燕科"
+        },
+        "th": {
+          "language": "th",
+          "value": "นกแอ่น"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26617"
+    },
+    "Laridae": {
+      "id": "Q27589",
+      "scientific": "Laridae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鸥科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Laridae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกนางนวล"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鸥科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鸥科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27589"
+    },
+    "Motacillidae": {
+      "id": "Q205943",
+      "scientific": "Motacillidae",
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹡鸰科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹡鸰科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Motacillidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鶺鴒科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q205943"
+    },
+    "Phasianidae": {
+      "id": "Q26375",
+      "scientific": "Phasianidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "雉科"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์ไก่ฟ้าและนกกระทา"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "雉科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "雉科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26375"
+    },
+    "Meropidae": {
+      "id": "Q183147",
+      "scientific": "Meropidae",
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "蜂虎科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "蜂虎科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Meropidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "蜂虎科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183147"
+    },
+    "Gruidae": {
+      "id": "Q25365",
+      "scientific": "Gruidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鹤科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Gruidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "นกกระเรียน"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹤科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹤科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25365"
+    },
+    "Passeridae": {
+      "id": "Q28922",
+      "scientific": "Passeridae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Passeridae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกกระจอก"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "雀科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "雀科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "雀科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28922"
+    },
+    "Hirundinidae": {
+      "id": "Q39861",
+      "scientific": "Hirundinidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "燕科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Hirundinidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "นกนางแอ่น"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "燕科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39861"
+    },
+    "Paridae": {
+      "id": "Q168473",
+      "scientific": "Paridae",
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "山雀科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "山雀科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Paridae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "山雀科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q168473"
+    },
+    "Picidae": {
+      "id": "Q25439",
+      "scientific": "Picidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "啄木鸟科"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกหัวขวาน"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "啄木鸟科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "啄木鸟科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25439"
+    },
+    "Strigidae": {
+      "id": "Q26012",
+      "scientific": "Strigidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鸱鸮科"
+        },
+        "en": {
+          "language": "en",
+          "value": "true owls"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกเค้าแมว"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鸱鸮科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26012"
+    },
+    "Tytonidae": {
+      "id": "Q27112",
+      "scientific": "Tytonidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "草鸮科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Tytonidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "วงศ์นกแสก"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27112"
+    },
+    "Pycnonotidae": {
+      "id": "Q188854",
+      "scientific": "Pycnonotidae",
+      "labels": {
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹎科"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹎科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Pycnonotidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "นกปรอด"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "鹎科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188854"
+    },
+    "Upupidae": {
+      "id": "Q20977",
+      "scientific": "Upupidae",
+      "labels": {
+        "en": {
+          "language": "en",
+          "value": "Upupidae"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "戴胜科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20977"
+    },
+    "Scolopacidae": {
+      "id": "Q26626",
+      "scientific": "Scolopacidae",
+      "labels": {
+        "zh": {
+          "language": "zh",
+          "value": "鹬科"
+        },
+        "en": {
+          "language": "en",
+          "value": "Scolopacidae"
+        },
+        "th": {
+          "language": "th",
+          "value": "นกอีก๋อย"
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "value": "鹬科"
+        },
+        "zh-hans": {
+          "language": "zh-hans",
+          "value": "鹬科"
+        }
+      },
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26626"
+    }
+  }
+}

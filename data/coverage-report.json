@@ -1,0 +1,534 @@
+{
+  "sourceSpecies": 1445,
+  "bundledSpecies": 1445,
+  "sourceCoverageComplete": true,
+  "studyReady": 1441,
+  "chinese": 1445,
+  "pinyin": 1445,
+  "english": 1441,
+  "taxonomyReview": 151,
+  "excludedSubspecies": 1766,
+  "sourceSynonymRows": 1844,
+  "rejectedAliasCount": 82,
+  "unmatchedEnglish": [
+    {
+      "scientific": "Caprimulgus centralasicus",
+      "chinese": "中亚夜鹰"
+    },
+    {
+      "scientific": "Garrulax owstoni",
+      "chinese": "海南画眉"
+    },
+    {
+      "scientific": "Phylloscopus occisinensis",
+      "chinese": "华西柳莺"
+    },
+    {
+      "scientific": "Strix davidi",
+      "chinese": "四川林鸮"
+    }
+  ],
+  "nameMatchCounts": {
+    "IOC 13.1 exact historical name": 38,
+    "IOC 15.2 exact scientific name": 1294,
+    "Unique Chinese name + family candidate; concept unreviewed": 101,
+    "unresolved; excluded from study": 4,
+    "Explicit genus-combination candidate; concept unreviewed": 7,
+    "Historical Chinese name + family candidate; concept unreviewed": 1
+  },
+  "rejectedAliases": [
+    {
+      "sourceId": "544efc63-83b3-4f84-92ec-699a044c6960",
+      "scientific": "Buteo japonicus",
+      "alias": "Zosterops japonicus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "57a7fa6c-4e98-4325-b508-ac1fb6124409",
+      "scientific": "Anas zonorhyncha",
+      "alias": "Anas poecilorhyncha",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "e2f78bbe-7c96-4ed9-bf50-7641395da7ea",
+      "scientific": "Bucephala clangula",
+      "alias": "Anas hyemalis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "3c2970a7-6cee-4a1f-b4cb-bc6e3b6d082c",
+      "scientific": "Clangula hyemalis",
+      "alias": "Anas hyemalis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "77c1ae11-6f6b-47fa-9488-e1410adc33fe",
+      "scientific": "Histrionicus histrionicus",
+      "alias": "Anas angustirostris",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "58a63d26-b8f6-4fb3-b5f4-037cb662dba9",
+      "scientific": "Marmaronetta angustirostris",
+      "alias": "Anas angustirostris",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "d182b57c-bde1-4d97-8b93-f6580cfbaba3",
+      "scientific": "Melanitta americana",
+      "alias": "Melanitta nigra",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "0e494b02-582b-4ccd-b435-5b6e6243bfe5",
+      "scientific": "Sarkidiornis melanotos",
+      "alias": "Anas ferruginea",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "617b5952-08e0-465d-8af8-18b787137e3d",
+      "scientific": "Tadorna ferruginea",
+      "alias": "Anas ferruginea",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "d2c0f5b9-3b5b-4a6f-a0f3-1d8d8c5272b3",
+      "scientific": "Brachyramphus perdix",
+      "alias": "Perdix perdix",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "2e949989-ce41-4dfd-bcf7-7797036b27a4",
+      "scientific": "Calidris acuminata",
+      "alias": "Calidris cooperi",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "2d6d389f-9b06-40ba-afed-013fd54f3b43",
+      "scientific": "Calidris ferruginea",
+      "alias": "Calidris cooperi",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "44429f71-d7c1-48c4-a66a-9e35293d9954",
+      "scientific": "Mycteria leucocephala",
+      "alias": "Pseudotantolus leucocephalus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "bc2e4ced-20ca-4659-a524-5a941c8aeb98",
+      "scientific": "Hierococcyx hyperythrus",
+      "alias": "Dendrocopos hyperythrus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "de14eef3-9ce8-4da2-babb-0749517bb751",
+      "scientific": "Lewinia striata",
+      "alias": "Gallirallus striatus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "65c4f388-4cc8-4db5-8edf-c5df8c75d54d",
+      "scientific": "Rallus indicus",
+      "alias": "Rallus aquaticus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "04180807-b0d3-4a8a-a19e-43f0c05bf9d1",
+      "scientific": "Aegithalos glaucogularis",
+      "alias": "Aegithalos caudatus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "847381f6-c48b-48f8-b5f5-569e28e40442",
+      "scientific": "Lalage nigra",
+      "alias": "Melanitta nigra",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "c733fd3a-80ea-49fb-a081-642674713906",
+      "scientific": "Certhia hodgsoni",
+      "alias": "Batrachostomus hodgsoni",
+      "reason": "another accepted species; multiple target species"
+    },
+    {
+      "sourceId": "81ce76ea-5ecb-461e-b53b-6608a07e88f8",
+      "scientific": "Corvus cornix",
+      "alias": "Corvus corone",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "922a3eb5-a414-40b1-96f2-12acd353ead7",
+      "scientific": "Zonotrichia leucophrys",
+      "alias": "Brachypteryx leucophrys",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "e2f2f808-6252-4d42-83db-72eee4c890b3",
+      "scientific": "Carpodacus davidianus",
+      "alias": "Paradoxornis davidianus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "6b2ace5e-15d1-401d-9550-622e568e9c29",
+      "scientific": "Carpodacus dubius",
+      "alias": "Carpodacus thura",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "056e24ba-0f9e-4d22-8e53-7105d76e663d",
+      "scientific": "Carpodacus pulcherrimus",
+      "alias": "Carpodacus davidianus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "eed46dd2-5d98-42ec-aee1-a4f310e05720",
+      "scientific": "Carpodacus thura",
+      "alias": "Carpodacus dubius",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "29efee9d-5b1f-4c69-ae9d-e63b8e87140f",
+      "scientific": "Mycerobas carnipes",
+      "alias": "Mycerobas hodgson",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "6bf2f5f9-590e-4c0e-9913-8e8a5da332bd",
+      "scientific": "Mycerobas melanozanthos",
+      "alias": "Mycerobas hodgson",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "885df8de-d4b3-4b72-bde3-e5e6bd6ab083",
+      "scientific": "Garrulax albogularis",
+      "alias": "Garrulax ruficeps",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "b9df55b9-db14-4cf8-9c8e-31ad7f4f2584",
+      "scientific": "Garrulax berthemyi",
+      "alias": "Garrulax poecilorhynchus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "65590d14-d79b-45fb-a308-7bb7c276961c",
+      "scientific": "Garrulax bieti",
+      "alias": "Garrulax lunulatus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "164c7a66-57d5-4412-96dd-44f5354c3912",
+      "scientific": "Garrulax canorus",
+      "alias": "Garrulax taewanus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "ce2e4e9e-71f7-4e46-8aed-2d95e2eb12de",
+      "scientific": "Garrulax ruficeps",
+      "alias": "Paradoxornis ruficeps",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "9b77ee36-9890-4664-93b6-41fd3e25bf7f",
+      "scientific": "Liocichla ripponi",
+      "alias": "Liocichla phoenicea",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "287f0d73-00c5-4cbb-b4a4-73d7793a0da0",
+      "scientific": "Trochalopteron affine",
+      "alias": "Garrulax affinis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "4e5e955d-0d3f-4b68-9ee4-fde2de7b8a4e",
+      "scientific": "Locustella davidi",
+      "alias": "Garrulax davidi",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "90f003a6-d471-45ff-b733-d3879e5bfa8f",
+      "scientific": "Locustella major",
+      "alias": "Dendrocopos major",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "ef75b9da-8eb4-4dfe-9a62-2937e2058e70",
+      "scientific": "Terpsiphone affinis",
+      "alias": "Garrulax affinis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "c75bb928-3b76-4bdb-a9ef-13d426390b67",
+      "scientific": "Terpsiphone incei",
+      "alias": "Terpsiphone paradisi",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "33e929ec-5fc7-4949-9f38-6c23391a25b5",
+      "scientific": "Motacilla alba",
+      "alias": "Motacilla grandis",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "96ad2035-0b8f-4e8e-84f3-38f477619e5a",
+      "scientific": "Motacilla flava",
+      "alias": "Motacilla tschutschensis",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "53e3c470-fbbe-463b-a268-7ce982c9e6c7",
+      "scientific": "Motacilla tschutschensis",
+      "alias": "Motacilla flava",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "5bfdfc70-6e0e-4b59-838a-e6906d2cc567",
+      "scientific": "Brachypteryx leucophris",
+      "alias": "Brachypteryx leucophrys",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "b2777438-be39-4825-9f5e-d07ef2121934",
+      "scientific": "Ficedula albicilla",
+      "alias": "Ficedula parva",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "73a363cf-485a-4ed8-a105-8368b99cbaf0",
+      "scientific": "Ficedula hodgsoni",
+      "alias": "Batrachostomus hodgsoni",
+      "reason": "another accepted species; multiple target species"
+    },
+    {
+      "sourceId": "ac7cd5e3-46ed-443c-8289-421d7cc2cdd5",
+      "scientific": "Tarsiger indicus",
+      "alias": "Sylvia indica",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "88285802-2b01-4371-ae28-5311ce35ef2f",
+      "scientific": "Oriolus chinensis",
+      "alias": "Oriolus tenuirostris",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "a1c359a2-0cd1-40bb-a986-264331bc59bf",
+      "scientific": "Oriolus oriolus",
+      "alias": "Oriolus kundoo",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "e053debe27e04634b9674df09fb3a113",
+      "scientific": "Parus cinereus",
+      "alias": "Parus major",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "b3e500d8-a01b-4f2a-b632-22278b94e193",
+      "scientific": "Alcippe morrisonia",
+      "alias": "Alcippe cinerea",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "1db8dc12-bbdc-4f58-aae8-a047af93aa46",
+      "scientific": "Graminicola striatus",
+      "alias": "Gallirallus striatus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "3ed0f462-522b-4c3e-9958-cb28524745a5",
+      "scientific": "Schoeniparus cinereus",
+      "alias": "Alcippe cinerea",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "4409fd19-c0d1-41e9-b673-ab7a98574ab5",
+      "scientific": "Phylloscopus claudiae",
+      "alias": "Phylloscopus reguloides",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "a66893a5-dda0-4997-ad61-a0bc1426bd88",
+      "scientific": "Phylloscopus forresti",
+      "alias": "Phylloscopus chloronotus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "48cc3426-933a-41a1-8e7f-2934a3deeafd",
+      "scientific": "Phylloscopus griseolus",
+      "alias": "Sylvia indica",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "f938322c-fce8-4e87-980a-0c71133f8627",
+      "scientific": "Phylloscopus humei",
+      "alias": "Phylloscopus inornatus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "555209e6-1d32-4840-a3bc-7c7c617a550c",
+      "scientific": "Phylloscopus ogilviegranti",
+      "alias": "Phylloscopus davisoni",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "ab072c79-5de3-4c9e-a9ac-fe9a5e111610",
+      "scientific": "Phylloscopus proregulus",
+      "alias": "Phylloscopus yunnanensis",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "e1200649-63bb-42d3-bf16-f09724c74916",
+      "scientific": "Seicercus omeiensis",
+      "alias": "Seicercus burkii",
+      "reason": "another accepted species; multiple target species"
+    },
+    {
+      "sourceId": "1d77bc64-2ba3-48ad-aa3b-6a42f3585705",
+      "scientific": "Seicercus soror",
+      "alias": "Seicercus burkii",
+      "reason": "another accepted species; multiple target species"
+    },
+    {
+      "sourceId": "651a923b-75cc-4d21-9b2f-49fa3cdad467",
+      "scientific": "Seicercus whistleri",
+      "alias": "Seicercus burkii",
+      "reason": "another accepted species; multiple target species"
+    },
+    {
+      "sourceId": "089fd732-b812-41c4-b88d-5e756bf8a2e5",
+      "scientific": "Pnoepyga pusilla",
+      "alias": "Pnoepyga formosana",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "a15c0efc-50e6-44bd-97d9-54bfcf610e38",
+      "scientific": "Pycnonotus cafer",
+      "alias": "Pycnonotus aurigaster",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "99e45a12-2ef5-4c60-8e53-1fa41cebdd1f",
+      "scientific": "Neosuthora davidiana",
+      "alias": "Paradoxornis davidianus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "89d75fde-63ac-40a6-b9ae-a1842020e748",
+      "scientific": "Paradoxornis flavirostris",
+      "alias": "Paradoxornis guttaticollis",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "2b8f20fc-946a-4d88-9d4e-8a24ec9b1d91",
+      "scientific": "Psittiparus ruficeps",
+      "alias": "Paradoxornis ruficeps",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "a9ffb284-0412-4f24-9725-d2ae0205a74a",
+      "scientific": "Sylvia crassirostris",
+      "alias": "Larus crassirostris",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "aa328259-f393-4992-8552-b54e5b1536aa",
+      "scientific": "Tephrodornis virgatus",
+      "alias": "Accipiter virgatus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "5a1ece66-3207-435a-8c53-10f20a8399f0",
+      "scientific": "Erythrogenys erythrocnemis",
+      "alias": "Pomatorhinus erythrocnemis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "aa8a747e-45b5-44e0-8291-e73964da46f5",
+      "scientific": "Erythrogenys gravivox",
+      "alias": "Pomatorhinus erythrocnemis",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "4d4a788c-ba78-47f3-9956-40ed0fae7418",
+      "scientific": "Pomatorhinus ruficollis",
+      "alias": "Pomatorhinus musicus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "afbc1242-c2a5-467d-b0ab-3a101882a456",
+      "scientific": "Pomatorhinus superciliaris",
+      "alias": "Abroscopus superciliaris",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "0d006f2b-65b5-42da-a901-535f44dc5f04",
+      "scientific": "Stachyris humei",
+      "alias": "Phylloscopus humei",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "f2c69913-5bd7-421f-a301-3f684c0c14a0",
+      "scientific": "Turdus mandarinus",
+      "alias": "Turdus merula",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "0e4178d4-cd4a-4ebf-9505-0e7e308379fe",
+      "scientific": "Turdus maximus",
+      "alias": "Aerodramus maximus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "68336d13-e554-4bd1-a48f-0c0f34ffa393",
+      "scientific": "Turdus merula",
+      "alias": "Turdus mandarinus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "f77d2d6b-4636-4513-833f-e7b8d6d0f66c",
+      "scientific": "Turdus naumanni",
+      "alias": "Turdus eunomus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "f6980cbd-d952-4c6b-838d-41a39515e55f",
+      "scientific": "Turdus ruficollis",
+      "alias": "Turdus atrogularis",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "aaa0128c-89c5-4b6a-9736-94054d582185",
+      "scientific": "Zoothera aurea",
+      "alias": "Zoothera dauma",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "81bd59e5-71fb-42c2-9cd9-8008ea7e554d",
+      "scientific": "Ixobrychus sinensis",
+      "alias": "Pseudotantolus leucocephalus",
+      "reason": "multiple target species"
+    },
+    {
+      "sourceId": "fc494638-e38d-4822-826e-fadceb18c678",
+      "scientific": "Pelecanus philippensis",
+      "alias": "Pelecanus crispus",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "bd9314b2-f8d2-4003-bff1-db2113a6b9bf",
+      "scientific": "Psittacula himalayana",
+      "alias": "Prunella himalayana",
+      "reason": "another accepted species"
+    },
+    {
+      "sourceId": "5a6908ef-51c7-47e7-a6cb-d68a951cbb4d",
+      "scientific": "Otus semitorques",
+      "alias": "Spizixos semitorques",
+      "reason": "another accepted species"
+    }
+  ],
+  "allChinaCurrentComplete": false
+}

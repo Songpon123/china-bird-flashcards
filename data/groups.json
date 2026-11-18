@@ -1,0 +1,804 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "title": "Family names and bird groups · ชื่อวงศ์และกลุ่มนก",
+    "version": "family-groups-2026-11-18-v1",
+    "membershipTaxonomy": "CoL China 2023 v1.1 (source concepts retained)",
+    "coverage": "26 selected family terms out of 109 source families, plus 7 informal learning groups. Not all family names translated. No species added.",
+    "license": "CC0 1.0 (Wikidata structured labels); CC BY 4.0 (IOC 15.2 English family labels); MIT (authored Thai glosses/group definitions). CAS member records remain CC BY-NC 4.0.",
+    "sourceFiles": [
+      "source-notices/family-labels-wikidata.json",
+      "source-notices/ioc-gbif-15.2.zip"
+    ],
+    "pinyinStatus": "Dictionary-generated; not expert reviewed"
+  },
+  "cards": [
+    {
+      "id": "group:hawks",
+      "chinese": "鹰类",
+      "pinyin": "yīng lèi",
+      "english": "Hawks, eagles & allies",
+      "scientific": "Accipitridae + Pandionidae",
+      "thai": "กลุ่มเหยี่ยวและอินทรี",
+      "kind": "group",
+      "families": [
+        "Accipitridae",
+        "Pandionidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Includes the source families Accipitridae and Pandionidae; excludes falcons and owls. Includes allied kites and vultures within Accipitridae.",
+      "aliases": [
+        "กลุ่มเหยี่ยวและอินทรี"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:pigeons-doves",
+      "chinese": "鸠鸽类",
+      "pinyin": "jiū gē lèi",
+      "english": "Doves & pigeons",
+      "scientific": "Columbidae",
+      "thai": "กลุ่มนกเขาและนกพิราบ",
+      "kind": "group",
+      "families": [
+        "Columbidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Dove and pigeon are overlapping common-name categories in one family, Columbidae; they are not two separate families.",
+      "aliases": [
+        "กลุ่มนกเขาและนกพิราบ"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:ducks",
+      "chinese": "鸭类",
+      "pinyin": "yā lèi",
+      "english": "Ducks",
+      "scientific": "Anatidae (duck genera)",
+      "thai": "กลุ่มเป็ด",
+      "kind": "group",
+      "families": [
+        "Anatidae"
+      ],
+      "includeGenera": [
+        "Aix",
+        "Anas",
+        "Aythya",
+        "Bucephala",
+        "Clangula",
+        "Dendrocygna",
+        "Histrionicus",
+        "Mareca",
+        "Marmaronetta",
+        "Melanitta",
+        "Mergellus",
+        "Mergus",
+        "Netta",
+        "Nettapus",
+        "Oxyura",
+        "Polysticta",
+        "Sarkidiornis",
+        "Sibirionetta",
+        "Spatula",
+        "Tadorna"
+      ],
+      "excludeGenera": [],
+      "scope": "Learning group using an explicit list of duck genera in the CAS snapshot. Geese (Anser, Branta) and swans (Cygnus) are separate. Not a formal taxonomic rank.",
+      "aliases": [
+        "กลุ่มเป็ด"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:geese",
+      "chinese": "雁类",
+      "pinyin": "yàn lèi",
+      "english": "Geese",
+      "scientific": "Anser, Branta",
+      "thai": "กลุ่มห่านป่า",
+      "kind": "group",
+      "families": [
+        "Anatidae"
+      ],
+      "includeGenera": [
+        "Anser",
+        "Branta"
+      ],
+      "excludeGenera": [],
+      "scope": "Wild geese in the source genera Anser and Branta. Domestic goose vocabulary (鹅, é) is different; domestic forms are not added as recorded wild species.",
+      "aliases": [
+        "กลุ่มห่านป่า"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:swans",
+      "chinese": "天鹅",
+      "pinyin": "tiān é",
+      "english": "Swans",
+      "scientific": "Cygnus",
+      "thai": "กลุ่มหงส์",
+      "kind": "group",
+      "families": [
+        "Anatidae"
+      ],
+      "includeGenera": [
+        "Cygnus"
+      ],
+      "excludeGenera": [],
+      "scope": "Source genus Cygnus. A common-name learning group within Anatidae.",
+      "aliases": [
+        "กลุ่มหงส์"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:owls",
+      "chinese": "鸮类",
+      "pinyin": "xiāo lèi",
+      "english": "Owls",
+      "scientific": "Strigidae + Tytonidae",
+      "thai": "กลุ่มนกเค้าแมวและนกแสก",
+      "kind": "group",
+      "families": [
+        "Strigidae",
+        "Tytonidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Includes the source families Strigidae and Tytonidae.",
+      "aliases": [
+        "กลุ่มนกเค้าแมวและนกแสก"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "group:woodpeckers",
+      "chinese": "啄木鸟",
+      "pinyin": "zhuó mù niǎo",
+      "english": "Woodpeckers",
+      "scientific": "Picidae",
+      "thai": "กลุ่มนกหัวขวาน",
+      "kind": "group",
+      "families": [
+        "Picidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Includes source family Picidae, including its allied piculets and wrynecks.",
+      "aliases": [
+        "กลุ่มนกหัวขวาน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Authored learning-group definition using CAS source family/genus keys",
+      "englishSource": "authored-learning-terms",
+      "sourceUrl": "https://doi.org/10.15468/ae6ush"
+    },
+    {
+      "id": "family:Accipitridae",
+      "chinese": "鹰科",
+      "pinyin": "yīng kē",
+      "english": "Kites, Hawks, Eagles",
+      "scientific": "Accipitridae",
+      "thai": "วงศ์เหยี่ยวและอินทรี",
+      "kind": "family",
+      "families": [
+        "Accipitridae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์เหยี่ยวและอินทรี"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25510"
+    },
+    {
+      "id": "family:Columbidae",
+      "chinese": "鸠鸽科",
+      "pinyin": "jiū gē kē",
+      "english": "Pigeons, Doves",
+      "scientific": "Columbidae",
+      "thai": "วงศ์นกเขาและนกพิราบ",
+      "kind": "family",
+      "families": [
+        "Columbidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกเขาและนกพิราบ"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10856"
+    },
+    {
+      "id": "family:Anatidae",
+      "chinese": "鸭科",
+      "pinyin": "yā kē",
+      "english": "Ducks, Geese, Swans",
+      "scientific": "Anatidae",
+      "thai": "วงศ์เป็ด ห่าน และหงส์",
+      "kind": "family",
+      "families": [
+        "Anatidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์เป็ด ห่าน และหงส์"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7556"
+    },
+    {
+      "id": "family:Falconidae",
+      "chinese": "隼科",
+      "pinyin": "sǔn kē",
+      "english": "Caracaras, Falcons",
+      "scientific": "Falconidae",
+      "thai": "วงศ์เหยี่ยวปีกแหลม",
+      "kind": "family",
+      "families": [
+        "Falconidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์เหยี่ยวปีกแหลม"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21744"
+    },
+    {
+      "id": "family:Strigidae",
+      "chinese": "鸱鸮科",
+      "pinyin": "chī xiāo kē",
+      "english": "Owls",
+      "scientific": "Strigidae",
+      "thai": "วงศ์นกเค้าแมว",
+      "kind": "family",
+      "families": [
+        "Strigidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกเค้าแมว"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26012"
+    },
+    {
+      "id": "family:Tytonidae",
+      "chinese": "草鸮科",
+      "pinyin": "cǎo xiāo kē",
+      "english": "Barn Owls",
+      "scientific": "Tytonidae",
+      "thai": "วงศ์นกแสก",
+      "kind": "family",
+      "families": [
+        "Tytonidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกแสก"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27112"
+    },
+    {
+      "id": "family:Picidae",
+      "chinese": "啄木鸟科",
+      "pinyin": "zhuó mù niǎo kē",
+      "english": "Woodpeckers",
+      "scientific": "Picidae",
+      "thai": "วงศ์นกหัวขวาน",
+      "kind": "family",
+      "families": [
+        "Picidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกหัวขวาน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25439"
+    },
+    {
+      "id": "family:Alcedinidae",
+      "chinese": "翠鸟科",
+      "pinyin": "cuì niǎo kē",
+      "english": "Kingfishers",
+      "scientific": "Alcedinidae",
+      "thai": "วงศ์นกกระเต็น",
+      "kind": "family",
+      "families": [
+        "Alcedinidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกระเต็น"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8154335"
+    },
+    {
+      "id": "family:Ardeidae",
+      "chinese": "鹭科",
+      "pinyin": "lù kē",
+      "english": "Herons, Bitterns",
+      "scientific": "Ardeidae",
+      "thai": "วงศ์นกยาง",
+      "kind": "family",
+      "families": [
+        "Ardeidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกยาง"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18789"
+    },
+    {
+      "id": "family:Ciconiidae",
+      "chinese": "鹳科",
+      "pinyin": "guàn kē",
+      "english": "Storks",
+      "scientific": "Ciconiidae",
+      "thai": "วงศ์นกกระสา",
+      "kind": "family",
+      "families": [
+        "Ciconiidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกระสา"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28507"
+    },
+    {
+      "id": "family:Gruidae",
+      "chinese": "鹤科",
+      "pinyin": "hè kē",
+      "english": "Cranes",
+      "scientific": "Gruidae",
+      "thai": "วงศ์นกกระเรียน",
+      "kind": "family",
+      "families": [
+        "Gruidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกระเรียน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25365"
+    },
+    {
+      "id": "family:Hirundinidae",
+      "chinese": "燕科",
+      "pinyin": "yàn kē",
+      "english": "Swallows, Martins",
+      "scientific": "Hirundinidae",
+      "thai": "วงศ์นกนางแอ่น",
+      "kind": "family",
+      "families": [
+        "Hirundinidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกนางแอ่น"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39861"
+    },
+    {
+      "id": "family:Apodidae",
+      "chinese": "雨燕科",
+      "pinyin": "yǔ yàn kē",
+      "english": "Swifts",
+      "scientific": "Apodidae",
+      "thai": "วงศ์นกแอ่น",
+      "kind": "family",
+      "families": [
+        "Apodidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกแอ่น"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26617"
+    },
+    {
+      "id": "family:Passeridae",
+      "chinese": "雀科",
+      "pinyin": "què kē",
+      "english": "Old World Sparrows, Snowfinches",
+      "scientific": "Passeridae",
+      "thai": "วงศ์นกกระจอก",
+      "kind": "family",
+      "families": [
+        "Passeridae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกระจอก"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28922"
+    },
+    {
+      "id": "family:Corvidae",
+      "chinese": "鸦科",
+      "pinyin": "yā kē",
+      "english": "Crows, Jays",
+      "scientific": "Corvidae",
+      "thai": "วงศ์นกกา",
+      "kind": "family",
+      "families": [
+        "Corvidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกา"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25565"
+    },
+    {
+      "id": "family:Phasianidae",
+      "chinese": "雉科",
+      "pinyin": "zhì kē",
+      "english": "Pheasants & Allies",
+      "scientific": "Phasianidae",
+      "thai": "วงศ์ไก่ฟ้าและนกกระทา",
+      "kind": "family",
+      "families": [
+        "Phasianidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์ไก่ฟ้าและนกกระทา"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26375"
+    },
+    {
+      "id": "family:Scolopacidae",
+      "chinese": "鹬科",
+      "pinyin": "yù kē",
+      "english": "Sandpipers, Snipes",
+      "scientific": "Scolopacidae",
+      "thai": "วงศ์นกชายเลน Scolopacidae",
+      "kind": "family",
+      "families": [
+        "Scolopacidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกชายเลน Scolopacidae"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26626"
+    },
+    {
+      "id": "family:Charadriidae",
+      "chinese": "鸻科",
+      "pinyin": "héng kē",
+      "english": "Plovers",
+      "scientific": "Charadriidae",
+      "thai": "วงศ์นกหัวโต",
+      "kind": "family",
+      "families": [
+        "Charadriidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกหัวโต"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28449"
+    },
+    {
+      "id": "family:Laridae",
+      "chinese": "鸥科",
+      "pinyin": "ōu kē",
+      "english": "Gulls, Terns, Skimmers",
+      "scientific": "Laridae",
+      "thai": "วงศ์นกนางนวลและนกนางนวลแกลบ",
+      "kind": "family",
+      "families": [
+        "Laridae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกนางนวลและนกนางนวลแกลบ"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27589"
+    },
+    {
+      "id": "family:Pycnonotidae",
+      "chinese": "鹎科",
+      "pinyin": "bēi kē",
+      "english": "Bulbuls",
+      "scientific": "Pycnonotidae",
+      "thai": "วงศ์นกปรอด",
+      "kind": "family",
+      "families": [
+        "Pycnonotidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกปรอด"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188854"
+    },
+    {
+      "id": "family:Paridae",
+      "chinese": "山雀科",
+      "pinyin": "shān què kē",
+      "english": "Tits, Chickadees",
+      "scientific": "Paridae",
+      "thai": "วงศ์นกติ๊ด",
+      "kind": "family",
+      "families": [
+        "Paridae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกติ๊ด"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q168473"
+    },
+    {
+      "id": "family:Fringillidae",
+      "chinese": "燕雀科",
+      "pinyin": "yàn què kē",
+      "english": "Finches, Euphonias",
+      "scientific": "Fringillidae",
+      "thai": "วงศ์นกจาบปีกอ่อน",
+      "kind": "family",
+      "families": [
+        "Fringillidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกจาบปีกอ่อน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q160835"
+    },
+    {
+      "id": "family:Emberizidae",
+      "chinese": "鹀科",
+      "pinyin": "wú kē",
+      "english": "Buntings",
+      "scientific": "Emberizidae",
+      "thai": "วงศ์นกจาบปีกอ่อนเล็ก",
+      "kind": "family",
+      "families": [
+        "Emberizidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกจาบปีกอ่อนเล็ก"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28486"
+    },
+    {
+      "id": "family:Motacillidae",
+      "chinese": "鹡鸰科",
+      "pinyin": "jí líng kē",
+      "english": "Wagtails, Pipits",
+      "scientific": "Motacillidae",
+      "thai": "วงศ์นกเด้าลมและนกเด้าดิน",
+      "kind": "family",
+      "families": [
+        "Motacillidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกเด้าลมและนกเด้าดิน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q205943"
+    },
+    {
+      "id": "family:Meropidae",
+      "chinese": "蜂虎科",
+      "pinyin": "fēng hǔ kē",
+      "english": "Bee-eaters",
+      "scientific": "Meropidae",
+      "thai": "วงศ์นกจาบคา",
+      "kind": "family",
+      "families": [
+        "Meropidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกจาบคา"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183147"
+    },
+    {
+      "id": "family:Upupidae",
+      "chinese": "戴胜科",
+      "pinyin": "dài shèng kē",
+      "english": "Hoopoes",
+      "scientific": "Upupidae",
+      "thai": "วงศ์นกกะรางหัวขวาน",
+      "kind": "family",
+      "families": [
+        "Upupidae"
+      ],
+      "includeGenera": [],
+      "excludeGenera": [],
+      "scope": "Family term. Member birds follow the retained CAS 2023 family assignment, not a newly inferred IOC occurrence list.",
+      "aliases": [
+        "วงศ์นกกะรางหัวขวาน"
+      ],
+      "taxonomyReview": false,
+      "pinyinStatus": "dictionary-generated; not expert reviewed",
+      "nameMatch": "Chinese label: exact Wikidata P225 match; English family label: exact IOC 15.2 family name",
+      "englishSource": "ioc-15.2",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20977"
+    }
+  ]
+}

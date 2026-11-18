@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+
+# Original archives remain in the local deliverable; fetch from credited publishers for rebuilds.
+source-notices/col-china-2023.zip
+source-notices/ioc-gbif-15.2.zip
+source-notices/ioc-13.1-multilingual.xlsx

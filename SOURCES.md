@@ -1,0 +1,82 @@
+# Source research and coverage audit
+
+Research and downloads: **18 November 2026**. This document distinguishes an entire source snapshot from an entire up-to-date national avifauna. The app supplies the former, not the latter.
+
+## Sources selected
+
+| Source | Authority, download and terms | Role in this prototype |
+| --- | --- | --- |
+| **Catalogue of Life China 2023 Annual Checklist, v1.1** | Biodiversity Committee of the Chinese Academy of Sciences / Species 2000 China Node. [Publisher's metadata and explicit CC BY-NC 4.0 license](https://www.gbifchina.org.cn/resource?r=chinacol2023), [GBIF dataset / DOI](https://doi.org/10.15468/ae6ush), [Darwin Core Archive download](https://www.gbifchina.org.cn/archive.do?r=chinacol2023). | National membership baseline, CAS source UUIDs, Simplified Chinese names, scientific names, family/order, source synonym relationships. Full original download and metadata are preserved in the local package; the GitHub repository retains the metadata, raw bird extract, download URLs and hashes. |
+| **IOC World Bird List v15.2, GBIF/CoLDP distribution** | Gill, Donsker & Rasmussen (eds), International Ornithologists Union. [Official master downloads](https://www.worldbirdnames.org/new/ioc-lists/master-list-2/), [registered dataset and CC BY 4.0 terms](https://www.gbif.org/dataset/c696e5ee-9088-4d11-bdae-ab88daffab78), [CoLDP ZIP](https://hosted-datasets.gbif.org/datasets/ioc.zip). The downloaded package identifies version 15.2 and issue date 2026-11-15. | English common names and reference scientific names. CAS national membership is never inferred from IOC global ranges. The archive's name and vernacular tables are joined by their IDs. |
+| **IOC v13.1 multilingual archive** | Gill, Donsker & Rasmussen (eds), 2023. [DOI](https://doi.org/10.14344/IOC.ML.13.1), [official XLSX download](https://worldbirdnames.org/Multiling%20IOC%2013.1_c.xlsx). Historical IOC names are credited under the legacy CC BY 3.0 attribution terms. | A limited historical English-name fallback when the CAS name no longer matches v15.2. Original workbook and citation are retained. Every fallback is marked for taxonomy review; it does not modernize the CAS species concept. |
+
+Original-file SHA-256 hashes are recorded in `data/birds.json` under `meta.sources`. The full local package includes these files in `source-notices/`, so it can be rebuilt without relying on mutable download URLs. The GitHub repository omits the three large ZIP/XLSX archives; a clone needs those publisher downloads before rebuilding, and the builder checks their hashes. No photos, illustrations, field-guide descriptions, audio recordings or occurrence records were taken from these sources.
+
+License-evidence distinction: CAS and the current IOC GBIF distribution have explicit publisher/registry license statements. The historical IOC CC BY 3.0 attribution is a legacy project-wide term, corroborated by a [cached publisher footer](https://deets.feedreader.com/worldbirdnames.org) identifying that license for IOC v15.1. The currently retrieved official v13.1 download page does not repeat a version-specific license statement. That evidence is weaker than the current GBIF metadata; it should be confirmed directly with the IOC editors before a production release that requires per-version rights clearance. The prototype retains the legacy attribution and change notices rather than silently applying the newer package's CC BY 4.0 terms to the old workbook.
+
+## Other authoritative or specialist sources investigated
+
+| Source | Finding | Why it is not the bundled baseline |
+| --- | --- | --- |
+| **CAS Catalogue of Life China 2026** | [CAS announcement](https://sdr.cas.cn/swjs/gzdt/202605/t20260527_5111036.html) and [Species 2000 China downloads](http://www.sp2000.org.cn/download). The download page lists `动物界-脊索动物门-2026-10714.xlsx` and older releases. | The download workflow asks for real name, email, research field, institution, phone and CAPTCHA. It was not submitted. The 2026 file was not acquired, its bird content was not audited, and the 2023 GBIF license is not assumed to apply to that newer release. |
+| **CBR Checklist of Birds of China v12.0 (2024)** | Relevant national bird-specific checklist; [China Bird Report's official site](https://www.birdreport.cn/) and specialist references identify the series. Community resource collections advertise XLS downloads. | A publisher-controlled, reusable download with explicit redistribution terms was not established in this session. Unofficial drive mirrors and scanned commercial books were not ingested. |
+| **China Bird Gallery** | [Its own scope explanation](https://aviceda.org/zh/about.php) describes 1,501 species based on CBR v12.0, adjusted to AviList v2025, and explicitly says it omits later new records. | A useful comparison and illustration of version limits, not a complete contemporary national authority or a license-cleared source for bulk redistribution of names/images. Not ingested. |
+| **AviList v2025** | [Official XLSX downloads and CC BY 4.0 terms](https://www.avilist.org/checklist/v2025/). Global taxonomy, taxonomic decision summaries and reference information. The page identifies this as an older release. | A global taxonomy is not a China occurrence checklist; it cannot alone decide national membership. The prototype retains CAS concepts rather than silently applying a different taxonomy. Not ingested. |
+| **eBird alternate common names** | [Cornell's download and citation page](https://support.ebird.org/en/support/solutions/articles/48000804865-bird-names-in-ebird) provides a downloadable multilingual matrix. | Language support does not establish China membership, and a complete, scope-defined national snapshot with reusable terms was not acquired from it here. Not ingested. |
+
+## Exact extraction result
+
+The CAS DwC-A has 5,055 Aves records: 3,211 accepted records and 1,844 synonyms. Its format lacks an explicit rank column. All 1,445 accepted two-word binomials pass the species-name pattern used by the builder; the remaining 1,766 accepted bird records are subspecies and are excluded from flashcard membership. Synonyms are search aids, never additional species.
+
+| Measure | Count |
+| --- | ---: |
+| Accepted CAS source species | 1,445 |
+| Bundled species | 1,445 |
+| Simplified Chinese field present | 1,445 |
+| Tone-marked Pinyin field present | 1,445 |
+| English-name field present / study cards available | 1,441 |
+| Exact scientific-name match to IOC 15.2 | 1,294 |
+| Exact historical scientific-name match to IOC 13.1 | 38 |
+| Current Chinese-name + family candidates | 101 |
+| Explicit genus/spelling combination candidates | 7 |
+| Historical Chinese-name + family candidates | 1 |
+| Unresolved English names | 4 |
+| Records requiring taxonomy review, including unresolved ones | 151 |
+| Rejected binomial synonym links | 82 |
+
+The four unresolved names are **Caprimulgus centralasicus**, **Garrulax owstoni**, **Phylloscopus occisinensis**, and **Strix davidi**. The library preserves their Chinese name, Pinyin and scientific name, with English explicitly unresolved. They do not appear in learning queues.
+
+**No percentage of contemporary national completeness is claimed.** Subtracting 1,445 from another checklist's total would not identify a valid missing-species count: taxon concepts, scope, record categories and dates differ. Even a full 2026 CAS download would need a bird-specific reconciliation before being described as every species ever recorded in the requested geography.
+
+## Normalization and concept safety
+
+1. Retain CAS accepted scientific names and UUIDs as the baseline identity, including historical combinations and source spelling errors. Normalize whitespace and Unicode; convert the traditional variant 鵰 to 雕 in the Simplified Chinese display while preserving the source form as an alias.
+2. Extract every accepted source species once. Do not pad a count with generated names, subspecies, hybrids, unidentified birds or duplicate synonyms.
+3. Attach IOC English names by exact scientific name where possible. Historical and cross-name candidates remain explicitly labelled. An exact name match itself is not proof of identical circumscription following a split or lump.
+4. A unique Chinese name plus matching family only proposes an English-name crosswalk. It never merges two CAS IDs, replaces the source scientific name, or transfers review history. The corresponding IOC name is available in each record's detail panel.
+5. Source synonyms with a different family, another accepted canonical species as their target name, or multiple target species are quarantined from search aliases. The 82 rejected links are inspectable in the report; this protects, for example, the suspicious Larus crassirostris → Sylvia crassirostris relationship. Safe aliases are deduplicated. Infraspecific names are not converted into additional species cards.
+6. All Pinyin is generated with pypinyin 0.55.0 in tone-mark style, one syllable per character. Explicit overrides address common surname/colloquial defaults, including 燕, 雀, 冠, 长 and 藏. No unknown Han characters remain in the Pinyin fields, but dictionary coverage is not expert validation. The builder retains its full override list for review. Pronunciation uses orthographic citation tones, not a phonetic transcription of tone sandhi.
+
+The data importer uses stable IDs and exact scientific-name checks. It blocks identity conflicts and cross-taxonomy updates that reuse IDs without an external, reviewed migration. It does not infer a species split/lump from common-name similarity.
+
+## Scope and what remains to complete nationwide coverage
+
+The selected CAS archive describes its geographic coverage as China and provides bounding coordinates; it does not supply the fine-grained per-record occurrence categories or regional completeness needed here. Taiwan-labelled names occur in the source, but this is not an independent Taiwan completeness audit. There are no authoritative province, residency, vagrant, introduced, escaped, extinct or “accepted national record” filters in the app because those fields were not supplied. The app does not fabricate them.
+
+To complete a current national edition:
+
+1. Obtain the newest CAS chordate workbook through its normal download workflow and establish that release's redistribution terms. Prefer a publisher-approved CBR national checklist as an independent bird-specific reference, with its own usable license.
+2. Define the geographic scope explicitly, including Taiwan, Hong Kong, Macao and relevant islands/territories, and define the accepted record categories.
+3. Reconcile national membership by source taxon identifiers and documented concept mappings. Have a bird taxonomist review splits, lumps, misapplied names and the flagged English candidates; audit all unmatched records instead of silently dropping them.
+4. Have a Mandarin reader familiar with ornithological names review the Pinyin, especially polyphonic characters and uncommon bird-name characters.
+5. Publish a new pinned release with source hashes, licenses, source and matched counts, exclusions, the actual remaining unmatched list, and an explicit coverage date. Import that release through the app's preview workflow. Preserve IDs only for unchanged concepts.
+
+This work is intentionally left visible as a data-completion requirement rather than claiming a synthetic 1,500-species or “all current China birds” dataset.
+
+## Family and group vocabulary (v0.2)
+
+The separate `data/groups.json` adds 26 selected family labels and seven informal learning groups. It does not add any species. Chinese family labels are from the [Wikidata structured-data API](https://www.wikidata.org/w/api.php), using exact P225 scientific-name matches; entity URLs and selected labels are preserved in `source-notices/family-labels-wikidata.json`. Their reuse terms are [CC0](https://www.wikidata.org/wiki/Wikidata:Licensing). English family labels are from the pinned IOC 15.2 VernacularName table (CC BY 4.0), joined to its family rows. Thai glosses and informal group rules are authored learning aids. All Pinyin remains dictionary-generated and unreviewed.
+
+Wikipedia title redirects were used only to discover candidate entity IDs. They were not treated as taxon matches: genus/species redirects and other-family redirects were rejected unless P225 exactly matched the selected family. Only 26 checked families are offered as vocabulary cards; this is explicitly partial against the 109 family keys in the original CAS snapshot.
+
+The common groups use explicit CAS family/genus keys. Ducks use the enumerated genera in the data, geese use Anser/Branta and swans use Cygnus; they do not overlap and account for all 54 source Anatidae species (38/13/3). Hawks/eagles include Accipitridae/Pandionidae, doves/pigeons include Columbidae, owls include Strigidae/Tytonidae, and woodpeckers include Picidae. The app does not transfer these group boundaries onto a different imported taxonomy without a mapping.

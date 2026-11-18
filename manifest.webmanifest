@@ -1,0 +1,12 @@
+{
+ "id":"./",
+ "name":"Yǔ · China Bird Flashcards",
+ "short_name":"Yǔ Birds",
+ "description":"Chinese bird names, family names and bird groups with tone-marked Pinyin.",
+ "start_url":"./#study",
+ "scope":"./",
+ "display":"standalone",
+ "background_color":"#f6f5ef",
+ "theme_color":"#174d3e",
+ "icons":[{"src":"./app/feather.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
