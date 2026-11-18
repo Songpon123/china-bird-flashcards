@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "version": "name-guide-2026-11-18-v2",
-    "characterCount": 474,
-    "dictionaryCharacters": 473,
-    "thaiCharacterCount": 233,
+    "version": "name-guide-2026-11-18-v6",
+    "characterCount": 475,
+    "dictionaryCharacters": 474,
+    "thaiCharacterCount": 236,
     "speciesNameCount": 1445,
     "termNameCount": 33,
     "dictionarySnapshot": {
@@ -12,7 +12,7 @@
       "retrieved": "2026-11-18",
       "downloadSHA256": "d7fbcfb99159d27db22787f515fd5548356607f8d9d381cb5c90917e3e7e0547",
       "sourceDate": "2026-11-18T03:25:44Z",
-      "subsetSHA256": "038f47cb779f13cbb9c35e2feff6a6439d2296195fb9d315c8d912099c751d79",
+      "subsetSHA256": "c502fa92147e254ef2e9eaf005d0458eeae3ce59f48e11a1f722087542c1e1c3",
       "extraction": "Unmodified source lines for individual name characters and exact substrings of the 1,445 species / 33 term names, plus explicitly listed extra compounds. Original header retained; no unrelated entries bundled.",
       "license": "CC BY-SA 4.0",
       "attribution": "MDBG and CC-CEDICT contributors; CEDICT copyright 1997, 1998 Paul Andrew Denisowski"
@@ -66,9 +66,9 @@
       "authoredNotes": "MIT (brief factual paraphrases with individual citations; original linked pages retain their own rights)"
     },
     "inputHashes": {
-      "source-notices/name-guide/cc-cedict-subset.txt": "038f47cb779f13cbb9c35e2feff6a6439d2296195fb9d315c8d912099c751d79",
-      "source-notices/name-guide/editorial.json": "25e5d6881f0ce04ef5525d03df154c6f7be57627bdfe9353d783517d79909db2",
-      "data/birds.json": "da4361a0465e9986b461aded863f5344dc9b6ba1fa653a0ef988393e375fb630",
+      "source-notices/name-guide/cc-cedict-subset.txt": "c502fa92147e254ef2e9eaf005d0458eeae3ce59f48e11a1f722087542c1e1c3",
+      "source-notices/name-guide/editorial.json": "d02f6cc062bd1be1caf7d24c9e839261b9193a99793fe576dce8842fb813d5c1",
+      "data/birds.json": "ab2444574174434b78e3092674a9d1ed58f41dfdeb15e26b2116391aeb20a155",
       "data/groups.json": "b4ef1132c53f0938ca4e1e8741de3b3d746df17383c3c5f54884632d651e57f8"
     }
   },
@@ -5032,8 +5032,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ยูนนาน (ชื่อย่อ)",
+      "learningEnglish": "Yunnan (short form)"
     },
     "滨": {
       "entries": [
@@ -5558,6 +5558,34 @@
             "ball game",
             "match",
             "场 (chǎng)"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": "",
+      "learningEnglish": ""
+    },
+    "理": {
+      "entries": [
+        {
+          "traditional": "理",
+          "pinyin": "lǐ",
+          "definitions": [
+            "texture",
+            "grain (of wood)",
+            "inner essence",
+            "intrinsic order",
+            "reason",
+            "logic",
+            "truth",
+            "science",
+            "natural science (esp. physics)",
+            "to manage",
+            "to pay attention to",
+            "to run (affairs)",
+            "to handle",
+            "to put in order",
+            "to tidy up"
           ],
           "source": "cedict"
         }
@@ -7063,8 +7091,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เครา (ในชื่อนี้ 胡 ใช้แทน 鬍)",
+      "learningEnglish": "beard (in 胡兀鹫, 胡 stands for 鬍)"
     },
     "胸": {
       "entries": [
@@ -7871,8 +7899,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ทิเบต (ชื่อย่อ)",
+      "learningEnglish": "Tibet (short for 西藏)"
     },
     "虎": {
       "entries": [
@@ -10848,7 +10876,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "เอเชียกลาง",
+      "pinyin": "zhōng yà",
+      "english": "Central Asia",
+      "kind": "name"
     },
     "中亚夜鹰": {
       "entries": [
@@ -10915,7 +10946,9 @@
         }
       ],
       "thai": "จีน / จีนในบริบทชื่อภูมิศาสตร์หรือวัฒนธรรม",
-      "pinyin": "zhōng huá"
+      "pinyin": "zhōng huá",
+      "english": "China (Zhonghua)",
+      "kind": "name"
     },
     "中华仙鹟": {
       "entries": [
@@ -11007,7 +11040,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "อเล็กซานเดอร์ (ชื่อบุคคล)",
+      "pinyin": "yà lì shān dà",
+      "english": "Alexander (a personal name)",
+      "kind": "name"
     },
     "亚历山大鹦鹉": {
       "entries": [
@@ -11033,7 +11069,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "เอเชีย",
+      "pinyin": "yà zhōu",
+      "english": "Asia",
+      "kind": "name"
     },
     "仙八色鸫": {
       "entries": [
@@ -11072,8 +11111,10 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกอีเสือ (shrike); ใช้เป็นคำประสม ไม่แปลว่า “ลุง+แรงงาน”",
-      "pinyin": "bó láo"
+      "thai": "นกอีเสือ (shrike)",
+      "pinyin": "bó láo",
+      "english": "shrike",
+      "kind": "name"
     },
     "低地": {
       "entries": [
@@ -11126,7 +11167,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "นกอัลบาทรอส (albatross)",
+      "pinyin": "xìn tiān wēng",
+      "english": "albatross",
+      "kind": "name"
     },
     "优雅": {
       "entries": [
@@ -11167,7 +11211,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "นกเอี้ยง (myna)",
+      "pinyin": "bā gē",
+      "english": "myna",
+      "kind": "name"
     },
     "八声杜鹃": {
       "entries": [
@@ -11298,7 +11345,9 @@
         }
       ],
       "thai": "แคนาดา เป็นชื่อประเทศถอดเสียง",
-      "pinyin": "jiā ná dà"
+      "pinyin": "jiā ná dà",
+      "english": "Canada",
+      "kind": "name"
     },
     "加拿大雁": {
       "entries": [
@@ -11522,7 +11571,9 @@
         }
       ],
       "thai": "อินเดีย",
-      "pinyin": "yìn dù"
+      "pinyin": "yìn dù",
+      "english": "India",
+      "kind": "name"
     },
     "印度寿带": {
       "entries": [
@@ -11716,7 +11767,9 @@
         }
       ],
       "thai": "ไต้หวัน",
-      "pinyin": "tái wān"
+      "pinyin": "tái wān",
+      "english": "Taiwan",
+      "kind": "name"
     },
     "和平": {
       "entries": [
@@ -11785,6 +11838,19 @@
       ],
       "thai": ""
     },
+    "喜山点翅朱雀": {
+      "entries": [
+        {
+          "traditional": "喜山點翅朱雀",
+          "pinyin": "xǐ shān diǎn chì zhū què",
+          "definitions": [
+            "(bird species of China) spot-winged rosefinch (Carpodacus rodopeplus)"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": ""
+    },
     "喜马拉雅": {
       "entries": [
         {
@@ -11796,8 +11862,10 @@
           "source": "cedict"
         }
       ],
-      "thai": "หิมาลัย เป็นชื่อภูมิศาสตร์ถอดเสียง; อย่าแปล 喜 (xǐ) 马 (mǎ) 拉 (lā) 雅 (yǎ) แยกกันเป็นที่มาของชื่อ",
-      "pinyin": "xǐ mǎ lā yǎ"
+      "thai": "หิมาลัย (ชื่อภูมิศาสตร์ถอดเสียง)",
+      "pinyin": "xǐ mǎ lā yǎ",
+      "english": "Himalaya",
+      "kind": "name"
     },
     "喜鹊": {
       "entries": [
@@ -11863,7 +11931,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "มณฑลเสฉวน",
+      "pinyin": "sì chuān",
+      "english": "Sichuan (province)",
+      "kind": "name"
     },
     "四川山鹧鸪": {
       "entries": [
@@ -11968,7 +12039,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "อียิปต์",
+      "pinyin": "āi jí",
+      "english": "Egypt",
+      "kind": "name"
     },
     "埃及夜鹰": {
       "entries": [
@@ -12546,7 +12620,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "หงส์ (swan); อ่านเป็นคำประสม ไม่ใช่คำยืนยันถิ่นอาศัยบนท้องฟ้า",
+      "thai": "หงส์ (swan); ตามตัวอักษรคือ “ห่านฟ้า”",
       "pinyin": "tiān é"
     },
     "太平": {
@@ -12581,7 +12655,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "มหาสมุทรแปซิฟิก",
+      "pinyin": "tài píng yáng",
+      "english": "Pacific Ocean",
+      "kind": "name"
     },
     "太平洋潜鸟": {
       "entries": [
@@ -12607,7 +12684,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "นกแว็กซ์วิง (waxwing); 太平 แปลว่าสงบสุข",
+      "pinyin": "tài píng niǎo",
+      "english": "waxwing (literally 'peace bird')",
+      "kind": "name"
     },
     "太阳": {
       "entries": [
@@ -12661,7 +12741,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "นกยูง (peafowl)",
+      "pinyin": "kǒng què",
+      "english": "peafowl",
+      "kind": "name"
     },
     "孤沙锥": {
       "entries": [
@@ -12778,7 +12861,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "อำเภอเป่าซิง มณฑลเสฉวน",
+      "pinyin": "bǎo xīng",
+      "english": "Baoxing (county in Sichuan)",
+      "kind": "name"
     },
     "宝兴歌鸫": {
       "entries": [
@@ -13296,7 +13382,9 @@
         }
       ],
       "thai": "เนปาล เป็นชื่อประเทศถอดเสียง",
-      "pinyin": "ní bó ěr"
+      "pinyin": "ní bó ěr",
+      "english": "Nepal",
+      "kind": "name"
     },
     "尼泊尔鹪鹛": {
       "entries": [
@@ -13560,7 +13648,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ง้อไบ๊ (ภูเขาเอ๋อเหมย มณฑลเสฉวน)",
+      "pinyin": "é méi",
+      "english": "Emei (Mount Emei, Sichuan)",
+      "kind": "name"
     },
     "峨眉柳莺": {
       "entries": [
@@ -13731,7 +13822,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "เกาะซาคาลิน",
+      "pinyin": "kù yè dǎo",
+      "english": "Sakhalin",
+      "kind": "name"
     },
     "弄岗穗鹛": {
       "entries": [
@@ -14451,7 +14545,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ซินเจียง",
+      "pinyin": "xīn jiāng",
+      "english": "Xinjiang",
+      "kind": "name"
     },
     "新疆歌鸲": {
       "entries": [
@@ -14503,7 +14600,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ญี่ปุ่น",
+      "pinyin": "rì běn",
+      "english": "Japan",
+      "kind": "name"
     },
     "日本松雀鹰": {
       "entries": [
@@ -14947,8 +15047,10 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกคัคคู; ชื่อเดียวกันยังใช้เรียกกุหลาบพันปีในอีกบริบท",
-      "pinyin": "dù juān"
+      "thai": "นกคัคคู และเป็นชื่อดอกกุหลาบพันปีด้วย",
+      "pinyin": "dù juān",
+      "english": "cuckoo",
+      "kind": "name"
     },
     "东亚": {
       "entries": [
@@ -14961,7 +15063,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "เอเชียตะวันออก",
+      "pinyin": "dōng yà",
+      "english": "East Asia",
+      "kind": "name"
     },
     "东方": {
       "entries": [
@@ -16601,7 +16706,9 @@
         }
       ],
       "thai": "ยูเรเชีย / ยุโรปและเอเชีย",
-      "pinyin": "ōu yà"
+      "pinyin": "ōu yà",
+      "english": "Eurasia",
+      "kind": "name"
     },
     "欧亚红尾鸲": {
       "entries": [
@@ -16974,7 +17081,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ไหหลำ (เกาะและมณฑล)",
+      "pinyin": "hǎi nán",
+      "english": "Hainan (island and province)",
+      "kind": "name"
     },
     "海南孔雀雉": {
       "entries": [
@@ -17339,7 +17449,9 @@
         }
       ],
       "thai": "ออสเตรเลีย",
-      "pinyin": "ào zhōu"
+      "pinyin": "ào zhōu",
+      "english": "Australia",
+      "kind": "name"
     },
     "火冠雀": {
       "entries": [
@@ -18148,6 +18260,19 @@
       ],
       "thai": ""
     },
+    "灰头雀鹛": {
+      "entries": [
+        {
+          "traditional": "灰頭雀鶥",
+          "pinyin": "huī tóu què méi",
+          "definitions": [
+            "(bird species of China) grey-hooded fulvetta (Fulvetta cinereiceps)"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": ""
+    },
     "灰头鸦雀": {
       "entries": [
         {
@@ -18500,7 +18625,9 @@
         }
       ],
       "thai": "ชวา เป็นชื่อเกาะถอดเสียง",
-      "pinyin": "zhǎo wā"
+      "pinyin": "zhǎo wā",
+      "english": "Java",
+      "kind": "name"
     },
     "爪哇八哥": {
       "entries": [
@@ -18681,7 +18808,9 @@
         }
       ],
       "thai": "ริวกิว เป็นชื่อหมู่เกาะ",
-      "pinyin": "liú qiú"
+      "pinyin": "liú qiú",
+      "english": "Ryukyu Islands",
+      "kind": "name"
     },
     "琉球歌鸲": {
       "entries": [
@@ -18759,7 +18888,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "มณฑลกานซู่",
+      "pinyin": "gān sù",
+      "english": "Gansu (province)",
+      "kind": "name"
     },
     "甘肃柳莺": {
       "entries": [
@@ -18926,6 +19058,19 @@
           "pinyin": "bái guān pān què",
           "definitions": [
             "(bird species of China) white-crowned penduline tit (Remiz coronatus)"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": ""
+    },
+    "白冠燕尾": {
+      "entries": [
+        {
+          "traditional": "白冠燕尾",
+          "pinyin": "bái guān yàn wěi",
+          "definitions": [
+            "(bird species of China) white-crowned forktail (Enicurus leschenaulti)"
           ],
           "source": "cedict"
         }
@@ -20562,7 +20707,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "คิดถึงกัน; 相思鸟 คือ “นกคู่รัก”",
+      "pinyin": "xiāng sī",
+      "english": "longing for each other (as in 'lovebird')",
+      "kind": "name"
     },
     "眉山": {
       "entries": [
@@ -22741,7 +22889,9 @@
         }
       ],
       "thai": "ทวีปอเมริกา",
-      "pinyin": "měi zhōu"
+      "pinyin": "měi zhōu",
+      "english": "the Americas",
+      "kind": "name"
     },
     "翠金鹃": {
       "entries": [
@@ -23448,7 +23598,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "จีนตอนใต้",
+      "pinyin": "huá nán",
+      "english": "South China",
+      "kind": "name"
     },
     "华南冠纹柳莺": {
       "entries": [
@@ -23487,7 +23640,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "จีนตะวันตก",
+      "pinyin": "huá xī",
+      "english": "West China",
+      "kind": "name"
     },
     "菲律宾": {
       "entries": [
@@ -23501,7 +23657,9 @@
         }
       ],
       "thai": "ฟิลิปปินส์ เป็นชื่อประเทศถอดเสียง",
-      "pinyin": "fēi lǜ bīn"
+      "pinyin": "fēi lǜ bīn",
+      "english": "the Philippines",
+      "kind": "name"
     },
     "菲律宾鹃鸠": {
       "entries": [
@@ -23555,7 +23713,9 @@
         }
       ],
       "thai": "มองโกเลีย / มองโกล",
-      "pinyin": "měng gǔ"
+      "pinyin": "měng gǔ",
+      "english": "Mongolia",
+      "kind": "name"
     },
     "蒙古沙雀": {
       "entries": [
@@ -23817,19 +23977,6 @@
       ],
       "thai": ""
     },
-    "蓝短翅鸫": {
-      "entries": [
-        {
-          "traditional": "藍短翅鶇",
-          "pinyin": "lán duǎn chì dōng",
-          "definitions": [
-            "(bird species of China) white-browed shortwing (Brachypteryx montana)"
-          ],
-          "source": "cedict"
-        }
-      ],
-      "thai": ""
-    },
     "蓝矶鸫": {
       "entries": [
         {
@@ -24019,6 +24166,19 @@
           "pinyin": "lán mǎ jī",
           "definitions": [
             "(bird species of China) blue eared pheasant (Crossoptilon auritum)"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": ""
+    },
+    "蓝须夜蜂虎": {
+      "entries": [
+        {
+          "traditional": "藍鬚夜蜂虎",
+          "pinyin": "lán xū yè fēng hǔ",
+          "definitions": [
+            "(bird species of China) blue-bearded bee-eater (Nyctyornis athertoni)"
           ],
           "source": "cedict"
         }
@@ -24232,6 +24392,22 @@
         }
       ],
       "thai": ""
+    },
+    "里海": {
+      "entries": [
+        {
+          "traditional": "裡海",
+          "pinyin": "Lǐ Hǎi",
+          "definitions": [
+            "Caspian Sea"
+          ],
+          "source": "cedict"
+        }
+      ],
+      "thai": "ทะเลแคสเปียน",
+      "pinyin": "lǐ hǎi",
+      "english": "Caspian Sea",
+      "kind": "name"
     },
     "褐冠山雀": {
       "entries": [
@@ -24571,19 +24747,6 @@
       ],
       "thai": ""
     },
-    "褐头雀鹛": {
-      "entries": [
-        {
-          "traditional": "褐頭雀鶥",
-          "pinyin": "hè tóu què méi",
-          "definitions": [
-            "(bird species of China) Manipur fulvetta (Fulvetta manipurensis)"
-          ],
-          "source": "cedict"
-        }
-      ],
-      "thai": ""
-    },
     "褐头凤鹛": {
       "entries": [
         {
@@ -24674,7 +24837,9 @@
         }
       ],
       "thai": "ไซบีเรีย เป็นชื่อภูมิศาสตร์ถอดเสียง",
-      "pinyin": "xī bó lì yà"
+      "pinyin": "xī bó lì yà",
+      "english": "Siberia",
+      "kind": "name"
     },
     "西伯利亚银鸥": {
       "entries": [
@@ -24753,7 +24918,9 @@
         }
       ],
       "thai": "ทิเบต",
-      "pinyin": "xī zàng"
+      "pinyin": "xī zàng",
+      "english": "Tibet",
+      "kind": "name"
     },
     "西藏毛腿沙鸡": {
       "entries": [
@@ -24883,7 +25050,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "เทือกเขาเฮ่อหลาน",
+      "pinyin": "hè lán shān",
+      "english": "Helan Mountains",
+      "kind": "name"
     },
     "贺兰山岩鹨": {
       "entries": [
@@ -25211,7 +25381,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ตะวันออกไกล",
+      "pinyin": "yuǎn dōng",
+      "english": "the Far East",
+      "kind": "name"
     },
     "远东树莺": {
       "entries": [
@@ -26165,7 +26338,9 @@
         }
       ],
       "thai": "อัลไต เป็นชื่อภูมิศาสตร์ถอดเสียง",
-      "pinyin": "ā ěr tài"
+      "pinyin": "ā ěr tài",
+      "english": "Altai",
+      "kind": "name"
     },
     "阿尔泰雪鸡": {
       "entries": [
@@ -26389,7 +26564,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "มณฑลยูนนาน",
+      "pinyin": "yún nán",
+      "english": "Yunnan (province)",
+      "kind": "name"
     },
     "云南柳莺": {
       "entries": [
@@ -26481,7 +26659,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "ชื่อเก่าของจีน",
+      "pinyin": "zhèn dàn",
+      "english": "an old name for China",
+      "kind": "name"
     },
     "震旦鸦雀": {
       "entries": [
@@ -27326,7 +27507,10 @@
           "source": "cedict"
         }
       ],
-      "thai": ""
+      "thai": "นกขุนทอง (hill myna)",
+      "pinyin": "liáo gē",
+      "english": "hill myna",
+      "kind": "name"
     },
     "鹰雕": {
       "entries": [
@@ -27394,7 +27578,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกเป็ดผี (grebe); เป็นคำสองพยางค์ ไม่แปลแยกเป็นสองความหมาย",
+      "thai": "นกเป็ดผี (grebe)",
       "pinyin": "pì tī"
     },
     "鸬鹚": {
@@ -29526,48 +29710,92 @@
     },
     "佛法僧": {
       "entries": [],
-      "thai": "ชื่อกลุ่มนกที่ใช้ในภาษาจีน; ความหมายตามตัวอักษรเชื่อมกับพุทธ พระธรรม พระสงฆ์ แต่ยังไม่มีที่มาของชื่อนี้ที่ตรวจสอบในแอป",
-      "pinyin": "fó fǎ sēng"
+      "thai": "นกตะขาบ (roller); ตามตัวอักษรคือ พุทธ ธรรม สงฆ์",
+      "pinyin": "fó fǎ sēng",
+      "english": "roller (bird-group name; literally Buddha, Dharma, Sangha)",
+      "kind": "name"
+    },
+    "喜山": {
+      "entries": [],
+      "thai": "หิมาลัย (ชื่อย่อของ 喜马拉雅山)",
+      "pinyin": "xǐ shān",
+      "english": "Himalayas (short for 喜马拉雅山)",
+      "kind": "name"
+    },
+    "叽喳": {
+      "entries": [],
+      "thai": "เสียงร้องจิ๊บ ๆ (คำเลียนเสียง)",
+      "pinyin": "jī zhā",
+      "english": "chirping (an imitative sound)",
+      "kind": "name"
     }
   },
   "unitWords": [
+    "亚历山大",
     "喜马拉雅",
     "西伯利亚",
     "佛法僧",
+    "信天翁",
     "加拿大",
     "啄木鸟",
+    "太平洋",
+    "太平鸟",
     "尼泊尔",
+    "库页岛",
     "菲律宾",
+    "贺兰山",
     "阿尔泰",
     "䴙䴘",
+    "东亚",
     "东方",
+    "中亚",
     "中华",
+    "云南",
+    "亚洲",
     "伯劳",
+    "八哥",
     "凤头",
+    "华南",
+    "华西",
     "印度",
     "台湾",
+    "叽喳",
+    "喜山",
     "喜鹊",
+    "四川",
+    "埃及",
     "天鹅",
+    "孔雀",
+    "宝兴",
     "山雀",
+    "峨眉",
     "戴胜",
     "斑鸠",
+    "新疆",
+    "日本",
     "普通",
     "杜鹃",
     "欧亚",
+    "海南",
     "澳洲",
     "爪哇",
     "琉球",
+    "甘肃",
     "白眉",
     "白腹",
     "白鹭",
     "百灵",
+    "相思",
     "红嘴",
     "红胸",
     "美洲",
     "翠鸟",
     "蒙古",
     "西藏",
+    "远东",
+    "里海",
     "长尾",
+    "震旦",
     "鸠鸽",
     "鸬鹚",
     "鸳鸯",
@@ -29576,6 +29804,7 @@
     "鹡鸰",
     "鹦鹉",
     "鹧鸪",
+    "鹩哥",
     "鹪鹩",
     "麻雀",
     "黄喉",
@@ -29586,8 +29815,8 @@
       "match": "白鹭",
       "kind": "literal",
       "title": "White + egret",
-      "thai": "白 (bái) หมายถึงขาว และ 鹭 (lù) หมายถึงนกยาง จึงอ่านชื่อได้ว่า “นกยางขาว” นี่คือการอธิบายส่วนประกอบของคำ ไม่ใช่หลักฐานว่าใครเป็นผู้ตั้งชื่อครั้งแรก",
-      "english": "白 (bái) means white and 鹭 (lù) means heron/egret. This is a literal reading, not a documented naming history.",
+      "thai": "白 (bái) แปลว่าขาว และ 鹭 (lù) แปลว่านกยาง ชื่อนี้จึงหมายถึง “นกยางสีขาว”",
+      "english": "白 (bái) means white and 鹭 (lù) means egret or heron: “white egret”.",
       "sources": [
         "cedict"
       ]
@@ -29596,8 +29825,8 @@
       "match": "红嘴蓝鹊",
       "kind": "literal",
       "title": "A colour + body-part pattern",
-      "thai": "แยกเป็น 红嘴 (hóng zuǐ) = ปากแดง, 蓝 (lán) = น้ำเงิน และ 鹊 (què) = magpie ชื่อชนิดจึงอ่านได้ว่า “นกสาลิกาสีน้ำเงินปากแดง” เป็นตัวอย่างการอ่านคำบอกสีและส่วนของร่างกาย",
-      "english": "Read 红嘴 (hóng zuǐ) as red-billed, 蓝 (lán) as blue, and 鹊 (què) as magpie. This explains the name’s wording, not who coined it.",
+      "thai": "ชื่อนี้ประกอบด้วย 红嘴 (hóng zuǐ) ปากแดง, 蓝 (lán) สีน้ำเงิน และ 鹊 (què) นกสาลิกา หมายถึง “นกสาลิกาสีน้ำเงินปากแดง” ชื่อนกจีนจำนวนมากใช้รูปแบบ สี + อวัยวะ + กลุ่มนก แบบเดียวกันนี้",
+      "english": "红嘴 (hóng zuǐ) red-billed, 蓝 (lán) blue and 鹊 (què) magpie: “red-billed blue magpie”. Many Chinese bird names follow this colour + body part + bird-group pattern.",
       "sources": [
         "cedict"
       ]
@@ -29606,8 +29835,8 @@
       "match": "啄木鸟",
       "kind": "literal",
       "title": "Peck + wood + bird",
-      "thai": "啄 (zhuó) = จิก, 木 (mù) = ไม้ และ 鸟 (niǎo) = นก รวมเป็นนกที่จิกไม้ ใช้ช่วยจำความหมายของคำว่า woodpecker ได้ตรงตัว",
-      "english": "啄 (zhuó) = peck, 木 (mù) = wood, 鸟 (niǎo) = bird: literally a bird that pecks wood.",
+      "thai": "啄 (zhuó) แปลว่าจิก 木 (mù) แปลว่าไม้ และ 鸟 (niǎo) แปลว่านก รวมกันเป็น “นกที่จิกไม้” ตรงกับคำว่า woodpecker ในภาษาอังกฤษ",
+      "english": "啄 (zhuó) peck, 木 (mù) wood and 鸟 (niǎo) bird: “the bird that pecks wood”, matching the English woodpecker.",
       "sources": [
         "cedict"
       ]
@@ -29617,8 +29846,8 @@
       "kind": "cultural",
       "exact": true,
       "title": "The magpie as a happy omen",
-      "thai": "พจนานุกรมกระทรวงศึกษาธิการไต้หวันอธิบายว่า คนในอดีตเชื่อว่าเสียงนกสาลิกาเป็นลางของข่าวดี จึงใช้ 喜 (xǐ) ซึ่งแปลว่าความยินดีในชื่อ เรื่องนี้เป็นความเชื่อทางวัฒนธรรม",
-      "english": "The MOE dictionary explains 喜鹊 (xǐ què) through the traditional belief that its call foretells happy news. This is a cultural belief.",
+      "thai": "พจนานุกรมของกระทรวงศึกษาธิการไต้หวันอธิบายว่า ผู้คนเชื่อกันมาแต่โบราณว่าเสียงร้องของนกสาลิกาเป็นลางบอกข่าวดี ชื่อนี้จึงมี 喜 (xǐ) ซึ่งแปลว่าความยินดี",
+      "english": "The Ministry of Education dictionary explains 喜鹊 (xǐ què) through the traditional belief that its call announces good news, hence 喜 (xǐ), joy.",
       "sources": [
         "moe-magpie"
       ]
@@ -29627,8 +29856,8 @@
       "match": "鸳鸯",
       "kind": "usage",
       "title": "A whole word, with two traditional sex terms",
-      "thai": "พจนานุกรมใช้ 鸳 (yuān) เรียกตัวผู้ และ 鸯 (yāng) เรียกตัวเมีย เมื่อรวมกันเป็นชื่อเป็ดแมนดาริน คำนี้ยังใช้เปรียบคู่สามีภรรยาได้ การเปรียบทางภาษาไม่ได้ยืนยันพฤติกรรมจับคู่ตลอดชีวิตของนก",
-      "english": "In the MOE dictionary 鸳 (yuān) denotes the male and 鸯 (yāng) the female Mandarin Duck. The compound also figuratively means a married couple.",
+      "thai": "ตามพจนานุกรม 鸳 (yuān) หมายถึงเป็ดแมนดารินตัวผู้ และ 鸯 (yāng) หมายถึงตัวเมีย สองคำรวมกันเป็นชื่อของนกชนิดนี้ และใช้เป็นคำเปรียบถึงคู่สามีภรรยาด้วย",
+      "english": "In the MOE dictionary 鸳 (yuān) is the male and 鸯 (yāng) the female Mandarin Duck; together they name the species and, figuratively, a devoted couple.",
       "sources": [
         "moe-mandarin"
       ]
@@ -29637,8 +29866,8 @@
       "match": "杜鹃",
       "kind": "folklore",
       "title": "The legend of Emperor Wang",
-      "thai": "ชื่อ杜鹃 (dù juān)เชื่อมกับตำนานกษัตริย์วั่งตี้แห่งรัฐสู่ ซึ่งวิญญาณกลายเป็นนกคัคคูหลังสิ้นพระชนม์ นี่เป็นเรื่องเล่าทางวรรณกรรมที่พจนานุกรมบันทึกไว้ ไม่ใช่หลักฐานยืนยันการกำเนิดของชื่อทุกชนิดที่มีคำว่า杜鹃 (dù juān)",
-      "english": "A recorded legend tells of Emperor Wang of Shu becoming a cuckoo after death. It is folklore, not proof of the naming origin of every 杜鹃 (dù juān) species.",
+      "thai": "ชื่อ 杜鹃 (dù juān) ผูกกับตำนานพระเจ้าวั่งตี้แห่งแคว้นสู่ ซึ่งเล่ากันว่าดวงวิญญาณของพระองค์กลายเป็นนกคัคคูหลังสิ้นพระชนม์ พจนานุกรมบันทึกเรื่องนี้ไว้ในฐานะตำนานพื้นบ้าน",
+      "english": "Folklore links 杜鹃 (dù juān) to Emperor Wang of Shu, whose spirit was said to become a cuckoo after his death; the dictionary records it as a legend.",
       "sources": [
         "moe-cuckoo"
       ]
@@ -29646,9 +29875,9 @@
     {
       "match": "戴胜",
       "kind": "interpretation",
-      "title": "An old head ornament, rather than “victory”",
-      "thai": "戴 (dài) อ่านได้ว่า “สวม” ส่วน 勝 (shèng)/胜 (shèng) มีความหมายเก่าว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายชื่อ戴胜 (dài shèng)ผ่านหงอนที่เด่นเหมือนเครื่องประดับ จึงไม่ควรใช้ความหมายทั่วไปว่า “ชนะ” มาแปลชื่อนี้",
-      "english": "戴 (dài) means to wear; 勝 (shèng)/胜 (shèng) also has an old head-ornament sense. The cited article explains the hoopoe’s name by its conspicuous crest. This is a source explanation, not a traced first coinage.",
+      "title": "Wearing a head ornament",
+      "thai": "戴 (dài) แปลว่าสวม และ 胜 (shèng) ซึ่งรูปเต็มคือ 勝 มีความหมายดั้งเดิมว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายว่าชื่อนี้มาจากหงอนที่โดดเด่นของนกกะรางหัวขวาน ซึ่งดูคล้ายเครื่องประดับบนศีรษะ",
+      "english": "戴 (dài) means to wear, and 胜 (shèng, traditional 勝) has an old sense of a head ornament. The cited article explains the hoopoe’s name by its conspicuous crest, worn like an ornament.",
       "sources": [
         "kinmen-hoopoe"
       ]
@@ -29657,8 +29886,8 @@
       "match": "伯劳",
       "kind": "usage",
       "title": "A bird-name compound",
-      "thai": "伯劳 (bó láo) เป็นคำประสมหมายถึงนกอีเสือ (shrike) แม้ 伯 (bó) และ 劳 (láo) จะมีความหมายเดี่ยวในพจนานุกรม ก็ไม่ควรนำมาต่อเป็นที่มาของชื่อนก",
-      "english": "伯劳 (bó láo) is the word for shrike. The independent senses of 伯 (bó) and 劳 (láo) do not establish the origin of this bird name.",
+      "thai": "伯劳 (bó láo) คือคำที่ใช้เรียกนกอีเสือ (shrike) และอ่านเป็นคำเดียว",
+      "english": "伯劳 (bó láo) is the word for shrike, read as a single word.",
       "sources": [
         "cedict"
       ]
@@ -29667,8 +29896,8 @@
       "match": "鹡鸰",
       "kind": "usage",
       "title": "Two characters, one bird word",
-      "thai": "鹡鸰 (jí líng) เป็นคำประสมชื่อนกเด้าลม พจนานุกรมอธิบายตัวอักษรแต่ละตัวโดยชี้กลับไปยังคำนี้ จึงไม่จำเป็นต้องฝืนแปลแต่ละตัวเป็นวัตถุสองอย่าง",
-      "english": "鹡 (jí) and 鸰 (líng) are defined through the compound 鹡鸰 (jí líng), wagtail. They are not two separate descriptive objects.",
+      "thai": "鹡鸰 (jí líng) คือนกเด้าลม (wagtail) อักษรทั้งสองตัวใช้เฉพาะในคำนี้ พจนานุกรมจึงอธิบายแต่ละตัวผ่านคำ 鹡鸰",
+      "english": "鹡鸰 (jí líng) means wagtail. Both characters exist for this word, and the dictionary defines each through it.",
       "sources": [
         "cedict"
       ]
@@ -29677,11 +29906,15 @@
       "match": "䴙䴘",
       "kind": "usage",
       "title": "Two characters, one bird word",
-      "thai": "䴙䴘 (pì tī) เป็นชื่อกลุ่มนกเป็ดผี (grebe) ตัวอักษรทั้งสองใช้ร่วมกันในคำนี้ พินอินคือ pì tī",
-      "english": "䴙䴘 (pì tī) (pì tī) means grebe. Its characters are used together in this lexical item.",
+      "thai": "䴙䴘 (pì tī) คือนกเป็ดผี (grebe) อักษรทั้งสองตัวใช้คู่กันในคำนี้",
+      "english": "䴙䴘 (pì tī) means grebe; the two characters are used together in this word.",
       "sources": [
         "cedict"
       ]
     }
-  ]
+  ],
+  "personalNameUnit": {
+    "thai": "ชื่อบุคคล + 氏 (’s)",
+    "english": "a person's name + 氏 (’s)"
+  }
 }

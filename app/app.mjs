@@ -41,7 +41,7 @@ function setupFilters(){
  $('deck').value=state.settings.deck;setDeckControls();$('direction').value=state.settings.direction;$('new-limit').value=state.settings.newLimit;$('show-pinyin').checked=state.settings.showPinyin;
  $('import-taxonomy').value=dataset.meta.taxonomy;
  $('edition-count').textContent=`${dataset.birds.length.toLocaleString()} real, sourced species`;
- document.querySelector('.edition small').textContent=!dataset.meta.imported&&dataset.meta.version==='colcn-2023-v1.1+names-2026-11-18'?'CAS 2023 archive · current coverage partial':'Imported checklist · coverage unverified';
+ document.querySelector('.edition small').textContent=!dataset.meta.imported&&dataset.meta.version==='colcn-2023-v1.1+names-2026-11-18+avilist-v2026'?'CAS 2023 archive · current coverage partial':'Imported checklist · coverage unverified';
  $('footer-source').textContent=dataset.meta.version+' · see source licenses';
 }
 function updateFamilyOptions(prefix){const order=$(prefix+'-order').value;options($(prefix+'-family'),dataset.birds.filter(b=>!order||b.order===order).map(b=>b.family),'All families',name=>familyLabel(name,groupDataset.cards));}
@@ -205,7 +205,7 @@ function showTermDetails(c){
 }
 function renderData(){
  const ready=dataset.birds.filter(b=>b.english).length;
- const baseline=!dataset.meta.imported&&dataset.meta.version==='colcn-2023-v1.1+names-2026-11-18';
+ const baseline=!dataset.meta.imported&&dataset.meta.version==='colcn-2023-v1.1+names-2026-11-18+avilist-v2026';
  document.querySelector('.coverage-paper h2').textContent=baseline?'Complete source. Partial current checklist.':'Imported checklist. Coverage unverified.';
  $('coverage-description').textContent=baseline?dataset.meta.coverage:'Coverage and reuse terms are supplied by the importer and have not been independently audited.'+(dataset.meta.coverage?' Importer’s coverage statement: '+dataset.meta.coverage:'');
  $('coverage-numbers').innerHTML=`<div><strong>${dataset.birds.length.toLocaleString()}</strong><span>source species in library</span></div><div><strong>${ready.toLocaleString()}</strong><span>with all four study fields</span></div>`;
@@ -289,8 +289,8 @@ function bind(){
  setInterval(()=>{if(view==='study'){renderStats();if(!currentId)renderStudy();}},15000);
 }
 try{
- const responses=await Promise.all([fetch('./data/birds.json'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
- const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-18-v2',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-18-v1',{cache:'no-cache'})]);
+ const responses=await Promise.all([fetch('./data/birds.json?v=2026-11-18-avilist'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
+ const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-18-v6',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-18-v2',{cache:'no-cache'})]);
  try{const response=optional[0].status==='fulfilled'?optional[0].value:null;if(!response?.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
  try{const response=optional[1].status==='fulfilled'?optional[1].value:null;if(!response?.ok)throw new Error('Download failed');ebirdLinks=validateEBirdLinks(await response.json());}catch{/* Species cards still link to eBird Explore for a manual lookup. */}
  const bundled=validateDataset(await responses[0].json());groupDataset=validateGroups(await responses[1].json());

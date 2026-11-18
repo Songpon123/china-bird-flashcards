@@ -12,7 +12,7 @@ Checked locally on 18 November 2026. This is a runnable prototype, not an expert
 
 ## Automated checks
 
-`npm test`: **8 passed, 0 failed**. Tests cover bundled-data integrity, tone-marked Pinyin and search variants, review intervals and lapses, independent directions, due-card ordering and daily limits, quoted CSV round trips, unsafe import identities, taxonomy updates and backup validation. A full 1,445-record CSV export/import round trip also preserved the normalized records.
+`npm test` at the initial release: **8 passed, 0 failed**. Later releases added tests; see the v0.2 and v0.3.2 sections below for the current count. Tests cover bundled-data integrity, tone-marked Pinyin and search variants, review intervals and lapses, independent directions, due-card ordering and daily limits, quoted CSV round trips, unsafe import identities, taxonomy updates and backup validation. A full 1,445-record CSV export/import round trip also preserved the normalized records.
 
 `node --check` passed for the app, shared logic and server. The server returned the application and dataset successfully over the documented loopback address.
 
@@ -45,8 +45,27 @@ Test reviews and dataset changes were restored to the original empty notebook be
 
 ## v0.2 family/group and mobile update
 
-Eleven automated tests now pass, including the complete 54-species duck/goose/swan partition, Thai and Pinyin family search, reserved ID safety, term progress and full vocabulary backups, plus compatibility with older backups. New source labels were checked against exact Wikidata P225 scientific names; the group builder checks the pinned input hashes.
+At v0.2, eleven automated tests passed, including the complete 54-species duck/goose/swan partition, Thai and Pinyin family search, reserved ID safety, term progress and full vocabulary backups, plus compatibility with older backups. New source labels were checked against exact Wikidata P225 scientific names; the group builder checks the pinned input hashes.
 
 Browser checks: the duck shortcut opened exactly 38 source species; a family term displayed 鸭科 / yā kē / Ducks, Geese, Swans / Anatidae; recording Good scheduled it for tomorrow; Undo removed only that test review; the reverse card displayed English first. Free practice kept rating controls disabled. Existing species progress was retained. Phone 390 × 844 and iPad 768 × 1024 viewport overrides produced effective content widths of 375 and 753 pixels respectively, with no document overflow. These were browser viewport checks, not tests on physical Apple hardware.
 
 The public Pages edition uses relative URLs and a root `.nojekyll` file. Home Screen support is supplied through a web manifest; no offline cache or cloud synchronization is claimed.
+
+## v0.3.2 automated test re-run
+
+Re-ran `npm test` on 18 November 2026 with Node.js 22.23.2: **18 passed, 0 failed**. The seven tests added since v0.2 cover the Name guide (character coverage and retained input hashes, context reading selection, compound and personal-name safeguards, credited and escaped rendering) and eBird references (source-match coverage, fallbacks for imported or changed names, and links shown only with the revealed answer). This re-run covered the automated tests only; no additional browser checks were made for it.
+
+## v0.4 name corrections against AviList v2026
+
+Checked on 18 November 2026. Sources: AviList v2026 extended (20 Oct 2026, SHA-256 `df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d`), an avilist.org export of the same release with Simplified Chinese names, the CBR Checklist of Birds of China v12.0 (SHA-256 `2bc5a89e089d7b0b6663ed7898e381248924b5a00df66db746f740cbcdc63c42`) and IOC 15.2 Chinese names.
+
+- All 1,516 CBR species mapped to 1,501 AviList species; 5 AviList splits (Butorides, Cinnyris, Gygis, Enicurus, Carduelis) were reviewed by range statement and mapped to the sibling recorded in China.
+- 46 cards corrected (38 concept, 2 English-only, 6 Chinese-only), listed with evidence in `source-notices/name-corrections-2026-11.json`. The build refuses to apply a correction whose stated AviList name, English name or Avibase ID is absent from the pinned AviList file, or whose source record has changed.
+- After correcting, no card's Chinese name is the AviList-Simplified, CBR or IOC name of a different China species, and no card's English name is the AviList or IOC name of a different taxon (genus moves excepted). Card IDs, Chinese names and scientific names remain unique.
+- eBird references rebuilt from the same 18 November snapshot: 1,418 links (1,274 scientific / 22 alias / 122 common-name), 27 manual lookups. Every corrected card links to the same Cornell species code that AviList lists, except the two broad AviList species, which link to the population recorded in China (Grey-headed Swamphen, Scarlet Minivet).
+- Name guide rebuilt from the same pinned CC-CEDICT download; 理 is the one new character (475 total, 474 from CC-CEDICT).
+- Name guide word units: 78 curated units, 48 of them read as whole words (22 added place names; opaque words such as 八哥, 孔雀, 信天翁, 太平鸟, 相思 and 叽喳), plus a rule that treats the character before 氏 as part of a personal name. All 158 names containing such a unit were listed and checked by hand. 日本松雀鹰 now reads 日本 = Japan rather than 日 = sun and 本 = root; 藏, 滇 and 胡 carry their bird-name senses (Tibet, Yunnan, beard). The ten name notes and the Thai unit glosses were rewritten to state each meaning and its source directly, without closing disclaimers; the note label (literal, usage, cultural, source explanation, folklore) carries the kind of evidence.
+- `npm test`: **23 passed, 0 failed**, including four new correction tests and one word-unit test.
+- Browser check (built-in Chromium, local server): the baseline edition label and footer version load, the Name guide shows 喜鹊 · Oriental Magpie · *Pica serica*, and no console errors were logged. Study-flow reviews were not repeated.
+
+Not verified: expert review of the 38 concept choices (in particular 蓝短翅鸫 → 中华短翅鸫, where the CAS record covers three China species), physical-device layout, and browsers holding an imported or restored dataset, which keep their stored copy.

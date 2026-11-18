@@ -24,11 +24,20 @@ def main():
             raise ValueError('Invalid eBird reference identifier')
         by_scientific.setdefault(row['sciName'], []).append(row)
         by_common.setdefault(normal(row['comName']), []).append(row)
+    # Reviewed corrections where eBird splits a species that AviList keeps broad:
+    # the reference points to the population recorded in China (shown as an alias match).
+    corrections = json.loads((ROOT / 'source-notices/name-corrections-2026-11.json').read_text())['corrections']
+    china_population = {c['now']['scientific']: c['ebirdChinaPopulation'] for c in corrections if c.get('ebirdChinaPopulation')}
     links, unmatched = {}, []
     counts = {'scientific':0, 'alias':0, 'common-name':0}
     for bird in birds:
         candidates = by_scientific.get(bird['scientific'], [])
         method = 'scientific'
+        if bird['scientific'] in china_population:
+            candidates = by_scientific.get(china_population[bird['scientific']], [])
+            method = 'alias'
+            if len(candidates) != 1:
+                raise ValueError(f"Missing eBird identifier for {china_population[bird['scientific']]}")
         if not candidates:
             candidates = list({r['speciesCode']:r for a in bird['aliases'] for r in by_scientific.get(a, [])}.values())
             method = 'alias'
@@ -47,7 +56,7 @@ def main():
     out = {
         'schemaVersion':1,
         'meta':{
-            'version':'ebird-reference-2026-11-18-v1', 'source':retained['source'],
+            'version':'ebird-reference-2026-11-18-v2', 'source':retained['source'],
             'matches':counts, 'unmatched':len(unmatched), 'sourceSpecies':len(birds),
             'limits':'Outbound reading references only, not equivalent taxon concepts. Exact common-name candidates are labelled separately. No fuzzy names, guessed species codes, or automatic taxonomy changes. Unmatched names open eBird Explore for manual lookup.',
             'inputHashes':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [source, birds_path]},

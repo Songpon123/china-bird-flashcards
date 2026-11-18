@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "meta": {
     "title": "Catalogue of Life China 2023 · bird species",
-    "version": "colcn-2023-v1.1+names-2026-11-18",
+    "version": "colcn-2023-v1.1+names-2026-11-18+avilist-v2026",
     "taxonomy": "CoL China 2023 v1.1 (source concepts retained)",
     "scope": "China as defined by the CAS source; no independent border, occurrence-status, or Taiwan completeness audit",
-    "license": "CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names); CC BY 3.0 (IOC 13.1 historical names)",
+    "license": "CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names; AviList v2026 corrections); CC BY 3.0 (IOC 13.1 historical names)",
     "sourceUrl": "https://doi.org/10.15468/ae6ush",
     "retrieved": "2026-11-18",
-    "coverage": "All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory.",
+    "coverage": "All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. 46 cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.",
     "report": {
       "sourceSpecies": 1445,
       "bundledSpecies": 1445,
@@ -17,19 +17,30 @@
       "chinese": 1445,
       "pinyin": 1445,
       "english": 1441,
-      "taxonomyReview": 151,
+      "taxonomyReview": 185,
       "excludedSubspecies": 1766,
       "sourceSynonymRows": 1844,
       "rejectedAliasCount": 82,
       "nameMatchCounts": {
-        "IOC 13.1 exact historical name": 38,
-        "IOC 15.2 exact scientific name": 1294,
-        "Unique Chinese name + family candidate; concept unreviewed": 101,
+        "IOC 13.1 exact historical name": 35,
+        "IOC 15.2 exact scientific name": 1252,
+        "Unique Chinese name + family candidate; concept unreviewed": 100,
+        "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 46,
         "unresolved; excluded from study": 4,
         "Explicit genus-combination candidate; concept unreviewed": 7,
         "Historical Chinese name + family candidate; concept unreviewed": 1
       },
-      "allChinaCurrentComplete": false
+      "allChinaCurrentComplete": false,
+      "nameCorrections": {
+        "total": 46,
+        "byKind": {
+          "concept": 38,
+          "english": 2,
+          "chinese": 6
+        },
+        "prunedAliases": 11,
+        "source": "source-notices/name-corrections-2026-11.json"
+      }
     },
     "sources": [
       {
@@ -55,6 +66,14 @@
         "download": "https://worldbirdnames.org/Multiling%20IOC%2013.1_c.xlsx",
         "license": "CC BY 3.0",
         "sha256": "223172d64aceacc6c5f7f28eb6106e8cc755f495fe3ff12b560b30268e275ece"
+      },
+      {
+        "id": "avilist-v2026",
+        "title": "AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026 (extended version, 20 Oct 2026). Used for reviewed name corrections only.",
+        "url": "https://doi.org/10.2173/avilist.v2026",
+        "download": "https://www.avilist.org/checklist/v2026/",
+        "license": "CC BY 4.0",
+        "sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d"
       }
     ]
   },
@@ -1727,18 +1746,19 @@
       "sourceId": "3ae1eb3a-4af9-4ac5-8060-7a64490eb28b",
       "chinese": "斑脸海番鸭",
       "pinyin": "bān liǎn hǎi fān yā",
-      "english": "Velvet Scoter",
-      "scientific": "Melanitta fusca",
+      "english": "Stejneger's Scoter",
+      "scientific": "Melanitta stejnegeri",
       "order": "Anseriformes",
       "family": "Anatidae",
       "aliases": [
-        "Anas fusca"
+        "Anas fusca",
+        "Melanitta fusca"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Melanitta fusca"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Melanitta stejnegeri"
     },
     {
       "id": "colcn:6c403716-c9fb-488c-81f1-f488090789eb",
@@ -2381,16 +2401,18 @@
       "sourceId": "c7b6a6fd-ccf5-4a00-a179-86c2542c73a4",
       "chinese": "普通夜鹰",
       "pinyin": "pǔ tōng yè yīng",
-      "english": "Jungle Nightjar",
-      "scientific": "Caprimulgus indicus",
+      "english": "Grey Nightjar",
+      "scientific": "Caprimulgus jotaka",
       "order": "Caprimulgiformes",
       "family": "Caprimulgidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Caprimulgus indicus"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Caprimulgus indicus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Caprimulgus jotaka"
     },
     {
       "id": "colcn:50cc1912-c20f-4bc2-b9b8-c6db46284b87",
@@ -3188,18 +3210,19 @@
       "sourceId": "59f9291f-b3e5-4f10-98a1-aff039b73ab2",
       "chinese": "白燕鸥",
       "pinyin": "bái yàn ōu",
-      "english": "White Tern",
-      "scientific": "Gygis alba",
+      "english": "Blue-billed White Tern",
+      "scientific": "Gygis candida",
       "order": "Charadriiformes",
       "family": "Laridae",
       "aliases": [
+        "Gygis alba",
         "Sterna alba"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Gygis alba"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Gygis candida"
     },
     {
       "id": "colcn:d666c40e-27c2-452d-9efa-18cf52022bb3",
@@ -3274,8 +3297,8 @@
     {
       "id": "colcn:b69bfd57-93e5-4787-b5c7-c7225ff33038",
       "sourceId": "b69bfd57-93e5-4787-b5c7-c7225ff33038",
-      "chinese": "黄腿银鸥",
-      "pinyin": "huáng tuǐ yín ōu",
+      "chinese": "里海银鸥",
+      "pinyin": "lǐ hǎi yín ōu",
       "english": "Caspian Gull",
       "scientific": "Larus cachinnans",
       "order": "Charadriiformes",
@@ -3283,7 +3306,7 @@
       "aliases": [],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Larus cachinnans"
     },
@@ -3390,18 +3413,18 @@
       "sourceId": "44ae24ae-afef-4887-9de3-6e1448a2d509",
       "chinese": "西伯利亚银鸥",
       "pinyin": "xī bó lì yà yín ōu",
-      "english": "American Herring Gull",
-      "scientific": "Larus smithsonianus",
+      "english": "Vega Gull",
+      "scientific": "Larus vegae",
       "order": "Charadriiformes",
       "family": "Laridae",
       "aliases": [
-        "Larus vegae"
+        "Larus smithsonianus"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Larus smithsonianus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Larus vegae"
     },
     {
       "id": "colcn:6b28d10d-550d-4d2e-8934-2968f9efc12f",
@@ -5357,18 +5380,19 @@
       "sourceId": "6e1d54dc-7034-4b4b-bb4d-285106682f7c",
       "chinese": "灰头绿鸠",
       "pinyin": "huī tóu lǜ jiū",
-      "english": "Sri Lanka Green Pigeon",
-      "scientific": "Treron pompadora",
+      "english": "Ashy-headed Green Pigeon",
+      "scientific": "Treron phayrei",
       "order": "Columbiformes",
       "family": "Columbidae",
       "aliases": [
-        "Columba pompadora"
+        "Columba pompadora",
+        "Treron pompadora"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Treron pompadora"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Treron phayrei"
     },
     {
       "id": "colcn:ff231aae-58a7-4b1f-bc77-5a6207fe95a9",
@@ -5608,16 +5632,18 @@
       "sourceId": "1773d749-40e3-4709-9abf-8edf690650ea",
       "chinese": "棕胸佛法僧",
       "pinyin": "zōng xiōng fó fǎ sēng",
-      "english": "Indian Roller",
-      "scientific": "Coracias benghalensis",
+      "english": "Indochinese Roller",
+      "scientific": "Coracias affinis",
       "order": "Coraciiformes",
       "family": "Coraciidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Coracias benghalensis"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Coracias benghalensis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Coracias affinis"
     },
     {
       "id": "colcn:76d8c8fa-cf6a-47d7-a534-bad81d14610e",
@@ -5786,8 +5812,8 @@
     {
       "id": "colcn:b91ff210-a9c9-4215-8740-22f56861bb13",
       "sourceId": "b91ff210-a9c9-4215-8740-22f56861bb13",
-      "chinese": "蓝须蜂虎",
-      "pinyin": "lán xū fēng hǔ",
+      "chinese": "蓝须夜蜂虎",
+      "pinyin": "lán xū yè fēng hǔ",
       "english": "Blue-bearded Bee-eater",
       "scientific": "Nyctyornis athertoni",
       "order": "Coraciiformes",
@@ -5797,7 +5823,7 @@
       ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Nyctyornis athertoni"
     },
@@ -7815,15 +7841,17 @@
       "sourceId": "d0a0fba4-962f-4f3c-a046-a59f059b715c",
       "chinese": "紫水鸡",
       "pinyin": "zǐ shuǐ jī",
-      "english": "Western Swamphen",
+      "english": "Purple Swamphen",
       "scientific": "Porphyrio porphyrio",
       "order": "Gruiformes",
       "family": "Rallidae",
-      "aliases": [],
+      "aliases": [
+        "Porphyrio poliocephalus"
+      ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
       "matchedScientific": "Porphyrio porphyrio"
     },
     {
@@ -8866,20 +8894,21 @@
       "sourceId": "947b7f50-d7fa-4bb0-a971-8ab7d7493218",
       "chinese": "大鹃鵙",
       "pinyin": "dà juān jú",
-      "english": "Indian Cuckooshrike",
-      "scientific": "Coracina macei",
+      "english": "Oriental Cuckooshrike",
+      "scientific": "Coracina javensis",
       "order": "Passeriformes",
       "family": "Campephagidae",
       "aliases": [
+        "Coracina macei",
         "Graucalus macei",
         "Graucalus rexpineti",
         "Turdus novaehollandiae"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Coracina macei"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Coracina javensis"
     },
     {
       "id": "colcn:d0c886a6-06a5-4b50-ba4b-6dc14197a38a",
@@ -8993,7 +9022,7 @@
       "sourceId": "3716bae1-7f3e-46e9-bd4a-541da36a7fe1",
       "chinese": "赤红山椒鸟",
       "pinyin": "chì hóng shān jiāo niǎo",
-      "english": "Orange Minivet",
+      "english": "Scarlet Minivet",
       "scientific": "Pericrocotus flammeus",
       "order": "Passeriformes",
       "family": "Campephagidae",
@@ -9005,8 +9034,8 @@
       ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
       "matchedScientific": "Pericrocotus flammeus"
     },
     {
@@ -9528,18 +9557,19 @@
       "sourceId": "1ce05f8e-bdb1-4380-97a7-442fa34307f4",
       "chinese": "蓝翅叶鹎",
       "pinyin": "lán chì yè bēi",
-      "english": "Javan Leafbird",
-      "scientific": "Chloropsis cochinchinensis",
+      "english": "Blue-winged Leafbird",
+      "scientific": "Chloropsis moluccensis",
       "order": "Passeriformes",
       "family": "Chloropseidae",
       "aliases": [
+        "Chloropsis cochinchinensis",
         "Turdus cochinchinensis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Chloropsis cochinchinensis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Chloropsis moluccensis"
     },
     {
       "id": "colcn:2cd1e680-a134-4084-927a-cc003d06278d",
@@ -9671,32 +9701,36 @@
       "sourceId": "67147fbf-22c5-4b87-ab8f-65fcb7db5ded",
       "chinese": "黑喉山鹪莺",
       "pinyin": "hēi hóu shān jiāo yīng",
-      "english": "Black-throated Prinia",
-      "scientific": "Prinia atrogularis",
+      "english": "Hill Prinia",
+      "scientific": "Prinia superciliaris",
       "order": "Passeriformes",
       "family": "Cisticolidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Prinia atrogularis"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Prinia atrogularis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Prinia superciliaris"
     },
     {
       "id": "colcn:b9343c47-6d6d-4244-8309-3e384a9e4be8",
       "sourceId": "b9343c47-6d6d-4244-8309-3e384a9e4be8",
       "chinese": "山鹪莺",
       "pinyin": "shān jiāo yīng",
-      "english": "Himalayan Prinia",
-      "scientific": "Prinia crinigera",
+      "english": "Striped Prinia",
+      "scientific": "Prinia striata",
       "order": "Passeriformes",
       "family": "Cisticolidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Prinia crinigera"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Prinia crinigera"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Prinia striata"
     },
     {
       "id": "colcn:04d8fb73-869e-4097-bad3-a141b885fe28",
@@ -10074,22 +10108,22 @@
       "sourceId": "bb8af919-e2be-4cbd-8db3-555fd18a97d9",
       "chinese": "星鸦",
       "pinyin": "xīng yā",
-      "english": "Northern Nutcracker",
-      "scientific": "Nucifraga caryocatactes",
+      "english": "Southern Nutcracker",
+      "scientific": "Nucifraga hemispila",
       "order": "Passeriformes",
       "family": "Corvidae",
       "aliases": [
         "Corvus caryocatactes",
-        "Nucifraga hemispila",
+        "Nucifraga caryocatactes",
         "Nucifraga macrorhynchos",
         "Nucifraga owstoni",
         "Nucifraga yunanensis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Nucifraga caryocatactes"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Nucifraga hemispila"
     },
     {
       "id": "colcn:eadc0a1d-6ad6-4bf5-bb1e-bd439173a9e1",
@@ -10132,22 +10166,22 @@
       "sourceId": "046e3a7d-a3bc-4c6e-b759-2a633f970dbc",
       "chinese": "喜鹊",
       "pinyin": "xǐ què",
-      "english": "Eurasian Magpie",
-      "scientific": "Pica pica",
+      "english": "Oriental Magpie",
+      "scientific": "Pica serica",
       "order": "Passeriformes",
       "family": "Corvidae",
       "aliases": [
         "Corvus pica",
         "Pica bactriana",
-        "Pica bottanensis",
         "Pica leucoptera",
+        "Pica pica",
         "Pica sericea"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Pica pica"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Pica serica"
     },
     {
       "id": "colcn:6c9ccd8e-6308-4cc7-a32b-1d7be48b9a5a",
@@ -10348,16 +10382,18 @@
       "sourceId": "f6428cc4-8d80-4ec6-a42c-1f8d1e84ca86",
       "chinese": "纯色啄花鸟",
       "pinyin": "chún sè zhuó huā niǎo",
-      "english": "Nilgiri Flowerpecker",
-      "scientific": "Dicaeum concolor",
+      "english": "Plain Flowerpecker",
+      "scientific": "Dicaeum minullum",
       "order": "Passeriformes",
       "family": "Dicaeidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Dicaeum concolor"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Dicaeum concolor"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Dicaeum minullum"
     },
     {
       "id": "colcn:2114ba5c-7eed-4262-8e66-9dc4a8912db4",
@@ -11342,18 +11378,18 @@
       "sourceId": "3b211856-0db5-49bc-b329-3c31e3fde351",
       "chinese": "红额金翅雀",
       "pinyin": "hóng é jīn chì què",
-      "english": "European Goldfinch",
-      "scientific": "Carduelis carduelis",
+      "english": "Grey-crowned Goldfinch",
+      "scientific": "Carduelis caniceps",
       "order": "Passeriformes",
       "family": "Fringillidae",
       "aliases": [
-        "Carduelis caniceps"
+        "Carduelis carduelis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Carduelis carduelis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Carduelis caniceps"
     },
     {
       "id": "colcn:e2f2f808-6252-4d42-83db-72eee4c890b3",
@@ -11537,8 +11573,8 @@
     {
       "id": "colcn:74e1ddad-9908-4c23-a877-abe63c8ab3cf",
       "sourceId": "74e1ddad-9908-4c23-a877-abe63c8ab3cf",
-      "chinese": "点翅朱雀",
-      "pinyin": "diǎn chì zhū què",
+      "chinese": "喜山点翅朱雀",
+      "pinyin": "xǐ shān diǎn chì zhū què",
       "english": "Spot-winged Rosefinch",
       "scientific": "Carpodacus rodopeplus",
       "order": "Passeriformes",
@@ -11546,7 +11582,7 @@
       "aliases": [],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Carpodacus rodopeplus"
     },
@@ -12461,16 +12497,18 @@
       "sourceId": "784a29e8-5e80-4daa-b961-e560287777fc",
       "chinese": "洋燕",
       "pinyin": "yáng yàn",
-      "english": "Tahiti Swallow",
-      "scientific": "Hirundo tahitica",
+      "english": "Pacific Swallow",
+      "scientific": "Hirundo javanica",
       "order": "Passeriformes",
       "family": "Hirundinidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Hirundo tahitica"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Hirundo tahitica"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Hirundo javanica"
     },
     {
       "id": "colcn:dd72696e-e89d-462c-a979-b4ddc2fc233b",
@@ -12545,19 +12583,20 @@
       "sourceId": "b9e64ed7-027e-4ef3-aea1-e8375e5f357e",
       "chinese": "褐喉沙燕",
       "pinyin": "hè hóu shā yàn",
-      "english": "Brown-throated Martin",
-      "scientific": "Riparia paludicola",
+      "english": "Grey-throated Martin",
+      "scientific": "Riparia chinensis",
       "order": "Passeriformes",
       "family": "Hirundinidae",
       "aliases": [
         "Hirundo chinensis",
-        "Hirundo paludicola"
+        "Hirundo paludicola",
+        "Riparia paludicola"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Riparia paludicola"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Riparia chinensis"
     },
     {
       "id": "colcn:7f1b01cd-95b3-49fa-a925-40aa90194c07",
@@ -12669,11 +12708,12 @@
       "sourceId": "d0175f3e-fb7c-4a6c-887c-d88ff93bceef",
       "chinese": "灰伯劳",
       "pinyin": "huī bó láo",
-      "english": "Great Grey Shrike",
-      "scientific": "Lanius excubitor",
+      "english": "Northern Shrike",
+      "scientific": "Lanius borealis",
       "order": "Passeriformes",
       "family": "Laniidae",
       "aliases": [
+        "Lanius excubitor",
         "Lanius funereus",
         "Lanius grimmi",
         "Lanius homeyeri",
@@ -12681,11 +12721,11 @@
         "Lanius pallidirostris",
         "Lanius przewalskii"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Lanius excubitor"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Lanius borealis"
     },
     {
       "id": "colcn:484f4d4a-1ae8-48d3-946b-d3299c9e1066",
@@ -14513,8 +14553,8 @@
     {
       "id": "colcn:2a96bb4a-d554-4314-8dee-bf42064f532f",
       "sourceId": "2a96bb4a-d554-4314-8dee-bf42064f532f",
-      "chinese": "田鹨",
-      "pinyin": "tián liù",
+      "chinese": "理氏鹨",
+      "pinyin": "lǐ shì liù",
       "english": "Richard's Pipit",
       "scientific": "Anthus richardi",
       "order": "Passeriformes",
@@ -14522,7 +14562,7 @@
       "aliases": [],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Anthus richardi"
     },
@@ -14547,22 +14587,24 @@
       "sourceId": "b3b61e83-6cf4-48ee-807d-0163b4e6244c",
       "chinese": "黄腹鹨",
       "pinyin": "huáng fù liù",
-      "english": "American Pipit",
-      "scientific": "Anthus rubescens",
+      "english": "Siberian Pipit",
+      "scientific": "Anthus japonicus",
       "order": "Passeriformes",
       "family": "Motacillidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Anthus rubescens"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Anthus rubescens"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Anthus japonicus"
     },
     {
       "id": "colcn:b7eb9d78-611b-4ff5-b0e5-5c2ed5228f55",
       "sourceId": "b7eb9d78-611b-4ff5-b0e5-5c2ed5228f55",
-      "chinese": "东方田鹨",
-      "pinyin": "dōng fāng tián liù",
+      "chinese": "田鹨",
+      "pinyin": "tián liù",
       "english": "Paddyfield Pipit",
       "scientific": "Anthus rufulus",
       "order": "Passeriformes",
@@ -14570,7 +14612,7 @@
       "aliases": [],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Anthus rufulus"
     },
@@ -14820,22 +14862,21 @@
     {
       "id": "colcn:7207303a-d1a7-45a2-bb41-d2af9706f443",
       "sourceId": "7207303a-d1a7-45a2-bb41-d2af9706f443",
-      "chinese": "蓝短翅鸫",
-      "pinyin": "lán duǎn chì dōng",
-      "english": "Javan Shortwing",
-      "scientific": "Brachypteryx montana",
+      "chinese": "中华短翅鸫",
+      "pinyin": "zhōng huá duǎn chì dōng",
+      "english": "Chinese Shortwing",
+      "scientific": "Brachypteryx sinensis",
       "order": "Passeriformes",
       "family": "Muscicapidae",
       "aliases": [
-        "Brachypteryx goodfellowi",
-        "Brachypteryx sinensis",
+        "Brachypteryx montana",
         "Calliope cruralis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Brachypteryx montana"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Brachypteryx sinensis"
     },
     {
       "id": "colcn:6c685aa8-5842-4a67-b200-b873f62b4e6c",
@@ -15030,16 +15071,18 @@
       "sourceId": "c627492f-7ccd-442e-a655-e3abb6e0d0b2",
       "chinese": "山蓝仙鹟",
       "pinyin": "shān lán xiān wēng",
-      "english": "Javan Blue Flycatcher",
-      "scientific": "Cyornis banyumas",
+      "english": "Hill Blue Flycatcher",
+      "scientific": "Cyornis whitei",
       "order": "Passeriformes",
       "family": "Muscicapidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Cyornis banyumas"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Cyornis banyumas"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Cyornis whitei"
     },
     {
       "id": "colcn:4c7c3b14-2af6-44c9-987d-d10f11be2db4",
@@ -15165,7 +15208,6 @@
       "order": "Passeriformes",
       "family": "Muscicapidae",
       "aliases": [
-        "Enicurus sinensis",
         "Turdus leschenaulti"
       ],
       "taxonomyReview": false,
@@ -15177,18 +15219,20 @@
     {
       "id": "colcn:1dc65e0a-96a1-45f8-a76b-ae7df1884774",
       "sourceId": "1dc65e0a-96a1-45f8-a76b-ae7df1884774",
-      "chinese": "白额燕尾",
-      "pinyin": "bái é yàn wěi",
-      "english": "White-crowned Forktail",
-      "scientific": "Enicurus leschenaulti",
+      "chinese": "白冠燕尾",
+      "pinyin": "bái guān yàn wěi",
+      "english": "Northern Forktail",
+      "scientific": "Enicurus sinensis",
       "order": "Passeriformes",
       "family": "Muscicapidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Enicurus leschenaulti"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Enicurus leschenaulti"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Enicurus sinensis"
     },
     {
       "id": "colcn:416ec863-22cf-4b70-afeb-bef2b1f602bb",
@@ -16084,16 +16128,18 @@
       "sourceId": "95cb7796-4e5f-4fd6-bceb-914a3d15dc47",
       "chinese": "棕腹蓝仙鹟",
       "pinyin": "zōng fù lán xiān wēng",
-      "english": "Taiwan Vivid Niltava",
-      "scientific": "Niltava vivida",
+      "english": "Chinese Vivid Niltava",
+      "scientific": "Niltava oatesi",
       "order": "Passeriformes",
       "family": "Muscicapidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Niltava vivida"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Niltava vivida"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Niltava oatesi"
     },
     {
       "id": "colcn:5a0b80ed-3fa1-4671-b4f1-3a7db36b1c00",
@@ -16779,16 +16825,18 @@
       "sourceId": "de9e7c0e-dd5c-41ea-963e-9354a1c0b79e",
       "chinese": "黄腹花蜜鸟",
       "pinyin": "huáng fù huā mì niǎo",
-      "english": "Garden Sunbird",
-      "scientific": "Cinnyris jugularis",
+      "english": "Ornate Sunbird",
+      "scientific": "Cinnyris ornatus",
       "order": "Passeriformes",
       "family": "Nectariniidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Cinnyris jugularis"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Cinnyris jugularis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Cinnyris ornatus"
     },
     {
       "id": "colcn:cdc1e3a1-913a-4cb4-972e-33d81d5f3f48",
@@ -17586,20 +17634,19 @@
       "sourceId": "b3e500d8-a01b-4f2a-b632-22278b94e193",
       "chinese": "灰眶雀鹛",
       "pinyin": "huī kuàng què méi",
-      "english": "Grey-cheeked Fulvetta",
-      "scientific": "Alcippe morrisonia",
+      "english": "David's Fulvetta",
+      "scientific": "Alcippe davidi",
       "order": "Passeriformes",
       "family": "Pellorneidae",
       "aliases": [
-        "Alcippe davidi",
         "Alcippe fraterculus",
-        "Alcippe hueti"
+        "Alcippe morrisonia"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Alcippe morrisonia"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Alcippe davidi"
     },
     {
       "id": "colcn:b4319298-71ab-4001-a311-276c5a73baca",
@@ -19638,18 +19685,18 @@
       "sourceId": "23af7422-2ae0-4d58-9b67-71daeb9b12b3",
       "chinese": "栗腹䴓",
       "pinyin": "lì fù shī",
-      "english": "Indian Nuthatch",
-      "scientific": "Sitta castanea",
+      "english": "Chestnut-bellied Nuthatch",
+      "scientific": "Sitta cinnamoventris",
       "order": "Passeriformes",
       "family": "Sittidae",
       "aliases": [
-        "Sitta cinnamoventris"
+        "Sitta castanea"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Sitta castanea"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Sitta cinnamoventris"
     },
     {
       "id": "colcn:b20372f4e4954215b14daa447855c98e",
@@ -19729,18 +19776,18 @@
       "sourceId": "7811aaf4-bb99-4fa4-b8ea-2c0babb2d706",
       "chinese": "白脸䴓",
       "pinyin": "bái liǎn shī",
-      "english": "White-cheeked Nuthatch",
-      "scientific": "Sitta leucopsis",
+      "english": "Przevalski's Nuthatch",
+      "scientific": "Sitta przewalskii",
       "order": "Passeriformes",
       "family": "Sittidae",
       "aliases": [
-        "Sitta przewalskii"
+        "Sitta leucopsis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Sitta leucopsis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Sitta przewalskii"
     },
     {
       "id": "colcn:f8d29e76-d49e-4b79-a4ff-969fc51e07f4",
@@ -20323,8 +20370,8 @@
     {
       "id": "colcn:1cfb651b-d35f-4c05-9e58-55ed21640848",
       "sourceId": "1cfb651b-d35f-4c05-9e58-55ed21640848",
-      "chinese": "褐头雀鹛",
-      "pinyin": "hè tóu què méi",
+      "chinese": "灰头雀鹛",
+      "pinyin": "huī tóu què méi",
       "english": "Grey-hooded Fulvetta",
       "scientific": "Fulvetta cinereiceps",
       "order": "Passeriformes",
@@ -20334,7 +20381,7 @@
       ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
       "englishSource": "ioc-15.2",
       "matchedScientific": "Fulvetta cinereiceps"
     },
@@ -20550,16 +20597,18 @@
       "sourceId": "2b8f20fc-946a-4d88-9d4e-8a24ec9b1d91",
       "chinese": "红头鸦雀",
       "pinyin": "hóng tóu yā què",
-      "english": "White-breasted Parrotbill",
-      "scientific": "Psittiparus ruficeps",
+      "english": "Rufous-headed Parrotbill",
+      "scientific": "Paradoxornis bakeri",
       "order": "Passeriformes",
       "family": "Sylviidae",
-      "aliases": [],
+      "aliases": [
+        "Psittiparus ruficeps"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 13.1 exact historical name",
-      "englishSource": "ioc-13.1",
-      "matchedScientific": "Psittiparus ruficeps"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Paradoxornis bakeri"
     },
     {
       "id": "colcn:67875c96-2de6-49f7-9210-4950d47a516b",
@@ -20910,18 +20959,19 @@
       "sourceId": "1308ce2f-bbfa-4701-bfac-8b7e7610b28f",
       "chinese": "黄喉穗鹛",
       "pinyin": "huáng hóu suì méi",
-      "english": "Buff-chested Babbler",
-      "scientific": "Cyanoderma ambiguum",
+      "english": "Rufous-fronted Babbler",
+      "scientific": "Cyanoderma rufifrons",
       "order": "Passeriformes",
       "family": "Timaliidae",
       "aliases": [
+        "Cyanoderma ambiguum",
         "Stachyris ambigua"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 13.1 exact historical name",
-      "englishSource": "ioc-13.1",
-      "matchedScientific": "Cyanoderma ambiguum"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Cyanoderma rufifrons"
     },
     {
       "id": "colcn:7c3e8d0c-204e-449a-82b5-9cc42b2d6cff",
@@ -21082,18 +21132,19 @@
       "sourceId": "f2207a50-e745-453d-bc41-aa1ddb22b6ed",
       "chinese": "红嘴钩嘴鹛",
       "pinyin": "hóng zuǐ gōu zuǐ méi",
-      "english": "Black-crowned Scimitar Babbler",
-      "scientific": "Pomatorhinus ferruginosus",
+      "english": "Brown-crowned Scimitar Babbler",
+      "scientific": "Pomatorhinus phayrei",
       "order": "Passeriformes",
       "family": "Timaliidae",
       "aliases": [
-        "Pomataorhinus ferruginosus"
+        "Pomataorhinus ferruginosus",
+        "Pomatorhinus ferruginosus"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Pomatorhinus ferruginosus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Pomatorhinus phayrei"
     },
     {
       "id": "colcn:b6f3d077-7d8c-4bd9-ba87-f1fad39804de",
@@ -21218,19 +21269,20 @@
       "sourceId": "57480ab0-de3e-4b8b-8ab3-533b34b3f308",
       "chinese": "长尾鹩鹛",
       "pinyin": "cháng wěi liáo méi",
-      "english": "Naga Wren-Babbler",
-      "scientific": "Spelaeornis chocolatinus",
+      "english": "Grey-bellied Wren-Babbler",
+      "scientific": "Spelaeornis reptatus",
       "order": "Passeriformes",
       "family": "Timaliidae",
       "aliases": [
         "Pnoepyga chocolatina",
+        "Spelaeornis chocolatinus",
         "Urocichla reptata"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Spelaeornis chocolatinus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Spelaeornis reptatus"
     },
     {
       "id": "colcn:a804da13-f56a-4e83-9f3b-6dd4a1abb1b7",
@@ -22299,16 +22351,18 @@
       "sourceId": "a8c85904-2062-41d9-a981-a1d71409063b",
       "chinese": "暗绿绣眼鸟",
       "pinyin": "àn lǜ xiù yǎn niǎo",
-      "english": "Warbling White-eye",
-      "scientific": "Zosterops japonicus",
+      "english": "Swinhoe's White-eye",
+      "scientific": "Zosterops simplex",
       "order": "Passeriformes",
       "family": "Zosteropidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Zosterops japonicus"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Zosterops japonicus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Zosterops simplex"
     },
     {
       "id": "colcn:d674924b-b6ad-422c-9c70-5de22c00dd05",
@@ -22503,36 +22557,38 @@
       "sourceId": "65328eb5-6d15-4b31-adbf-3f0d9eba38f8",
       "chinese": "牛背鹭",
       "pinyin": "niú bèi lù",
-      "english": "Western Cattle Egret",
-      "scientific": "Bubulcus ibis",
+      "english": "Eastern Cattle Egret",
+      "scientific": "Ardea coromanda",
       "order": "Pelecaniformes",
       "family": "Ardeidae",
       "aliases": [
+        "Bubulcus ibis",
         "Cancroma coromanda"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 13.1 exact historical name",
-      "englishSource": "ioc-13.1",
-      "matchedScientific": "Bubulcus ibis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Ardea coromanda"
     },
     {
       "id": "colcn:7cefd49a-5474-4e56-813d-893f8ca79439",
       "sourceId": "7cefd49a-5474-4e56-813d-893f8ca79439",
       "chinese": "绿鹭",
       "pinyin": "lǜ lù",
-      "english": "Striated Heron",
-      "scientific": "Butorides striata",
+      "english": "Little Heron",
+      "scientific": "Butorides atricapilla",
       "order": "Pelecaniformes",
       "family": "Ardeidae",
       "aliases": [
-        "Ardea striata"
+        "Ardea striata",
+        "Butorides striata"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Butorides striata"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Butorides atricapilla"
     },
     {
       "id": "colcn:4163db88-fa4f-488b-9f2e-4088d1839e36",
@@ -23051,18 +23107,19 @@
       "sourceId": "3496cfb7-e9bf-4062-8d39-1b194984f2d6",
       "chinese": "蓝耳拟啄木鸟",
       "pinyin": "lán ěr nǐ zhuó mù niǎo",
-      "english": "Yellow-eared Barbet",
-      "scientific": "Psilopogon australis",
+      "english": "Blue-eared Barbet",
+      "scientific": "Psilopogon cyanotis",
       "order": "Piciformes",
       "family": "Capitonidae",
       "aliases": [
-        "Megalaima australis"
+        "Megalaima australis",
+        "Psilopogon australis"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Psilopogon australis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Psilopogon cyanotis"
     },
     {
       "id": "colcn:ae981139-1355-4b55-9540-290d81ae9be3",
@@ -23227,16 +23284,18 @@
       "sourceId": "c566a5b2-5573-4d4b-a9f2-d9a4c61ccd50",
       "chinese": "大金背啄木鸟",
       "pinyin": "dà jīn bèi zhuó mù niǎo",
-      "english": "Buff-spotted Flameback",
-      "scientific": "Chrysocolaptes lucidus",
+      "english": "Greater Flameback",
+      "scientific": "Chrysocolaptes guttacristatus",
       "order": "Piciformes",
       "family": "Picidae",
-      "aliases": [],
-      "taxonomyReview": false,
+      "aliases": [
+        "Chrysocolaptes lucidus"
+      ],
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Chrysocolaptes lucidus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Chrysocolaptes guttacristatus"
     },
     {
       "id": "colcn:dcccaac8-c21b-4292-af92-f892c22a1ef7",
@@ -23310,14 +23369,16 @@
       "chinese": "赤胸啄木鸟",
       "pinyin": "chì xiōng zhuó mù niǎo",
       "english": "Necklaced Woodpecker",
-      "scientific": "Dendrocopos cathpharius",
+      "scientific": "Dryobates pernyii",
       "order": "Piciformes",
       "family": "Picidae",
-      "aliases": [],
+      "aliases": [
+        "Dendrocopos cathpharius"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",
-      "englishSource": "ioc-15.2",
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
       "matchedScientific": "Dryobates pernyii"
     },
     {
@@ -24742,19 +24803,20 @@
       "sourceId": "93e06a82-f7d6-4993-a98e-d790887bb89f",
       "chinese": "灰林鸮",
       "pinyin": "huī lín xiāo",
-      "english": "Tawny Owl",
-      "scientific": "Strix aluco",
+      "english": "Himalayan Owl",
+      "scientific": "Strix nivicolum",
       "order": "Strigiformes",
       "family": "Strigidae",
       "aliases": [
+        "Strix aluco",
         "Syrnium ma",
         "Syrnium nivicolum"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Strix aluco"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Strix nivicolum"
     },
     {
       "id": "colcn:ac3ea3f0-8595-4a4a-aa0b-80f5a5b9254f",
@@ -24867,19 +24929,20 @@
       "sourceId": "4751ea98-2e18-47cd-b2bd-07a0f8027db3",
       "chinese": "仓鸮",
       "pinyin": "cāng xiāo",
-      "english": "Western Barn Owl",
-      "scientific": "Tyto alba",
+      "english": "Eastern Barn Owl",
+      "scientific": "Tyto javanica",
       "order": "Strigiformes",
       "family": "Tytonidae",
       "aliases": [
         "Strix alba",
-        "Strix javanica"
+        "Strix javanica",
+        "Tyto alba"
       ],
-      "taxonomyReview": false,
+      "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
-      "matchedScientific": "Tyto alba"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Tyto javanica"
     },
     {
       "id": "colcn:9cd09478-d859-4c08-8db2-baaffedde024",

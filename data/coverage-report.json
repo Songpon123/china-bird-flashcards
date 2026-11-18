@@ -6,7 +6,7 @@
   "chinese": 1445,
   "pinyin": 1445,
   "english": 1441,
-  "taxonomyReview": 151,
+  "taxonomyReview": 185,
   "excludedSubspecies": 1766,
   "sourceSynonymRows": 1844,
   "rejectedAliasCount": 82,
@@ -29,9 +29,10 @@
     }
   ],
   "nameMatchCounts": {
-    "IOC 13.1 exact historical name": 38,
-    "IOC 15.2 exact scientific name": 1294,
-    "Unique Chinese name + family candidate; concept unreviewed": 101,
+    "IOC 13.1 exact historical name": 35,
+    "IOC 15.2 exact scientific name": 1252,
+    "Unique Chinese name + family candidate; concept unreviewed": 100,
+    "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 46,
     "unresolved; excluded from study": 4,
     "Explicit genus-combination candidate; concept unreviewed": 7,
     "Historical Chinese name + family candidate; concept unreviewed": 1
@@ -530,5 +531,15 @@
       "reason": "another accepted species"
     }
   ],
-  "allChinaCurrentComplete": false
+  "allChinaCurrentComplete": false,
+  "nameCorrections": {
+    "total": 46,
+    "byKind": {
+      "concept": 38,
+      "english": 2,
+      "chinese": 6
+    },
+    "prunedAliases": 11,
+    "source": "source-notices/name-corrections-2026-11.json"
+  }
 }

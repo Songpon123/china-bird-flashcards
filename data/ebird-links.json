@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "version": "ebird-reference-2026-11-18-v1",
+    "version": "ebird-reference-2026-11-18-v2",
     "source": {
       "title": "eBird Taxonomy reference API · Cornell Lab of Ornithology",
       "url": "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json&cat=species",
@@ -13,16 +13,16 @@
       "documentation": "https://support.ebird.org/en/support/solutions/articles/48000837816-the-ebird-taxonomy"
     },
     "matches": {
-      "scientific": 1272,
-      "alias": 20,
-      "common-name": 125
+      "scientific": 1274,
+      "alias": 22,
+      "common-name": 122
     },
-    "unmatched": 28,
+    "unmatched": 27,
     "sourceSpecies": 1445,
     "limits": "Outbound reading references only, not equivalent taxon concepts. Exact common-name candidates are labelled separately. No fuzzy names, guessed species codes, or automatic taxonomy changes. Unmatched names open eBird Explore for manual lookup.",
     "inputHashes": {
-      "source-notices/ebird-reference-identifiers.json": "0f956eb9ba7bead66da633a7059b7af5f4a19c0a185369021af65556bd2d405b",
-      "data/birds.json": "da4361a0465e9986b461aded863f5344dc9b6ba1fa653a0ef988393e375fb630"
+      "source-notices/ebird-reference-identifiers.json": "f51407819640c01247d658d5647c6028e209a5d36a1daa4e17764b2eccfab8fc",
+      "data/birds.json": "ab2444574174434b78e3092674a9d1ed58f41dfdeb15e26b2116391aeb20a155"
     }
   },
   "byScientific": {
@@ -677,11 +677,11 @@
       "sourceEnglish": "Black Scoter",
       "method": "scientific"
     },
-    "Melanitta fusca": {
-      "code": "whwsco3",
-      "scientific": "Melanitta fusca",
-      "english": "Velvet Scoter",
-      "sourceEnglish": "Velvet Scoter",
+    "Melanitta stejnegeri": {
+      "code": "whwsco1",
+      "scientific": "Melanitta stejnegeri",
+      "english": "Stejneger's Scoter",
+      "sourceEnglish": "Stejneger's Scoter",
       "method": "scientific"
     },
     "Mergellus albellus": {
@@ -929,11 +929,11 @@
       "sourceEnglish": "European Nightjar",
       "method": "scientific"
     },
-    "Caprimulgus indicus": {
-      "code": "grynig2",
-      "scientific": "Caprimulgus indicus",
-      "english": "Jungle Nightjar",
-      "sourceEnglish": "Jungle Nightjar",
+    "Caprimulgus jotaka": {
+      "code": "grynig1",
+      "scientific": "Caprimulgus jotaka",
+      "english": "Gray Nightjar",
+      "sourceEnglish": "Grey Nightjar",
       "method": "scientific"
     },
     "Caprimulgus macrurus": {
@@ -1251,11 +1251,11 @@
       "sourceEnglish": "Gull-billed Tern",
       "method": "scientific"
     },
-    "Gygis alba": {
-      "code": "whiter3",
-      "scientific": "Gygis alba",
-      "english": "Atlantic White-Tern",
-      "sourceEnglish": "White Tern",
+    "Gygis candida": {
+      "code": "whiter4",
+      "scientific": "Gygis candida",
+      "english": "Blue-billed White-Tern",
+      "sourceEnglish": "Blue-billed White Tern",
       "method": "scientific"
     },
     "Hydrocoloeus minutus": {
@@ -1335,11 +1335,11 @@
       "sourceEnglish": "Slaty-backed Gull",
       "method": "scientific"
     },
-    "Larus smithsonianus": {
-      "code": "amhgul1",
-      "scientific": "Larus smithsonianus",
-      "english": "American Herring Gull",
-      "sourceEnglish": "American Herring Gull",
+    "Larus vegae": {
+      "code": "veggul1",
+      "scientific": "Larus vegae",
+      "english": "Vega Gull",
+      "sourceEnglish": "Vega Gull",
       "method": "scientific"
     },
     "Leucophaeus pipixcan": {
@@ -2140,11 +2140,11 @@
       "sourceEnglish": "Yellow-footed Green Pigeon",
       "method": "scientific"
     },
-    "Treron pompadora": {
-      "code": "pogpig1",
-      "scientific": "Treron pompadora",
-      "english": "Sri Lanka Green-Pigeon",
-      "sourceEnglish": "Sri Lanka Green Pigeon",
+    "Treron phayrei": {
+      "code": "pomgrp5",
+      "scientific": "Treron phayrei",
+      "english": "Ashy-headed Green-Pigeon",
+      "sourceEnglish": "Ashy-headed Green Pigeon",
       "method": "scientific"
     },
     "Treron sieboldii": {
@@ -2238,11 +2238,11 @@
       "sourceEnglish": "Collared Kingfisher",
       "method": "scientific"
     },
-    "Coracias benghalensis": {
-      "code": "indrol2",
-      "scientific": "Coracias benghalensis",
-      "english": "Indian Roller",
-      "sourceEnglish": "Indian Roller",
+    "Coracias affinis": {
+      "code": "indrol3",
+      "scientific": "Coracias affinis",
+      "english": "Indochinese Roller",
+      "sourceEnglish": "Indochinese Roller",
       "method": "scientific"
     },
     "Coracias garrulus": {
@@ -3142,11 +3142,11 @@
       "method": "scientific"
     },
     "Porphyrio porphyrio": {
-      "code": "purswa1",
-      "scientific": "Porphyrio porphyrio",
-      "english": "Western Swamphen",
-      "sourceEnglish": "Western Swamphen",
-      "method": "scientific"
+      "code": "purswa3",
+      "scientific": "Porphyrio poliocephalus",
+      "english": "Gray-headed Swamphen",
+      "sourceEnglish": "Purple Swamphen",
+      "method": "alias"
     },
     "Porzana porzana": {
       "code": "spocra1",
@@ -3554,11 +3554,11 @@
       "sourceEnglish": "Snow Bunting",
       "method": "scientific"
     },
-    "Coracina macei": {
-      "code": "larcuc1",
-      "scientific": "Coracina macei",
-      "english": "Indian Cuckooshrike",
-      "sourceEnglish": "Indian Cuckooshrike",
+    "Coracina javensis": {
+      "code": "larcuc11",
+      "scientific": "Coracina javensis",
+      "english": "Oriental Cuckooshrike",
+      "sourceEnglish": "Oriental Cuckooshrike",
       "method": "scientific"
     },
     "Lalage melaschistos": {
@@ -3604,11 +3604,11 @@
       "method": "scientific"
     },
     "Pericrocotus flammeus": {
-      "code": "scamin3",
-      "scientific": "Pericrocotus flammeus",
-      "english": "Orange Minivet",
-      "sourceEnglish": "Orange Minivet",
-      "method": "scientific"
+      "code": "scamin1",
+      "scientific": "Pericrocotus speciosus",
+      "english": "Scarlet Minivet",
+      "sourceEnglish": "Scarlet Minivet",
+      "method": "alias"
     },
     "Pericrocotus roseus": {
       "code": "rosmin1",
@@ -3820,11 +3820,11 @@
       "sourceEnglish": "Golden-fronted Leafbird",
       "method": "scientific"
     },
-    "Chloropsis cochinchinensis": {
-      "code": "buwlea2",
-      "scientific": "Chloropsis cochinchinensis",
-      "english": "Javan Leafbird",
-      "sourceEnglish": "Javan Leafbird",
+    "Chloropsis moluccensis": {
+      "code": "blwlea1",
+      "scientific": "Chloropsis moluccensis",
+      "english": "Blue-winged Leafbird",
+      "sourceEnglish": "Blue-winged Leafbird",
       "method": "scientific"
     },
     "Chloropsis hardwickii": {
@@ -3876,18 +3876,18 @@
       "sourceEnglish": "Common Tailorbird",
       "method": "scientific"
     },
-    "Prinia atrogularis": {
-      "code": "hilpri1",
-      "scientific": "Prinia atrogularis",
-      "english": "Black-throated Prinia",
-      "sourceEnglish": "Black-throated Prinia",
+    "Prinia superciliaris": {
+      "code": "hilpri2",
+      "scientific": "Prinia superciliaris",
+      "english": "Hill Prinia",
+      "sourceEnglish": "Hill Prinia",
       "method": "scientific"
     },
-    "Prinia crinigera": {
-      "code": "strpri2",
-      "scientific": "Prinia crinigera",
-      "english": "Himalayan Prinia",
-      "sourceEnglish": "Himalayan Prinia",
+    "Prinia striata": {
+      "code": "strpri8",
+      "scientific": "Prinia striata",
+      "english": "Striped Prinia",
+      "sourceEnglish": "Striped Prinia",
       "method": "scientific"
     },
     "Prinia flaviventris": {
@@ -4030,11 +4030,11 @@
       "sourceEnglish": "Eurasian Jay",
       "method": "scientific"
     },
-    "Nucifraga caryocatactes": {
-      "code": "eurnut3",
-      "scientific": "Nucifraga caryocatactes",
-      "english": "Northern Nutcracker",
-      "sourceEnglish": "Northern Nutcracker",
+    "Nucifraga hemispila": {
+      "code": "eurnut4",
+      "scientific": "Nucifraga hemispila",
+      "english": "Southern Nutcracker",
+      "sourceEnglish": "Southern Nutcracker",
       "method": "scientific"
     },
     "Perisoreus infaustus": {
@@ -4051,11 +4051,11 @@
       "sourceEnglish": "Sichuan Jay",
       "method": "scientific"
     },
-    "Pica pica": {
-      "code": "eurmag1",
-      "scientific": "Pica pica",
-      "english": "Eurasian Magpie",
-      "sourceEnglish": "Eurasian Magpie",
+    "Pica serica": {
+      "code": "orimag1",
+      "scientific": "Pica serica",
+      "english": "Oriental Magpie",
+      "sourceEnglish": "Oriental Magpie",
       "method": "scientific"
     },
     "Podoces biddulphi": {
@@ -4135,11 +4135,11 @@
       "sourceEnglish": "Yellow-vented Flowerpecker",
       "method": "common-name"
     },
-    "Dicaeum concolor": {
-      "code": "plaflo1",
-      "scientific": "Dicaeum concolor",
-      "english": "Nilgiri Flowerpecker",
-      "sourceEnglish": "Nilgiri Flowerpecker",
+    "Dicaeum minullum": {
+      "code": "plaflo2",
+      "scientific": "Dicaeum minullum",
+      "english": "Plain Flowerpecker",
+      "sourceEnglish": "Plain Flowerpecker",
       "method": "scientific"
     },
     "Dicaeum cruentatum": {
@@ -4506,11 +4506,11 @@
       "sourceEnglish": "Spectacled Finch",
       "method": "scientific"
     },
-    "Carduelis carduelis": {
-      "code": "eurgol",
-      "scientific": "Carduelis carduelis",
-      "english": "European Goldfinch",
-      "sourceEnglish": "European Goldfinch",
+    "Carduelis caniceps": {
+      "code": "eurgol2",
+      "scientific": "Carduelis caniceps",
+      "english": "Gray-crowned Goldfinch",
+      "sourceEnglish": "Grey-crowned Goldfinch",
       "method": "scientific"
     },
     "Carpodacus davidianus": {
@@ -4940,11 +4940,11 @@
       "sourceEnglish": "Wire-tailed Swallow",
       "method": "scientific"
     },
-    "Hirundo tahitica": {
-      "code": "pacswa5",
-      "scientific": "Hirundo tahitica",
-      "english": "Tahiti Swallow",
-      "sourceEnglish": "Tahiti Swallow",
+    "Hirundo javanica": {
+      "code": "pacswa1",
+      "scientific": "Hirundo javanica",
+      "english": "Pacific Swallow",
+      "sourceEnglish": "Pacific Swallow",
       "method": "scientific"
     },
     "Petrochelidon fluvicola": {
@@ -4975,11 +4975,11 @@
       "sourceEnglish": "Pale Martin",
       "method": "scientific"
     },
-    "Riparia paludicola": {
-      "code": "plamar1",
-      "scientific": "Riparia paludicola",
-      "english": "Plain Martin",
-      "sourceEnglish": "Brown-throated Martin",
+    "Riparia chinensis": {
+      "code": "gytmar1",
+      "scientific": "Riparia chinensis",
+      "english": "Gray-throated Martin",
+      "sourceEnglish": "Grey-throated Martin",
       "method": "scientific"
     },
     "Riparia riparia": {
@@ -5024,11 +5024,11 @@
       "sourceEnglish": "Brown Shrike",
       "method": "scientific"
     },
-    "Lanius excubitor": {
-      "code": "norshr1",
-      "scientific": "Lanius excubitor",
-      "english": "Great Gray Shrike",
-      "sourceEnglish": "Great Grey Shrike",
+    "Lanius borealis": {
+      "code": "norshr4",
+      "scientific": "Lanius borealis",
+      "english": "Northern Shrike",
+      "sourceEnglish": "Northern Shrike",
       "method": "scientific"
     },
     "Lanius isabellinus": {
@@ -5745,11 +5745,11 @@
       "sourceEnglish": "Rosy Pipit",
       "method": "scientific"
     },
-    "Anthus rubescens": {
-      "code": "amepip",
-      "scientific": "Anthus rubescens",
-      "english": "American Pipit",
-      "sourceEnglish": "American Pipit",
+    "Anthus japonicus": {
+      "code": "sibpip1",
+      "scientific": "Anthus japonicus",
+      "english": "Siberian Pipit",
+      "sourceEnglish": "Siberian Pipit",
       "method": "scientific"
     },
     "Anthus rufulus": {
@@ -5850,11 +5850,11 @@
       "sourceEnglish": "Lesser Shortwing",
       "method": "scientific"
     },
-    "Brachypteryx montana": {
-      "code": "whbsho10",
-      "scientific": "Brachypteryx montana",
-      "english": "Javan Shortwing",
-      "sourceEnglish": "Javan Shortwing",
+    "Brachypteryx sinensis": {
+      "code": "whbsho5",
+      "scientific": "Brachypteryx sinensis",
+      "english": "Chinese Shortwing",
+      "sourceEnglish": "Chinese Shortwing",
       "method": "scientific"
     },
     "Calliope calliope": {
@@ -5934,11 +5934,11 @@
       "sourceEnglish": "Blue-and-white Flycatcher",
       "method": "scientific"
     },
-    "Cyornis banyumas": {
-      "code": "hibfly3",
-      "scientific": "Cyornis banyumas",
-      "english": "Javan Blue Flycatcher",
-      "sourceEnglish": "Javan Blue Flycatcher",
+    "Cyornis whitei": {
+      "code": "hibfly1",
+      "scientific": "Cyornis whitei",
+      "english": "Hill Blue Flycatcher",
+      "sourceEnglish": "Hill Blue Flycatcher",
       "method": "scientific"
     },
     "Cyornis brunneatus": {
@@ -5997,11 +5997,11 @@
       "sourceEnglish": "Black-backed Forktail",
       "method": "scientific"
     },
-    "Enicurus leschenaulti": {
-      "code": "whcfor5",
-      "scientific": "Enicurus leschenaulti",
-      "english": "Javan Forktail",
-      "sourceEnglish": "White-crowned Forktail",
+    "Enicurus sinensis": {
+      "code": "whcfor4",
+      "scientific": "Enicurus sinensis",
+      "english": "Northern Forktail",
+      "sourceEnglish": "Northern Forktail",
       "method": "scientific"
     },
     "Enicurus maculatus": {
@@ -6368,11 +6368,11 @@
       "sourceEnglish": "Rufous-bellied Niltava",
       "method": "scientific"
     },
-    "Niltava vivida": {
-      "code": "vivnil3",
-      "scientific": "Niltava vivida",
-      "english": "Taiwan Vivid Niltava",
-      "sourceEnglish": "Taiwan Vivid Niltava",
+    "Niltava oatesi": {
+      "code": "vivnil2",
+      "scientific": "Niltava oatesi",
+      "english": "Chinese Vivid Niltava",
+      "sourceEnglish": "Chinese Vivid Niltava",
       "method": "scientific"
     },
     "Oenanthe deserti": {
@@ -6634,11 +6634,11 @@
       "sourceEnglish": "Purple Sunbird",
       "method": "scientific"
     },
-    "Cinnyris jugularis": {
-      "code": "olbsun31",
-      "scientific": "Cinnyris jugularis",
-      "english": "Garden Sunbird",
-      "sourceEnglish": "Garden Sunbird",
+    "Cinnyris ornatus": {
+      "code": "olbsun4",
+      "scientific": "Cinnyris ornatus",
+      "english": "Ornate Sunbird",
+      "sourceEnglish": "Ornate Sunbird",
       "method": "scientific"
     },
     "Hypogramma hypogrammicum": {
@@ -6956,11 +6956,11 @@
       "sourceEnglish": "Rufous-necked Snowfinch",
       "method": "scientific"
     },
-    "Alcippe morrisonia": {
-      "code": "gycful1",
-      "scientific": "Alcippe morrisonia",
-      "english": "Morrison's Fulvetta",
-      "sourceEnglish": "Grey-cheeked Fulvetta",
+    "Alcippe davidi": {
+      "code": "gycful3",
+      "scientific": "Alcippe davidi",
+      "english": "David's Fulvetta",
+      "sourceEnglish": "David's Fulvetta",
       "method": "scientific"
     },
     "Alcippe nipalensis": {
@@ -7775,11 +7775,11 @@
       "sourceEnglish": "White-browed Fantail",
       "method": "scientific"
     },
-    "Sitta castanea": {
-      "code": "chbnut2",
-      "scientific": "Sitta castanea",
-      "english": "Indian Nuthatch",
-      "sourceEnglish": "Indian Nuthatch",
+    "Sitta cinnamoventris": {
+      "code": "chbnut3",
+      "scientific": "Sitta cinnamoventris",
+      "english": "Chestnut-bellied Nuthatch",
+      "sourceEnglish": "Chestnut-bellied Nuthatch",
       "method": "scientific"
     },
     "Sitta europaea": {
@@ -7810,11 +7810,11 @@
       "sourceEnglish": "White-tailed Nuthatch",
       "method": "scientific"
     },
-    "Sitta leucopsis": {
-      "code": "whcnut1",
-      "scientific": "Sitta leucopsis",
-      "english": "White-cheeked Nuthatch",
-      "sourceEnglish": "White-cheeked Nuthatch",
+    "Sitta przewalskii": {
+      "code": "prznut1",
+      "scientific": "Sitta przewalskii",
+      "english": "Przevalski's Nuthatch",
+      "sourceEnglish": "Przevalski's Nuthatch",
       "method": "scientific"
     },
     "Sitta magna": {
@@ -8146,12 +8146,12 @@
       "sourceEnglish": "Grey-headed Parrotbill",
       "method": "alias"
     },
-    "Psittiparus ruficeps": {
-      "code": "ruhpar3",
-      "scientific": "Paradoxornis ruficeps",
-      "english": "White-breasted Parrotbill",
-      "sourceEnglish": "White-breasted Parrotbill",
-      "method": "common-name"
+    "Paradoxornis bakeri": {
+      "code": "ruhpar2",
+      "scientific": "Paradoxornis bakeri",
+      "english": "Rufous-headed Parrotbill",
+      "sourceEnglish": "Rufous-headed Parrotbill",
+      "method": "scientific"
     },
     "Rhopophilus pekinensis": {
       "code": "beibab1",
@@ -8258,6 +8258,13 @@
       "sourceEnglish": "Large Woodshrike",
       "method": "scientific"
     },
+    "Cyanoderma rufifrons": {
+      "code": "rufbab10",
+      "scientific": "Cyanoderma rufifrons",
+      "english": "Rufous-fronted Babbler",
+      "sourceEnglish": "Rufous-fronted Babbler",
+      "method": "scientific"
+    },
     "Cyanoderma chrysaeum": {
       "code": "golbab1",
       "scientific": "Cyanoderma chrysaeum",
@@ -8321,11 +8328,11 @@
       "sourceEnglish": "Pin-striped Tit-Babbler",
       "method": "scientific"
     },
-    "Pomatorhinus ferruginosus": {
-      "code": "cobscb1",
-      "scientific": "Pomatorhinus ferruginosus",
-      "english": "Black-crowned Scimitar-Babbler",
-      "sourceEnglish": "Black-crowned Scimitar Babbler",
+    "Pomatorhinus phayrei": {
+      "code": "bncscb1",
+      "scientific": "Pomatorhinus phayrei",
+      "english": "Brown-crowned Scimitar-Babbler",
+      "sourceEnglish": "Brown-crowned Scimitar Babbler",
       "method": "scientific"
     },
     "Pomatorhinus musicus": {
@@ -8377,11 +8384,11 @@
       "sourceEnglish": "Rufous-throated Wren-Babbler",
       "method": "scientific"
     },
-    "Spelaeornis chocolatinus": {
-      "code": "ltwbab1",
-      "scientific": "Spelaeornis chocolatinus",
-      "english": "Naga Wren-Babbler",
-      "sourceEnglish": "Naga Wren-Babbler",
+    "Spelaeornis reptatus": {
+      "code": "gybwrb1",
+      "scientific": "Spelaeornis reptatus",
+      "english": "Gray-bellied Wren-Babbler",
+      "sourceEnglish": "Grey-bellied Wren-Babbler",
       "method": "scientific"
     },
     "Spelaeornis kinneari": {
@@ -8818,11 +8825,11 @@
       "sourceEnglish": "Chestnut-flanked White-eye",
       "method": "scientific"
     },
-    "Zosterops japonicus": {
-      "code": "warwhe1",
-      "scientific": "Zosterops japonicus",
-      "english": "Warbling White-eye",
-      "sourceEnglish": "Warbling White-eye",
+    "Zosterops simplex": {
+      "code": "swiwhe1",
+      "scientific": "Zosterops simplex",
+      "english": "Swinhoe's White-eye",
+      "sourceEnglish": "Swinhoe's White-eye",
       "method": "scientific"
     },
     "Zosterops meyeni": {
@@ -8902,18 +8909,18 @@
       "sourceEnglish": "Eurasian Bittern",
       "method": "scientific"
     },
-    "Bubulcus ibis": {
-      "code": "categr1",
-      "scientific": "Ardea ibis",
-      "english": "Western Cattle-Egret",
-      "sourceEnglish": "Western Cattle Egret",
-      "method": "common-name"
+    "Ardea coromanda": {
+      "code": "categr2",
+      "scientific": "Ardea coromanda",
+      "english": "Eastern Cattle-Egret",
+      "sourceEnglish": "Eastern Cattle Egret",
+      "method": "scientific"
     },
-    "Butorides striata": {
-      "code": "strher2",
-      "scientific": "Butorides striata",
-      "english": "Striated Heron",
-      "sourceEnglish": "Striated Heron",
+    "Butorides atricapilla": {
+      "code": "strher1",
+      "scientific": "Butorides atricapilla",
+      "english": "Little Heron",
+      "sourceEnglish": "Little Heron",
       "method": "scientific"
     },
     "Egretta eulophotes": {
@@ -9112,11 +9119,11 @@
       "sourceEnglish": "Blue-throated Barbet",
       "method": "common-name"
     },
-    "Psilopogon australis": {
-      "code": "litbar1",
-      "scientific": "Psilopogon australis",
-      "english": "Yellow-eared Barbet",
-      "sourceEnglish": "Yellow-eared Barbet",
+    "Psilopogon cyanotis": {
+      "code": "buebar1",
+      "scientific": "Psilopogon cyanotis",
+      "english": "Blue-eared Barbet",
+      "sourceEnglish": "Blue-eared Barbet",
       "method": "scientific"
     },
     "Psilopogon faber": {
@@ -9182,11 +9189,11 @@
       "sourceEnglish": "Bay Woodpecker",
       "method": "scientific"
     },
-    "Chrysocolaptes lucidus": {
-      "code": "busfla1",
-      "scientific": "Chrysocolaptes lucidus",
-      "english": "Buff-spotted Flameback",
-      "sourceEnglish": "Buff-spotted Flameback",
+    "Chrysocolaptes guttacristatus": {
+      "code": "grefla1",
+      "scientific": "Chrysocolaptes guttacristatus",
+      "english": "Greater Flameback",
+      "sourceEnglish": "Greater Flameback",
       "method": "scientific"
     },
     "Chrysophlegma flavinucha": {
@@ -9210,12 +9217,12 @@
       "sourceEnglish": "Brown-fronted Woodpecker",
       "method": "common-name"
     },
-    "Dendrocopos cathpharius": {
+    "Dryobates pernyii": {
       "code": "crbwoo7",
       "scientific": "Dryobates pernyii",
       "english": "Necklaced Woodpecker",
       "sourceEnglish": "Necklaced Woodpecker",
-      "method": "common-name"
+      "method": "scientific"
     },
     "Dendrocopos darjellensis": {
       "code": "darwoo1",
@@ -9791,11 +9798,11 @@
       "sourceEnglish": "Oriental Scops Owl",
       "method": "scientific"
     },
-    "Strix aluco": {
-      "code": "tawowl1",
-      "scientific": "Strix aluco",
-      "english": "Tawny Owl",
-      "sourceEnglish": "Tawny Owl",
+    "Strix nivicolum": {
+      "code": "himowl1",
+      "scientific": "Strix nivicolum",
+      "english": "Himalayan Owl",
+      "sourceEnglish": "Himalayan Owl",
       "method": "scientific"
     },
     "Strix leptogrammica": {
@@ -9833,11 +9840,11 @@
       "sourceEnglish": "Oriental Bay Owl",
       "method": "scientific"
     },
-    "Tyto alba": {
-      "code": "webowl1",
-      "scientific": "Tyto alba",
-      "english": "Western Barn Owl",
-      "sourceEnglish": "Western Barn Owl",
+    "Tyto javanica": {
+      "code": "eabowl1",
+      "scientific": "Tyto javanica",
+      "english": "Eastern Barn Owl",
+      "sourceEnglish": "Eastern Barn Owl",
       "method": "scientific"
     },
     "Tyto longimembris": {
@@ -9971,7 +9978,6 @@
     "Sylvia althaea",
     "Sylvia communis",
     "Sylvia minula",
-    "Cyanoderma ambiguum",
     "Ixobrychus eurhythmus",
     "Dendrocopos canicapillus",
     "Strix davidi"

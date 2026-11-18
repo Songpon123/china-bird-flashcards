@@ -1,0 +1,1394 @@
+{
+  "title": "Reviewed name corrections for the CAS 2023 flashcard dataset",
+  "reviewed": "2026-11-18",
+  "policy": "Fix only names that are wrong for the bird recorded in China: scientific/English names of a population outside China, English names used for another taxon, and Chinese names that belong to another species. Card IDs never change. Genus moves, spelling and alternative names are left as they are.",
+  "sources": {
+    "avilist": "AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026 (CC BY 4.0). Simplified Chinese names from the avilist.org extended export (Chinese (SIM) column).",
+    "cbr12": "China Bird Report Ed. 2024. The CBR Checklist of Birds of China v12.0 (18 Dec 2024); cited for China occurrence and names, not redistributed.",
+    "ioc152": "Gill F, Donsker D & Rasmussen P (eds). IOC World Bird List v15.2, multilingual Chinese names (CC BY 4.0)."
+  },
+  "corrections": [
+    {
+      "id": "colcn:65328eb5-6d15-4b31-adbf-3f0d9eba38f8",
+      "kind": "concept",
+      "reason": "split; Western Cattle Egret does not occur in China",
+      "was": {
+        "chinese": "牛背鹭",
+        "scientific": "Bubulcus ibis",
+        "english": "Western Cattle Egret"
+      },
+      "now": {
+        "chinese": "牛背鹭",
+        "scientific": "Ardea coromanda",
+        "english": "Eastern Cattle Egret"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Ardea coromanda",
+          "english": "Eastern Cattle Egret",
+          "avibaseId": "avibase-0653A8AD",
+          "cornellCode": "categr2",
+          "chineseSimplified": "牛背鹭"
+        },
+        "cbr12": {
+          "no": "194",
+          "scientific": "Ardea coromanda",
+          "chinese": "牛背鹭"
+        },
+        "ioc152Chinese": "牛背鹭"
+      }
+    },
+    {
+      "id": "colcn:44ae24ae-afef-4887-9de3-6e1448a2d509",
+      "kind": "concept",
+      "reason": "split; American Herring Gull is North American, the card's 西伯利亚银鸥 is the Vega Gull",
+      "was": {
+        "chinese": "西伯利亚银鸥",
+        "scientific": "Larus smithsonianus",
+        "english": "American Herring Gull"
+      },
+      "now": {
+        "chinese": "西伯利亚银鸥",
+        "scientific": "Larus vegae",
+        "english": "Vega Gull"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Larus vegae",
+          "english": "Vega Gull",
+          "avibaseId": "avibase-FD1EF7BB",
+          "cornellCode": "veggul1",
+          "chineseSimplified": "织女银鸥"
+        },
+        "cbr12": {
+          "no": "430",
+          "scientific": "Larus vegae",
+          "chinese": "西伯利亚银鸥"
+        },
+        "ioc152Chinese": "西伯利亚银鸥"
+      }
+    },
+    {
+      "id": "colcn:6e1d54dc-7034-4b4b-bb4d-285106682f7c",
+      "kind": "concept",
+      "reason": "split; Sri Lanka Green Pigeon is endemic to Sri Lanka",
+      "was": {
+        "chinese": "灰头绿鸠",
+        "scientific": "Treron pompadora",
+        "english": "Sri Lanka Green Pigeon"
+      },
+      "now": {
+        "chinese": "灰头绿鸠",
+        "scientific": "Treron phayrei",
+        "english": "Ashy-headed Green Pigeon"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Treron phayrei",
+          "english": "Ashy-headed Green Pigeon",
+          "avibaseId": "avibase-4116FF6B",
+          "cornellCode": "pomgrp5",
+          "chineseSimplified": "灰头绿鸠"
+        },
+        "cbr12": {
+          "no": "470",
+          "scientific": "Treron phayrei",
+          "chinese": "灰头绿鸠"
+        },
+        "ioc152Chinese": "灰头绿鸠"
+      }
+    },
+    {
+      "id": "colcn:4751ea98-2e18-47cd-b2bd-07a0f8027db3",
+      "kind": "concept",
+      "reason": "split; Western Barn Owl does not occur in China",
+      "was": {
+        "chinese": "仓鸮",
+        "scientific": "Tyto alba",
+        "english": "Western Barn Owl"
+      },
+      "now": {
+        "chinese": "仓鸮",
+        "scientific": "Tyto javanica",
+        "english": "Eastern Barn Owl"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Tyto javanica",
+          "english": "Eastern Barn Owl",
+          "avibaseId": "avibase-E5E05FEF",
+          "cornellCode": "eabowl1",
+          "chineseSimplified": "仓鸮"
+        },
+        "cbr12": {
+          "no": "501",
+          "scientific": "Tyto javanica",
+          "chinese": "仓鸮"
+        },
+        "ioc152Chinese": "仓鸮"
+      }
+    },
+    {
+      "id": "colcn:93e06a82-f7d6-4993-a98e-d790887bb89f",
+      "kind": "concept",
+      "reason": "split; China's 灰林鸮 is the Himalayan Owl",
+      "was": {
+        "chinese": "灰林鸮",
+        "scientific": "Strix aluco",
+        "english": "Tawny Owl"
+      },
+      "now": {
+        "chinese": "灰林鸮",
+        "scientific": "Strix nivicolum",
+        "english": "Himalayan Owl"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Strix nivicolum",
+          "english": "Himalayan Owl",
+          "avibaseId": "avibase-6EC64712",
+          "cornellCode": "himowl1",
+          "chineseSimplified": "灰林鸮"
+        },
+        "cbr12": {
+          "no": "530",
+          "scientific": "Strix nivicolum",
+          "chinese": "灰林鸮"
+        },
+        "ioc152Chinese": "灰林鸮"
+      }
+    },
+    {
+      "id": "colcn:c7b6a6fd-ccf5-4a00-a179-86c2542c73a4",
+      "kind": "concept",
+      "reason": "split; Jungle Nightjar is South Asian",
+      "was": {
+        "chinese": "普通夜鹰",
+        "scientific": "Caprimulgus indicus",
+        "english": "Jungle Nightjar"
+      },
+      "now": {
+        "chinese": "普通夜鹰",
+        "scientific": "Caprimulgus jotaka",
+        "english": "Grey Nightjar"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Caprimulgus jotaka",
+          "english": "Grey Nightjar",
+          "avibaseId": "avibase-7A2734EB",
+          "cornellCode": "grynig1",
+          "chineseSimplified": "普通夜鹰"
+        },
+        "cbr12": {
+          "no": "535",
+          "scientific": "Caprimulgus jotaka",
+          "chinese": "普通夜鹰"
+        },
+        "ioc152Chinese": "普通夜鹰"
+      }
+    },
+    {
+      "id": "colcn:1773d749-40e3-4709-9abf-8edf690650ea",
+      "kind": "concept",
+      "reason": "split; Indian Roller does not occur in China",
+      "was": {
+        "chinese": "棕胸佛法僧",
+        "scientific": "Coracias benghalensis",
+        "english": "Indian Roller"
+      },
+      "now": {
+        "chinese": "棕胸佛法僧",
+        "scientific": "Coracias affinis",
+        "english": "Indochinese Roller"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Coracias affinis",
+          "english": "Indochinese Roller",
+          "avibaseId": "avibase-959FEC0D",
+          "cornellCode": "indrol3",
+          "chineseSimplified": "棕胸佛法僧"
+        },
+        "cbr12": {
+          "no": "558",
+          "scientific": "Coracias affinis",
+          "chinese": "棕胸佛法僧"
+        },
+        "ioc152Chinese": "棕胸佛法僧"
+      }
+    },
+    {
+      "id": "colcn:3496cfb7-e9bf-4062-8d39-1b194984f2d6",
+      "kind": "concept",
+      "reason": "split; Yellow-eared Barbet is Javan",
+      "was": {
+        "chinese": "蓝耳拟啄木鸟",
+        "scientific": "Psilopogon australis",
+        "english": "Yellow-eared Barbet"
+      },
+      "now": {
+        "chinese": "蓝耳拟啄木鸟",
+        "scientific": "Psilopogon cyanotis",
+        "english": "Blue-eared Barbet"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Psilopogon cyanotis",
+          "english": "Blue-eared Barbet",
+          "avibaseId": "avibase-E3ADA3B1",
+          "cornellCode": "buebar1",
+          "chineseSimplified": "蓝耳拟啄木鸟"
+        },
+        "cbr12": {
+          "no": "593",
+          "scientific": "Psilopogon cyanotis",
+          "chinese": "蓝耳拟啄木鸟"
+        },
+        "ioc152Chinese": "蓝耳拟啄木鸟"
+      }
+    },
+    {
+      "id": "colcn:c566a5b2-5573-4d4b-a9f2-d9a4c61ccd50",
+      "kind": "concept",
+      "reason": "split; Buff-spotted Flameback is Philippine",
+      "was": {
+        "chinese": "大金背啄木鸟",
+        "scientific": "Chrysocolaptes lucidus",
+        "english": "Buff-spotted Flameback"
+      },
+      "now": {
+        "chinese": "大金背啄木鸟",
+        "scientific": "Chrysocolaptes guttacristatus",
+        "english": "Greater Flameback"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Chrysocolaptes guttacristatus",
+          "english": "Greater Flameback",
+          "avibaseId": "avibase-A837BACA",
+          "cornellCode": "grefla1",
+          "chineseSimplified": "大金背啄木鸟"
+        },
+        "cbr12": {
+          "no": "623",
+          "scientific": "Chrysocolaptes guttacristatus",
+          "chinese": "大金背啄木鸟"
+        },
+        "ioc152Chinese": "大金背啄木鸟"
+      }
+    },
+    {
+      "id": "colcn:947b7f50-d7fa-4bb0-a971-8ab7d7493218",
+      "kind": "concept",
+      "reason": "split; Indian Cuckooshrike is South Asian",
+      "was": {
+        "chinese": "大鹃鵙",
+        "scientific": "Coracina macei",
+        "english": "Indian Cuckooshrike"
+      },
+      "now": {
+        "chinese": "大鹃鵙",
+        "scientific": "Coracina javensis",
+        "english": "Oriental Cuckooshrike"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Coracina javensis",
+          "english": "Oriental Cuckooshrike",
+          "avibaseId": "avibase-7B64BB7F",
+          "cornellCode": "larcuc11",
+          "chineseSimplified": "大鹃鵙"
+        },
+        "cbr12": {
+          "no": "674",
+          "scientific": "Coracina javensis",
+          "chinese": "大鹃鵙"
+        },
+        "ioc152Chinese": "大鹃鵙"
+      }
+    },
+    {
+      "id": "colcn:784a29e8-5e80-4daa-b961-e560287777fc",
+      "kind": "concept",
+      "reason": "split; Tahiti Swallow is Polynesian",
+      "was": {
+        "chinese": "洋燕",
+        "scientific": "Hirundo tahitica",
+        "english": "Tahiti Swallow"
+      },
+      "now": {
+        "chinese": "洋燕",
+        "scientific": "Hirundo javanica",
+        "english": "Pacific Swallow"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Hirundo javanica",
+          "english": "Pacific Swallow",
+          "avibaseId": "avibase-466C01C2",
+          "cornellCode": "pacswa1",
+          "chineseSimplified": "洋燕 (洋斑燕)"
+        },
+        "cbr12": {
+          "no": "833",
+          "scientific": "Hirundo javanica",
+          "chinese": "洋燕"
+        },
+        "ioc152Chinese": "洋燕"
+      }
+    },
+    {
+      "id": "colcn:23af7422-2ae0-4d58-9b67-71daeb9b12b3",
+      "kind": "concept",
+      "reason": "split; Indian Nuthatch is Indian",
+      "was": {
+        "chinese": "栗腹䴓",
+        "scientific": "Sitta castanea",
+        "english": "Indian Nuthatch"
+      },
+      "now": {
+        "chinese": "栗腹䴓",
+        "scientific": "Sitta cinnamoventris",
+        "english": "Chestnut-bellied Nuthatch"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Sitta cinnamoventris",
+          "english": "Chestnut-bellied Nuthatch",
+          "avibaseId": "avibase-DB238042",
+          "cornellCode": "chbnut3",
+          "chineseSimplified": "栗腹䴓"
+        },
+        "cbr12": {
+          "no": "1153",
+          "scientific": "Sitta cinnamoventris",
+          "chinese": "栗腹䴓"
+        },
+        "ioc152Chinese": "栗腹䴓"
+      }
+    },
+    {
+      "id": "colcn:7811aaf4-bb99-4fa4-b8ea-2c0babb2d706",
+      "kind": "concept",
+      "reason": "split; White-cheeked Nuthatch is Himalayan, China's 白脸䴓 is Przevalski's",
+      "was": {
+        "chinese": "白脸䴓",
+        "scientific": "Sitta leucopsis",
+        "english": "White-cheeked Nuthatch"
+      },
+      "now": {
+        "chinese": "白脸䴓",
+        "scientific": "Sitta przewalskii",
+        "english": "Przevalski's Nuthatch"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Sitta przewalskii",
+          "english": "Przevalski's Nuthatch",
+          "avibaseId": "avibase-341E57F9",
+          "cornellCode": "prznut1",
+          "chineseSimplified": "白脸䴓"
+        },
+        "cbr12": {
+          "no": "1157",
+          "scientific": "Sitta przewalskii",
+          "chinese": "白脸䴓"
+        },
+        "ioc152Chinese": "白脸䴓"
+      }
+    },
+    {
+      "id": "colcn:c627492f-7ccd-442e-a655-e3abb6e0d0b2",
+      "kind": "concept",
+      "reason": "split; Javan Blue Flycatcher is Javan",
+      "was": {
+        "chinese": "山蓝仙鹟",
+        "scientific": "Cyornis banyumas",
+        "english": "Javan Blue Flycatcher"
+      },
+      "now": {
+        "chinese": "山蓝仙鹟",
+        "scientific": "Cyornis whitei",
+        "english": "Hill Blue Flycatcher"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Cyornis whitei",
+          "english": "Hill Blue Flycatcher",
+          "avibaseId": "avibase-869DE48B",
+          "cornellCode": "hibfly1",
+          "chineseSimplified": "山蓝仙鹟"
+        },
+        "cbr12": {
+          "no": "1257",
+          "scientific": "Cyornis whitei",
+          "chinese": "山蓝仙鹟"
+        },
+        "ioc152Chinese": "山蓝仙鹟"
+      }
+    },
+    {
+      "id": "colcn:1ce05f8e-bdb1-4380-97a7-442fa34307f4",
+      "kind": "concept",
+      "reason": "split; Javan Leafbird is Javan",
+      "was": {
+        "chinese": "蓝翅叶鹎",
+        "scientific": "Chloropsis cochinchinensis",
+        "english": "Javan Leafbird"
+      },
+      "now": {
+        "chinese": "蓝翅叶鹎",
+        "scientific": "Chloropsis moluccensis",
+        "english": "Blue-winged Leafbird"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Chloropsis moluccensis",
+          "english": "Blue-winged Leafbird",
+          "avibaseId": "avibase-47CF4ED7",
+          "cornellCode": "blwlea1",
+          "chineseSimplified": "蓝翅叶鹎"
+        },
+        "cbr12": {
+          "no": "1345",
+          "scientific": "Chloropsis moluccensis",
+          "chinese": "蓝翅叶鹎"
+        },
+        "ioc152Chinese": "蓝翅叶鹎"
+      }
+    },
+    {
+      "id": "colcn:f6428cc4-8d80-4ec6-a42c-1f8d1e84ca86",
+      "kind": "concept",
+      "reason": "split; Nilgiri Flowerpecker is Indian",
+      "was": {
+        "chinese": "纯色啄花鸟",
+        "scientific": "Dicaeum concolor",
+        "english": "Nilgiri Flowerpecker"
+      },
+      "now": {
+        "chinese": "纯色啄花鸟",
+        "scientific": "Dicaeum minullum",
+        "english": "Plain Flowerpecker"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Dicaeum minullum",
+          "english": "Plain Flowerpecker",
+          "avibaseId": "avibase-F26BDDA7",
+          "cornellCode": "plaflo2",
+          "chineseSimplified": "纯色啄花鸟"
+        },
+        "cbr12": {
+          "no": "1352",
+          "scientific": "Dicaeum minullum",
+          "chinese": "纯色啄花鸟"
+        },
+        "ioc152Chinese": "纯色啄花鸟"
+      }
+    },
+    {
+      "id": "colcn:b3b61e83-6cf4-48ee-807d-0163b4e6244c",
+      "kind": "concept",
+      "reason": "split; American Pipit is American, China's 黄腹鹨 is Siberian Pipit",
+      "was": {
+        "chinese": "黄腹鹨",
+        "scientific": "Anthus rubescens",
+        "english": "American Pipit"
+      },
+      "now": {
+        "chinese": "黄腹鹨",
+        "scientific": "Anthus japonicus",
+        "english": "Siberian Pipit"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Anthus japonicus",
+          "english": "Siberian Pipit",
+          "avibaseId": "avibase-CEF9CA9D",
+          "cornellCode": "sibpip1",
+          "chineseSimplified": "黄腹鹨"
+        },
+        "cbr12": {
+          "no": "1415",
+          "scientific": "Anthus japonicus",
+          "chinese": "黄腹鹨"
+        },
+        "ioc152Chinese": "黄腹鹨"
+      }
+    },
+    {
+      "id": "colcn:3ae1eb3a-4af9-4ac5-8060-7a64490eb28b",
+      "kind": "concept",
+      "reason": "split; 斑脸海番鸭 is Stejneger's Scoter, Velvet Scoter is 丝绒海番鸭",
+      "was": {
+        "chinese": "斑脸海番鸭",
+        "scientific": "Melanitta fusca",
+        "english": "Velvet Scoter"
+      },
+      "now": {
+        "chinese": "斑脸海番鸭",
+        "scientific": "Melanitta stejnegeri",
+        "english": "Stejneger's Scoter"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Melanitta stejnegeri",
+          "english": "Stejneger's Scoter",
+          "avibaseId": "avibase-1A601D86",
+          "cornellCode": "whwsco1",
+          "chineseSimplified": "斑脸海番鸭"
+        },
+        "cbr12": {
+          "no": "52",
+          "scientific": "Melanitta stejnegeri",
+          "chinese": "斑脸海番鸭"
+        },
+        "ioc152Chinese": "斑脸海番鸭"
+      }
+    },
+    {
+      "id": "colcn:33d88c95-3991-49f6-b83f-28903d7c51f7",
+      "kind": "concept",
+      "reason": "split; 赤胸啄木鸟 is the Necklaced Woodpecker",
+      "was": {
+        "chinese": "赤胸啄木鸟",
+        "scientific": "Dendrocopos cathpharius",
+        "english": "Necklaced Woodpecker"
+      },
+      "now": {
+        "chinese": "赤胸啄木鸟",
+        "scientific": "Dryobates pernyii",
+        "english": "Necklaced Woodpecker"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Dryobates pernyii",
+          "english": "Necklaced Woodpecker",
+          "avibaseId": "avibase-E5515964",
+          "cornellCode": "crbwoo7",
+          "chineseSimplified": "赤胸啄木鸟"
+        },
+        "cbr12": {
+          "no": "604",
+          "scientific": "Dryobates pernyii",
+          "chinese": "赤胸啄木鸟"
+        },
+        "ioc152Chinese": "赤胸啄木鸟"
+      }
+    },
+    {
+      "id": "colcn:d0175f3e-fb7c-4a6c-887c-d88ff93bceef",
+      "kind": "concept",
+      "reason": "split; 灰伯劳 is the Northern Shrike, Great Grey Shrike is 西方灰伯劳",
+      "was": {
+        "chinese": "灰伯劳",
+        "scientific": "Lanius excubitor",
+        "english": "Great Grey Shrike"
+      },
+      "now": {
+        "chinese": "灰伯劳",
+        "scientific": "Lanius borealis",
+        "english": "Northern Shrike"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Lanius borealis",
+          "english": "Northern Shrike",
+          "avibaseId": "avibase-76158864",
+          "cornellCode": "norshr4",
+          "chineseSimplified": "灰伯劳"
+        },
+        "cbr12": {
+          "no": "680",
+          "scientific": "Lanius borealis",
+          "chinese": "灰伯劳"
+        },
+        "ioc152Chinese": "灰伯劳"
+      }
+    },
+    {
+      "id": "colcn:046e3a7d-a3bc-4c6e-b759-2a633f970dbc",
+      "kind": "concept",
+      "reason": "split; 喜鹊 is the Oriental Magpie, Eurasian Magpie is 欧亚喜鹊",
+      "was": {
+        "chinese": "喜鹊",
+        "scientific": "Pica pica",
+        "english": "Eurasian Magpie"
+      },
+      "now": {
+        "chinese": "喜鹊",
+        "scientific": "Pica serica",
+        "english": "Oriental Magpie"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Pica serica",
+          "english": "Oriental Magpie",
+          "avibaseId": "avibase-7D3B961F",
+          "cornellCode": "orimag1",
+          "chineseSimplified": "喜鹊"
+        },
+        "cbr12": {
+          "no": "736",
+          "scientific": "Pica serica",
+          "chinese": "喜鹊"
+        },
+        "ioc152Chinese": "喜鹊"
+      }
+    },
+    {
+      "id": "colcn:bb8af919-e2be-4cbd-8db3-555fd18a97d9",
+      "kind": "concept",
+      "reason": "split; 星鸦 is the Southern Nutcracker, Northern Nutcracker is 北星鸦",
+      "was": {
+        "chinese": "星鸦",
+        "scientific": "Nucifraga caryocatactes",
+        "english": "Northern Nutcracker"
+      },
+      "now": {
+        "chinese": "星鸦",
+        "scientific": "Nucifraga hemispila",
+        "english": "Southern Nutcracker"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Nucifraga hemispila",
+          "english": "Southern Nutcracker",
+          "avibaseId": "avibase-2AF8ECCE",
+          "cornellCode": "eurnut4",
+          "chineseSimplified": "星鸦 (南星鸦)"
+        },
+        "cbr12": {
+          "no": "740",
+          "scientific": "Nucifraga hemispila",
+          "chinese": "星鸦"
+        },
+        "ioc152Chinese": "星鸦"
+      }
+    },
+    {
+      "id": "colcn:b9343c47-6d6d-4244-8309-3e384a9e4be8",
+      "kind": "concept",
+      "reason": "split; 山鹪莺 is the Striped Prinia",
+      "was": {
+        "chinese": "山鹪莺",
+        "scientific": "Prinia crinigera",
+        "english": "Himalayan Prinia"
+      },
+      "now": {
+        "chinese": "山鹪莺",
+        "scientific": "Prinia striata",
+        "english": "Striped Prinia"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Prinia striata",
+          "english": "Striped Prinia",
+          "avibaseId": "avibase-76B7FC0A",
+          "cornellCode": "strpri8",
+          "chineseSimplified": "山鹪莺"
+        },
+        "cbr12": {
+          "no": "961",
+          "scientific": "Prinia striata",
+          "chinese": "山鹪莺"
+        },
+        "ioc152Chinese": "山鹪莺"
+      }
+    },
+    {
+      "id": "colcn:67147fbf-22c5-4b87-ab8f-65fcb7db5ded",
+      "kind": "concept",
+      "reason": "split; 黑喉山鹪莺 is the Hill Prinia",
+      "was": {
+        "chinese": "黑喉山鹪莺",
+        "scientific": "Prinia atrogularis",
+        "english": "Black-throated Prinia"
+      },
+      "now": {
+        "chinese": "黑喉山鹪莺",
+        "scientific": "Prinia superciliaris",
+        "english": "Hill Prinia"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Prinia superciliaris",
+          "english": "Hill Prinia",
+          "avibaseId": "avibase-9F434A62",
+          "cornellCode": "hilpri2",
+          "chineseSimplified": "黑喉山鹪莺"
+        },
+        "cbr12": {
+          "no": "963",
+          "scientific": "Prinia superciliaris",
+          "chinese": "黑喉山鹪莺"
+        },
+        "ioc152Chinese": "黑喉山鹪莺"
+      }
+    },
+    {
+      "id": "colcn:f2207a50-e745-453d-bc41-aa1ddb22b6ed",
+      "kind": "concept",
+      "reason": "split; 红嘴钩嘴鹛 is the Brown-crowned Scimitar Babbler",
+      "was": {
+        "chinese": "红嘴钩嘴鹛",
+        "scientific": "Pomatorhinus ferruginosus",
+        "english": "Black-crowned Scimitar Babbler"
+      },
+      "now": {
+        "chinese": "红嘴钩嘴鹛",
+        "scientific": "Pomatorhinus phayrei",
+        "english": "Brown-crowned Scimitar Babbler"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Pomatorhinus phayrei",
+          "english": "Brown-crowned Scimitar Babbler",
+          "avibaseId": "avibase-65875E25",
+          "cornellCode": "bncscb1",
+          "chineseSimplified": "红嘴钩嘴鹛"
+        },
+        "cbr12": {
+          "no": "981",
+          "scientific": "Pomatorhinus phayrei",
+          "chinese": "红嘴钩嘴鹛"
+        },
+        "ioc152Chinese": "红嘴钩嘴鹛"
+      }
+    },
+    {
+      "id": "colcn:b3e500d8-a01b-4f2a-b632-22278b94e193",
+      "kind": "concept",
+      "reason": "split; 灰眶雀鹛 is David's Fulvetta, Grey-cheeked Fulvetta is Taiwanese 台湾雀鹛",
+      "was": {
+        "chinese": "灰眶雀鹛",
+        "scientific": "Alcippe morrisonia",
+        "english": "Grey-cheeked Fulvetta"
+      },
+      "now": {
+        "chinese": "灰眶雀鹛",
+        "scientific": "Alcippe davidi",
+        "english": "David's Fulvetta"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Alcippe davidi",
+          "english": "David's Fulvetta",
+          "avibaseId": "avibase-39FE95C7",
+          "cornellCode": "gycful3",
+          "chineseSimplified": "灰眶雀鹛"
+        },
+        "cbr12": {
+          "no": "1016",
+          "scientific": "Alcippe davidi",
+          "chinese": "灰眶雀鹛"
+        },
+        "ioc152Chinese": "灰眶雀鹛"
+      }
+    },
+    {
+      "id": "colcn:a8c85904-2062-41d9-a981-a1d71409063b",
+      "kind": "concept",
+      "reason": "split; 暗绿绣眼鸟 is Swinhoe's White-eye",
+      "was": {
+        "chinese": "暗绿绣眼鸟",
+        "scientific": "Zosterops japonicus",
+        "english": "Warbling White-eye"
+      },
+      "now": {
+        "chinese": "暗绿绣眼鸟",
+        "scientific": "Zosterops simplex",
+        "english": "Swinhoe's White-eye"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Zosterops simplex",
+          "english": "Swinhoe's White-eye",
+          "avibaseId": "avibase-B1AC8066",
+          "cornellCode": "swiwhe1",
+          "chineseSimplified": "暗绿绣眼鸟"
+        },
+        "cbr12": {
+          "no": "1142",
+          "scientific": "Zosterops simplex",
+          "chinese": "暗绿绣眼鸟"
+        },
+        "ioc152Chinese": "暗绿绣眼鸟"
+      }
+    },
+    {
+      "id": "colcn:95cb7796-4e5f-4fd6-bceb-914a3d15dc47",
+      "kind": "concept",
+      "reason": "split; 棕腹蓝仙鹟 is the mainland Chinese Vivid Niltava",
+      "was": {
+        "chinese": "棕腹蓝仙鹟",
+        "scientific": "Niltava vivida",
+        "english": "Taiwan Vivid Niltava"
+      },
+      "now": {
+        "chinese": "棕腹蓝仙鹟",
+        "scientific": "Niltava oatesi",
+        "english": "Chinese Vivid Niltava"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Niltava oatesi",
+          "english": "Chinese Vivid Niltava",
+          "avibaseId": "avibase-ACBC2BB0",
+          "cornellCode": "vivnil2",
+          "chineseSimplified": "棕腹蓝仙鹟"
+        },
+        "cbr12": {
+          "no": "1243",
+          "scientific": "Niltava oatesi",
+          "chinese": "棕腹蓝仙鹟"
+        },
+        "ioc152Chinese": "棕腹蓝仙鹟"
+      }
+    },
+    {
+      "id": "colcn:2b8f20fc-946a-4d88-9d4e-8a24ec9b1d91",
+      "kind": "concept",
+      "reason": "split; 红头鸦雀 is the Rufous-headed Parrotbill, White-breasted is 白胸鸦雀",
+      "was": {
+        "chinese": "红头鸦雀",
+        "scientific": "Psittiparus ruficeps",
+        "english": "White-breasted Parrotbill"
+      },
+      "now": {
+        "chinese": "红头鸦雀",
+        "scientific": "Paradoxornis bakeri",
+        "english": "Rufous-headed Parrotbill"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Paradoxornis bakeri",
+          "english": "Rufous-headed Parrotbill",
+          "avibaseId": "avibase-C89C9217",
+          "cornellCode": "ruhpar2",
+          "chineseSimplified": "红头鸦雀"
+        },
+        "cbr12": {
+          "no": "1128",
+          "scientific": "Paradoxornis bakeri",
+          "chinese": "红头鸦雀"
+        },
+        "ioc152Chinese": "红头鸦雀"
+      }
+    },
+    {
+      "id": "colcn:7cefd49a-5474-4e56-813d-893f8ca79439",
+      "kind": "concept",
+      "reason": "AviList 2026 split; Striated Heron is South American",
+      "was": {
+        "chinese": "绿鹭",
+        "scientific": "Butorides striata",
+        "english": "Striated Heron"
+      },
+      "now": {
+        "chinese": "绿鹭",
+        "scientific": "Butorides atricapilla",
+        "english": "Little Heron"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Butorides atricapilla",
+          "english": "Little Heron",
+          "avibaseId": "avibase-7085B8A0",
+          "cornellCode": "strher1",
+          "chineseSimplified": "绿鹭"
+        },
+        "cbr12": {
+          "no": "188",
+          "scientific": "Butorides striata",
+          "chinese": "绿鹭"
+        },
+        "ioc152Chinese": "绿鹭"
+      }
+    },
+    {
+      "id": "colcn:de9e7c0e-dd5c-41ea-963e-9354a1c0b79e",
+      "kind": "concept",
+      "reason": "AviList 2026 split; Garden Sunbird is Philippine",
+      "was": {
+        "chinese": "黄腹花蜜鸟",
+        "scientific": "Cinnyris jugularis",
+        "english": "Garden Sunbird"
+      },
+      "now": {
+        "chinese": "黄腹花蜜鸟",
+        "scientific": "Cinnyris ornatus",
+        "english": "Ornate Sunbird"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Cinnyris ornatus",
+          "english": "Ornate Sunbird",
+          "avibaseId": "avibase-8885A375",
+          "cornellCode": "olbsun4",
+          "chineseSimplified": "黄腹花蜜鸟"
+        },
+        "cbr12": {
+          "no": "1358",
+          "scientific": "Cinnyris jugularis",
+          "chinese": "黄腹花蜜鸟"
+        },
+        "ioc152Chinese": "黄腹花蜜鸟"
+      }
+    },
+    {
+      "id": "colcn:59f9291f-b3e5-4f10-98a1-aff039b73ab2",
+      "kind": "concept",
+      "reason": "AviList 2026 split; Atlantic White Tern is South Atlantic",
+      "was": {
+        "chinese": "白燕鸥",
+        "scientific": "Gygis alba",
+        "english": "White Tern"
+      },
+      "now": {
+        "chinese": "白燕鸥",
+        "scientific": "Gygis candida",
+        "english": "Blue-billed White Tern"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Gygis candida",
+          "english": "Blue-billed White Tern",
+          "avibaseId": "avibase-0E429338",
+          "cornellCode": "whiter4",
+          "chineseSimplified": "白燕鸥"
+        },
+        "cbr12": {
+          "no": "391",
+          "scientific": "Gygis alba",
+          "chinese": "白燕鸥"
+        },
+        "ioc152Chinese": ""
+      }
+    },
+    {
+      "id": "colcn:1dc65e0a-96a1-45f8-a76b-ae7df1884774",
+      "kind": "concept",
+      "reason": "AviList 2026 split; Javan Forktail is Javan. 白额燕尾 is not used by AviList-SIM, CBR or IOC; all three use 白冠燕尾",
+      "was": {
+        "chinese": "白额燕尾",
+        "scientific": "Enicurus leschenaulti",
+        "english": "White-crowned Forktail"
+      },
+      "now": {
+        "chinese": "白冠燕尾",
+        "scientific": "Enicurus sinensis",
+        "english": "Northern Forktail"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Enicurus sinensis",
+          "english": "Northern Forktail",
+          "avibaseId": "avibase-5F5FB120",
+          "cornellCode": "whcfor4",
+          "chineseSimplified": "白冠燕尾"
+        },
+        "cbr12": {
+          "no": "1273",
+          "scientific": "Enicurus leschenaulti",
+          "chinese": "白冠燕尾"
+        },
+        "ioc152Chinese": ""
+      }
+    },
+    {
+      "id": "colcn:3b211856-0db5-49bc-b329-3c31e3fde351",
+      "kind": "concept",
+      "reason": "AviList split; European Goldfinch does not breed in China",
+      "was": {
+        "chinese": "红额金翅雀",
+        "scientific": "Carduelis carduelis",
+        "english": "European Goldfinch"
+      },
+      "now": {
+        "chinese": "红额金翅雀",
+        "scientific": "Carduelis caniceps",
+        "english": "Grey-crowned Goldfinch"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Carduelis caniceps",
+          "english": "Grey-crowned Goldfinch",
+          "avibaseId": "avibase-9BDBCD7F",
+          "cornellCode": "eurgol2",
+          "chineseSimplified": "红额金翅雀"
+        },
+        "cbr12": {
+          "no": "1478",
+          "scientific": "Carduelis carduelis",
+          "chinese": "红额金翅雀"
+        },
+        "ioc152Chinese": "灰冠金翅雀"
+      }
+    },
+    {
+      "id": "colcn:1308ce2f-bbfa-4701-bfac-8b7e7610b28f",
+      "kind": "concept",
+      "reason": "lump; AviList, IOC 15.2 and CBR v12.0 no longer recognise Buff-chested Babbler",
+      "was": {
+        "chinese": "黄喉穗鹛",
+        "scientific": "Cyanoderma ambiguum",
+        "english": "Buff-chested Babbler"
+      },
+      "now": {
+        "chinese": "黄喉穗鹛",
+        "scientific": "Cyanoderma rufifrons",
+        "english": "Rufous-fronted Babbler"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Cyanoderma rufifrons",
+          "english": "Rufous-fronted Babbler",
+          "avibaseId": "avibase-2D0AAC5C",
+          "cornellCode": "rufbab10",
+          "chineseSimplified": "黄喉穗鹛/红额穗鹛"
+        },
+        "cbr12": {
+          "no": "975",
+          "scientific": "Cyanoderma rufifrons",
+          "chinese": "红额穗鹛"
+        },
+        "ioc152Chinese": "红额穗鹛"
+      }
+    },
+    {
+      "id": "colcn:57480ab0-de3e-4b8b-8ab3-533b34b3f308",
+      "kind": "concept",
+      "reason": "split; Naga Wren-Babbler is Indian, China's bird is Grey-bellied Wren-Babbler",
+      "was": {
+        "chinese": "长尾鹩鹛",
+        "scientific": "Spelaeornis chocolatinus",
+        "english": "Naga Wren-Babbler"
+      },
+      "now": {
+        "chinese": "长尾鹩鹛",
+        "scientific": "Spelaeornis reptatus",
+        "english": "Grey-bellied Wren-Babbler"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Spelaeornis reptatus",
+          "english": "Grey-bellied Wren-Babbler",
+          "avibaseId": "avibase-9FAE6D78",
+          "cornellCode": "gybwrb1",
+          "chineseSimplified": "灰腹鹩鹛 (长尾鹩鹛)"
+        },
+        "cbr12": {
+          "no": "979",
+          "scientific": "Spelaeornis reptatus",
+          "chinese": "灰腹鹩鹛"
+        },
+        "ioc152Chinese": "灰腹鹩鹛"
+      }
+    },
+    {
+      "id": "colcn:b9e64ed7-027e-4ef3-aea1-e8375e5f357e",
+      "kind": "concept",
+      "reason": "split; Brown-throated Martin is African",
+      "was": {
+        "chinese": "褐喉沙燕",
+        "scientific": "Riparia paludicola",
+        "english": "Brown-throated Martin"
+      },
+      "now": {
+        "chinese": "褐喉沙燕",
+        "scientific": "Riparia chinensis",
+        "english": "Grey-throated Martin"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Riparia chinensis",
+          "english": "Grey-throated Martin",
+          "avibaseId": "avibase-D0222DB9",
+          "cornellCode": "gytmar1",
+          "chineseSimplified": "灰喉沙燕 (褐喉沙燕)"
+        },
+        "cbr12": {
+          "no": "828",
+          "scientific": "Riparia chinensis",
+          "chinese": "灰喉沙燕"
+        },
+        "ioc152Chinese": "灰喉沙燕"
+      }
+    },
+    {
+      "id": "colcn:7207303a-d1a7-45a2-bb41-d2af9706f443",
+      "kind": "concept",
+      "reason": "split; Javan Shortwing (蓝短翅鸫) is Javan. The CAS concept covers three China species; the card keeps the China-endemic Chinese Shortwing, a CAS synonym of the record",
+      "was": {
+        "chinese": "蓝短翅鸫",
+        "scientific": "Brachypteryx montana",
+        "english": "Javan Shortwing"
+      },
+      "now": {
+        "chinese": "中华短翅鸫",
+        "scientific": "Brachypteryx sinensis",
+        "english": "Chinese Shortwing"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Brachypteryx sinensis",
+          "english": "Chinese Shortwing",
+          "avibaseId": "avibase-DF676564",
+          "cornellCode": "whbsho5",
+          "chineseSimplified": "中华短翅鸫"
+        },
+        "cbr12": {
+          "no": "1278",
+          "scientific": "Brachypteryx sinensis",
+          "chinese": "中华短翅鸫"
+        },
+        "ioc152Chinese": "中华短翅鸫"
+      }
+    },
+    {
+      "id": "colcn:d0a0fba4-962f-4f3c-a046-a59f059b715c",
+      "kind": "english",
+      "reason": "AviList lumps the swamphens; Western Swamphen is the IOC name for the non-China population",
+      "was": {
+        "chinese": "紫水鸡",
+        "scientific": "Porphyrio porphyrio",
+        "english": "Western Swamphen"
+      },
+      "now": {
+        "chinese": "紫水鸡",
+        "scientific": "Porphyrio porphyrio",
+        "english": "Purple Swamphen"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Porphyrio porphyrio",
+          "english": "Purple Swamphen",
+          "avibaseId": "avibase-AC1E791E",
+          "cornellCode": "",
+          "chineseSimplified": ""
+        },
+        "cbr12": {
+          "no": "279 / 280",
+          "scientific": "Porphyrio poliocephalus / Porphyrio indicus",
+          "chinese": "紫水鸡 / 黑背紫水鸡"
+        },
+        "ioc152Chinese": "西紫水鸡"
+      },
+      "ebirdChinaPopulation": "Porphyrio poliocephalus"
+    },
+    {
+      "id": "colcn:3716bae1-7f3e-46e9-bd4a-541da36a7fe1",
+      "kind": "english",
+      "reason": "AviList lumps the minivets; Orange Minivet is the IOC name for the South Indian population",
+      "was": {
+        "chinese": "赤红山椒鸟",
+        "scientific": "Pericrocotus flammeus",
+        "english": "Orange Minivet"
+      },
+      "now": {
+        "chinese": "赤红山椒鸟",
+        "scientific": "Pericrocotus flammeus",
+        "english": "Scarlet Minivet"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Pericrocotus flammeus",
+          "english": "Scarlet Minivet",
+          "avibaseId": "avibase-7F97F882",
+          "cornellCode": "",
+          "chineseSimplified": ""
+        },
+        "cbr12": {
+          "no": "669",
+          "scientific": "Pericrocotus speciosus",
+          "chinese": "赤红山椒鸟"
+        },
+        "ioc152Chinese": "赤黄山椒鸟"
+      },
+      "ebirdChinaPopulation": "Pericrocotus speciosus"
+    },
+    {
+      "id": "colcn:1cfb651b-d35f-4c05-9e58-55ed21640848",
+      "kind": "chinese",
+      "reason": "褐头雀鹛 is the Manipur Fulvetta's name",
+      "was": {
+        "chinese": "褐头雀鹛",
+        "scientific": "Fulvetta cinereiceps",
+        "english": "Grey-hooded Fulvetta"
+      },
+      "now": {
+        "chinese": "灰头雀鹛",
+        "scientific": "Fulvetta cinereiceps",
+        "english": "Grey-hooded Fulvetta"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Fulvetta cinereiceps",
+          "english": "Grey-hooded Fulvetta",
+          "avibaseId": "avibase-9F47C704",
+          "cornellCode": "sttful1",
+          "chineseSimplified": "灰头雀鹛"
+        },
+        "cbr12": {
+          "no": "1106",
+          "scientific": "Fulvetta cinereiceps",
+          "chinese": "灰头雀鹛"
+        },
+        "ioc152Chinese": "灰头雀鹛"
+      }
+    },
+    {
+      "id": "colcn:2a96bb4a-d554-4314-8dee-bf42064f532f",
+      "kind": "chinese",
+      "reason": "田鹨 is the Paddyfield Pipit's name",
+      "was": {
+        "chinese": "田鹨",
+        "scientific": "Anthus richardi",
+        "english": "Richard's Pipit"
+      },
+      "now": {
+        "chinese": "理氏鹨",
+        "scientific": "Anthus richardi",
+        "english": "Richard's Pipit"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Anthus richardi",
+          "english": "Richard's Pipit",
+          "avibaseId": "avibase-41ECD10E",
+          "cornellCode": "ricpip1",
+          "chineseSimplified": "理氏鹨"
+        },
+        "cbr12": {
+          "no": "1405",
+          "scientific": "Anthus richardi",
+          "chinese": "理氏鹨"
+        },
+        "ioc152Chinese": "理氏鹨"
+      }
+    },
+    {
+      "id": "colcn:b7eb9d78-611b-4ff5-b0e5-5c2ed5228f55",
+      "kind": "chinese",
+      "reason": "completes the swap with Anthus richardi",
+      "was": {
+        "chinese": "东方田鹨",
+        "scientific": "Anthus rufulus",
+        "english": "Paddyfield Pipit"
+      },
+      "now": {
+        "chinese": "田鹨",
+        "scientific": "Anthus rufulus",
+        "english": "Paddyfield Pipit"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Anthus rufulus",
+          "english": "Paddyfield Pipit",
+          "avibaseId": "avibase-57A0C80B",
+          "cornellCode": "oripip1",
+          "chineseSimplified": "田鹨"
+        },
+        "cbr12": {
+          "no": "1406",
+          "scientific": "Anthus rufulus",
+          "chinese": "田鹨"
+        },
+        "ioc152Chinese": "田鹨"
+      }
+    },
+    {
+      "id": "colcn:74e1ddad-9908-4c23-a877-abe63c8ab3cf",
+      "kind": "chinese",
+      "reason": "点翅朱雀 is the CBR/IOC name of Sharpe's Rosefinch",
+      "was": {
+        "chinese": "点翅朱雀",
+        "scientific": "Carpodacus rodopeplus",
+        "english": "Spot-winged Rosefinch"
+      },
+      "now": {
+        "chinese": "喜山点翅朱雀",
+        "scientific": "Carpodacus rodopeplus",
+        "english": "Spot-winged Rosefinch"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Carpodacus rodopeplus",
+          "english": "Spot-winged Rosefinch",
+          "avibaseId": "avibase-013420E1",
+          "cornellCode": "spwros2",
+          "chineseSimplified": "喜山点翅朱雀"
+        },
+        "cbr12": {
+          "no": "1453",
+          "scientific": "Carpodacus rodopeplus",
+          "chinese": "喜山点翅朱雀"
+        },
+        "ioc152Chinese": "喜山点翅朱雀"
+      }
+    },
+    {
+      "id": "colcn:b69bfd57-93e5-4787-b5c7-c7225ff33038",
+      "kind": "chinese",
+      "reason": "黄腿银鸥 is the Yellow-legged Gull's name",
+      "was": {
+        "chinese": "黄腿银鸥",
+        "scientific": "Larus cachinnans",
+        "english": "Caspian Gull"
+      },
+      "now": {
+        "chinese": "里海银鸥",
+        "scientific": "Larus cachinnans",
+        "english": "Caspian Gull"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Larus cachinnans",
+          "english": "Caspian Gull",
+          "avibaseId": "avibase-93CA037F",
+          "cornellCode": "casgul2",
+          "chineseSimplified": "里海银鸥 (黄脚银鸥)"
+        },
+        "cbr12": {
+          "no": "429",
+          "scientific": "Larus cachinnans",
+          "chinese": "里海银鸥"
+        },
+        "ioc152Chinese": "里海银鸥"
+      }
+    },
+    {
+      "id": "colcn:b91ff210-a9c9-4215-8740-22f56861bb13",
+      "kind": "chinese",
+      "reason": "蓝须蜂虎 is the Blue-moustached Bee-eater's name",
+      "was": {
+        "chinese": "蓝须蜂虎",
+        "scientific": "Nyctyornis athertoni",
+        "english": "Blue-bearded Bee-eater"
+      },
+      "now": {
+        "chinese": "蓝须夜蜂虎",
+        "scientific": "Nyctyornis athertoni",
+        "english": "Blue-bearded Bee-eater"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Nyctyornis athertoni",
+          "english": "Blue-bearded Bee-eater",
+          "avibaseId": "avibase-5C15B5FC",
+          "cornellCode": "bbbeat1",
+          "chineseSimplified": "蓝须夜蜂虎"
+        },
+        "cbr12": {
+          "no": "572",
+          "scientific": "Nyctyornis athertoni",
+          "chinese": "蓝须夜蜂虎"
+        },
+        "ioc152Chinese": "蓝须夜蜂虎"
+      }
+    }
+  ]
+}

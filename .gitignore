@@ -6,3 +6,6 @@ __pycache__/
 source-notices/col-china-2023.zip
 source-notices/ioc-gbif-15.2.zip
 source-notices/ioc-13.1-multilingual.xlsx
+
+# AviList v2026 is kept in the local deliverable; fetch it from avilist.org for rebuilds.
+source-notices/avilist-v2026-extended.xlsx

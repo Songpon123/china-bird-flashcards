@@ -10,9 +10,9 @@ const groups=JSON.parse(await read('data/groups.json')).cards;
 const guide=validateNameGuide(JSON.parse(await read('data/name-guide.json')));
 test('every bundled name character has a sourced meaning; coverage counts and retained input hashes agree',async()=>{
  const chars=new Set([...birds,...groups].flatMap(b=>[...b.chinese]));
- assert.equal(chars.size,474);assert.equal(guide.meta.characterCount,chars.size);
+ assert.equal(chars.size,475);assert.equal(guide.meta.characterCount,chars.size);
  for(const b of [...birds,...groups])assert.deepEqual(nameAnalysis(b,guide).missing,[],b.chinese);
- assert.equal(Object.values(guide.characters).filter(c=>c.entries.some(e=>e.source==='cedict')).length,473);
+ assert.equal(Object.values(guide.characters).filter(c=>c.entries.some(e=>e.source==='cedict')).length,474);
  assert.equal(Object.values(guide.characters).filter(c=>c.thai).length,guide.meta.thaiCharacterCount);
  assert.equal(guide.characters['鵟'].entries[0].source,'cas-usage');
  for(const [path,hash] of Object.entries(guide.meta.inputHashes))assert.equal(createHash('sha256').update(await read(path)).digest('hex'),hash,path);
@@ -43,9 +43,24 @@ test('compounds and personal names do not acquire fabricated literal etymologies
  assert.equal(cuckoo.notes.find(n=>n.match==='杜鹃').kind,'folklore');
  assert.equal(nameAnalysis({chinese:'灰喜鹊'},guide).notes.filter(n=>n.kind==='cultural').length,0);
 });
+test('place names and other opaque words are read as one word, not character by character',()=>{
+ const japan=nameAnalysis({chinese:'日本松雀鹰',pinyin:'rì běn sōng què yīng'},guide);
+ assert.deepEqual(japan.units.map(u=>[u.word,u.kind,u.english]),[['日本','name','Japan']]);
+ assert.deepEqual(japan.characters.map(c=>c.unit?.word??null),['日本','日本',null,null,null]);
+ const html=renderNameAnalysis({chinese:'日本松雀鹰',pinyin:'rì běn sōng què yīng'},guide);
+ assert.match(html,/Part of <strong lang="zh-Hans">日本<\/strong>/);
+ assert.ok(!html.includes('<p class="learning-gloss">sun; day</p>'),'日 must not be glossed as sun inside 日本');
+ // Composed words keep their character meanings.
+ assert.equal(nameAnalysis({chinese:'红嘴蓝鹊',pinyin:'hóng zuǐ lán què'},guide).characters[0].unit,null);
+ for(const [name,word] of [['喜山点翅朱雀','喜山'],['四川柳莺','四川'],['海南孔雀雉','海南'],['里海银鸥','里海'],['红背伯劳','伯劳']])
+  assert.equal(nameAnalysis({chinese:name},guide).characters[0+(name==='红背伯劳'?2:0)].unit?.word,word,name);
+ assert.equal(nameAnalysis({chinese:'藏雪鸡',pinyin:'zàng xuě jī'},guide).characters[0].learningEnglish,'Tibet (short for 西藏)');
+ // Every name unit has an English and Thai meaning, and only matches names where it is that word.
+ for(const w of guide.unitWords)if(guide.compounds[w].kind==='name'){assert.ok(guide.compounds[w].english,w);assert.ok(guide.compounds[w].thai,w);}
+});
 test('rendered meanings retain credits, distinguish unsupported history, escape text and reject unsafe links',()=>{
  const html=renderNameAnalysis({chinese:'褐耳鹰',pinyin:'hè ěr yīng'},guide);
- assert.match(html,/No verified naming history/);assert.match(html,/CC BY-SA 4.0/);
+ assert.match(html,/Naming-history notes are available for selected names/);assert.match(html,/CC BY-SA 4.0/);
  const altered=structuredClone(guide);
  altered.characters['白'].thai='<img src=x onerror=alert(1)>';
  altered.meta.sources.find(s=>s.id==='cedict').url='javascript:alert(1)';

@@ -213,6 +213,7 @@
 喉 喉 [hou2] /throat/larynx/
 喜 喜 [xi3] /to be fond of/to like/to enjoy/to be happy/to feel pleased/happiness/delight/glad/
 喜山白眉朱雀 喜山白眉朱雀 [xi3 shan1 bai2 mei2 zhu1 que4] /(bird species of China) Himalayan white-browed rosefinch (Carpodacus thura)/
+喜山點翅朱雀 喜山点翅朱雀 [xi3 shan1 dian3 chi4 zhu1 que4] /(bird species of China) spot-winged rosefinch (Carpodacus rodopeplus)/
 喜馬拉雅 喜马拉雅 [Xi3 ma3 la1 ya3] /the Himalayas/
 喜鵲 喜鹊 [xi3 que4] /magpie/
 喳 喳 [cha1] /used in 喳喳[cha1 cha1] and 喳喳[cha1 cha5]/
@@ -936,6 +937,7 @@
 灰頭灰雀 灰头灰雀 [hui1 tou2 hui1 que4] /(bird species of China) grey-headed bullfinch (Pyrrhula erythaca)/
 灰頭綠鳩 灰头绿鸠 [hui1 tou2 lu:4 jiu1] /(bird species of China) ashy-headed green pigeon (Treron phayrei)/
 灰頭藪鶥 灰头薮鹛 [hui1 tou2 sou3 mei2] /(bird species of China) red-faced liocichla (Liocichla phoenicea)/
+灰頭雀鶥 灰头雀鹛 [hui1 tou2 que4 mei2] /(bird species of China) grey-hooded fulvetta (Fulvetta cinereiceps)/
 灰頭鴉雀 灰头鸦雀 [hui1 tou2 ya1 que4] /(bird species of China) grey-headed parrotbill (Paradoxornis gularis)/
 灰頭鵐 灰头鹀 [hui1 tou2 wu2] /(bird species of China) black-faced bunting (Emberiza spodocephala)/
 灰頭鶇 灰头鸫 [hui1 tou2 dong1] /(bird species of China) chestnut thrush (Turdus rubrocanus)/
@@ -999,6 +1001,7 @@
 珠 珠 [zhu1] /bead/pearl/CL:粒[li4],顆|颗[ke1]/
 珠頸斑鳩 珠颈斑鸠 [zhu1 jing3 ban1 jiu1] /(bird species of China) spotted dove (Spilopelia chinensis)/
 球 球 [qiu2] /ball/sphere/globe/CL:個|个[ge4]/ball game/match/CL:場|场[chang3]/
+理 理 [li3] /texture/grain (of wood)/inner essence/intrinsic order/reason/logic/truth/science/natural science (esp. physics)/to manage/to pay attention to/to run (affairs)/to handle/to put in order/to tidy up/
 琉 琉 [liu2] /precious stone/
 琉球 琉球 [Liu2 qiu2] /Ryūkyū/refers to the Ryūkyū Islands 琉球群島|琉球群岛[Liu2 qiu2 Qun2 dao3] stretching from Japan to Taiwan/Liuchiu township in Pingtung County 屏東縣|屏东县[Ping2 dong1 Xian4], Taiwan/
 琉球歌鴝 琉球歌鸲 [Liu2 qiu2 ge1 qu2] /(bird species of China) Ryukyu robin (Larvivora komadori)/
@@ -1045,6 +1048,7 @@
 白兀鷲 白兀鹫 [bai2 wu4 jiu4] /(bird species of China) Egyptian vulture (Neophron percnopterus)/
 白冠噪鶥 白冠噪鹛 [bai2 guan1 zao4 mei2] /(bird species of China) white-crested laughingthrush (Garrulax leucolophus)/
 白冠攀雀 白冠攀雀 [bai2 guan1 pan1 que4] /(bird species of China) white-crowned penduline tit (Remiz coronatus)/
+白冠燕尾 白冠燕尾 [bai2 guan1 yan4 wei3] /(bird species of China) white-crowned forktail (Enicurus leschenaulti)/
 白冠長尾雉 白冠长尾雉 [bai2 guan1 chang2 wei3 zhi4] /(bird species of China) Reeves's pheasant (Syrmaticus reevesii)/
 白喉 白喉 [bai2 hou2] /diphtheria/
 白喉冠鵯 白喉冠鹎 [bai2 hou2 guan1 bei1] /(bird species of China) puff-throated bulbul (Alophoixus pallidus)/
@@ -1566,7 +1570,6 @@
 藍枕花蜜鳥 蓝枕花蜜鸟 [lan2 zhen3 hua1 mi4 niao3] /(bird species of China) purple-naped spiderhunter (Kurochkinegramma hypogrammicum)/
 藍歌鴝 蓝歌鸲 [lan2 ge1 qu2] /(bird species of China) Siberian blue robin (Larvivora cyane)/
 藍眉林鴝 蓝眉林鸲 [lan2 mei2 lin2 qu2] /(bird species of China) Himalayan bluetail (Tarsiger rufilatus)/
-藍短翅鶇 蓝短翅鸫 [lan2 duan3 chi4 dong1] /(bird species of China) white-browed shortwing (Brachypteryx montana)/
 藍磯鶇 蓝矶鸫 [lan2 ji1 dong1] /(bird species of China) blue rock thrush (Monticola solitarius)/
 藍綠鵲 蓝绿鹊 [lan2 lu:4 que4] /(bird species of China) common green magpie (Cissa chinensis)/
 藍翅噪鶥 蓝翅噪鹛 [lan2 chi4 zao4 mei2] /(bird species of China) blue-winged laughingthrush (Trochalopteron squamatum)/
@@ -1582,6 +1585,7 @@
 藍頭紅尾鴝 蓝头红尾鸲 [lan2 tou2 hong2 wei3 qu2] /(bird species of China) blue-capped redstart (Phoenicurus coeruleocephala)/
 藍額紅尾鴝 蓝额红尾鸲 [lan2 e2 hong2 wei3 qu2] /(bird species of China) blue-fronted redstart (Phoenicurus frontalis)/
 藍馬雞 蓝马鸡 [lan2 ma3 ji1] /(bird species of China) blue eared pheasant (Crossoptilon auritum)/
+藍鬚夜蜂虎 蓝须夜蜂虎 [lan2 xu1 ye4 feng1 hu3] /(bird species of China) blue-bearded bee-eater (Nyctyornis athertoni)/
 藍鵐 蓝鹀 [lan2 wu2] /(bird species of China) slaty bunting (Emberiza siemsseni)/
 藏 藏 [Zang4] /Tibetan ethnic group/Tibet Autonomous Region (short name for 西藏自治區|西藏自治区[Xi1 zang4 Zi4 zhi4 qu1])/
 藏 藏 [cang2] /to conceal/to hide away/to harbor/to store/to collect/
@@ -1628,6 +1632,7 @@
 衚 胡 [hu2] /used in 衚衕|胡同[hu2 tong4]/
 裏 里 [li3] /variant of 裡|里[li3]/
 裡 里 [li3] /lining/interior/inside/internal/also written 裏|里[li3]/
+裡海 里海 [Li3 Hai3] /Caspian Sea/
 褐 褐 [he4] /brown/gray or dark color/coarse hemp cloth/Taiwan pr. [he2]/
 褐冠山雀 褐冠山雀 [he4 guan1 shan1 que4] /(bird species of China) grey-crested tit (Lophophanes dichrous)/
 褐冠鵑隼 褐冠鹃隼 [he4 guan1 juan1 sun3] /(bird species of China) Jerdon's baza (Aviceda jerdoni)/
@@ -1655,7 +1660,6 @@
 褐臉雀鶥 褐脸雀鹛 [he4 lian3 que4 mei2] /(bird species of China) brown-cheeked fulvetta (Alcippe poioicephala)/
 褐頂雀鶥 褐顶雀鹛 [he4 ding3 que4 mei2] /(bird species of China) dusky fulvetta (Schoeniparus brunneus)/
 褐頭山雀 褐头山雀 [he4 tou2 shan1 que4] /(bird species of China) willow tit (Poecile montanus)/
-褐頭雀鶥 褐头雀鹛 [he4 tou2 que4 mei2] /(bird species of China) Manipur fulvetta (Fulvetta manipurensis)/
 褐頭鳳鶥 褐头凤鹛 [he4 tou2 feng4 mei2] /(bird species of China) Taiwan yuhina (Yuhina brunneiceps)/
 褐頭鵐 褐头鹀 [he4 tou2 wu2] /(bird species of China) red-headed bunting (Emberiza bruniceps)/
 褐頭鶇 褐头鸫 [he4 tou2 dong1] /(bird species of China) grey-sided thrush (Turdus feae)/

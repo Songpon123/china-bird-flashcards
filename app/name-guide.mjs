@@ -23,17 +23,30 @@ export function characterEntries(record,reading=''){
 export function nameAnalysis(bird,guide){
  const name=String(bird.chinese||'').normalize('NFC'),characters=[...name],syllables=String(bird.pinyin||'').trim().split(/\s+/);
  const aligned=syllables.length===characters.length;
- const units=[],used=new Set();
+ const units=[],used=new Set(),unitAt=[];
  // Only curated compounds are segmented: arbitrary dictionary substrings can
  // mean something quite unrelated to the name (e.g. 背信 inside two modifiers).
  for(let i=0;i<characters.length;){
   const remainder=characters.slice(i).join('');
   const word=guide.unitWords.find(w=>remainder.startsWith(w));
-  if(word){if(!used.has(word)){units.push({word,...guide.compounds[word]});used.add(word);}i+=[...word].length;}
+  if(word){
+   if(!used.has(word)){units.push({word,...guide.compounds[word]});used.add(word);}
+   // Characters of a place name or other opaque word take the word's meaning, not their own.
+   const unit=guide.compounds[word]?.kind==='name'?{word,...guide.compounds[word]}:null;
+   for(let k=0;k<[...word].length;k++)unitAt[i+k]=unit;
+   i+=[...word].length;
+  }
   else i++;
  }
+ // X氏 = “X's”: X is part of a person's name, so its dictionary meaning does not apply.
+ // The person is not identified here (see the personal-name caution).
+ for(let j=1;j<characters.length;j++){
+  if(characters[j]!=='氏'||unitAt[j-1]||unitAt[j]||!guide.personalNameUnit)continue;
+  const unit={word:characters[j-1]+'氏',kind:'name',entries:[],...guide.personalNameUnit,pinyin:aligned?`${syllables[j-1]} ${syllables[j]}`:''};
+  unitAt[j-1]=unitAt[j]=unit;units.push(unit);
+ }
  return {
-  characters:characters.map((character,i)=>({character,reading:aligned?syllables[i]:'',...guide.characters[character],entries:characterEntries(guide.characters[character],aligned?syllables[i]:'')})),
+  characters:characters.map((character,i)=>({character,reading:aligned?syllables[i]:'',...guide.characters[character],entries:characterEntries(guide.characters[character],aligned?syllables[i]:''),unit:unitAt[i]||null})),
   units,dictionary:guide.compounds[name]||null,
   notes:guide.notes.filter(n=>n.exact?name===n.match:name.includes(n.match)),
   hasPersonalNameMarker:name.includes('氏'),

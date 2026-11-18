@@ -97,6 +97,11 @@ def main():
     for w, gloss in editorial['compoundGlosses'].items():
         compounds.setdefault(w, {'entries':[], 'thai':''})['thai'] = gloss['thai']
         compounds[w]['pinyin'] = gloss['pinyin']
+        # kind "name": a place name, personal name or opaque word whose characters
+        # must not be read one by one (日本 is Japan, not "sun" + "root").
+        for key in ('english', 'kind'):
+            if gloss.get(key):
+                compounds[w][key] = gloss[key]
     out = {
         'schemaVersion':1,
         'meta':{
@@ -114,6 +119,7 @@ def main():
         'characters':characters, 'compounds':compounds,
         'unitWords':sorted(editorial['compoundGlosses'], key=lambda w:(-len(w), w)),
         'notes':editorial['notes'],
+        'personalNameUnit':editorial['personalNameUnit'],
     }
     target = ROOT / 'data/name-guide.json'
     target.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n')
