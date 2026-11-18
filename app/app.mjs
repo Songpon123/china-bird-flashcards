@@ -1,7 +1,7 @@
 import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs';
 import {familyKey,inGroup,familyLabel,validateGroups} from './taxonomy.mjs';
 import {validateNameGuide,characterEntries} from './name-guide.mjs';
-import {renderNameAnalysis} from './name-guide-ui.mjs';
+import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.3.1';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='yu-birds-state-v1',DATA='yu-birds-dataset-v1',GROUP_DATA='yu-birds-groups-v1';
@@ -289,7 +289,7 @@ function bind(){
 }
 try{
  const responses=await Promise.all([fetch('./data/birds.json'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
- try{const response=await fetch('./data/name-guide.json');if(!response.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
+ try{const response=await fetch('./data/name-guide.json?v=2026-11-18-v2',{cache:'no-cache'});if(!response.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
  const bundled=validateDataset(await responses[0].json());groupDataset=validateGroups(await responses[1].json());
  let storedData=null,storedState=null,storedGroups=null;
  try{storedData=localStorage.getItem(DATA);storedState=localStorage.getItem(STORE);storedGroups=localStorage.getItem(GROUP_DATA);}catch{storageOK=false;error('Browser storage is unavailable. You can study in this tab and export a backup.');}

@@ -19,3 +19,5 @@ python3 scripts/build_name_guide.py
 ```
 
 To extract a new official release, obtain the source from the [publisher's download page](https://www.mdbg.net/chinese/dictionary?page=cc-cedict), inspect its license, and run `python3 scripts/build_name_guide.py --cedict /absolute/path/to/cedict.txt.gz`. This deliberately updates the source manifest. Audit coverage, editorial readings, source changes and rights before publishing. Changing the bird checklist may require new character definitions and compound review; the builder refuses uncovered characters.
+
+When publishing a changed language pack, bump its editorial version and the matching fetch URL query in `app/app.mjs`; bump the app entry/import URL queries for changed runtime modules. The pinned edition URL avoids mixing cached older definitions with a newer renderer on GitHub Pages. The language fetch also revalidates cached responses.
