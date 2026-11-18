@@ -1,0 +1,10 @@
+{
+  "downloadUrl": "https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz",
+  "retrieved": "2026-11-18",
+  "downloadSHA256": "d7fbcfb99159d27db22787f515fd5548356607f8d9d381cb5c90917e3e7e0547",
+  "sourceDate": "2026-11-18T03:25:44Z",
+  "subsetSHA256": "038f47cb779f13cbb9c35e2feff6a6439d2296195fb9d315c8d912099c751d79",
+  "extraction": "Unmodified source lines for individual name characters and exact substrings of the 1,445 species / 33 term names, plus explicitly listed extra compounds. Original header retained; no unrelated entries bundled.",
+  "license": "CC BY-SA 4.0",
+  "attribution": "MDBG and CC-CEDICT contributors; CEDICT copyright 1997, 1998 Paul Andrew Denisowski"
+}

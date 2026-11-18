@@ -31,7 +31,7 @@ Use the same address each time. `localhost` and `127.0.0.1`, different ports, an
 ## Study
 
 - Choose **Chinese → English** or **English → Chinese**. Progress is separate for each direction.
-- **Spaced review + new birds** presents due cards first, followed by up to 20 new cards per day per direction by default. Set the limit to zero for reviews only. New allowances reset at local midnight; existing due times use elapsed time.
+- **Spaced review + new cards** presents due cards first, followed by up to 20 new cards per day per direction by default. Set the limit to zero for reviews only. New allowances reset at local midnight; existing due times use elapsed time.
 - Reveal a card, then choose Again, Hard, Good or Easy. The proposed interval appears on each button. The app does not grade typed answers or automatically claim that a word is mastered.
 - **Browse & practice freely** explores the filtered checklist without changing schedules. Library rows can open individual birds in practice mode.
 - Search accepts Chinese, English, scientific names, safe aliases, and Pinyin with or without tones or spaces. `lvtouya`, `lu: tou ya` and `lǜ tóu yā` all find 绿头鸭.
@@ -45,13 +45,29 @@ The prototype uses a small, documented SM-2-inspired heuristic, not FSRS and not
 
 ## Family and group vocabulary
 
-Open **วงศ์และกลุ่ม** for 33 additional terms: **26 selected family names** out of the baseline’s 109 families, plus **7 common-name learning groups**. These terms do not increase the 1,445-species count. Select the family/group card deck in Study for reversible, separately scheduled vocabulary cards. The daily new-card allowance is shared between both decks within each direction.
+Open **Families & groups** for 33 additional terms: **26 selected family names** out of the baseline’s 109 families, plus **7 common-name learning groups**. These terms do not increase the 1,445-species count. Select the family/group card deck in Study for reversible, separately scheduled vocabulary cards. The daily new-card allowance is shared between both decks within each direction.
 
 Examples: 鹰科 **yīng kē** (Accipitridae), 鸠鸽科 **jiū gē kē** (Columbidae), 鸭科 **yā kē** (Anatidae), 鸭类 **yā lèi** (ducks), 雁类 **yàn lèi** (wild geese). The informal groups include hawks/eagles, doves/pigeons, ducks, geese, swans, owls and woodpeckers. Wild geese use 雁; the everyday/domestic-goose word 鹅 (é) has a different scope.
 
 Each term has a Thai learning gloss, pronunciation controls during study, provenance and a button to view member species. Membership follows explicit source family/genus rules: ducks 38, geese 13, swans 3, together partitioning the 54 source Anatidae records. A common name containing “goose” does not itself determine membership. Different-taxonomy imports disable these membership links until a reviewed mapping is supplied. Other families retain their scientific names without guessed Chinese translations.
 
 Full backups include the vocabulary snapshot and schedules. Older backups remain supported and use the app’s bundled vocabulary. Species CSV/JSON imports update the species deck; updating group definitions requires a reviewed app/data release.
+
+## Character meanings and selected name stories
+
+All menus and controls use English. The **Name guide** explains all **474 distinct Chinese characters** used in the bundled 1,445 species names and 33 family/group terms. **473 character headwords come from the official CC-CEDICT snapshot; one modern-usage gloss for 鵟 is separately attributed to the CAS checklist.** English meanings cover all 474; selected Thai learning glosses cover **233**. General dictionary senses and alternate readings remain available in expandable sections. Source text, selected English learning glosses, Thai translations and formatting adaptations are attributed under **CC BY-SA 4.0**, separately from the bird dataset and app code.
+
+Search a Chinese name, English bird name, Pinyin, or a character. Example buttons open 白鹭, 喜鹊, 鸳鸯, 戴胜 and 杜鹃. The guide distinguishes **literal reading, word usage, cultural explanation, source explanation and folklore**. There are **10 selected notes**, not a complete history of all bird names. Names without a sourced note say so. Curated word units preserve compounds such as 伯劳, 鹡鸰 and 䴙䴘 and place-name transliterations; a dictionary substring is never automatically asserted to explain a naming origin. 氏 prompts a personal-name caution without inventing the commemorated person's identity.
+
+After revealing a flashcard, expand **Understand this name · meanings & story**. Definitions are hidden while the answer is hidden, in both study directions. Library and family/group details also include the guide. The language pack changes no bird IDs, schedules, dataset membership or saved progress. Imported/restored names use the bundled guide and explicitly identify any uncovered characters. Notebook backups retain datasets and progress; the app-bundled language pack is not copied into backups. Preserve `data/name-guide.json` and `source-notices/name-guide/` separately to keep an exact guide edition.
+
+Rebuild the guide without downloads or third-party Python packages:
+
+```sh
+python3 scripts/build_name_guide.py
+```
+
+See [the retained source and rebuild notes](source-notices/name-guide/README.md) for a pinned source hash, extraction rules, individual note citations and how to update an official dictionary snapshot. General dictionary senses, selected learning translations, and checklist Pinyin still need expert review. Naming stories are limited independently of character-definition coverage.
 
 ## Keep your progress
 

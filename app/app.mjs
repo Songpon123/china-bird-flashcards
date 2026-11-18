@@ -1,12 +1,14 @@
 import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs';
 import {familyKey,inGroup,familyLabel,validateGroups} from './taxonomy.mjs';
+import {validateNameGuide,characterEntries} from './name-guide.mjs';
+import {renderNameAnalysis} from './name-guide-ui.mjs';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='yu-birds-state-v1',DATA='yu-birds-dataset-v1',GROUP_DATA='yu-birds-groups-v1';
 let dataset,groupDataset,state,view='study',mode='review',revealed=false,currentId=null,skipped=new Set(),page=0,lastUndo=null,pendingImport=null,pendingRestore=null,voices=[],storageOK=true,externalChange=false;
-let practiceIndex=0;
+let practiceIndex=0,nameGuide=null,guideSelection=null;
 const defaults={direction:'zh-en',deck:'species',newLimit:20,showPinyin:false,voice:''};
-const titleCopy={groups:['ชื่อวงศ์และกลุ่มนก','เรียนจากกลุ่มใหญ่ แล้วค่อยจำชื่อแต่ละชนิด · Chinese, Pinyin, English & scientific scope.'],study:['A whole new way to name birds.','From 白鹭 to Little Egret. Build a vocabulary that stays with you.'],library:['Every bird has a story. Start with its name.','Explore the source checklist in Chinese, Pinyin, English and scientific Latin.'],progress:['A little practice. A growing vocabulary.','Watch your field notebook fill up, one review at a time.'],data:['A good name starts with a good source.','Understand the checklist, inspect its limits, and keep your notebook current.']};
+const titleCopy={guide:['What’s inside a Chinese bird name?','Explore characters, word meanings and the stories behind selected names.'],groups:['Know the families. Find your birds.','Learn the larger groups, then explore each species · Chinese, Pinyin, English & scientific scope.'],study:['A whole new way to name birds.','From 白鹭 to Little Egret. Build a vocabulary that stays with you.'],library:['Every bird has a story. Start with its name.','Explore the source checklist in Chinese, Pinyin, English and scientific Latin.'],progress:['A little practice. A growing vocabulary.','Watch your field notebook fill up, one review at a time.'],data:['A good name starts with a good source.','Understand the checklist, inspect its limits, and keep your notebook current.']};
 function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').hidden=true,6000);}
 function error(message){$('fatal').textContent=message;$('fatal').hidden=false;}
 function saveState(){
@@ -22,7 +24,7 @@ function setView(name){
  for(const n of Object.keys(titleCopy))$(n+'-view').hidden=n!==name;
  document.querySelectorAll('[data-view]').forEach(b=>{if(b.dataset.view===name)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  $('page-title').textContent=titleCopy[name][0];$('page-subtitle').textContent=titleCopy[name][1];
- if(name==='groups')renderGroups();if(name==='library')renderLibrary();if(name==='progress')renderProgress();if(name==='data')renderData();if(name==='study')renderStudy();
+ if(name==='guide')renderGuide();if(name==='groups')renderGroups();if(name==='library')renderLibrary();if(name==='progress')renderProgress();if(name==='data')renderData();if(name==='study')renderStudy();
  history.replaceState(null,'','#'+name);
 }
 function options(select,values,allLabel,label=s=>s){
@@ -33,7 +35,7 @@ function setupFilters(){
  for(const prefix of ['study','library']){
   options($(prefix+'-order'),dataset.birds.map(b=>b.order),'All orders');
   updateFamilyOptions(prefix);
-  const select=$(prefix+'-group'),prev=select.value;select.innerHTML='<option value="">ทั้งหมด · All bird groups</option>'+groupDataset.cards.map(c=>`<option value="${esc(c.id)}">${esc(c.thai)} · ${esc(c.chinese)}</option>`).join('');if([...select.options].some(o=>o.value===prev))select.value=prev;select.disabled=!membershipCompatible();
+  const select=$(prefix+'-group'),prev=select.value;select.innerHTML='<option value="">All bird groups</option>'+groupDataset.cards.map(c=>`<option value="${esc(c.id)}">${esc(c.english)} · ${esc(c.chinese)}</option>`).join('');if([...select.options].some(o=>o.value===prev))select.value=prev;select.disabled=!membershipCompatible();
  }
  $('deck').value=state.settings.deck;setDeckControls();$('direction').value=state.settings.direction;$('new-limit').value=state.settings.newLimit;$('show-pinyin').checked=state.settings.showPinyin;
  $('import-taxonomy').value=dataset.meta.taxonomy;
@@ -72,7 +74,7 @@ function renderStudy(){
  $('flip').disabled=!b;$('next').disabled=!b||q.length<2;$('previous').disabled=!b||mode!=='practice'||q.length<2;
  $('speak').disabled=!b||!voices.length||!('speechSynthesis' in window)||(state.settings.direction==='en-zh'&&!revealed);
  $('bird-details').disabled=!b;$('undo').disabled=!lastUndo||externalChange;
- $('card-family').textContent=b?(b.kind?(b.kind==='family'?'วงศ์ · FAMILY':'กลุ่มนก · COMMON GROUP'):familyLabel(b.family,groupDataset.cards)):'YOUR FIELD NOTEBOOK';$('card-stage').textContent=b?(mode==='practice'?'FREE PRACTICE':stateOf(p).toUpperCase()):'ALL SET';
+ $('card-family').textContent=b?(b.kind?(b.kind==='family'?'FAMILY':'COMMON GROUP'):familyLabel(b.family,groupDataset.cards)):'YOUR FIELD NOTEBOOK';$('card-stage').textContent=b?(mode==='practice'?'FREE PRACTICE':stateOf(p).toUpperCase()):'ALL SET';
  $('flip').innerHTML=(revealed?'Show question':'Reveal answer')+' <kbd>space</kbd>';
  if(!b){
   $('card-body').innerHTML=`<div class="empty"><h3>${studyBirds().length?'Room to let it settle.':'No birds in this focus.'}</h3><p>${studyBirds().length?'No cards are available right now. Due cards return at their scheduled time; your new-card allowance resets tomorrow.':'Try clearing the search or filters. Missing English names are listed in the library.'}</p><p>Choose “Browse & practice freely” to explore without changing schedules.</p>${skipped.size?'<button class="secondary" id="restore-skipped">Bring back skipped cards</button>':''}</div>`;
@@ -81,9 +83,12 @@ function renderStudy(){
   const zhFront=state.settings.direction==='zh-en';
   const main=zhFront?`<div class="chinese" lang="zh-Hans">${esc(b.chinese)}</div>${state.settings.showPinyin||revealed?`<div class="pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</div>`:''}`:`<div class="english">${esc(b.english)}</div>`;
   const answer=zhFront?`<div class="small-english">${esc(b.english)}</div>`:`<div class="small-zh" lang="zh-Hans">${esc(b.chinese)}</div><div class="pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</div>`;
-  $('card-body').innerHTML=`<div class="card-hint">${revealed?'THE FOUR NAMES':zhFront?(b.kind?'WHAT IS THIS TERM IN ENGLISH?':'WHAT IS THIS BIRD IN ENGLISH?'):'HOW DO YOU SAY IT IN CHINESE?'}</div>${main}${revealed?`<div class="answer-rule"></div>${answer}<div class="scientific">${esc(b.scientific)}</div>${b.kind?`<div class="term-thai" lang="th">${esc(b.thai)}</div><p class="term-scope">${b.kind==='family'?'科 (kē) = วงศ์ทางอนุกรมวิธาน':'กลุ่มชื่อสามัญสำหรับช่วยเรียน · ดูขอบเขตได้ที่ “ที่มา”'}</p>`:''}${b.taxonomyReview?'<span class="review-note">Name crosswalk needs taxonomy review</span>':''}`:''}`;
+  $('card-body').innerHTML=`<div class="card-hint">${revealed?'THE FOUR NAMES':zhFront?(b.kind?'WHAT IS THIS TERM IN ENGLISH?':'WHAT IS THIS BIRD IN ENGLISH?'):'HOW DO YOU SAY IT IN CHINESE?'}</div>${main}${revealed?`<div class="answer-rule"></div>${answer}<div class="scientific">${esc(b.scientific)}</div>${b.kind?`<div class="term-thai" lang="th">${esc(b.thai)}</div><p class="term-scope">${b.kind==='family'?'科 (kē) = taxonomic family':'An informal learning group · open its details to see the scope'}</p>`:''}${b.taxonomyReview?'<span class="review-note">Name crosswalk needs taxonomy review</span>':''}`:''}`;
   $('card-sequence').textContent=mode==='practice'?`Card ${q.findIndex(x=>x.id===b.id)+1} of ${q.length}`:p?.reviews?`${p.reviews} previous review${p.reviews===1?'':'s'} in this direction`:'A new name to get to know';
  }
+ $('study-meanings').hidden=!b||!revealed;
+ $('study-meaning-content').innerHTML=b&&revealed?renderNameAnalysis(b,nameGuide):'';
+ if(!revealed)$('study-meanings').open=false;
  $('rate-help').textContent=mode==='practice'?'Free practice does not change your review schedule.':revealed?'How well did you remember? Choose your next interval.':'Reveal the answer, then tell yourself how it went.';
  document.querySelectorAll('[data-rating]').forEach(btn=>{
   btn.disabled=!b||!revealed||mode!=='review'||externalChange;
@@ -120,10 +125,11 @@ function renderLibrary(){
  $('page-prev').disabled=page===0;$('page-next').disabled=(page+1)*40>=birds.length;
 }
 function showDetails(b){
- if(!b)return;document.querySelector('#details-dialog h2').textContent='Bird record';if(b.kind){showTermDetails(b);return;}const source=dataset.meta.sources?.find(s=>s.id===b.englishSource);
+ if(!b)return;document.querySelector('#details-dialog h2').textContent='Bird name & record';if(b.kind){showTermDetails(b);return;}const source=dataset.meta.sources?.find(s=>s.id===b.englishSource);
  const pairs=[['Chinese',b.chinese],['Pinyin',b.pinyin],['English',b.english||'Unresolved · excluded from study'],['Scientific',b.scientific],['Family / order',familyLabel(b.family,groupDataset.cards)+' / '+b.order],['Stable ID',b.id],['Aliases',b.aliases.join('; ')||'No safe aliases in this snapshot'],['English source',source?.title||b.englishSource||'Unresolved'],['Matched name',b.matchedScientific||'—'],['Name matching',b.nameMatch],['Pinyin status',b.pinyinStatus]];
  const sourceUrl=b.id.startsWith('colcn:')?`https://www.gbif.org/dataset/7e276a96-73ea-4efc-8ffb-e74ef573ef6c/taxon/${encodeURIComponent(b.sourceId)}`:dataset.meta.sourceUrl;
  $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">Scientific-name equality is a name match, not a guarantee that taxon concepts agree after splits or lumps.</p><p><a href="${safeUrl(sourceUrl)}" target="_blank" rel="noreferrer">Source record / checklist ↗</a></p>`;
+ $('details-content').insertAdjacentHTML('beforeend','<h3 class="details-meaning-title">Name meanings & story</h3>'+renderNameAnalysis(b,nameGuide));
  $('details-dialog').showModal();
 }
 function practice(id){
@@ -144,22 +150,41 @@ function renderProgress(){
  $('direction-progress').innerHTML=DIRECTIONS.map(d=>{const n=all.filter(b=>state.progress[keyFor(b.id,d)]?.reviews).length;return `<div class="progress-row"><strong>${d==='zh-en'?'Chinese → English':'English → Chinese'}</strong><span>${n} / ${all.length} introduced</span><div class="meter"><i style="width:${n/all.length*100}%"></i></div></div>`;}).join('')+(archived?`<p class="muted">${archived} archived card schedules retained for species absent from the current dataset.</p>`:'');
 }
 function safeUrl(value){try{const u=new URL(value);return /^https?:$/.test(u.protocol)?esc(u.href):'#';}catch{return '#';}}
+function renderGuide(){
+ if(!nameGuide){$('guide-coverage').textContent='Dictionary unavailable. Reload to retry.';$('guide-content').innerHTML=renderNameAnalysis({},null);return;}
+ const q=$('guide-search').value.trim(),all=[...dataset.birds,...groupDataset.cards];
+ const found=all.filter(b=>!q||matches(b,q)).sort((a,b)=>Number(b.chinese===q)-Number(a.chinese===q));
+ const characters=Object.entries(nameGuide.characters).filter(([c,r])=>q&&fold([c,r.thai,r.learningEnglish,...r.entries.flatMap(e=>[e.pinyin,...e.definitions])].join(' ')).includes(fold(q))).slice(0,10);
+ const meta=nameGuide.meta;
+ $('guide-coverage').textContent=`Bundled names: ${meta.characterCount} distinct characters covered (${meta.dictionaryCharacters} from CC-CEDICT + 1 modern-usage entry); ${meta.thaiCharacterCount} with Thai glosses. ${meta.notesCount||nameGuide.notes.length} selected name notes. New imported characters may be uncovered.`;
+ $('guide-result-count').textContent=`${found.length.toLocaleString()} matching names`;
+ $('guide-results').innerHTML=found.slice(0,20).map(b=>`<button class="guide-result" data-guide-record="${esc(b.id)}" aria-pressed="${guideSelection===b.id}"><strong lang="zh-Hans">${esc(b.chinese)}</strong><span>${esc(b.english||b.scientific)}</span><small lang="zh-Latn-pinyin">${esc(b.pinyin)}</small></button>`).join('')+(found.length>20?'<p class="muted">Showing the first 20. Refine your search for more names.</p>':found.length?'':'<p class="muted">No matching names. Try Chinese, Pinyin, or an English bird name.</p>');
+ $('guide-character-results').innerHTML=characters.length?'<h3>Matching characters</h3><div class="character-choices">'+characters.map(([c])=>`<button class="secondary" data-guide-character="${esc(c)}" lang="zh-Hans">${esc(c)}</button>`).join('')+'</div>':'';
+ let b=all.find(b=>b.id===guideSelection);
+ const character=guideSelection?.startsWith('char:')?guideSelection.slice(5):!b&&[...q].length===1&&nameGuide.characters[q]?q:null;
+ if(character){const r=nameGuide.characters[character];b={chinese:character,pinyin:characterEntries(r)[0]?.pinyin||'',english:'Character lookup'};}
+ else if(!b)b=found[0];
+ if(!b){$('guide-record-heading').innerHTML='<h2>Choose a name or character</h2>';$('guide-content').innerHTML='<p class="muted">Search above to explore its meaning.</p>';return;}
+ $('guide-results').querySelectorAll('[data-guide-record]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.guideRecord===b.id)));
+ $('guide-record-heading').innerHTML=`<h2 lang="zh-Hans">${esc(b.chinese)}</h2><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</p><p>${esc(b.english||'English name unresolved')}${b.scientific?` · <em>${esc(b.scientific)}</em>`:''}</p>`;
+ $('guide-content').innerHTML=renderNameAnalysis(b,nameGuide);
+}
 function membershipCompatible(){return dataset.meta.taxonomy===groupDataset.meta.membershipTaxonomy;}
 function setDeckControls(){
  const terms=state.settings.deck==='groups';
  document.querySelectorAll('[data-species-filter]').forEach(el=>el.hidden=terms);
- $('study-search').placeholder=terms?'เหยี่ยว, 鸭科, yā kē, Anatidae…':'白鹭, bái lù, egret…';
+ $('study-search').placeholder=terms?'hawks, 鸭科, yā kē, Anatidae…':'白鹭, bái lù, egret…';
 }
 function renderGroups(){
  const query=$('groups-search').value,kind=$('groups-kind').value,compatible=membershipCompatible();
  const cards=groupDataset.cards.filter(c=>(!query||matches(c,query))&&(!kind||c.kind===kind));
- $('groups-coverage').textContent=`ชุดเริ่มต้น: ${groupDataset.cards.filter(c=>c.kind==='family').length} จาก 109 วงศ์ในแหล่งข้อมูลเดิม และ ${groupDataset.cards.filter(c=>c.kind==='group').length} กลุ่มช่วยเรียน · สมาชิกกลุ่มยึด CAS 2023${compatible?'':' · ชุดข้อมูลนำเข้าต่างอนุกรมวิธาน: ยังไม่จับคู่สมาชิกกลุ่ม'}`;
- $('groups-count').textContent=`${cards.length} คำศัพท์ · family & group terms`;
- $('quick-groups').innerHTML=groupDataset.cards.filter(c=>c.kind==='group').slice(0,4).map(c=>`<button class="secondary" data-members="${esc(c.id)}" ${compatible?'':'disabled'}>${esc(c.thai)} ↗</button>`).join('');
+ $('groups-coverage').textContent=`Starter vocabulary: ${groupDataset.cards.filter(c=>c.kind==='family').length} of 109 source families, plus ${groupDataset.cards.filter(c=>c.kind==='group').length} informal groups · CAS 2023 membership${compatible?'':' · Imported taxonomy differs: membership links unavailable'}`;
+ $('groups-count').textContent=`${cards.length} family & group terms`;
+ $('quick-groups').innerHTML=groupDataset.cards.filter(c=>c.kind==='group').slice(0,4).map(c=>`<button class="secondary" data-members="${esc(c.id)}" ${compatible?'':'disabled'}>${esc(c.english)} ↗</button>`).join('');
  $('group-cards').innerHTML=cards.map(c=>{
   const count=compatible?dataset.birds.filter(b=>inGroup(b,c)).length:null;
-  return `<article class="term-card"><div class="section-line"><span class="pill">${c.kind==='family'?'วงศ์ · FAMILY':'กลุ่มนก · COMMON GROUP'}</span><span>${count===null?'ยังไม่จับคู่':count+' ชนิด'}</span></div><h3 lang="zh-Hans">${esc(c.chinese)}</h3><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(c.pinyin)}</p><p class="term-english">${esc(c.english)}</p><p class="term-latin">${esc(c.scientific)}</p><p lang="th">${esc(c.thai)}</p><div class="term-actions"><button class="primary" data-term="${esc(c.id)}">ฝึกคำนี้</button><button class="secondary" data-members="${esc(c.id)}" ${count?'':'disabled'}>ดูชนิดนก →</button><button class="text-button" data-term-details="${esc(c.id)}">ขอบเขต / ที่มา ↗</button></div></article>`;
- }).join('')||'<p class="empty">ไม่พบวงศ์หรือกลุ่มที่ค้นหา · No matching terms.</p>';
+  return `<article class="term-card"><div class="section-line"><span class="pill">${c.kind==='family'?'FAMILY':'COMMON GROUP'}</span><span>${count===null?'Not mapped':count+' species'}</span></div><h3 lang="zh-Hans">${esc(c.chinese)}</h3><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(c.pinyin)}</p><p class="term-english">${esc(c.english)}</p><p class="term-latin">${esc(c.scientific)}</p><p lang="th">${esc(c.thai)}</p><div class="term-actions"><button class="primary" data-term="${esc(c.id)}">Practice term</button><button class="secondary" data-members="${esc(c.id)}" ${count?'':'disabled'}>View species →</button><button class="text-button" data-term-details="${esc(c.id)}">Meanings & sources ↗</button></div></article>`;
+ }).join('')||'<p class="empty">No matching terms.</p>';
 }
 function startTerms(id=null){
  state.settings.deck='groups';$('deck').value='groups';mode=id?'practice':'review';$('mode').value=mode;saveState();clearStudyFilters();setDeckControls();currentId=id;revealed=false;skipped.clear();practiceIndex=0;setView('study');$('flashcard').scrollIntoView({block:'center'});
@@ -174,8 +199,8 @@ function handleGroupClick(e){
 }
 function showTermDetails(c){
  document.querySelector('#details-dialog h2').textContent='Family / group term';
- const pairs=[['ชื่อจีน',c.chinese],['พินอิน',c.pinyin],['English',c.english],['คำช่วยจำไทย',c.thai],['ประเภท',c.kind==='family'?'Family / วงศ์':'Informal learning group / กลุ่มช่วยเรียน'],['ชื่อวิทยาศาสตร์ / ขอบเขต',c.scientific],['Definition',c.scope],['Stable ID',c.id],['Names / sources',c.nameMatch],['Pinyin status',c.pinyinStatus]];
- $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">${esc(groupDataset.meta.license)}</p><a href="${safeUrl(c.sourceUrl)}" target="_blank" rel="noreferrer">Source ↗</a>`;$('details-dialog').showModal();
+ const pairs=[['Chinese',c.chinese],['Pinyin',c.pinyin],['English',c.english],['Thai learning gloss',c.thai],['Term type',c.kind==='family'?'Family':'Informal learning group'],['Scientific family / scope',c.scientific],['Definition',c.scope],['Stable ID',c.id],['Names / sources',c.nameMatch],['Pinyin status',c.pinyinStatus]];
+ $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">${esc(groupDataset.meta.license)}</p><a href="${safeUrl(c.sourceUrl)}" target="_blank" rel="noreferrer">Source ↗</a><h3 class="details-meaning-title">Name meanings & story</h3>${renderNameAnalysis(c,nameGuide)}`;if(!$('details-dialog').open)$('details-dialog').showModal();
 }
 function renderData(){
  const ready=dataset.birds.filter(b=>b.english).length;
@@ -242,6 +267,10 @@ function bind(){
    $(prefix+'-'+f).addEventListener(f==='search'?'input':'change',()=>{if(f==='order')updateFamilyOptions(prefix);if(prefix==='study')resetStudy();else{page=0;renderLibrary();}});
   }
  }
+ $('guide-search').oninput=()=>{guideSelection=null;renderGuide();};
+ $('guide-shortcuts').onclick=e=>{const button=e.target.closest('[data-guide-name]');if(button){$('guide-search').value=button.dataset.guideName;guideSelection=null;renderGuide();}};
+ $('guide-results').onclick=e=>{const button=e.target.closest('[data-guide-record]');if(button){guideSelection=button.dataset.guideRecord;renderGuide();$('guide-record-heading').scrollIntoView({block:'start',behavior:'smooth'});}};
+ $('guide-character-results').onclick=e=>{const button=e.target.closest('[data-guide-character]');if(button){$('guide-search').value=button.dataset.guideCharacter;guideSelection='char:'+button.dataset.guideCharacter;renderGuide();$('guide-record-heading').scrollIntoView({block:'start',behavior:'smooth'});}};
  $('groups-search').oninput=renderGroups;$('groups-kind').onchange=renderGroups;$('study-terms').onclick=()=>startTerms();
  $('group-cards').onclick=handleGroupClick;$('quick-groups').onclick=handleGroupClick;
  $('reviewed-only').onchange=resetStudy;$('clear-study').onclick=()=>{clearStudyFilters();resetStudy();};
@@ -260,6 +289,7 @@ function bind(){
 }
 try{
  const responses=await Promise.all([fetch('./data/birds.json'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
+ try{const response=await fetch('./data/name-guide.json');if(!response.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
  const bundled=validateDataset(await responses[0].json());groupDataset=validateGroups(await responses[1].json());
  let storedData=null,storedState=null,storedGroups=null;
  try{storedData=localStorage.getItem(DATA);storedState=localStorage.getItem(STORE);storedGroups=localStorage.getItem(GROUP_DATA);}catch{storageOK=false;error('Browser storage is unavailable. You can study in this tab and export a backup.');}

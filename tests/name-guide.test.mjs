@@ -1,0 +1,58 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {validateNameGuide,nameAnalysis,characterEntries} from '../app/name-guide.mjs';
+import {renderNameAnalysis} from '../app/name-guide-ui.mjs';
+const read=path=>readFile(new URL('../'+path,import.meta.url));
+const birds=JSON.parse(await read('data/birds.json')).birds;
+const groups=JSON.parse(await read('data/groups.json')).cards;
+const guide=validateNameGuide(JSON.parse(await read('data/name-guide.json')));
+test('every bundled name character has a sourced meaning; coverage counts and retained input hashes agree',async()=>{
+ const chars=new Set([...birds,...groups].flatMap(b=>[...b.chinese]));
+ assert.equal(chars.size,474);assert.equal(guide.meta.characterCount,chars.size);
+ for(const b of [...birds,...groups])assert.deepEqual(nameAnalysis(b,guide).missing,[],b.chinese);
+ assert.equal(Object.values(guide.characters).filter(c=>c.entries.some(e=>e.source==='cedict')).length,473);
+ assert.equal(Object.values(guide.characters).filter(c=>c.thai).length,guide.meta.thaiCharacterCount);
+ assert.equal(guide.characters['鵟'].entries[0].source,'cas-usage');
+ for(const [path,hash] of Object.entries(guide.meta.inputHashes))assert.equal(createHash('sha256').update(await read(path)).digest('hex'),hash,path);
+});
+test('context readings are selected without throwing away other dictionary senses or inventing a pronunciation',()=>{
+ const long=nameAnalysis({chinese:'长尾',pinyin:'cháng wěi'},guide);
+ assert.equal(long.characters[0].entries[0].pinyin,'cháng');
+ assert.ok(long.characters[0].entries.some(e=>e.pinyin==='zhǎng'));
+ const alt=nameAnalysis({chinese:'长',pinyin:'zhǎng'},guide);
+ assert.equal(alt.characters[0].entries[0].pinyin,'zhǎng');
+ assert.ok(nameAnalysis({chinese:'白',pinyin:'bái'},guide).characters[0].entries[0].definitions.includes('white'));
+ assert.ok(characterEntries(guide.characters['白'])[0].definitions.includes('white'));
+ const mismatch=nameAnalysis({chinese:'长尾',pinyin:'not-aligned'},guide);
+ assert.equal(mismatch.characters[0].reading,'');
+ const imported=nameAnalysis({chinese:'𠮷',pinyin:'jí'},guide);
+ assert.deepEqual(imported.missing,['𠮷']);assert.equal(imported.characters[0].entries.length,0);
+});
+test('compounds and personal names do not acquire fabricated literal etymologies',()=>{
+ const shrike=nameAnalysis({chinese:'红背伯劳',pinyin:'hóng bèi bó láo'},guide);
+ assert.ok(shrike.units.some(u=>u.word==='伯劳'));
+ assert.ok(!shrike.units.some(u=>u.word==='背信'));
+ const place=nameAnalysis({chinese:'喜马拉雅中杜鹃'},guide);
+ assert.ok(place.units.some(u=>u.word==='喜马拉雅'));
+ assert.equal(nameAnalysis({chinese:'布氏鹨'},guide).hasPersonalNameMarker,true);
+ const unknown=nameAnalysis({chinese:'褐耳鹰'},guide);
+ assert.equal(unknown.notes.length,0);
+ const cuckoo=nameAnalysis({chinese:'大杜鹃'},guide);
+ assert.equal(cuckoo.notes.find(n=>n.match==='杜鹃').kind,'folklore');
+ assert.equal(nameAnalysis({chinese:'灰喜鹊'},guide).notes.filter(n=>n.kind==='cultural').length,0);
+});
+test('rendered meanings retain credits, distinguish unsupported history, escape text and reject unsafe links',()=>{
+ const html=renderNameAnalysis({chinese:'褐耳鹰',pinyin:'hè ěr yīng'},guide);
+ assert.match(html,/No verified naming history/);assert.match(html,/CC BY-SA 4.0/);
+ const altered=structuredClone(guide);
+ altered.characters['白'].thai='<img src=x onerror=alert(1)>';
+ altered.meta.sources.find(s=>s.id==='cedict').url='javascript:alert(1)';
+ const escaped=renderNameAnalysis({chinese:'白'},altered);
+ assert.ok(!escaped.includes('<img'));assert.ok(escaped.includes('&lt;img'));assert.ok(!escaped.includes('javascript:'));
+ assert.match(renderNameAnalysis({chinese:'𠮷'},guide),/Not covered by this snapshot/);
+ assert.match(renderNameAnalysis({},null),/unavailable/);
+ const missingSource=structuredClone(guide);missingSource.notes[0].sources=['made-up'];
+ assert.throws(()=>validateNameGuide(missingSource),/evidence/);
+});

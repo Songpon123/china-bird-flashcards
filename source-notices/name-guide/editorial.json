@@ -1,0 +1,775 @@
+{
+  "version": "name-guide-2026-11-18-v1",
+  "thaiGlosses": {
+    "白": "ขาว",
+    "黑": "ดำ",
+    "红": "แดง",
+    "赤": "แดง / สีแดงเข้ม",
+    "朱": "แดงชาด",
+    "丹": "แดงชาด",
+    "黄": "เหลือง",
+    "金": "ทอง / สีทอง",
+    "银": "เงิน / สีเงิน",
+    "铜": "ทองแดง",
+    "铁": "เหล็ก",
+    "灰": "เทา / เถ้า",
+    "褐": "น้ำตาล",
+    "棕": "น้ำตาล / ปาล์ม",
+    "栗": "เกาลัด / สีน้ำตาลเกาลัด",
+    "绿": "เขียว",
+    "青": "เขียวหรือฟ้า / สีคราม ขึ้นกับคำ",
+    "蓝": "น้ำเงิน / ฟ้า",
+    "紫": "ม่วง",
+    "绯": "แดงเข้ม",
+    "粉": "ผง / สีชมพูเมื่อใช้กับสี",
+    "橙": "ส้ม / สีส้ม",
+    "苍": "เขียวอมเทา / เทาซีด",
+    "乌": "อีกา / ดำ",
+    "雪": "หิมะ",
+    "花": "ดอกไม้ / ลวดลายหลากสี",
+    "斑": "จุด / ด่าง",
+    "纹": "ลาย / เส้นลาย",
+    "条": "แถบ / เส้นยาว",
+    "点": "จุด",
+    "横": "ขวาง / แนวนอน",
+    "纵": "ตามยาว / แนวตั้ง",
+    "环": "วง / แหวน",
+    "冠": "มงกุฎ / หงอน",
+    "顶": "ยอด / กระหม่อม",
+    "头": "หัว",
+    "额": "หน้าผาก",
+    "眉": "คิ้ว",
+    "眼": "ตา",
+    "眶": "เบ้าตา",
+    "耳": "หู",
+    "颊": "แก้ม",
+    "颏": "คาง; ในชื่อนกใช้หมายถึงบริเวณคอด้วย",
+    "喉": "ลำคอ",
+    "颈": "คอ",
+    "嘴": "ปาก / จะงอยปาก",
+    "口": "ปาก",
+    "鼻": "จมูก",
+    "须": "หนวด / ต้อง",
+    "爪": "กรงเล็บ",
+    "足": "เท้า",
+    "脚": "ขา / เท้า",
+    "趾": "นิ้วเท้า",
+    "蹼": "พังผืดระหว่างนิ้ว",
+    "肩": "ไหล่",
+    "背": "หลัง",
+    "胸": "อก",
+    "腹": "ท้อง",
+    "腰": "เอว",
+    "胁": "สีข้าง",
+    "臀": "สะโพก / ก้น",
+    "腿": "ขา",
+    "尾": "หาง",
+    "翅": "ปีก",
+    "羽": "ขนนก",
+    "毛": "ขน",
+    "绒": "ขนอ่อน / กำมะหยี่",
+    "大": "ใหญ่",
+    "小": "เล็ก",
+    "中": "กลาง",
+    "长": "ยาว (cháng); อีกเสียง zhǎng มีความหมายต่างกัน",
+    "短": "สั้น",
+    "阔": "กว้าง",
+    "宽": "กว้าง",
+    "细": "เล็กเรียว / ละเอียด",
+    "厚": "หนา",
+    "尖": "แหลม",
+    "钝": "ทู่",
+    "弯": "โค้ง",
+    "叉": "แยกเป็นง่าม / ส้อม",
+    "双": "คู่ / สอง",
+    "三": "สาม",
+    "四": "สี่",
+    "八": "แปด",
+    "半": "ครึ่ง",
+    "纯": "ล้วน / บริสุทธิ์",
+    "淡": "อ่อน / จาง",
+    "暗": "มืด / สีเข้ม",
+    "丽": "งดงาม",
+    "美": "สวยงาม",
+    "华": "งดงาม / จีน ตามบริบท",
+    "山": "ภูเขา",
+    "岩": "หิน / โขดหิน",
+    "石": "หิน",
+    "林": "ป่า",
+    "树": "ต้นไม้",
+    "木": "ไม้ / ต้นไม้",
+    "竹": "ไผ่",
+    "草": "หญ้า",
+    "苇": "กก / อ้อ",
+    "芦": "อ้อ / กก",
+    "田": "นา / ทุ่งเพาะปลูก",
+    "稻": "ข้าว",
+    "禾": "ธัญพืช / ต้นข้าว",
+    "秧": "ต้นกล้า",
+    "麦": "ข้าวสาลี / ธัญพืช",
+    "豆": "ถั่ว",
+    "麻": "ป่าน / ปอ; ความหมายขึ้นกับคำประสม",
+    "松": "สน",
+    "柳": "หลิว",
+    "梅": "เหมย / บ๊วย",
+    "棉": "ฝ้าย",
+    "叶": "ใบไม้",
+    "果": "ผลไม้",
+    "地": "ดิน / พื้นดิน",
+    "海": "ทะเล",
+    "河": "แม่น้ำ",
+    "溪": "ลำธาร",
+    "水": "น้ำ",
+    "池": "สระน้ำ",
+    "沼": "บึง / หนอง",
+    "泽": "บึง / พื้นที่ชุ่มน้ำ",
+    "沙": "ทราย",
+    "漠": "ทะเลทราย",
+    "滨": "ริมฝั่ง",
+    "湾": "อ่าว",
+    "岛": "เกาะ",
+    "崖": "หน้าผา",
+    "岭": "สันเขา",
+    "原": "ที่ราบ / ดั้งเดิม",
+    "荒": "รกร้าง",
+    "北": "เหนือ",
+    "南": "ใต้",
+    "东": "ตะวันออก",
+    "西": "ตะวันตก",
+    "高": "สูง",
+    "低": "ต่ำ",
+    "远": "ไกล",
+    "夜": "กลางคืน",
+    "日": "ดวงอาทิตย์ / วัน",
+    "星": "ดาว",
+    "天": "ฟ้า / สวรรค์",
+    "雨": "ฝน",
+    "云": "เมฆ",
+    "风": "ลม",
+    "雷": "ฟ้าร้อง",
+    "火": "ไฟ",
+    "烟": "ควัน",
+    "寒": "หนาว",
+    "秋": "ฤดูใบไม้ร่วง",
+    "家": "บ้าน / ครอบครัว",
+    "啄": "จิก",
+    "食": "กิน / อาหาร",
+    "捕": "จับ",
+    "渔": "จับปลา",
+    "猎": "ล่า",
+    "潜": "ดำน้ำ / ซ่อนตัว",
+    "游": "ว่าย / ท่องไป",
+    "浮": "ลอย",
+    "翻": "พลิก / กลับ",
+    "织": "ทอ",
+    "缝": "เย็บ",
+    "攀": "ปีน",
+    "旋": "หมุน / วน",
+    "歌": "เพลง / ร้องเพลง",
+    "啸": "ร้องเสียงแหลม / ผิวปาก",
+    "噪": "ส่งเสียงดัง",
+    "喜": "ยินดี / ความสุข",
+    "戴": "สวม / สวมไว้บนศีรษะ",
+    "胜": "ชัยชนะ / ชนะ; ชื่อ戴胜มีบริบทเฉพาะ ดูคำอธิบายชื่อ",
+    "氏": "สกุล / คำต่อท้ายชื่อบุคคล",
+    "拟": "คล้าย / เลียนแบบ",
+    "类": "ประเภท / กลุ่ม",
+    "科": "วงศ์ในอนุกรมวิธาน; มีความหมายทั่วไปว่าสาขาด้วย",
+    "鸟": "นก",
+    "鹰": "เหยี่ยว / อินทรี",
+    "隼": "เหยี่ยวฟอลคอน",
+    "雕": "อินทรีขนาดใหญ่; มีความหมายทั่วไปว่าแกะสลักด้วย",
+    "鸠": "นกเขา",
+    "鸽": "นกพิราบ",
+    "鸭": "เป็ด",
+    "雁": "ห่านป่า",
+    "鹅": "ห่าน",
+    "鹭": "นกยาง / นกกระสากลุ่ม heron และ egret",
+    "鹤": "นกกระเรียน",
+    "鹳": "นกกระสากลุ่ม stork",
+    "鸥": "นกนางนวล",
+    "燕": "นกนางแอ่น (yàn); เสียงอื่นใช้ในชื่อเฉพาะ",
+    "雀": "นกกระจอก / นกขนาดเล็ก ขึ้นกับคำ",
+    "鸦": "อีกา",
+    "鸮": "นกเค้า / นกฮูก",
+    "鹗": "เหยี่ยวออสเปรย์",
+    "鸢": "เหยี่ยวไคต์",
+    "鹫": "แร้ง",
+    "雉": "ไก่ฟ้า",
+    "鸡": "ไก่",
+    "鹊": "นกสาลิกากลุ่ม magpie",
+    "鸫": "นกเดินดงกลุ่ม thrush",
+    "莺": "นกร้องเพลง / นกกลุ่ม warbler ตามคำประสม",
+    "鹎": "นกปรอด",
+    "鹟": "นกจับแมลง",
+    "鹀": "นกจาบปีกอ่อนกลุ่ม bunting",
+    "鹨": "นกเด้าดินกลุ่ม pipit",
+    "鹬": "นกชายเลน / นกปากซ่อม ขึ้นกับคำประสม",
+    "鸻": "นกหัวโตกลุ่ม plover",
+    "䴓": "นกไต่ไม้กลุ่ม nuthatch",
+    "䴕": "นกหัวขวาน",
+    "䳭": "นกกลุ่ม wheatear",
+    "鳞": "เกล็ด",
+    "鱼": "ปลา",
+    "蜂": "ผึ้ง / ต่อ",
+    "蜜": "น้ำผึ้ง",
+    "蛇": "งู",
+    "蚁": "มด",
+    "蛛": "แมงมุม",
+    "虎": "เสือ",
+    "牛": "วัว",
+    "马": "ม้า",
+    "犀": "แรด",
+    "琵": "ส่วนของคำว่า琵琶 เครื่องดนตรีผีผา",
+    "鹡": "ใช้ร่วมกับ鸰เป็น鹡鸰 ชื่อนกเด้าลม",
+    "鸰": "ใช้ร่วมกับ鹡เป็น鹡鸰 ชื่อนกเด้าลม",
+    "䴙": "ใช้ร่วมกับ䴘เป็น䴙䴘 ชื่อนกเป็ดผี",
+    "䴘": "ใช้ร่วมกับ䴙เป็น䴙䴘 ชื่อนกเป็ดผี",
+    "鸳": "เป็ดแมนดารินตัวผู้ ตามการใช้ในพจนานุกรม",
+    "鸯": "เป็ดแมนดารินตัวเมีย ตามการใช้ในพจนานุกรม",
+    "伯": "ลุงฝ่ายพ่อ / ผู้เป็นใหญ่; ใน伯劳ต้องอ่านเป็นคำประสม",
+    "劳": "แรงงาน / ความเหนื่อย; ใน伯劳ต้องอ่านเป็นคำประสม",
+    "佛": "พระพุทธเจ้า / พุทธศาสนา (fó)",
+    "法": "กฎหมาย / วิธี / ธรรมะ ตามบริบท",
+    "僧": "พระสงฆ์",
+    "杜": "ชื่อสกุลตู้ / ต้นแพร์ชนิดหนึ่ง; ใน杜鹃เป็นส่วนของชื่อนก"
+  },
+  "compoundGlosses": {
+    "白鹭": {
+      "thai": "นกยางขาว (Little Egret); 白=ขาว และ 鹭=นกยาง"
+    },
+    "啄木鸟": {
+      "thai": "นกหัวขวาน; 啄=จิก 木=ไม้ 鸟=นก"
+    },
+    "伯劳": {
+      "thai": "นกอีเสือ (shrike); ใช้เป็นคำประสม ไม่แปลว่า “ลุง+แรงงาน”"
+    },
+    "鸳鸯": {
+      "thai": "เป็ดแมนดาริน; เป็นคำประสม และใช้เปรียบคู่รักได้"
+    },
+    "戴胜": {
+      "thai": "นกกะรางหัวขวาน (hoopoe); ดูคำอธิบายเรื่องเครื่องประดับศีรษะ"
+    },
+    "喜鹊": {
+      "thai": "นกสาลิกากลุ่ม magpie; 喜=ความยินดี และ 鹊=magpie"
+    },
+    "杜鹃": {
+      "thai": "นกคัคคู; ชื่อเดียวกันยังใช้เรียกกุหลาบพันปีในอีกบริบท"
+    },
+    "䴙䴘": {
+      "thai": "นกเป็ดผี (grebe); เป็นคำสองพยางค์ ไม่แปลแยกเป็นสองความหมาย"
+    },
+    "鹡鸰": {
+      "thai": "นกเด้าลม (wagtail); เป็นคำสองพยางค์"
+    },
+    "鸬鹚": {
+      "thai": "นกกาน้ำ (cormorant)"
+    },
+    "鹦鹉": {
+      "thai": "นกแก้ว (parrot)"
+    },
+    "鹌鹑": {
+      "thai": "นกกระทา (quail)"
+    },
+    "鹧鸪": {
+      "thai": "นกกระทากลุ่ม partridge"
+    },
+    "鹪鹩": {
+      "thai": "นกกระจ้อยกลุ่ม wren"
+    },
+    "鹈鹕": {
+      "thai": "นกกระทุง (pelican)"
+    },
+    "天鹅": {
+      "thai": "หงส์ (swan); อ่านเป็นคำประสม ไม่ใช่คำยืนยันถิ่นอาศัยบนท้องฟ้า"
+    },
+    "麻雀": {
+      "thai": "นกกระจอก (sparrow)"
+    },
+    "翠鸟": {
+      "thai": "นกกระเต็น (kingfisher)"
+    },
+    "鸠鸽": {
+      "thai": "นกเขาและนกพิราบ (doves and pigeons)"
+    },
+    "斑鸠": {
+      "thai": "นกเขากลุ่ม turtledove"
+    },
+    "山雀": {
+      "thai": "นกติ๊ดกลุ่ม tit / chickadee"
+    },
+    "百灵": {
+      "thai": "นกจาบฝนกลุ่ม lark"
+    },
+    "喜马拉雅": {
+      "thai": "หิมาลัย เป็นชื่อภูมิศาสตร์ถอดเสียง; อย่าแปล 喜 马 拉 雅 แยกกันเป็นที่มาของชื่อ"
+    },
+    "西伯利亚": {
+      "thai": "ไซบีเรีย เป็นชื่อภูมิศาสตร์ถอดเสียง"
+    },
+    "尼泊尔": {
+      "thai": "เนปาล เป็นชื่อประเทศถอดเสียง"
+    },
+    "阿尔泰": {
+      "thai": "อัลไต เป็นชื่อภูมิศาสตร์ถอดเสียง"
+    },
+    "蒙古": {
+      "thai": "มองโกเลีย / มองโกล"
+    },
+    "印度": {
+      "thai": "อินเดีย"
+    },
+    "爪哇": {
+      "thai": "ชวา เป็นชื่อเกาะถอดเสียง"
+    },
+    "菲律宾": {
+      "thai": "ฟิลิปปินส์ เป็นชื่อประเทศถอดเสียง"
+    },
+    "加拿大": {
+      "thai": "แคนาดา เป็นชื่อประเทศถอดเสียง"
+    },
+    "琉球": {
+      "thai": "ริวกิว เป็นชื่อหมู่เกาะ"
+    },
+    "欧亚": {
+      "thai": "ยูเรเชีย / ยุโรปและเอเชีย"
+    },
+    "美洲": {
+      "thai": "ทวีปอเมริกา"
+    },
+    "澳洲": {
+      "thai": "ออสเตรเลีย"
+    },
+    "台湾": {
+      "thai": "ไต้หวัน"
+    },
+    "西藏": {
+      "thai": "ทิเบต"
+    },
+    "中华": {
+      "thai": "จีน / จีนในบริบทชื่อภูมิศาสตร์หรือวัฒนธรรม"
+    },
+    "普通": {
+      "thai": "ทั่วไป / สามัญ"
+    },
+    "东方": {
+      "thai": "ตะวันออก"
+    },
+    "凤头": {
+      "thai": "หัวมีหงอน / หงอนแบบนกเฟิ่ง ตามการอ่านชื่อ"
+    },
+    "红嘴": {
+      "thai": "ปากแดง"
+    },
+    "白眉": {
+      "thai": "คิ้วขาว"
+    },
+    "长尾": {
+      "thai": "หางยาว"
+    },
+    "黑颈": {
+      "thai": "คอดำ"
+    },
+    "红胸": {
+      "thai": "อกแดง"
+    },
+    "白腹": {
+      "thai": "ท้องขาว"
+    },
+    "黄喉": {
+      "thai": "คอเหลือง"
+    },
+    "佛法僧": {
+      "thai": "ชื่อกลุ่มนกที่ใช้ในภาษาจีน; ความหมายตามตัวอักษรเชื่อมกับพุทธ พระธรรม พระสงฆ์ แต่ยังไม่มีที่มาของชื่อนี้ที่ตรวจสอบในแอป"
+    }
+  },
+  "extraWords": [
+    "喜马拉雅",
+    "西伯利亚",
+    "尼泊尔",
+    "阿尔泰",
+    "佛法僧"
+  ],
+  "sources": [
+    {
+      "id": "cedict",
+      "title": "CC-CEDICT · MDBG and contributors",
+      "url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "use": "Dictionary entries; adapted Thai learning glosses and formatting share the same license."
+    },
+    {
+      "id": "cas-usage",
+      "title": "CAS · Catalogue of Life China 2023",
+      "url": "https://doi.org/10.15468/ae6ush",
+      "license": "CC BY-NC 4.0",
+      "use": "Modern usage evidence for 鵟 in the source checklist; authored usage gloss, not a CC-CEDICT entry."
+    },
+    {
+      "id": "moe-magpie",
+      "title": "MOE Revised Mandarin Dictionary · 鵲",
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=6399&la=0&powerMode=0",
+      "use": "Brief authored paraphrase of the recorded happy-omen belief; no entry text or images reproduced."
+    },
+    {
+      "id": "moe-mandarin",
+      "title": "MOE Concised Mandarin Dictionary · 鴛鴦",
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44683&la=0&powerMode=1",
+      "use": "Brief authored paraphrase of sex terms and figurative usage; no entry text or images reproduced."
+    },
+    {
+      "id": "moe-cuckoo",
+      "title": "MOE Revised Mandarin Dictionary · 望帝啼鵑",
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162957&q=1&word=%E6%9C%9B",
+      "use": "Brief authored paraphrase of a literary legend; no entry text or images reproduced."
+    },
+    {
+      "id": "kinmen-hoopoe",
+      "title": "Kinmen Daily · 田間戴勝飛 (2023)",
+      "url": "https://www.kmdn.gov.tw/1117/1271/1277/553575/",
+      "use": "Brief authored paraphrase of the explanation of 戴勝; not a definitive historical etymology."
+    }
+  ],
+  "notes": [
+    {
+      "match": "白鹭",
+      "kind": "literal",
+      "title": "White + egret",
+      "thai": "白 หมายถึงขาว และ 鹭 หมายถึงนกยาง จึงอ่านชื่อได้ว่า “นกยางขาว” นี่คือการอธิบายส่วนประกอบของคำ ไม่ใช่หลักฐานว่าใครเป็นผู้ตั้งชื่อครั้งแรก",
+      "english": "白 means white and 鹭 means heron/egret. This is a literal reading, not a documented naming history.",
+      "sources": [
+        "cedict"
+      ]
+    },
+    {
+      "match": "红嘴蓝鹊",
+      "kind": "literal",
+      "title": "A colour + body-part pattern",
+      "thai": "แยกเป็น 红嘴 = ปากแดง, 蓝 = น้ำเงิน และ 鹊 = magpie ชื่อชนิดจึงอ่านได้ว่า “นกสาลิกาสีน้ำเงินปากแดง” เป็นตัวอย่างการอ่านคำบอกสีและส่วนของร่างกาย",
+      "english": "Read 红嘴 as red-billed, 蓝 as blue, and 鹊 as magpie. This explains the name’s wording, not who coined it.",
+      "sources": [
+        "cedict"
+      ]
+    },
+    {
+      "match": "啄木鸟",
+      "kind": "literal",
+      "title": "Peck + wood + bird",
+      "thai": "啄 = จิก, 木 = ไม้ และ 鸟 = นก รวมเป็นนกที่จิกไม้ ใช้ช่วยจำความหมายของคำว่า woodpecker ได้ตรงตัว",
+      "english": "啄 = peck, 木 = wood, 鸟 = bird: literally a bird that pecks wood.",
+      "sources": [
+        "cedict"
+      ]
+    },
+    {
+      "match": "喜鹊",
+      "kind": "cultural",
+      "exact": true,
+      "title": "The magpie as a happy omen",
+      "thai": "พจนานุกรมกระทรวงศึกษาธิการไต้หวันอธิบายว่า คนในอดีตเชื่อว่าเสียงนกสาลิกาเป็นลางของข่าวดี จึงใช้ 喜 ซึ่งแปลว่าความยินดีในชื่อ เรื่องนี้เป็นความเชื่อทางวัฒนธรรม",
+      "english": "The MOE dictionary explains 喜鹊 through the traditional belief that its call foretells happy news. This is a cultural belief.",
+      "sources": [
+        "moe-magpie"
+      ]
+    },
+    {
+      "match": "鸳鸯",
+      "kind": "usage",
+      "title": "A whole word, with two traditional sex terms",
+      "thai": "พจนานุกรมใช้ 鸳 เรียกตัวผู้ และ 鸯 เรียกตัวเมีย เมื่อรวมกันเป็นชื่อเป็ดแมนดาริน คำนี้ยังใช้เปรียบคู่สามีภรรยาได้ การเปรียบทางภาษาไม่ได้ยืนยันพฤติกรรมจับคู่ตลอดชีวิตของนก",
+      "english": "In the MOE dictionary 鸳 denotes the male and 鸯 the female Mandarin Duck. The compound also figuratively means a married couple.",
+      "sources": [
+        "moe-mandarin"
+      ]
+    },
+    {
+      "match": "杜鹃",
+      "kind": "folklore",
+      "title": "The legend of Emperor Wang",
+      "thai": "ชื่อ杜鹃เชื่อมกับตำนานกษัตริย์วั่งตี้แห่งรัฐสู่ ซึ่งวิญญาณกลายเป็นนกคัคคูหลังสิ้นพระชนม์ นี่เป็นเรื่องเล่าทางวรรณกรรมที่พจนานุกรมบันทึกไว้ ไม่ใช่หลักฐานยืนยันการกำเนิดของชื่อทุกชนิดที่มีคำว่า杜鹃",
+      "english": "A recorded legend tells of Emperor Wang of Shu becoming a cuckoo after death. It is folklore, not proof of the naming origin of every 杜鹃 species.",
+      "sources": [
+        "moe-cuckoo"
+      ]
+    },
+    {
+      "match": "戴胜",
+      "kind": "interpretation",
+      "title": "An old head ornament, rather than “victory”",
+      "thai": "戴 อ่านได้ว่า “สวม” ส่วน 勝/胜 มีความหมายเก่าว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายชื่อ戴胜ผ่านหงอนที่เด่นเหมือนเครื่องประดับ จึงไม่ควรใช้ความหมายทั่วไปว่า “ชนะ” มาแปลชื่อนี้",
+      "english": "戴 means to wear; 勝/胜 also has an old head-ornament sense. The cited article explains the hoopoe’s name by its conspicuous crest. This is a source explanation, not a traced first coinage.",
+      "sources": [
+        "kinmen-hoopoe"
+      ]
+    },
+    {
+      "match": "伯劳",
+      "kind": "usage",
+      "title": "A bird-name compound",
+      "thai": "伯劳 เป็นคำประสมหมายถึงนกอีเสือ (shrike) แม้ 伯 และ 劳 จะมีความหมายเดี่ยวในพจนานุกรม ก็ไม่ควรนำมาต่อเป็นที่มาของชื่อนก",
+      "english": "伯劳 is the word for shrike. The independent senses of 伯 and 劳 do not establish the origin of this bird name.",
+      "sources": [
+        "cedict"
+      ]
+    },
+    {
+      "match": "鹡鸰",
+      "kind": "usage",
+      "title": "Two characters, one bird word",
+      "thai": "鹡鸰 เป็นคำประสมชื่อนกเด้าลม พจนานุกรมอธิบายตัวอักษรแต่ละตัวโดยชี้กลับไปยังคำนี้ จึงไม่จำเป็นต้องฝืนแปลแต่ละตัวเป็นวัตถุสองอย่าง",
+      "english": "鹡 and 鸰 are defined through the compound 鹡鸰, wagtail. They are not two separate descriptive objects.",
+      "sources": [
+        "cedict"
+      ]
+    },
+    {
+      "match": "䴙䴘",
+      "kind": "usage",
+      "title": "Two characters, one bird word",
+      "thai": "䴙䴘 เป็นชื่อกลุ่มนกเป็ดผี (grebe) ตัวอักษรทั้งสองใช้ร่วมกันในคำนี้ พินอินคือ pì tī",
+      "english": "䴙䴘 (pì tī) means grebe. Its characters are used together in this lexical item.",
+      "sources": [
+        "cedict"
+      ]
+    }
+  ],
+  "characterOverrides": {
+    "鵟": {
+      "pinyin": "kuáng",
+      "thai": "เหยี่ยวบัซซาร์ด; ความหมายที่ใช้ในชื่อนกปัจจุบัน",
+      "definitions": [
+        "buzzard (modern bird-name usage in this checklist)"
+      ],
+      "source": "cas-usage"
+    }
+  },
+  "englishGlosses": {
+    "白": "white",
+    "黑": "black",
+    "红": "red",
+    "赤": "red; reddish",
+    "朱": "vermilion; scarlet",
+    "丹": "cinnabar; red",
+    "黄": "yellow",
+    "金": "gold; golden",
+    "银": "silver; silvery",
+    "铜": "copper",
+    "灰": "grey; ash",
+    "褐": "brown",
+    "棕": "brown; also palm in other contexts",
+    "栗": "chestnut; chestnut-brown",
+    "绿": "green",
+    "青": "green, blue or blue-green, depending on the compound",
+    "蓝": "blue",
+    "紫": "purple",
+    "绯": "scarlet; deep red",
+    "粉": "powder; pink in colour compounds",
+    "橙": "orange",
+    "苍": "greyish; pale green/blue",
+    "乌": "crow; black",
+    "雪": "snow",
+    "花": "flower; patterned or variegated, depending on the name",
+    "斑": "spot; speckle; mottling",
+    "纹": "pattern; markings",
+    "条": "strip; stripe",
+    "点": "dot; spot",
+    "横": "across; transverse",
+    "纵": "lengthwise; longitudinal",
+    "环": "ring",
+    "冠": "crown; crest",
+    "顶": "top; crown of the head",
+    "头": "head",
+    "额": "forehead",
+    "眉": "eyebrow",
+    "眼": "eye",
+    "眶": "eye socket",
+    "耳": "ear",
+    "颊": "cheek",
+    "颏": "chin; throat in some bird names",
+    "喉": "throat",
+    "颈": "neck",
+    "嘴": "mouth; bill or beak",
+    "口": "mouth",
+    "鼻": "nose",
+    "须": "whisker; must",
+    "爪": "claw; talon",
+    "足": "foot",
+    "脚": "foot; leg",
+    "趾": "toe",
+    "蹼": "webbing between toes",
+    "肩": "shoulder",
+    "背": "back",
+    "胸": "chest; breast",
+    "腹": "belly; abdomen",
+    "腰": "waist",
+    "胁": "flank; side",
+    "臀": "buttocks; rump region",
+    "腿": "leg",
+    "尾": "tail",
+    "翅": "wing",
+    "羽": "feather; plumage",
+    "毛": "hair; down; fur",
+    "绒": "down; fine fluff; velvet",
+    "大": "large; big",
+    "小": "small",
+    "中": "middle; central",
+    "长": "long (cháng); other readings have other senses",
+    "短": "short",
+    "阔": "wide; broad",
+    "宽": "wide; broad",
+    "细": "slender; fine",
+    "厚": "thick",
+    "尖": "pointed; sharp",
+    "钝": "blunt",
+    "弯": "curved; bent",
+    "叉": "fork; forked",
+    "双": "pair; double",
+    "三": "three",
+    "四": "four",
+    "八": "eight",
+    "半": "half",
+    "纯": "pure; plain; unmixed",
+    "淡": "pale; light",
+    "暗": "dark",
+    "丽": "beautiful",
+    "美": "beautiful",
+    "华": "splendid; Chinese, depending on the compound",
+    "山": "mountain",
+    "岩": "rock; cliff",
+    "石": "stone; rock",
+    "林": "forest; woods",
+    "树": "tree",
+    "木": "wood; tree",
+    "竹": "bamboo",
+    "草": "grass",
+    "苇": "reed",
+    "芦": "reed",
+    "田": "cultivated field; paddy",
+    "稻": "rice plant",
+    "禾": "grain crop",
+    "秧": "seedling",
+    "麦": "wheat; grain",
+    "豆": "bean",
+    "麻": "hemp; other senses depend on the compound",
+    "松": "pine",
+    "柳": "willow",
+    "梅": "plum",
+    "棉": "cotton",
+    "叶": "leaf",
+    "果": "fruit",
+    "地": "ground; earth",
+    "海": "sea",
+    "河": "river",
+    "溪": "stream",
+    "水": "water",
+    "池": "pool; pond",
+    "沼": "marsh",
+    "泽": "marsh; wetland",
+    "沙": "sand",
+    "漠": "desert",
+    "滨": "shore; bank",
+    "湾": "bay",
+    "岛": "island",
+    "崖": "cliff",
+    "岭": "ridge",
+    "原": "plain; original",
+    "荒": "wild; desolate",
+    "北": "north",
+    "南": "south",
+    "东": "east",
+    "西": "west",
+    "高": "high; tall",
+    "低": "low",
+    "远": "far; distant",
+    "夜": "night",
+    "日": "sun; day",
+    "星": "star",
+    "天": "sky; heaven",
+    "雨": "rain",
+    "云": "cloud",
+    "风": "wind",
+    "雷": "thunder",
+    "火": "fire",
+    "烟": "smoke",
+    "寒": "cold",
+    "秋": "autumn",
+    "家": "home; house; family",
+    "啄": "to peck",
+    "食": "food; eat",
+    "捕": "catch",
+    "渔": "to fish",
+    "猎": "to hunt",
+    "潜": "to dive; to hide",
+    "游": "swim; wander",
+    "浮": "float",
+    "翻": "turn over",
+    "织": "weave",
+    "缝": "sew",
+    "攀": "climb",
+    "旋": "turn; revolve",
+    "歌": "song; sing",
+    "啸": "whistle; shrill call",
+    "噪": "make a noise",
+    "喜": "joy; happiness; to like",
+    "戴": "wear; put on the head",
+    "氏": "family name; clan-name suffix",
+    "拟": "resemble; imitate",
+    "类": "kind; category; group",
+    "科": "family (taxonomy); branch or field in general usage",
+    "鸟": "bird",
+    "鹰": "hawk; eagle",
+    "隼": "falcon",
+    "雕": "large eagle; carve in other contexts",
+    "鸠": "dove",
+    "鸽": "pigeon; dove",
+    "鸭": "duck",
+    "雁": "wild goose",
+    "鹅": "goose",
+    "鹭": "heron; egret",
+    "鹤": "crane",
+    "鹳": "stork",
+    "鸥": "gull",
+    "燕": "swallow (yàn); other readings occur in proper names",
+    "雀": "sparrow; small bird, depending on the compound",
+    "鸦": "crow; raven",
+    "鸮": "owl",
+    "鹗": "osprey",
+    "鸢": "kite (bird)",
+    "鹫": "vulture",
+    "雉": "pheasant",
+    "鸡": "chicken; fowl",
+    "鹊": "magpie",
+    "鸫": "thrush",
+    "莺": "warbler or songbird, depending on the compound",
+    "鹎": "bulbul",
+    "鹟": "flycatcher",
+    "鹀": "bunting",
+    "鹨": "pipit",
+    "鹬": "sandpiper; snipe or other wader, depending on the compound",
+    "鸻": "plover",
+    "䴓": "nuthatch",
+    "䴕": "woodpecker",
+    "䳭": "wheatear",
+    "鳞": "scale (of a fish etc.)",
+    "鱼": "fish",
+    "蜂": "bee; wasp",
+    "蜜": "honey",
+    "蛇": "snake",
+    "蚁": "ant",
+    "蛛": "spider",
+    "虎": "tiger",
+    "牛": "cattle; ox",
+    "马": "horse",
+    "犀": "rhinoceros",
+    "鹡": "used with 鸰 in 鹡鸰, wagtail",
+    "鸰": "used with 鹡 in 鹡鸰, wagtail",
+    "䴙": "used with 䴘 in 䴙䴘, grebe",
+    "䴘": "used with 䴙 in 䴙䴘, grebe",
+    "鸳": "male Mandarin Duck in dictionary usage",
+    "鸯": "female Mandarin Duck in dictionary usage",
+    "佛": "Buddha; Buddhism (fó)",
+    "法": "law; method; Buddhist dharma, depending on the context",
+    "僧": "Buddhist monk"
+  }
+}
