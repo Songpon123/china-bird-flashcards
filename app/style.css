@@ -14,3 +14,5 @@
 @media(max-width:740px){.name-analysis p:not(.eyebrow){font-size:14px}.name-analysis .entry-source,.name-analysis .meaning-credit{font-size:11px!important}}
 
 .name-analysis details{margin:8px 0}.name-analysis summary{margin-bottom:0}
+
+.ebird-reference{margin-top:18px;max-width:470px;z-index:1}.ebird-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-height:44px;padding:9px 18px;border-radius:7px}.ebird-reference p{font:11px/1.6 var(--sans);color:var(--muted);margin:9px 0 0;overflow-wrap:anywhere}

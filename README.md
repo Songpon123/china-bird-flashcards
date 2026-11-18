@@ -1,5 +1,7 @@
 # 羽 Yǔ — China Bird Flashcards
 
+**[คู่มือใช้งานภาษาไทย](README.th.md)** · **[Open the live app](https://songpon123.github.io/china-bird-flashcards/)** · [GitHub repository](https://github.com/Songpon123/china-bird-flashcards)
+
 A runnable, local-first prototype for learning bird names in Simplified Chinese, tone-marked Hanyu Pinyin, English and scientific Latin. No API key, account, database server, package installation or internet connection is needed to study the bundled data.
 
 **Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **151 records flagged for taxonomy review**, including those four. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
@@ -33,6 +35,7 @@ Use the same address each time. `localhost` and `127.0.0.1`, different ports, an
 - Choose **Chinese → English** or **English → Chinese**. Progress is separate for each direction.
 - **Spaced review + new cards** presents due cards first, followed by up to 20 new cards per day per direction by default. Set the limit to zero for reviews only. New allowances reset at local midnight; existing due times use elapsed time.
 - Reveal a card, then choose Again, Hard, Good or Easy. The proposed interval appears on each button. The app does not grade typed answers or automatically claim that a word is mastered.
+- After revealing a species card (when the toggle says **Show question**), **View on eBird ↗** opens a species reference in a new tab. It is hidden on the question side, in both directions. Family/group cards do not link to an arbitrary species. Unmatched species use **Find on eBird ↗** to open Explore for manual search.
 - **Browse & practice freely** explores the filtered checklist without changing schedules. Library rows can open individual birds in practice mode.
 - Search accepts Chinese, English, scientific names, safe aliases, and Pinyin with or without tones or spaces. `lvtouya`, `lu: tou ya` and `lǜ tóu yā` all find 绿头鸭.
 - Filter by order, family, progress, or whether a record requires taxonomy review. Optional front-side Pinyin is a hint you can turn off.
@@ -42,6 +45,14 @@ Use the same address each time. `localhost` and `127.0.0.1`, different ports, an
 ### Schedule
 
 The prototype uses a small, documented SM-2-inspired heuristic, not FSRS and not the original SM-2 algorithm. Again returns in one minute and resets the success streak; Hard starts at one day, then multiplies the previous interval by 1.2; Good starts at one day, then six days, then multiplies by ease; Easy starts at four days, then multiplies by ease × 1.3. Ease starts at 2.5, is bounded to 1.3–4, decreases on Again/Hard and increases on Easy. Intervals are shown before grading. “Mature” means a 21-day-or-longer interval.
+
+### eBird reading references
+
+The app bundles **1,417 outbound species references** from a retained snapshot of the official eBird Taxonomy API: **1,272 exact scientific-name matches**, **20 unique scientific-alias matches**, and **125 exact English common-name candidates** (case and punctuation normalized). The last category is labelled **Name-based reference**, with the destination name visible. Matching is for reading links; it does not assert equivalent taxon concepts, resolve splits/lumps, update the checklist, or move progress. **28 source names remain manual lookups**; no eBird code is invented. eBird names and species limits may differ from the retained CAS baseline.
+
+Imported names receive direct references only when supported by this snapshot. Changed English names invalidate old common-name candidates; removed aliases invalidate alias-based references. If the reference file cannot load, the cards still link to eBird Explore. eBird runs no code in the app and receives no request until you follow an external link. No API key is used by visitors; no eBird media, range maps, descriptive text or observations are bundled. Language and eBird reference packs are app resources, separate from notebook backups.
+
+Rebuild links offline from the retained identifiers with `python3 scripts/build_ebird_links.py`. Source citation, retrieval date, original response hash, and limits are retained in `source-notices/ebird-reference-identifiers.json` and the generated JSON. The full publisher taxonomy is not redistributed, and its license is not inferred from the app's MIT license. See [data attribution](DATA_LICENSE.md).
 
 ## Family and group vocabulary
 
