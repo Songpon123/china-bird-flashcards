@@ -9,3 +9,7 @@ source-notices/ioc-13.1-multilingual.xlsx
 
 # AviList v2026 is kept in the local deliverable; fetch it from avilist.org for rebuilds.
 source-notices/avilist-v2026-extended.xlsx
+
+# Character structure inputs; fetch from the URLs in source-notices/character-structure/README.md.
+source-notices/character-structure/makemeahanzi-dictionary.txt
+source-notices/character-structure/Unihan.zip

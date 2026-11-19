@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "version": "name-guide-2026-11-18-v6",
+    "version": "name-guide-2026-11-19-v7",
     "characterCount": 475,
     "dictionaryCharacters": 474,
-    "thaiCharacterCount": 236,
+    "thaiCharacterCount": 475,
     "speciesNameCount": 1445,
     "termNameCount": 33,
     "dictionarySnapshot": {
@@ -67,8 +67,8 @@
     },
     "inputHashes": {
       "source-notices/name-guide/cc-cedict-subset.txt": "c502fa92147e254ef2e9eaf005d0458eeae3ce59f48e11a1f722087542c1e1c3",
-      "source-notices/name-guide/editorial.json": "d02f6cc062bd1be1caf7d24c9e839261b9193a99793fe576dce8842fb813d5c1",
-      "data/birds.json": "9f065918e8295424919c380b405ae829579570588dd2578bf9c050470ccb29ed",
+      "source-notices/name-guide/editorial.json": "6df6bd40b04d0019cc23c8472ed18a02744e671504871b8935d11c45e48772b2",
+      "data/birds.json": "8988cbebcc4a33d39c3cb03f1b95e1b6aaad3de626802b6a6c96a37189d32eac",
       "data/groups.json": "b4ef1132c53f0938ca4e1e8741de3b3d746df17383c3c5f54884632d651e57f8"
     }
   },
@@ -213,7 +213,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ตัวตลกในงิ้ว",
       "learningEnglish": ""
     },
     "丘": {
@@ -246,7 +246,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เนินดิน",
       "learningEnglish": ""
     },
     "东": {
@@ -286,7 +286,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไหม / เส้นด้าย",
       "learningEnglish": ""
     },
     "中": {
@@ -454,8 +454,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เอเชีย (ชื่อย่อ)",
+      "learningEnglish": "Asia (abbr.)"
     },
     "交": {
       "entries": [
@@ -471,7 +471,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไขว้กัน",
       "learningEnglish": ""
     },
     "仓": {
@@ -489,7 +489,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ยุ้งฉาง",
       "learningEnglish": ""
     },
     "仙": {
@@ -511,7 +511,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เซียน / นางฟ้า",
       "learningEnglish": ""
     },
     "休": {
@@ -536,8 +536,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "พัก; ในชื่อนกใช้ถอดเสียงชื่อบุคคล",
+      "learningEnglish": "to rest"
     },
     "优": {
       "entries": [
@@ -551,7 +551,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดีเยี่ยม",
       "learningEnglish": ""
     },
     "伯": {
@@ -658,7 +658,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แคระ",
       "learningEnglish": ""
     },
     "信": {
@@ -682,7 +682,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "จดหมาย / ความเชื่อ",
       "learningEnglish": ""
     },
     "僧": {
@@ -720,8 +720,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "สูงตระหง่าน / โล้น; 兀鹫 คือแร้ง",
+      "learningEnglish": "towering; bald (兀鹫 vulture)"
     },
     "光": {
       "entries": [
@@ -738,7 +738,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แสง / เงางาม",
       "learningEnglish": ""
     },
     "八": {
@@ -777,7 +777,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กล้วยไม้",
       "learningEnglish": ""
     },
     "兴": {
@@ -816,7 +816,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รุ่งเรือง",
       "learningEnglish": ""
     },
     "冕": {
@@ -831,7 +831,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "มงกุฎ",
       "learningEnglish": ""
     },
     "军": {
@@ -846,7 +846,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ทหาร / กองทัพ",
       "learningEnglish": ""
     },
     "冠": {
@@ -903,8 +903,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "หงส์ / นกฟีนิกซ์ในตำนานจีน",
+      "learningEnglish": "phoenix"
     },
     "凫": {
       "entries": [
@@ -926,7 +926,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เป็ดป่า",
       "learningEnglish": ""
     },
     "利": {
@@ -955,7 +955,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "คม / ประโยชน์; ใช้ถอดเสียงใน 西伯利亚",
       "learningEnglish": ""
     },
     "剑": {
@@ -979,7 +979,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดาบ",
       "learningEnglish": ""
     },
     "剪": {
@@ -1004,8 +1004,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "กรรไกร / ตัด",
+      "learningEnglish": "scissors; to cut"
     },
     "加": {
       "entries": [
@@ -1030,8 +1030,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เพิ่ม; ใน 加拿大 คือแคนาดา",
+      "learningEnglish": "to add; Canada (in 加拿大)"
     },
     "劳": {
       "entries": [
@@ -1074,7 +1074,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ช้อน",
       "learningEnglish": ""
     },
     "北": {
@@ -1210,8 +1210,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ตราประทับ; ชื่อย่อของอินเดีย",
+      "learningEnglish": "seal; India (abbr.)"
     },
     "卷": {
       "entries": [
@@ -1252,7 +1252,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ม้วน / งอ; 卷尾 คือนกแซงแซว",
       "learningEnglish": ""
     },
     "历": {
@@ -1297,7 +1297,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผ่านมา; ใช้ถอดเสียงใน 亚历山大",
       "learningEnglish": ""
     },
     "厚": {
@@ -1410,7 +1410,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ถึง; ใน 埃及 คืออียิปต์",
       "learningEnglish": ""
     },
     "双": {
@@ -1470,7 +1470,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กลับด้าน",
       "learningEnglish": ""
     },
     "发": {
@@ -1498,8 +1498,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เส้นผม",
+      "learningEnglish": "hair"
     },
     "口": {
       "entries": [
@@ -1538,8 +1538,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "โบราณ",
+      "learningEnglish": "ancient"
     },
     "台": {
       "entries": [
@@ -1609,8 +1609,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ไต้หวัน (ชื่อย่อ)",
+      "learningEnglish": "Taiwan (abbr.)"
     },
     "叶": {
       "entries": [
@@ -1657,8 +1657,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เสียงร้องจิ๊บ",
+      "learningEnglish": "chirp (imitative)"
     },
     "和": {
       "entries": [
@@ -1738,7 +1738,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สันติ / กลมกลืน",
       "learningEnglish": ""
     },
     "咬": {
@@ -1761,7 +1761,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กัด; 咬鹃 คือนกขุนแผน",
       "learningEnglish": ""
     },
     "哇": {
@@ -1785,7 +1785,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ถอดเสียงใน 爪哇 (ชวา)",
       "learningEnglish": ""
     },
     "响": {
@@ -1806,7 +1806,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เสียงดัง",
       "learningEnglish": ""
     },
     "哥": {
@@ -1820,7 +1820,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "พี่ชาย",
       "learningEnglish": ""
     },
     "啄": {
@@ -1907,8 +1907,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เสียงร้องจ้อกแจ้ก",
+      "learningEnglish": "chatter (imitative)"
     },
     "嘴": {
       "entries": [
@@ -1978,7 +1978,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สวน",
       "learningEnglish": ""
     },
     "圆": {
@@ -1999,7 +1999,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กลม",
       "learningEnglish": ""
     },
     "地": {
@@ -2049,7 +2049,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ห้อยลง",
       "learningEnglish": ""
     },
     "埃": {
@@ -2074,8 +2074,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ฝุ่น; ใน 埃及 คืออียิปต์",
+      "learningEnglish": "dust; Egypt (in 埃及)"
     },
     "塍": {
       "entries": [
@@ -2096,7 +2096,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "คันนา; 塍鹬 คือนกปากแอ่น",
       "learningEnglish": ""
     },
     "塔": {
@@ -2119,7 +2119,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เจดีย์ / หอคอย",
       "learningEnglish": ""
     },
     "壁": {
@@ -2134,7 +2134,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผนัง / หน้าผา",
       "learningEnglish": ""
     },
     "声": {
@@ -2153,7 +2153,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เสียง",
       "learningEnglish": ""
     },
     "夜": {
@@ -2236,7 +2236,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ยิ่ง / มากที่สุด",
       "learningEnglish": ""
     },
     "头": {
@@ -2299,8 +2299,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "แปลก / พิเศษ",
+      "learningEnglish": "strange; remarkable"
     },
     "姬": {
       "entries": [
@@ -2324,8 +2324,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เล็กและงาม (ในชื่อนก); เดิมหมายถึงหญิงสูงศักดิ์",
+      "learningEnglish": "small, dainty (in bird names; originally a noblewoman)"
     },
     "孔": {
       "entries": [
@@ -2348,8 +2348,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "รู; 孔雀 คือนกยูง",
+      "learningEnglish": "hole; (孔雀) peafowl"
     },
     "孤": {
       "entries": [
@@ -2363,7 +2363,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "โดดเดี่ยว",
       "learningEnglish": ""
     },
     "宝": {
@@ -2388,7 +2388,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ของมีค่า / สมบัติ",
       "learningEnglish": ""
     },
     "家": {
@@ -2458,7 +2458,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แขก; ใช้ถอดเสียงใน 菲律宾",
       "learningEnglish": ""
     },
     "寒": {
@@ -2501,8 +2501,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "อายุยืน",
+      "learningEnglish": "longevity"
     },
     "小": {
       "entries": [
@@ -2544,7 +2544,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 เนปาล",
       "learningEnglish": ""
     },
     "尖": {
@@ -2578,7 +2578,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 เนปาล",
       "learningEnglish": ""
     },
     "尾": {
@@ -2653,7 +2653,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เนินเขา",
       "learningEnglish": ""
     },
     "岛": {
@@ -2761,7 +2761,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สูงตระหง่าน (ใน 峨眉)",
       "learningEnglish": ""
     },
     "崖": {
@@ -2801,8 +2801,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "แม่น้ำ; ชื่อย่อของเสฉวน",
+      "learningEnglish": "river; Sichuan (abbr.)"
     },
     "巨": {
       "entries": [
@@ -2824,7 +2824,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใหญ่มาก",
       "learningEnglish": ""
     },
     "布": {
@@ -2852,7 +2852,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผ้า; ในชื่อนกใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "帆": {
@@ -2885,7 +2885,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใบเรือ",
       "learningEnglish": ""
     },
     "希": {
@@ -2901,7 +2901,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หายาก / ความหวัง",
       "learningEnglish": ""
     },
     "带": {
@@ -2931,7 +2931,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แถบ / ริบบิ้น",
       "learningEnglish": ""
     },
     "平": {
@@ -2962,8 +2962,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ราบ / สงบ",
+      "learningEnglish": "flat; peaceful"
     },
     "幽": {
       "entries": [
@@ -2983,7 +2983,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สงัด / ลึกลับ",
       "learningEnglish": ""
     },
     "库": {
@@ -2999,7 +2999,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "คลัง",
       "learningEnglish": ""
     },
     "度": {
@@ -3030,7 +3030,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ระดับ / ข้าม (ใน 印度 อินเดีย)",
       "learningEnglish": ""
     },
     "异": {
@@ -3052,7 +3052,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แตกต่าง",
       "learningEnglish": ""
     },
     "弄": {
@@ -3098,7 +3098,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ตรอก; ใช้ในชื่อสถานที่ 弄岗",
       "learningEnglish": ""
     },
     "弗": {
@@ -3113,7 +3113,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "弯": {
@@ -3202,8 +3202,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "แข็งแรง",
+      "learningEnglish": "strong"
     },
     "彩": {
       "entries": [
@@ -3220,7 +3220,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หลากสี",
       "learningEnglish": ""
     },
     "律": {
@@ -3242,8 +3242,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "กฎ; ใช้ถอดเสียงใน 菲律宾",
+      "learningEnglish": "law; rule"
     },
     "思": {
       "entries": [
@@ -3257,7 +3257,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "คิดถึง",
       "learningEnglish": ""
     },
     "恶": {
@@ -3296,7 +3296,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ร้าย; ใน 苦恶 เป็นคำเลียนเสียงร้อง",
       "learningEnglish": ""
     },
     "戴": {
@@ -3353,8 +3353,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "แบน",
+      "learningEnglish": "flat"
     },
     "扇": {
       "entries": [
@@ -3378,8 +3378,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "พัด",
+      "learningEnglish": "fan"
     },
     "拉": {
       "entries": [
@@ -3414,7 +3414,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดึง; ใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "拟": {
@@ -3480,7 +3480,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หยิบ; ใช้ถอดเสียงใน 加拿大",
       "learningEnglish": ""
     },
     "捕": {
@@ -3539,8 +3539,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ลวดลาย / อักษร",
+      "learningEnglish": "pattern; markings; writing"
     },
     "斑": {
       "entries": [
@@ -3584,8 +3584,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ใหม่",
+      "learningEnglish": "new"
     },
     "方": {
       "entries": [
@@ -3620,8 +3620,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ทิศ / ด้าน",
+      "learningEnglish": "direction; side"
     },
     "旋": {
       "entries": [
@@ -3679,7 +3679,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รุ่งอรุณ",
       "learningEnglish": ""
     },
     "星": {
@@ -3713,7 +3713,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ทั่วไป",
       "learningEnglish": ""
     },
     "暗": {
@@ -3783,8 +3783,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "รุนแรง / ฉับพลัน",
+      "learningEnglish": "violent; sudden"
     },
     "曙": {
       "entries": [
@@ -3798,7 +3798,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รุ่งสาง",
       "learningEnglish": ""
     },
     "木": {
@@ -3844,7 +3844,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ราก / ต้นกำเนิด",
       "learningEnglish": ""
     },
     "朱": {
@@ -3899,7 +3899,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผสม / หลากหลาย",
       "learningEnglish": ""
     },
     "杓": {
@@ -3922,7 +3922,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ด้ามทัพพี; 杓鹬 คือนกอีก๋อย",
       "learningEnglish": ""
     },
     "杜": {
@@ -4016,7 +4016,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ขั้วโลก / ที่สุด",
       "learningEnglish": ""
     },
     "枕": {
@@ -4031,8 +4031,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ท้ายทอย (ในชื่อนก); เดิมแปลว่าหมอน",
+      "learningEnglish": "nape (in bird names; literally pillow)"
     },
     "林": {
       "entries": [
@@ -4214,7 +4214,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ปลายกิ่ง",
       "learningEnglish": ""
     },
     "棉": {
@@ -4269,7 +4269,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกเอี้ยงและนกกิ้งโครง (ใน 椋鸟)",
       "learningEnglish": ""
     },
     "椒": {
@@ -4283,7 +4283,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "พริกไทย; 山椒鸟 คือนกพญาไฟ",
       "learningEnglish": ""
     },
     "楔": {
@@ -4298,7 +4298,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ลิ่ม",
       "learningEnglish": ""
     },
     "榛": {
@@ -4312,7 +4312,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ต้นเฮเซล",
       "learningEnglish": ""
     },
     "槲": {
@@ -4327,7 +4327,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ต้นโอ๊กมองโกเลีย",
       "learningEnglish": ""
     },
     "横": {
@@ -4401,8 +4401,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ยุโรป (ชื่อย่อ)",
+      "learningEnglish": "Europe (abbr.)"
     },
     "歌": {
       "entries": [
@@ -4460,8 +4460,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เปรียบเทียบ; ใช้ถอดเสียงชื่อบุคคล",
+      "learningEnglish": "to compare"
     },
     "毛": {
       "entries": [
@@ -4666,7 +4666,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "จอดเรือ; ใช้ถอดเสียงใน 尼泊尔",
       "learningEnglish": ""
     },
     "法": {
@@ -4740,8 +4740,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "คลื่น",
+      "learningEnglish": "wave"
     },
     "泰": {
       "entries": [
@@ -4766,8 +4766,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "สงบ; ใช้ถอดเสียงใน 阿尔泰",
+      "learningEnglish": "peaceful"
     },
     "泽": {
       "entries": [
@@ -4802,7 +4802,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "มหาสมุทร",
       "learningEnglish": ""
     },
     "洲": {
@@ -4817,7 +4817,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ทวีป",
       "learningEnglish": ""
     },
     "流": {
@@ -4838,7 +4838,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไหล",
       "learningEnglish": ""
     },
     "浮": {
@@ -4944,7 +4944,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ข้าม",
       "learningEnglish": ""
     },
     "游": {
@@ -5078,7 +5078,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ลอย",
       "learningEnglish": ""
     },
     "漠": {
@@ -5136,8 +5136,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "อ่าว; ชื่อย่อของออสเตรเลีย",
+      "learningEnglish": "bay; Australia (abbr.)"
     },
     "火": {
       "entries": [
@@ -5204,7 +5204,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ว่องไว / วิญญาณ",
       "learningEnglish": ""
     },
     "点": {
@@ -5276,7 +5276,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ถ่านหิน",
       "learningEnglish": ""
     },
     "燕": {
@@ -5393,7 +5393,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สุนัข",
       "learningEnglish": ""
     },
     "猎": {
@@ -5427,7 +5427,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดุร้าย",
       "learningEnglish": ""
     },
     "玄": {
@@ -5442,7 +5442,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดำ / ลึกลับ",
       "learningEnglish": ""
     },
     "玉": {
@@ -5456,7 +5456,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หยก",
       "learningEnglish": ""
     },
     "王": {
@@ -5489,8 +5489,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ราชา",
+      "learningEnglish": "king"
     },
     "环": {
       "entries": [
@@ -5534,7 +5534,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไข่มุก",
       "learningEnglish": ""
     },
     "球": {
@@ -5562,7 +5562,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ลูกกลม (ใน 琉球 ริวกิว)",
       "learningEnglish": ""
     },
     "理": {
@@ -5590,7 +5590,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เหตุผล; ใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "琉": {
@@ -5620,7 +5620,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ใน 琉球 (ริวกิว)",
       "learningEnglish": ""
     },
     "琴": {
@@ -5643,7 +5643,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "พิณ",
       "learningEnglish": ""
     },
     "琵": {
@@ -5679,7 +5679,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กลีบ",
       "learningEnglish": ""
     },
     "甘": {
@@ -5703,8 +5703,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "หวาน; ชื่อย่อของกานซู่",
+      "learningEnglish": "sweet; Gansu (abbr.)"
     },
     "田": {
       "entries": [
@@ -5745,7 +5745,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "วาด / ภาพวาด",
       "learningEnglish": ""
     },
     "番": {
@@ -5770,8 +5770,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ต่างแดน",
+      "learningEnglish": "foreign"
     },
     "疆": {
       "entries": [
@@ -5785,7 +5785,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "พรมแดน",
       "learningEnglish": ""
     },
     "疣": {
@@ -5800,7 +5800,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หูด / ปุ่ม",
       "learningEnglish": ""
     },
     "痣": {
@@ -5815,7 +5815,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไฝ",
       "learningEnglish": ""
     },
     "瘤": {
@@ -5837,7 +5837,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ปุ่มเนื้อ",
       "learningEnglish": ""
     },
     "白": {
@@ -5893,8 +5893,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ร้อย",
+      "learningEnglish": "hundred"
     },
     "皇": {
       "entries": [
@@ -5916,8 +5916,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "จักรพรรดิ / หลวง",
+      "learningEnglish": "imperial"
     },
     "皱": {
       "entries": [
@@ -5932,7 +5932,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รอยย่น",
       "learningEnglish": ""
     },
     "盔": {
@@ -5946,7 +5946,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หมวกเกราะ",
       "learningEnglish": ""
     },
     "盘": {
@@ -5969,7 +5969,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "จาน / ขด",
       "learningEnglish": ""
     },
     "相": {
@@ -6008,8 +6008,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ซึ่งกันและกัน",
+      "learningEnglish": "each other"
     },
     "眉": {
       "entries": [
@@ -6071,7 +6071,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หอก",
       "learningEnglish": ""
     },
     "短": {
@@ -6139,8 +6139,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ชายฝั่งหิน",
+      "learningEnglish": "rocky shore"
     },
     "硫": {
       "entries": [
@@ -6153,7 +6153,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กำมะถัน",
       "learningEnglish": ""
     },
     "硬": {
@@ -6172,7 +6172,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แข็ง",
       "learningEnglish": ""
     },
     "禾": {
@@ -6203,7 +6203,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ล้าน / โล้น",
       "learningEnglish": ""
     },
     "秋": {
@@ -6324,8 +6324,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "รวงข้าว",
+      "learningEnglish": "ear of grain"
     },
     "端": {
       "entries": [
@@ -6352,7 +6352,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ปลาย",
       "learningEnglish": ""
     },
     "竹": {
@@ -6381,7 +6381,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รั้ว",
       "learningEnglish": ""
     },
     "类": {
@@ -6546,7 +6546,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เส้น / ด้าย",
       "learningEnglish": ""
     },
     "细": {
@@ -6619,7 +6619,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "งานปัก; 绣眼鸟 คือนกแว่นตาขาว",
       "learningEnglish": ""
     },
     "绯": {
@@ -6709,8 +6709,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ตาข่าย / ผ้าโปร่ง",
+      "learningEnglish": "net; gauze"
     },
     "美": {
       "entries": [
@@ -6775,7 +6775,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ชายชรา",
       "learningEnglish": ""
     },
     "翅": {
@@ -6822,8 +6822,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "งอนขึ้น",
+      "learningEnglish": "upturned"
     },
     "翠": {
       "entries": [
@@ -6837,7 +6837,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สีเขียวมรกต; 翠鸟 คือนกกระเต็น",
       "learningEnglish": ""
     },
     "翡": {
@@ -6851,7 +6851,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ใน 翡翠 (หยกเขียว / นกกระเต็น)",
       "learningEnglish": ""
     },
     "翻": {
@@ -6922,7 +6922,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เคร่งขรึม (ใน 甘肃)",
       "learningEnglish": ""
     },
     "肉": {
@@ -6942,7 +6942,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เนื้อ",
       "learningEnglish": ""
     },
     "肩": {
@@ -7158,7 +7158,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใบหน้า",
       "learningEnglish": ""
     },
     "腰": {
@@ -7263,7 +7263,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไหล่ / ปีก",
       "learningEnglish": ""
     },
     "臀": {
@@ -7299,7 +7299,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เรือรบ",
       "learningEnglish": ""
     },
     "色": {
@@ -7326,7 +7326,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สี",
       "learningEnglish": ""
     },
     "芦": {
@@ -7479,8 +7479,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "พู่ (ใน 流苏)",
+      "learningEnglish": "tassel (in 流苏)"
     },
     "苦": {
       "entries": [
@@ -7498,7 +7498,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ขม",
       "learningEnglish": ""
     },
     "草": {
@@ -7590,7 +7590,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดอกเบญจมาศ",
       "learningEnglish": ""
     },
     "菲": {
@@ -7625,8 +7625,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ชื่อย่อของฟิลิปปินส์",
+      "learningEnglish": "the Philippines (abbr.)"
     },
     "萨": {
       "entries": [
@@ -7648,8 +7648,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ใช้ถอดเสียง (萨岛 = เกาะซาคาลิน)",
+      "learningEnglish": "used to write foreign names"
     },
     "董": {
       "entries": [
@@ -7672,8 +7672,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ใช้ในชื่อ 董鸡 นกอีลุ้ม",
+      "learningEnglish": "used in 董鸡 (watercock)"
     },
     "蒂": {
       "entries": [
@@ -7694,7 +7694,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ขั้วผลไม้; ใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "蒙": {
@@ -7777,8 +7777,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ใช้ใน 蒙古 (มองโกเลีย)",
+      "learningEnglish": "used in 蒙古 (Mongolia)"
     },
     "蒲": {
       "entries": [
@@ -7802,8 +7802,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ต้นธูปฤาษี",
+      "learningEnglish": "cattail; reed-mace"
     },
     "蓑": {
       "entries": [
@@ -7824,7 +7824,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เสื้อกันฝนฟาง",
       "learningEnglish": ""
     },
     "蓝": {
@@ -7862,7 +7862,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ป่าละเมาะ / ที่ลุ่มรก",
       "learningEnglish": ""
     },
     "藏": {
@@ -7928,7 +7928,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รุ้ง",
       "learningEnglish": ""
     },
     "蚁": {
@@ -7988,7 +7988,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หอยนางรม",
       "learningEnglish": ""
     },
     "蛙": {
@@ -8011,7 +8011,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "กบ",
       "learningEnglish": ""
     },
     "蛛": {
@@ -8085,7 +8085,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ขี้ผึ้ง",
       "learningEnglish": ""
     },
     "蝗": {
@@ -8099,7 +8099,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ตั๊กแตน",
       "learningEnglish": ""
     },
     "血": {
@@ -8114,7 +8114,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เลือด",
       "learningEnglish": ""
     },
     "褐": {
@@ -8193,8 +8193,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เขา (ของสัตว์)",
+      "learningEnglish": "horn"
     },
     "豆": {
       "entries": [
@@ -8238,7 +8238,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "อวยพร",
       "learningEnglish": ""
     },
     "贼": {
@@ -8257,7 +8257,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "โจร; 贼鸥 คือนกสกัว",
       "learningEnglish": ""
     },
     "赛": {
@@ -8277,7 +8277,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "แข่งขัน; ใช้ถอดเสียงชื่อบุคคล",
       "learningEnglish": ""
     },
     "赤": {
@@ -8308,7 +8308,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สีดินเทศ",
       "learningEnglish": ""
     },
     "足": {
@@ -8362,8 +8362,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เดือย",
+      "learningEnglish": "spur"
     },
     "路": {
       "entries": [
@@ -8388,8 +8388,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ถนน; ใช้ถอดเสียงชื่อบุคคล",
+      "learningEnglish": "road"
     },
     "跷": {
       "entries": [
@@ -8414,7 +8414,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไม้ต่อขา",
       "learningEnglish": ""
     },
     "蹼": {
@@ -8442,7 +8442,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เปล่งประกาย",
       "learningEnglish": ""
     },
     "辫": {
@@ -8457,7 +8457,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เปีย",
       "learningEnglish": ""
     },
     "达": {
@@ -8483,8 +8483,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ถึง; ใช้ถอดเสียงใน 达乌里",
+      "learningEnglish": "to reach"
     },
     "远": {
       "entries": [
@@ -8538,7 +8538,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผ่าน / ทั่ว (普通 = ทั่วไป)",
       "learningEnglish": ""
     },
     "道": {
@@ -8559,8 +8559,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ทาง; ใช้นับแถบ เช่น 三道眉 คิ้วสามแถบ",
+      "learningEnglish": "path; counter for stripes (三道眉 three brow stripes)"
     },
     "遗": {
       "entries": [
@@ -8573,7 +8573,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "หลงเหลือ",
       "learningEnglish": ""
     },
     "酒": {
@@ -8591,7 +8591,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เหล้า / ไวน์",
       "learningEnglish": ""
     },
     "里": {
@@ -8636,7 +8636,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ข้างใน; ใช้ถอดเสียงใน 达乌里 และ 里海",
       "learningEnglish": ""
     },
     "金": {
@@ -8692,7 +8692,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เข็ม",
       "learningEnglish": ""
     },
     "钝": {
@@ -8734,7 +8734,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ตะขอ",
       "learningEnglish": ""
     },
     "钳": {
@@ -8757,7 +8757,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "คีม",
       "learningEnglish": ""
     },
     "铁": {
@@ -8842,7 +8842,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สนิม",
       "learningEnglish": ""
     },
     "锡": {
@@ -8860,7 +8860,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดีบุก",
       "learningEnglish": ""
     },
     "锥": {
@@ -8876,7 +8876,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สว่าน / ทรงกรวย; 沙锥 คือนกปากซ่อม",
       "learningEnglish": ""
     },
     "锦": {
@@ -8892,7 +8892,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผ้าแพรปัก; 锦鸡 คือไก่ฟ้าสีทอง",
       "learningEnglish": ""
     },
     "镰": {
@@ -8922,7 +8922,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "เคียว",
       "learningEnglish": ""
     },
     "长": {
@@ -8995,7 +8995,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ดวงอาทิตย์ (太阳)",
       "learningEnglish": ""
     },
     "阿": {
@@ -9018,7 +9018,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ถอดเสียง เช่น 阿尔泰 อัลไต",
       "learningEnglish": ""
     },
     "隼": {
@@ -9094,7 +9094,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สง่างาม",
       "learningEnglish": ""
     },
     "雉": {
@@ -9238,7 +9238,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "สั่นสะเทือน",
       "learningEnglish": ""
     },
     "霍": {
@@ -9260,8 +9260,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "ใช้ถอดเสียงชื่อบุคคล",
+      "learningEnglish": "used to write a person's name"
     },
     "青": {
       "entries": [
@@ -9308,7 +9308,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "รองเท้าบูต",
       "learningEnglish": ""
     },
     "韦": {
@@ -9330,8 +9330,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "หนังฟอก; ใช้ถอดเสียงชื่อบุคคล",
+      "learningEnglish": "tanned leather"
     },
     "页": {
       "entries": [
@@ -9353,8 +9353,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "หน้ากระดาษ",
+      "learningEnglish": "page"
     },
     "顶": {
       "entries": [
@@ -9424,7 +9424,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ปลอกคอ / คอ",
       "learningEnglish": ""
     },
     "颈": {
@@ -9600,8 +9600,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "กระดูก",
+      "learningEnglish": "bone"
     },
     "高": {
       "entries": [
@@ -9643,7 +9643,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ผี",
       "learningEnglish": ""
     },
     "鱼": {
@@ -9680,7 +9680,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ปลาโอ (bonito); 鲣鸟 คือนกบูบี้",
       "learningEnglish": ""
     },
     "鳞": {
@@ -9709,8 +9709,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "นกยางไฟ (bittern) และนกยางบางชนิด",
+      "learningEnglish": "bittern"
     },
     "鵙": {
       "entries": [
@@ -9723,7 +9723,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกอีเสือ; ใน 鹃鵙 หมายถึงนกขี้เถ้า",
       "learningEnglish": ""
     },
     "鵟": {
@@ -9870,7 +9870,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกบัสตาร์ด (bustard)",
       "learningEnglish": ""
     },
     "鸪": {
@@ -9885,7 +9885,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ใน 鹧鸪 นกกระทากลุ่ม francolin และ partridge",
       "learningEnglish": ""
     },
     "鸫": {
@@ -9913,7 +9913,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกาน้ำ (ใน 鸬鹚)",
       "learningEnglish": ""
     },
     "鸭": {
@@ -9984,7 +9984,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกเค้า (คำโบราณ)",
       "learningEnglish": ""
     },
     "鸲": {
@@ -9998,7 +9998,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกลุ่มโรบินและนกเขน (robin, redstart)",
       "learningEnglish": ""
     },
     "鸳": {
@@ -10026,7 +10026,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกเค้าแคระ (ใน 鸺鹠)",
       "learningEnglish": ""
     },
     "鸻": {
@@ -10070,7 +10070,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ห่านป่า",
       "learningEnglish": ""
     },
     "鹀": {
@@ -10099,7 +10099,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกขมิ้น (oriole)",
       "learningEnglish": ""
     },
     "鹃": {
@@ -10113,7 +10113,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกคัคคู / นกกาเหว่า",
       "learningEnglish": ""
     },
     "鹅": {
@@ -10167,7 +10167,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ไก่ฟ้ากลุ่ม Lophura เช่น 白鹇 ไก่ฟ้าหลังขาว",
       "learningEnglish": ""
     },
     "鹈": {
@@ -10181,7 +10181,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกระทุง (ใน 鹈鹕)",
       "learningEnglish": ""
     },
     "鹉": {
@@ -10195,7 +10195,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกแก้ว (ใน 鹦鹉)",
       "learningEnglish": ""
     },
     "鹊": {
@@ -10223,7 +10223,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกคุ่ม (ใน 鹌鹑)",
       "learningEnglish": ""
     },
     "鹎": {
@@ -10251,8 +10251,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "นกคุ่ม (quail)",
+      "learningEnglish": "quail"
     },
     "鹕": {
       "entries": [
@@ -10265,7 +10265,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกระทุง (ใน 鹈鹕)",
       "learningEnglish": ""
     },
     "鹗": {
@@ -10301,7 +10301,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกาน้ำ (ใน 鸬鹚)",
       "learningEnglish": ""
     },
     "鹛": {
@@ -10315,7 +10315,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกกินแมลงกลุ่ม babbler",
       "learningEnglish": ""
     },
     "鹞": {
@@ -10330,8 +10330,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "เหยี่ยวทุ่ง (harrier)",
+      "learningEnglish": "harrier"
     },
     "鹟": {
       "entries": [
@@ -10358,7 +10358,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกเค้าแคระ (ใน 鸺鹠)",
       "learningEnglish": ""
     },
     "鹡": {
@@ -10400,7 +10400,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกแก้ว (ใน 鹦鹉)",
       "learningEnglish": ""
     },
     "鹧": {
@@ -10415,7 +10415,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ใช้ใน 鹧鸪 นกกระทากลุ่ม francolin และ partridge",
       "learningEnglish": ""
     },
     "鹨": {
@@ -10443,7 +10443,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกเรน (ใน 鹪鹩)",
       "learningEnglish": ""
     },
     "鹪": {
@@ -10457,7 +10457,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกขนาดเล็ก ใช้ใน 鹪鹩 นกเรน และ 鹪莺 นกกระจิบหญ้า",
       "learningEnglish": ""
     },
     "鹫": {
@@ -10516,7 +10516,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกช้อนหอย (ibis)",
       "learningEnglish": ""
     },
     "鹰": {
@@ -10544,7 +10544,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "นกจมูกหลอด (shearwater, petrel)",
       "learningEnglish": ""
     },
     "鹲": {
@@ -10558,8 +10558,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
-      "learningEnglish": ""
+      "thai": "นกร่อนทะเล (tropicbird)",
+      "learningEnglish": "tropicbird"
     },
     "鹳": {
       "entries": [
@@ -10673,7 +10673,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "",
+      "thai": "ข้าวฟ่างเหนียว",
       "learningEnglish": ""
     },
     "黑": {
@@ -29728,6 +29728,34 @@
       "pinyin": "jī zhā",
       "english": "chirping (an imitative sound)",
       "kind": "name"
+    },
+    "苦恶": {
+      "entries": [],
+      "thai": "เสียงร้องของนกกวักที่เขียนเป็นคำว่า 苦恶 (คำเลียนเสียง)",
+      "pinyin": "kǔ è",
+      "english": "the call of the waterhen, written as 苦恶",
+      "kind": "name"
+    },
+    "弄岗": {
+      "entries": [],
+      "thai": "หนงก่าง (เขตอนุรักษ์ในกว่างซี)",
+      "pinyin": "nòng gǎng",
+      "english": "Nonggang (nature reserve in Guangxi)",
+      "kind": "name"
+    },
+    "萨岛": {
+      "entries": [],
+      "thai": "เกาะซาคาลิน (ชื่อย่อของ 萨哈林岛)",
+      "pinyin": "sà dǎo",
+      "english": "Sakhalin (short for 萨哈林岛)",
+      "kind": "name"
+    },
+    "达乌里": {
+      "entries": [],
+      "thai": "ดาอูเรีย (ดินแดนทางตะวันออกของทะเลสาบไบคาล)",
+      "pinyin": "dá wū lǐ",
+      "english": "Dauria (region east of Lake Baikal)",
+      "kind": "name"
     }
   },
   "unitWords": [
@@ -29744,6 +29772,7 @@
     "库页岛",
     "菲律宾",
     "贺兰山",
+    "达乌里",
     "阿尔泰",
     "䴙䴘",
     "东亚",
@@ -29769,6 +29798,7 @@
     "宝兴",
     "山雀",
     "峨眉",
+    "弄岗",
     "戴胜",
     "斑鸠",
     "新疆",
@@ -29790,6 +29820,8 @@
     "红胸",
     "美洲",
     "翠鸟",
+    "苦恶",
+    "萨岛",
     "蒙古",
     "西藏",
     "远东",

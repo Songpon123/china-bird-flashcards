@@ -74,7 +74,7 @@ combination_candidates={
 simplifications={'鵰':'雕'}
 # Orthographic, syllable-by-syllable dictionary readings, not tone-sandhi audio.
 # These override surname/colloquial defaults in a general-purpose dictionary.
-readings={'燕':'yàn','雀':'què','长':'cháng','冠':'guān','藏':'zàng','颈':'jǐng','颏':'kē','尾':'wěi','绿':'lǜ','蒙':'měng','翘':'qiào','扁':'biǎn','薄':'bó','血':'xuè','伯':'bó','氏':'shì','佛':'fó','恶':'è','咬':'yǎo','爪':'zhǎo','角':'jiǎo','杓':'biāo'}
+readings={'燕':'yàn','雀':'què','长':'cháng','冠':'guān','藏':'zàng','颈':'jǐng','颏':'kē','尾':'wěi','绿':'lǜ','蒙':'měng','翘':'qiào','扁':'biǎn','薄':'bó','血':'xuè','伯':'bó','氏':'shì','佛':'fó','恶':'è','咬':'yǎo','爪':'zhǎo','角':'jiǎo','杓':'biāo','发':'fà'}
 load_single_dict({ord(k):v for k,v in readings.items()})
 birds=[]; rejected=[]; unmatched=[]
 for b in sorted(species,key=lambda r:(r['order'],r['family'],r['scientificName'])):

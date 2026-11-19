@@ -56,7 +56,7 @@ def main():
     out = {
         'schemaVersion':1,
         'meta':{
-            'version':'ebird-reference-2026-11-18-v2', 'source':retained['source'],
+            'version':'ebird-reference-2026-11-19-v3', 'source':retained['source'],
             'matches':counts, 'unmatched':len(unmatched), 'sourceSpecies':len(birds),
             'limits':'Outbound reading references only, not equivalent taxon concepts. Exact common-name candidates are labelled separately. No fuzzy names, guessed species codes, or automatic taxonomy changes. Unmatched names open eBird Explore for manual lookup.',
             'inputHashes':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [source, birds_path]},

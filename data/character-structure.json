@@ -1,0 +1,4420 @@
+{
+ "schemaVersion": 1,
+ "meta": {
+  "version": "character-structure-2026-11-19-v1",
+  "characterCount": 475,
+  "counts": {
+   "pictophonetic": 277,
+   "ideographic": 132,
+   "pictographic": 40
+  },
+  "authored": [
+   "䳭",
+   "䴓",
+   "䴕",
+   "䴘",
+   "䴙",
+   "鳽",
+   "鵙",
+   "鵟",
+   "鹀",
+   "鹟",
+   "鹲"
+  ],
+  "sources": [
+   {
+    "id": "makemeahanzi",
+    "title": "Make Me a Hanzi · dictionary.txt (Shaunak Kishore)",
+    "url": "https://github.com/skishore/makemeahanzi",
+    "license": "LGPL-3.0-or-later",
+    "use": "Radical and how each character is built (meaning part, sound part, origin hint)."
+   },
+   {
+    "id": "unihan",
+    "title": "Unicode Han Database (Unihan), Unicode 18.0.0 (2026-07-31)",
+    "url": "https://www.unicode.org/charts/unihan.html",
+    "license": "Unicode License V3",
+    "use": "Total stroke counts (kTotalStrokes)."
+   },
+   {
+    "id": "authored",
+    "title": "Authored for this app",
+    "license": "LGPL-3.0-or-later (distributed with the derived file)",
+    "use": "Structure of 11 bird-name characters missing from Make Me a Hanzi, and Thai meanings of meaning parts."
+   }
+  ],
+  "inputHashes": {
+   "source-notices/character-structure/makemeahanzi-dictionary.txt": "744bb05d5b0742e9ee35c37791f94d56a173349b3367569e7ca11e510364d203",
+   "source-notices/character-structure/Unihan.zip": "4c93ea9c1f636451729a840978f1667a53886af37ba854fdcce109721c63d43e"
+  }
+ },
+ "characters": {
+  "䳭": {
+   "strokes": 20,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "即",
+   "phoneticPinyin": "jí"
+  },
+  "䴓": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "师",
+   "phoneticPinyin": "shī"
+  },
+  "䴕": {
+   "strokes": 17,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "列",
+   "phoneticPinyin": "liè"
+  },
+  "䴘": {
+   "strokes": 21,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "虒",
+   "phoneticPinyin": "sī"
+  },
+  "䴙": {
+   "strokes": 24,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "辟",
+   "phoneticPinyin": "pì"
+  },
+  "三": {
+   "strokes": 3,
+   "radical": "一",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Three parallel lines; compare 一 (one) and 二 (two)"
+  },
+  "丑": {
+   "strokes": 4,
+   "radical": "一",
+   "source": "makemeahanzi"
+  },
+  "丘": {
+   "strokes": 5,
+   "radical": "一",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Two hills"
+  },
+  "东": {
+   "strokes": 5,
+   "radical": "一",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Simplified form of 東, the sun 日 rising behind a tree 木"
+  },
+  "丝": {
+   "strokes": 5,
+   "radical": "一",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 絲, two threads"
+  },
+  "中": {
+   "strokes": 4,
+   "radical": "丨",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A line 丨 through the center of a box 口"
+  },
+  "丹": {
+   "strokes": 4,
+   "radical": "丶",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A red pellet 丶 from a mine 井"
+  },
+  "丽": {
+   "strokes": 8,
+   "radical": "丶",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 麗; the antlers of a deer 鹿"
+  },
+  "乌": {
+   "strokes": 4,
+   "radical": "丿",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Simplified form of 烏; a crow; compare 鸟"
+  },
+  "云": {
+   "strokes": 4,
+   "radical": "二",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A cloud"
+  },
+  "亚": {
+   "strokes": 6,
+   "radical": "一",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Picture of a cross-shaped house or temple"
+  },
+  "交": {
+   "strokes": 6,
+   "radical": "亠",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person with crossed (intersecting) legs"
+  },
+  "仓": {
+   "strokes": 4,
+   "radical": "人",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 倉; grains 食 kept in storage 口"
+  },
+  "仙": {
+   "strokes": 5,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "山",
+   "phoneticPinyin": "shān"
+  },
+  "休": {
+   "strokes": 6,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 亻 leaning against a tree 木"
+  },
+  "优": {
+   "strokes": 6,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "尤",
+   "phoneticPinyin": "yóu"
+  },
+  "伯": {
+   "strokes": 7,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "白",
+   "phoneticPinyin": "bái"
+  },
+  "低": {
+   "strokes": 7,
+   "radical": "亻",
+   "source": "makemeahanzi"
+  },
+  "佛": {
+   "strokes": 7,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "弗",
+   "phoneticPinyin": "fú"
+  },
+  "侏": {
+   "strokes": 8,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "朱",
+   "phoneticPinyin": "zhū"
+  },
+  "信": {
+   "strokes": 9,
+   "radical": "亻",
+   "source": "makemeahanzi"
+  },
+  "僧": {
+   "strokes": 14,
+   "radical": "亻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "亻",
+   "semanticMeaning": "person",
+   "semanticThai": "คน",
+   "phonetic": "曾",
+   "phoneticPinyin": "céng"
+  },
+  "兀": {
+   "strokes": 3,
+   "radical": "兀",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Cutting 一 off the feet 儿"
+  },
+  "光": {
+   "strokes": 6,
+   "radical": "儿",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 儿 carrying a torch 火"
+  },
+  "八": {
+   "strokes": 2,
+   "radical": "八",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two bent lines meaning \"to divide\""
+  },
+  "兰": {
+   "strokes": 5,
+   "radical": "丷",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "An orchid in bloom"
+  },
+  "兴": {
+   "strokes": 6,
+   "radical": "八",
+   "source": "makemeahanzi"
+  },
+  "冕": {
+   "strokes": 11,
+   "radical": "冂",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "冂",
+   "semanticMeaning": "crown",
+   "semanticThai": "สิ่งครอบ",
+   "phonetic": "免",
+   "phoneticPinyin": "miǎn"
+  },
+  "军": {
+   "strokes": 6,
+   "radical": "车",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Soldiers 冖 (distorted 力) in a cart 车"
+  },
+  "冠": {
+   "strokes": 9,
+   "radical": "冖",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man 元 puts on a cap 冖 with his hand 寸"
+  },
+  "凤": {
+   "strokes": 4,
+   "radical": "几",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "又",
+   "semanticMeaning": "simplified form of 鳥 bird",
+   "semanticThai": "นก (รูปย่อของ 鳥)",
+   "phonetic": "凡",
+   "phoneticPinyin": "fán"
+  },
+  "凫": {
+   "strokes": 6,
+   "radical": "几",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "凡",
+   "phoneticPinyin": "fán"
+  },
+  "利": {
+   "strokes": 7,
+   "radical": "刂",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Harvesting 刂 grain 禾"
+  },
+  "剑": {
+   "strokes": 9,
+   "radical": "刂",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "刂",
+   "semanticMeaning": "knife",
+   "semanticThai": "มีด",
+   "phonetic": "佥",
+   "phoneticPinyin": "qiān"
+  },
+  "剪": {
+   "strokes": 11,
+   "radical": "刀",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "刀",
+   "semanticMeaning": "knife",
+   "semanticThai": "มีด",
+   "phonetic": "前",
+   "phoneticPinyin": "qián"
+  },
+  "加": {
+   "strokes": 5,
+   "radical": "力",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Supporting a cause with the strength 力 of one's words 口"
+  },
+  "劳": {
+   "strokes": 8,
+   "radical": "力",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man lifting 力 a load 冖 of grass 艹"
+  },
+  "勺": {
+   "strokes": 3,
+   "radical": "勹",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A spoon 勹 with something in it 丶"
+  },
+  "北": {
+   "strokes": 5,
+   "radical": "匕",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Two people 匕 sitting back-to-back; phonetic loan for \"north\""
+  },
+  "半": {
+   "strokes": 5,
+   "radical": "十",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A cow 牛 splitting 丷 wood in half"
+  },
+  "华": {
+   "strokes": 6,
+   "radical": "十",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "十",
+   "semanticMeaning": "ten",
+   "semanticThai": "สิบ",
+   "phonetic": "化",
+   "phoneticPinyin": "huà"
+  },
+  "南": {
+   "strokes": 9,
+   "radical": "十",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A musical bell"
+  },
+  "印": {
+   "strokes": 6,
+   "radical": "卩",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A hand 爪 stamping a seal 卩"
+  },
+  "卷": {
+   "strokes": 8,
+   "radical": "㔾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A curled up scroll 㔾"
+  },
+  "历": {
+   "strokes": 4,
+   "radical": "厂",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "厤",
+   "semanticMeaning": "calendar",
+   "semanticThai": "ปฏิทิน",
+   "phonetic": "力",
+   "phoneticPinyin": "lì"
+  },
+  "厚": {
+   "strokes": 9,
+   "radical": "厂",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Sunlight 日 and children 子 in a building 厂"
+  },
+  "原": {
+   "strokes": 10,
+   "radical": "厂",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "厂",
+   "semanticMeaning": "cliff",
+   "semanticThai": "หน้าผา",
+   "phonetic": "泉",
+   "phoneticPinyin": "quán"
+  },
+  "叉": {
+   "strokes": 3,
+   "radical": "又",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A hand 又 grasping an object 丶"
+  },
+  "及": {
+   "strokes": 4,
+   "radical": "又",
+   "source": "makemeahanzi"
+  },
+  "双": {
+   "strokes": 4,
+   "radical": "又",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two hands 又 side-by-side"
+  },
+  "反": {
+   "strokes": 4,
+   "radical": "又",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A hand 又 held up against a cliff 厂"
+  },
+  "发": {
+   "strokes": 5,
+   "radical": "又",
+   "source": "makemeahanzi"
+  },
+  "口": {
+   "strokes": 3,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "An open mouth"
+  },
+  "古": {
+   "strokes": 5,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Words passing through ten 十 mouths 口"
+  },
+  "台": {
+   "strokes": 5,
+   "radical": "口",
+   "source": "makemeahanzi"
+  },
+  "叶": {
+   "strokes": 5,
+   "radical": "口",
+   "source": "makemeahanzi"
+  },
+  "叽": {
+   "strokes": 5,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "几",
+   "phoneticPinyin": "jǐ"
+  },
+  "和": {
+   "strokes": 8,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "禾",
+   "phoneticPinyin": "hé"
+  },
+  "咬": {
+   "strokes": 9,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "交",
+   "phoneticPinyin": "jiāo"
+  },
+  "哇": {
+   "strokes": 9,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "圭",
+   "phoneticPinyin": "guī"
+  },
+  "响": {
+   "strokes": 9,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "向",
+   "phoneticPinyin": "xiàng"
+  },
+  "哥": {
+   "strokes": 10,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "One person talking 可 over another 可"
+  },
+  "啄": {
+   "strokes": 11,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "豖",
+   "phoneticPinyin": "chù"
+  },
+  "啸": {
+   "strokes": 11,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "肃",
+   "phoneticPinyin": "sù"
+  },
+  "喉": {
+   "strokes": 12,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "侯",
+   "phoneticPinyin": "hóu"
+  },
+  "喜": {
+   "strokes": 12,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Singing 口 and beating drums 壴"
+  },
+  "喳": {
+   "strokes": 12,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "查",
+   "phoneticPinyin": "chá"
+  },
+  "嘴": {
+   "strokes": 16,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "口",
+   "semanticMeaning": "mouth",
+   "semanticThai": "ปาก",
+   "phonetic": "觜",
+   "phoneticPinyin": "zī"
+  },
+  "噪": {
+   "strokes": 16,
+   "radical": "口",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The sound 口 of birds chirping 喿; 喿 also provides the pronunciation"
+  },
+  "四": {
+   "strokes": 5,
+   "radical": "囗",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A child 儿 in a room with four walls 囗"
+  },
+  "圃": {
+   "strokes": 10,
+   "radical": "囗",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "囗",
+   "semanticMeaning": "enclosure",
+   "semanticThai": "การล้อมรอบ",
+   "phonetic": "甫",
+   "phoneticPinyin": "fǔ"
+  },
+  "圆": {
+   "strokes": 10,
+   "radical": "囗",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "囗",
+   "semanticMeaning": "enclosure",
+   "semanticThai": "การล้อมรอบ",
+   "phonetic": "员",
+   "phoneticPinyin": "yuán"
+  },
+  "地": {
+   "strokes": 6,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "土",
+   "semanticMeaning": "earth",
+   "semanticThai": "ดิน",
+   "phonetic": "也",
+   "phoneticPinyin": "yě"
+  },
+  "垂": {
+   "strokes": 8,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A tree with drooping branches"
+  },
+  "埃": {
+   "strokes": 10,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "土",
+   "semanticMeaning": "earth",
+   "semanticThai": "ดิน",
+   "phonetic": "矣",
+   "phoneticPinyin": "yǐ"
+  },
+  "塍": {
+   "strokes": 13,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "土",
+   "semanticMeaning": "earth",
+   "semanticThai": "ดิน",
+   "phonetic": "月",
+   "phoneticPinyin": "yuè"
+  },
+  "塔": {
+   "strokes": 12,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "土",
+   "semanticMeaning": "earth",
+   "semanticThai": "ดิน",
+   "phonetic": "荅",
+   "phoneticPinyin": "dā"
+  },
+  "壁": {
+   "strokes": 16,
+   "radical": "土",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "土",
+   "semanticMeaning": "earth",
+   "semanticThai": "ดิน",
+   "phonetic": "辟",
+   "phoneticPinyin": "pì"
+  },
+  "声": {
+   "strokes": 7,
+   "radical": "士",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 聲; see that character for the etymology"
+  },
+  "夜": {
+   "strokes": 8,
+   "radical": "夕",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 亻 sneaking by under cover 亠 of night 夕"
+  },
+  "大": {
+   "strokes": 3,
+   "radical": "大",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man 人 with outstretched arms"
+  },
+  "天": {
+   "strokes": 4,
+   "radical": "大",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The heavens 一 above a man 大"
+  },
+  "太": {
+   "strokes": 4,
+   "radical": "大",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A giant 大 with a normal-sized man 丶 for scale"
+  },
+  "头": {
+   "strokes": 5,
+   "radical": "大",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "大",
+   "semanticMeaning": "high",
+   "semanticThai": "ใหญ่ / สูง"
+  },
+  "奇": {
+   "strokes": 8,
+   "radical": "大",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 大 riding a horse 可"
+  },
+  "姬": {
+   "strokes": 10,
+   "radical": "女",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "An official 臣 woman 女"
+  },
+  "孔": {
+   "strokes": 4,
+   "radical": "子",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The mouth 乚 of a crying baby 子"
+  },
+  "孤": {
+   "strokes": 8,
+   "radical": "子",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "子",
+   "semanticMeaning": "child",
+   "semanticThai": "เด็ก",
+   "phonetic": "瓜",
+   "phoneticPinyin": "guā"
+  },
+  "宝": {
+   "strokes": 8,
+   "radical": "宀",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Jade 玉 kept in one's house 宀"
+  },
+  "家": {
+   "strokes": 10,
+   "radical": "宀",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "宀",
+   "semanticMeaning": "roof",
+   "semanticThai": "หลังคา",
+   "phonetic": "豕",
+   "phoneticPinyin": "shǐ"
+  },
+  "宽": {
+   "strokes": 11,
+   "radical": "宀",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "宀",
+   "semanticMeaning": "roof",
+   "semanticThai": "หลังคา",
+   "phonetic": "苋",
+   "phoneticPinyin": "xiàn"
+  },
+  "宾": {
+   "strokes": 10,
+   "radical": "宀",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A solider 兵 quartered under one's roof 宀"
+  },
+  "寒": {
+   "strokes": 12,
+   "radical": "宀",
+   "source": "makemeahanzi"
+  },
+  "寿": {
+   "strokes": 7,
+   "radical": "寸",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Altered form of 老"
+  },
+  "小": {
+   "strokes": 3,
+   "radical": "小",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Dividing 八 by a line 亅"
+  },
+  "尔": {
+   "strokes": 5,
+   "radical": "小",
+   "source": "makemeahanzi"
+  },
+  "尖": {
+   "strokes": 6,
+   "radical": "小",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A point, small 小 over big 大"
+  },
+  "尼": {
+   "strokes": 5,
+   "radical": "尸",
+   "source": "makemeahanzi"
+  },
+  "尾": {
+   "strokes": 7,
+   "radical": "尸",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A furry 毛 tail behind a body 尸"
+  },
+  "山": {
+   "strokes": 3,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Three mountain peaks"
+  },
+  "岗": {
+   "strokes": 7,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "山",
+   "semanticMeaning": "mountain",
+   "semanticThai": "ภูเขา",
+   "phonetic": "冈",
+   "phoneticPinyin": "gāng"
+  },
+  "岛": {
+   "strokes": 7,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A bird 鸟 perched atop a mountain 山"
+  },
+  "岩": {
+   "strokes": 8,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The rocks 石 that make up a mountain 山"
+  },
+  "岭": {
+   "strokes": 8,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "山",
+   "semanticMeaning": "mountain",
+   "semanticThai": "ภูเขา",
+   "phonetic": "令",
+   "phoneticPinyin": "lìng"
+  },
+  "峨": {
+   "strokes": 10,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "山",
+   "semanticMeaning": "mountain",
+   "semanticThai": "ภูเขา",
+   "phonetic": "我",
+   "phoneticPinyin": "wǒ"
+  },
+  "崖": {
+   "strokes": 11,
+   "radical": "山",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A mountain 山 precipice 厓; 厓 also provides the pronunciation"
+  },
+  "川": {
+   "strokes": 3,
+   "radical": "川",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A river's flow; compare 巛"
+  },
+  "巨": {
+   "strokes": 5,
+   "radical": "匚",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A hand holding a large carpenter's square 工"
+  },
+  "布": {
+   "strokes": 5,
+   "radical": "巾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Cloth 巾 held in a hand"
+  },
+  "帆": {
+   "strokes": 6,
+   "radical": "巾",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "巾",
+   "semanticMeaning": "cloth",
+   "semanticThai": "ผ้า",
+   "phonetic": "凡",
+   "phoneticPinyin": "fán"
+  },
+  "希": {
+   "strokes": 7,
+   "radical": "巾",
+   "source": "makemeahanzi"
+  },
+  "带": {
+   "strokes": 9,
+   "radical": "巾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A belt, creasing one's robe above 卅 but not below 巾"
+  },
+  "平": {
+   "strokes": 5,
+   "radical": "广",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A leveling scale"
+  },
+  "幽": {
+   "strokes": 9,
+   "radical": "幺",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Small niches 幺 in the mountainside 山; 幺 also provides the pronunciation"
+  },
+  "库": {
+   "strokes": 7,
+   "radical": "广",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A stable 广 where carriages 车 are parked"
+  },
+  "度": {
+   "strokes": 9,
+   "radical": "广",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Twenty 廿 people 又 meeting inside a building 广 to deliberate"
+  },
+  "异": {
+   "strokes": 6,
+   "radical": "廾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 異; a person 共 with a scary face田"
+  },
+  "弄": {
+   "strokes": 7,
+   "radical": "廾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two hands 廾 playing with a piece of jade 玉; 廾 also provides the pronunciation"
+  },
+  "弗": {
+   "strokes": 5,
+   "radical": "弓",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two arrows 丨 pulled across a bow"
+  },
+  "弯": {
+   "strokes": 9,
+   "radical": "弓",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Like 亦 a bow 弓"
+  },
+  "强": {
+   "strokes": 12,
+   "radical": "弓",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "弓",
+   "semanticMeaning": "bow",
+   "semanticThai": "คันธนู",
+   "phonetic": "虫",
+   "phoneticPinyin": "chóng"
+  },
+  "彩": {
+   "strokes": 11,
+   "radical": "彡",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "彡",
+   "semanticMeaning": "hair",
+   "semanticThai": "ขนหรือลวดลาย",
+   "phonetic": "采",
+   "phoneticPinyin": "cǎi"
+  },
+  "律": {
+   "strokes": 9,
+   "radical": "彳",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To walk 彳 as required by law 聿"
+  },
+  "思": {
+   "strokes": 9,
+   "radical": "心",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Weighing something with your mind 囟 (altered) and heart 心"
+  },
+  "恶": {
+   "strokes": 10,
+   "radical": "心",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "心",
+   "semanticMeaning": "heart",
+   "semanticThai": "หัวใจ",
+   "phonetic": "亚",
+   "phoneticPinyin": "yà"
+  },
+  "戴": {
+   "strokes": 17,
+   "radical": "戈",
+   "source": "makemeahanzi"
+  },
+  "扁": {
+   "strokes": 9,
+   "radical": "户",
+   "source": "makemeahanzi"
+  },
+  "扇": {
+   "strokes": 10,
+   "radical": "户",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A feathered 羽 fan in the shape of a folding door 户"
+  },
+  "拉": {
+   "strokes": 8,
+   "radical": "扌",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "扌",
+   "semanticMeaning": "hand",
+   "semanticThai": "มือ",
+   "phonetic": "立",
+   "phoneticPinyin": "lì"
+  },
+  "拟": {
+   "strokes": 7,
+   "radical": "扌",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "扌",
+   "semanticMeaning": "hand",
+   "semanticThai": "มือ",
+   "phonetic": "以",
+   "phoneticPinyin": "yǐ"
+  },
+  "拿": {
+   "strokes": 10,
+   "radical": "手",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "手",
+   "semanticMeaning": "hand",
+   "semanticThai": "มือ",
+   "phonetic": "合",
+   "phoneticPinyin": "hé"
+  },
+  "捕": {
+   "strokes": 10,
+   "radical": "扌",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "扌",
+   "semanticMeaning": "hand",
+   "semanticThai": "มือ",
+   "phonetic": "甫",
+   "phoneticPinyin": "fǔ"
+  },
+  "攀": {
+   "strokes": 19,
+   "radical": "手",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "手",
+   "semanticMeaning": "hand",
+   "semanticThai": "มือ",
+   "phonetic": "樊",
+   "phoneticPinyin": "fán"
+  },
+  "文": {
+   "strokes": 4,
+   "radical": "文",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A tattooed chest, representing writing"
+  },
+  "斑": {
+   "strokes": 12,
+   "radical": "文",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Markings 文 in jade 王"
+  },
+  "新": {
+   "strokes": 13,
+   "radical": "斤",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A freshly chopped 斤 tree 亲"
+  },
+  "方": {
+   "strokes": 4,
+   "radical": "方",
+   "source": "makemeahanzi"
+  },
+  "旋": {
+   "strokes": 11,
+   "radical": "方",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "An army 方 marching under a flag 疋"
+  },
+  "日": {
+   "strokes": 4,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "The sun"
+  },
+  "旦": {
+   "strokes": 5,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The sun 日 rising over the horizon 一"
+  },
+  "星": {
+   "strokes": 9,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "日",
+   "semanticMeaning": "sun",
+   "semanticThai": "ดวงอาทิตย์",
+   "phonetic": "生",
+   "phoneticPinyin": "shēng"
+  },
+  "普": {
+   "strokes": 12,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Everyone 並 under the sun 日"
+  },
+  "暗": {
+   "strokes": 13,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "日",
+   "semanticMeaning": "sun",
+   "semanticThai": "ดวงอาทิตย์",
+   "phonetic": "音",
+   "phoneticPinyin": "yīn"
+  },
+  "暴": {
+   "strokes": 15,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man with head 日 and hands 共 tormenting a deer 水"
+  },
+  "曙": {
+   "strokes": 18,
+   "radical": "日",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "日",
+   "semanticMeaning": "sun",
+   "semanticThai": "ดวงอาทิตย์",
+   "phonetic": "署",
+   "phoneticPinyin": "shǔ"
+  },
+  "木": {
+   "strokes": 4,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A tree"
+  },
+  "本": {
+   "strokes": 5,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A tree 木 with its roots highlighted"
+  },
+  "朱": {
+   "strokes": 6,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The color of the sap 一 of some trees 木"
+  },
+  "杂": {
+   "strokes": 6,
+   "radical": "木",
+   "source": "makemeahanzi"
+  },
+  "杓": {
+   "strokes": 7,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A wooden 木 spoon 勺"
+  },
+  "杜": {
+   "strokes": 7,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "土",
+   "phoneticPinyin": "tǔ"
+  },
+  "条": {
+   "strokes": 7,
+   "radical": "木",
+   "source": "makemeahanzi"
+  },
+  "松": {
+   "strokes": 8,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "公",
+   "phoneticPinyin": "gōng"
+  },
+  "极": {
+   "strokes": 7,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "wood",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "及",
+   "phoneticPinyin": "jí"
+  },
+  "枕": {
+   "strokes": 8,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "wood",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "冘",
+   "phoneticPinyin": "yín"
+  },
+  "林": {
+   "strokes": 8,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two trees 木 representing a forest"
+  },
+  "果": {
+   "strokes": 8,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Fruit 田 growing on a tree 木"
+  },
+  "柳": {
+   "strokes": 9,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "卯",
+   "phoneticPinyin": "mǎo"
+  },
+  "树": {
+   "strokes": 9,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "对",
+   "phoneticPinyin": "duì"
+  },
+  "栗": {
+   "strokes": 10,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A tree 木 bearing nuts 覀; compare 果"
+  },
+  "梅": {
+   "strokes": 11,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "每",
+   "phoneticPinyin": "měi"
+  },
+  "梢": {
+   "strokes": 11,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "肖",
+   "phoneticPinyin": "xiào"
+  },
+  "棉": {
+   "strokes": 12,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Silk 帛 picked off a tree 木"
+  },
+  "棕": {
+   "strokes": 12,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "宗",
+   "phoneticPinyin": "zōng"
+  },
+  "椋": {
+   "strokes": 12,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "京",
+   "phoneticPinyin": "jīng"
+  },
+  "椒": {
+   "strokes": 12,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "叔",
+   "phoneticPinyin": "shū"
+  },
+  "楔": {
+   "strokes": 13,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "wood",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "契",
+   "phoneticPinyin": "qì"
+  },
+  "榛": {
+   "strokes": 14,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "秦",
+   "phoneticPinyin": "qín"
+  },
+  "槲": {
+   "strokes": 15,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "斛",
+   "phoneticPinyin": "hú"
+  },
+  "横": {
+   "strokes": 15,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "黄",
+   "phoneticPinyin": "huáng"
+  },
+  "橙": {
+   "strokes": 16,
+   "radical": "木",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "木",
+   "semanticMeaning": "tree",
+   "semanticThai": "ต้นไม้",
+   "phonetic": "登",
+   "phoneticPinyin": "dēng"
+  },
+  "欧": {
+   "strokes": 8,
+   "radical": "欠",
+   "source": "makemeahanzi"
+  },
+  "歌": {
+   "strokes": 14,
+   "radical": "欠",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "欠",
+   "semanticMeaning": "breath",
+   "semanticThai": "ลมหายใจ",
+   "phonetic": "哥",
+   "phoneticPinyin": "gē"
+  },
+  "比": {
+   "strokes": 4,
+   "radical": "比",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two spoons 匕 side-by-side; 匕 also provides the pronunciation"
+  },
+  "毛": {
+   "strokes": 4,
+   "radical": "毛",
+   "source": "makemeahanzi"
+  },
+  "氏": {
+   "strokes": 4,
+   "radical": "氏",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person bowing down"
+  },
+  "水": {
+   "strokes": 4,
+   "radical": "水",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A river running between two banks; compare 川"
+  },
+  "池": {
+   "strokes": 6,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "也",
+   "phoneticPinyin": "yě"
+  },
+  "沙": {
+   "strokes": 7,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "少",
+   "phoneticPinyin": "shǎo"
+  },
+  "河": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "可",
+   "phoneticPinyin": "kě"
+  },
+  "沼": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "召",
+   "phoneticPinyin": "zhào"
+  },
+  "泊": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "白",
+   "phoneticPinyin": "bái"
+  },
+  "法": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The course 去 followed by a stream 氵"
+  },
+  "波": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "皮",
+   "phoneticPinyin": "pí"
+  },
+  "泰": {
+   "strokes": 10,
+   "radical": "氺",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Water 氺 contained by a dam"
+  },
+  "泽": {
+   "strokes": 8,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ"
+  },
+  "洋": {
+   "strokes": 9,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "羊",
+   "phoneticPinyin": "yáng"
+  },
+  "洲": {
+   "strokes": 9,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A state 州 surrounded by water 氵; 州 also provides the pronunciation"
+  },
+  "流": {
+   "strokes": 10,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "㐬",
+   "phoneticPinyin": "liú"
+  },
+  "浮": {
+   "strokes": 10,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "孚",
+   "phoneticPinyin": "fú"
+  },
+  "海": {
+   "strokes": 10,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "每",
+   "phoneticPinyin": "měi"
+  },
+  "淡": {
+   "strokes": 11,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "炎",
+   "phoneticPinyin": "yán"
+  },
+  "渔": {
+   "strokes": 11,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To fish 鱼 in a river氵; 鱼 also provides the pronunciation"
+  },
+  "渡": {
+   "strokes": 12,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "度",
+   "phoneticPinyin": "dù"
+  },
+  "游": {
+   "strokes": 12,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To swim freely 斿 through the seas 氵"
+  },
+  "湾": {
+   "strokes": 12,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "弯",
+   "phoneticPinyin": "wān"
+  },
+  "溪": {
+   "strokes": 13,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "奚",
+   "phoneticPinyin": "xī"
+  },
+  "滇": {
+   "strokes": 13,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "真",
+   "phoneticPinyin": "zhēn"
+  },
+  "滨": {
+   "strokes": 13,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "宾",
+   "phoneticPinyin": "bīn"
+  },
+  "漂": {
+   "strokes": 14,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "票",
+   "phoneticPinyin": "piào"
+  },
+  "漠": {
+   "strokes": 13,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "莫",
+   "phoneticPinyin": "mò"
+  },
+  "潜": {
+   "strokes": 15,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "替",
+   "phoneticPinyin": "tì"
+  },
+  "澳": {
+   "strokes": 15,
+   "radical": "氵",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "氵",
+   "semanticMeaning": "water",
+   "semanticThai": "น้ำ",
+   "phonetic": "奥",
+   "phoneticPinyin": "ào"
+  },
+  "火": {
+   "strokes": 4,
+   "radical": "火",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Flames"
+  },
+  "灰": {
+   "strokes": 6,
+   "radical": "火",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The remains of a fire 火; 火 also provides the pronunciation"
+  },
+  "灵": {
+   "strokes": 7,
+   "radical": "彐",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "火",
+   "semanticMeaning": "fire",
+   "semanticThai": "ไฟ",
+   "phonetic": "彐",
+   "phoneticPinyin": "jì"
+  },
+  "点": {
+   "strokes": 9,
+   "radical": "灬",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "灬",
+   "semanticMeaning": "fire",
+   "semanticThai": "ไฟ",
+   "phonetic": "占",
+   "phoneticPinyin": "zhàn"
+  },
+  "烟": {
+   "strokes": 10,
+   "radical": "火",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "火",
+   "semanticMeaning": "fire",
+   "semanticThai": "ไฟ",
+   "phonetic": "因",
+   "phoneticPinyin": "yīn"
+  },
+  "煤": {
+   "strokes": 13,
+   "radical": "火",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "火",
+   "semanticMeaning": "fire",
+   "semanticThai": "ไฟ",
+   "phonetic": "某",
+   "phoneticPinyin": "mǒu"
+  },
+  "燕": {
+   "strokes": 16,
+   "radical": "灬",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A swallow, with its head 廿, wings 北, and tail 灬"
+  },
+  "爪": {
+   "strokes": 4,
+   "radical": "爪",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A bird's talons"
+  },
+  "牛": {
+   "strokes": 4,
+   "radical": "牛",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "An ox's horned head"
+  },
+  "犀": {
+   "strokes": 12,
+   "radical": "牛",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "An ox 牛 with a tail 尾"
+  },
+  "狗": {
+   "strokes": 8,
+   "radical": "犭",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "犭",
+   "semanticMeaning": "dog",
+   "semanticThai": "สัตว์",
+   "phonetic": "句",
+   "phoneticPinyin": "jù"
+  },
+  "猎": {
+   "strokes": 11,
+   "radical": "犭",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "犭",
+   "semanticMeaning": "dog",
+   "semanticThai": "สัตว์",
+   "phonetic": "昔",
+   "phoneticPinyin": "xī"
+  },
+  "猛": {
+   "strokes": 11,
+   "radical": "犭",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "犭",
+   "semanticMeaning": "dog",
+   "semanticThai": "สัตว์",
+   "phonetic": "孟",
+   "phoneticPinyin": "mèng"
+  },
+  "玄": {
+   "strokes": 5,
+   "radical": "玄",
+   "source": "makemeahanzi"
+  },
+  "玉": {
+   "strokes": 5,
+   "radical": "玉",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A necklace 丨 adorned with three pieces of jade"
+  },
+  "王": {
+   "strokes": 4,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man 十 bridging heaven and earth (both 一)"
+  },
+  "环": {
+   "strokes": 8,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "王",
+   "semanticMeaning": "jade",
+   "semanticThai": "หยก",
+   "phonetic": "不",
+   "phoneticPinyin": "bù"
+  },
+  "珠": {
+   "strokes": 10,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "王",
+   "semanticMeaning": "jade",
+   "semanticThai": "หยก",
+   "phonetic": "朱",
+   "phoneticPinyin": "zhū"
+  },
+  "球": {
+   "strokes": 11,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "王",
+   "semanticMeaning": "jade",
+   "semanticThai": "หยก",
+   "phonetic": "求",
+   "phoneticPinyin": "qiú"
+  },
+  "理": {
+   "strokes": 11,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "王",
+   "semanticMeaning": "king",
+   "semanticThai": "หยก",
+   "phonetic": "里",
+   "phoneticPinyin": "lǐ"
+  },
+  "琉": {
+   "strokes": 11,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "王",
+   "semanticMeaning": "jade",
+   "semanticThai": "หยก",
+   "phonetic": "㐬",
+   "phoneticPinyin": "liú"
+  },
+  "琴": {
+   "strokes": 12,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Two guitar strings 玨 suggest the meaning; 今 provides the pronunciation"
+  },
+  "琵": {
+   "strokes": 12,
+   "radical": "王",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "玨",
+   "semanticMeaning": "guitar strings",
+   "semanticThai": "สายพิณ",
+   "phonetic": "比",
+   "phoneticPinyin": "bǐ"
+  },
+  "瓣": {
+   "strokes": 19,
+   "radical": "瓜",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "瓜",
+   "semanticMeaning": "melon",
+   "semanticThai": "แตง",
+   "phonetic": "\n\n\n\n\n\n\n\n辡",
+   "phoneticPinyin": ""
+  },
+  "甘": {
+   "strokes": 5,
+   "radical": "甘",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Picture of a tongue with 一 marking the sweet spot"
+  },
+  "田": {
+   "strokes": 5,
+   "radical": "田",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "The plots of a rice paddy"
+  },
+  "画": {
+   "strokes": 8,
+   "radical": "田",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A painting on an easel; compare 畫, which includes the brush"
+  },
+  "番": {
+   "strokes": 12,
+   "radical": "田",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Sowing seeds 米 on the farm 田"
+  },
+  "疆": {
+   "strokes": 19,
+   "radical": "田",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A bow 弓 and arrow 土 used to defend a border 畺; 畺 also provides the pronunciation"
+  },
+  "疣": {
+   "strokes": 9,
+   "radical": "疒",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "疒",
+   "semanticMeaning": "sickness",
+   "semanticThai": "ความเจ็บป่วย",
+   "phonetic": "尤",
+   "phoneticPinyin": "yóu"
+  },
+  "痣": {
+   "strokes": 12,
+   "radical": "疒",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The mark 志 of an illness 疒; 志 also provides the pronunciation"
+  },
+  "瘤": {
+   "strokes": 15,
+   "radical": "疒",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "疒",
+   "semanticMeaning": "sickness",
+   "semanticThai": "ความเจ็บป่วย",
+   "phonetic": "留",
+   "phoneticPinyin": "liú"
+  },
+  "白": {
+   "strokes": 5,
+   "radical": "白",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A burning candle; the rays of the sun"
+  },
+  "百": {
+   "strokes": 6,
+   "radical": "白",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "一",
+   "semanticMeaning": "one",
+   "semanticThai": "หนึ่ง",
+   "phonetic": "白",
+   "phoneticPinyin": "bái"
+  },
+  "皇": {
+   "strokes": 9,
+   "radical": "白",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A crown 白 on the head of the emperor 王"
+  },
+  "皱": {
+   "strokes": 10,
+   "radical": "皮",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "皮",
+   "semanticMeaning": "skin",
+   "semanticThai": "หนัง",
+   "phonetic": "刍",
+   "phoneticPinyin": "chú"
+  },
+  "盔": {
+   "strokes": 11,
+   "radical": "皿",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "皿",
+   "semanticMeaning": "dish",
+   "semanticThai": "ภาชนะ",
+   "phonetic": "灰",
+   "phoneticPinyin": "huī"
+  },
+  "盘": {
+   "strokes": 11,
+   "radical": "皿",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "皿",
+   "semanticMeaning": "dish",
+   "semanticThai": "ภาชนะ",
+   "phonetic": "般",
+   "phoneticPinyin": "bān"
+  },
+  "相": {
+   "strokes": 9,
+   "radical": "目",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To stare 目 at a tree 木, meaning to observe"
+  },
+  "眉": {
+   "strokes": 9,
+   "radical": "目",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Picture of hair 尸 above an eye 目"
+  },
+  "眶": {
+   "strokes": 11,
+   "radical": "目",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "目",
+   "semanticMeaning": "eye",
+   "semanticThai": "ตา",
+   "phonetic": "匡",
+   "phoneticPinyin": "kuāng"
+  },
+  "眼": {
+   "strokes": 11,
+   "radical": "目",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "目",
+   "semanticMeaning": "eye",
+   "semanticThai": "ตา",
+   "phonetic": "艮",
+   "phoneticPinyin": "gěn"
+  },
+  "矛": {
+   "strokes": 5,
+   "radical": "矛",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A spear pointed up and to the right"
+  },
+  "短": {
+   "strokes": 12,
+   "radical": "矢",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "矢",
+   "semanticMeaning": "dart",
+   "semanticThai": "ลูกศร",
+   "phonetic": "豆",
+   "phoneticPinyin": "dòu"
+  },
+  "石": {
+   "strokes": 5,
+   "radical": "石",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A rock 口 at the base of a cliff 厂"
+  },
+  "矶": {
+   "strokes": 7,
+   "radical": "石",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "石",
+   "semanticMeaning": "rock",
+   "semanticThai": "หิน",
+   "phonetic": "几",
+   "phoneticPinyin": "jǐ"
+  },
+  "硫": {
+   "strokes": 12,
+   "radical": "石",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "石",
+   "semanticMeaning": "mineral",
+   "semanticThai": "หิน",
+   "phonetic": "㐬",
+   "phoneticPinyin": "liú"
+  },
+  "硬": {
+   "strokes": 12,
+   "radical": "石",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "石",
+   "semanticMeaning": "stone",
+   "semanticThai": "หิน",
+   "phonetic": "更",
+   "phoneticPinyin": "gèng"
+  },
+  "禾": {
+   "strokes": 5,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A plant stalk with a sagging head"
+  },
+  "秃": {
+   "strokes": 7,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Grains of hair 禾 on a person's head 几"
+  },
+  "秋": {
+   "strokes": 9,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The time of year when farmers would burn 禾 crops 火"
+  },
+  "科": {
+   "strokes": 9,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A hand measuring 斗 grain 禾"
+  },
+  "秧": {
+   "strokes": 10,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "禾",
+   "semanticMeaning": "rice",
+   "semanticThai": "ธัญพืช",
+   "phonetic": "央",
+   "phoneticPinyin": "yāng"
+  },
+  "稻": {
+   "strokes": 15,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "禾",
+   "semanticMeaning": "grain",
+   "semanticThai": "ธัญพืช",
+   "phonetic": "舀",
+   "phoneticPinyin": "yǎo"
+  },
+  "穗": {
+   "strokes": 17,
+   "radical": "禾",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "禾",
+   "semanticMeaning": "grain",
+   "semanticThai": "ธัญพืช",
+   "phonetic": "惠",
+   "phoneticPinyin": "huì"
+  },
+  "端": {
+   "strokes": 14,
+   "radical": "立",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "立",
+   "semanticMeaning": "stand",
+   "semanticThai": "ยืน",
+   "phonetic": "耑",
+   "phoneticPinyin": "duān"
+  },
+  "竹": {
+   "strokes": 6,
+   "radical": "竹",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Two stalks of bamboo"
+  },
+  "篱": {
+   "strokes": 16,
+   "radical": "⺮",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺮",
+   "semanticMeaning": "bamboo",
+   "semanticThai": "ไม้ไผ่",
+   "phonetic": "离",
+   "phoneticPinyin": "lí"
+  },
+  "类": {
+   "strokes": 9,
+   "radical": "大",
+   "source": "makemeahanzi"
+  },
+  "粉": {
+   "strokes": 10,
+   "radical": "米",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "米",
+   "semanticMeaning": "grain",
+   "semanticThai": "ข้าว",
+   "phonetic": "分",
+   "phoneticPinyin": "fēn"
+  },
+  "紫": {
+   "strokes": 12,
+   "radical": "糸",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "糸",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "此",
+   "phoneticPinyin": "cǐ"
+  },
+  "红": {
+   "strokes": 6,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "工",
+   "phoneticPinyin": "gōng"
+  },
+  "纯": {
+   "strokes": 7,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "屯",
+   "phoneticPinyin": "tún"
+  },
+  "纵": {
+   "strokes": 7,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "从",
+   "phoneticPinyin": "cóng"
+  },
+  "纹": {
+   "strokes": 7,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "文",
+   "phoneticPinyin": "wén"
+  },
+  "线": {
+   "strokes": 8,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "戋",
+   "phoneticPinyin": "jiān"
+  },
+  "细": {
+   "strokes": 8,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "田",
+   "phoneticPinyin": "tián"
+  },
+  "织": {
+   "strokes": 8,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "只",
+   "phoneticPinyin": "zhī"
+  },
+  "绒": {
+   "strokes": 9,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "戎",
+   "phoneticPinyin": "róng"
+  },
+  "绣": {
+   "strokes": 10,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "秀",
+   "phoneticPinyin": "xiù"
+  },
+  "绯": {
+   "strokes": 11,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "非",
+   "phoneticPinyin": "fēi"
+  },
+  "绿": {
+   "strokes": 11,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "silk",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "录",
+   "phoneticPinyin": "lù"
+  },
+  "缝": {
+   "strokes": 13,
+   "radical": "纟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "逢",
+   "phoneticPinyin": "féng"
+  },
+  "罗": {
+   "strokes": 8,
+   "radical": "罒",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "罒",
+   "semanticMeaning": "net",
+   "semanticThai": "ตาข่าย"
+  },
+  "美": {
+   "strokes": 9,
+   "radical": "羊",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 大 wearing an elegant crown 羊"
+  },
+  "羽": {
+   "strokes": 6,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Two feathers or wings"
+  },
+  "翁": {
+   "strokes": 10,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "feather",
+   "semanticThai": "ขนนก",
+   "phonetic": "公",
+   "phoneticPinyin": "gōng"
+  },
+  "翅": {
+   "strokes": 10,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "wings",
+   "semanticThai": "ขนนก",
+   "phonetic": "支",
+   "phoneticPinyin": "zhī"
+  },
+  "翘": {
+   "strokes": 12,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "wings",
+   "semanticThai": "ขนนก",
+   "phonetic": "尧",
+   "phoneticPinyin": "yáo"
+  },
+  "翠": {
+   "strokes": 14,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "wings",
+   "semanticThai": "ขนนก",
+   "phonetic": "卒",
+   "phoneticPinyin": "zú"
+  },
+  "翡": {
+   "strokes": 14,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "plume",
+   "semanticThai": "ขนนก",
+   "phonetic": "非",
+   "phoneticPinyin": "fēi"
+  },
+  "翻": {
+   "strokes": 18,
+   "radical": "羽",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "羽",
+   "semanticMeaning": "wings",
+   "semanticThai": "ขนนก",
+   "phonetic": "番",
+   "phoneticPinyin": "fān"
+  },
+  "耳": {
+   "strokes": 6,
+   "radical": "耳",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "An ear"
+  },
+  "肃": {
+   "strokes": 8,
+   "radical": "肀",
+   "source": "makemeahanzi"
+  },
+  "肉": {
+   "strokes": 6,
+   "radical": "肉",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Meat on the ribs of an animal"
+  },
+  "肩": {
+   "strokes": 8,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man bringing home meat ⺼ for the family 户"
+  },
+  "胁": {
+   "strokes": 8,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To control 办 another's body ⺼"
+  },
+  "背": {
+   "strokes": 9,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "北",
+   "phoneticPinyin": "běi"
+  },
+  "胜": {
+   "strokes": 9,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "生",
+   "phoneticPinyin": "shēng"
+  },
+  "胡": {
+   "strokes": 9,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "meat",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "古",
+   "phoneticPinyin": "gǔ"
+  },
+  "胸": {
+   "strokes": 10,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A heart ⺼ in the chest 匈; 匈 also provides the pronunciation"
+  },
+  "脚": {
+   "strokes": 11,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "却",
+   "phoneticPinyin": "què"
+  },
+  "脸": {
+   "strokes": 11,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "佥",
+   "phoneticPinyin": "qiān"
+  },
+  "腰": {
+   "strokes": 13,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "要",
+   "phoneticPinyin": "yào"
+  },
+  "腹": {
+   "strokes": 13,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "复",
+   "phoneticPinyin": "fù"
+  },
+  "腿": {
+   "strokes": 13,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Flesh ⺼ used to walk 退; 退 also provides the pronunciation"
+  },
+  "膀": {
+   "strokes": 14,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Flesh ⺼ beside 旁 the body; 旁 also provides the pronunciation"
+  },
+  "臀": {
+   "strokes": 17,
+   "radical": "⺼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "⺼",
+   "semanticMeaning": "flesh",
+   "semanticThai": "เนื้อ / ร่างกาย",
+   "phonetic": "殿",
+   "phoneticPinyin": "diàn"
+  },
+  "舰": {
+   "strokes": 10,
+   "radical": "舟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "舟",
+   "semanticMeaning": "ship",
+   "semanticThai": "เรือ",
+   "phonetic": "见",
+   "phoneticPinyin": "jiàn"
+  },
+  "色": {
+   "strokes": 6,
+   "radical": "色",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "What a person ⺈ desires 巴"
+  },
+  "芦": {
+   "strokes": 7,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "户",
+   "phoneticPinyin": "hù"
+  },
+  "花": {
+   "strokes": 8,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A flower 艹 in bloom 化; 化 also provides the pronunciation"
+  },
+  "苇": {
+   "strokes": 7,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "韦",
+   "phoneticPinyin": "wéi"
+  },
+  "苍": {
+   "strokes": 7,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "仓",
+   "phoneticPinyin": "cāng"
+  },
+  "苏": {
+   "strokes": 8,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "稣",
+   "phoneticPinyin": "sū"
+  },
+  "苦": {
+   "strokes": 9,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "古",
+   "phoneticPinyin": "gǔ"
+  },
+  "草": {
+   "strokes": 10,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "早",
+   "phoneticPinyin": "zǎo"
+  },
+  "荒": {
+   "strokes": 10,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "芒",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า",
+   "phonetic": "川",
+   "phoneticPinyin": "chuān"
+  },
+  "莺": {
+   "strokes": 11,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A bird 鸟 covered in 冖 green 艹 feathers"
+  },
+  "菊": {
+   "strokes": 12,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "flower",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "匊",
+   "phoneticPinyin": "jū"
+  },
+  "菲": {
+   "strokes": 12,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "非",
+   "phoneticPinyin": "fēi"
+  },
+  "萨": {
+   "strokes": 11,
+   "radical": "艹",
+   "source": "makemeahanzi"
+  },
+  "董": {
+   "strokes": 13,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "重",
+   "phoneticPinyin": "zhòng"
+  },
+  "蒂": {
+   "strokes": 13,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "帝",
+   "phoneticPinyin": "dì"
+  },
+  "蒙": {
+   "strokes": 14,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "冡",
+   "phoneticPinyin": "méng"
+  },
+  "蒲": {
+   "strokes": 14,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "浦",
+   "phoneticPinyin": "pǔ"
+  },
+  "蓑": {
+   "strokes": 13,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "衰",
+   "phoneticPinyin": "shuāi"
+  },
+  "蓝": {
+   "strokes": 14,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "plant",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "监",
+   "phoneticPinyin": "jiān"
+  },
+  "薮": {
+   "strokes": 16,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "数",
+   "phoneticPinyin": "shù"
+  },
+  "藏": {
+   "strokes": 18,
+   "radical": "艹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "艹",
+   "semanticMeaning": "grass",
+   "semanticThai": "หญ้า / พืช",
+   "phonetic": "臧",
+   "phoneticPinyin": "zāng"
+  },
+  "虎": {
+   "strokes": 8,
+   "radical": "虎",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A tiger 虍 standing on a rock 几; 虍 also provides the pronunciation"
+  },
+  "虹": {
+   "strokes": 9,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "工",
+   "phoneticPinyin": "gōng"
+  },
+  "蚁": {
+   "strokes": 9,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "义",
+   "phoneticPinyin": "yì"
+  },
+  "蛇": {
+   "strokes": 11,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "worm",
+   "semanticThai": "แมลง",
+   "phonetic": "它",
+   "phoneticPinyin": "tā"
+  },
+  "蛎": {
+   "strokes": 11,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "mollusk",
+   "semanticThai": "แมลง",
+   "phonetic": "厉",
+   "phoneticPinyin": "lì"
+  },
+  "蛙": {
+   "strokes": 12,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "圭",
+   "phoneticPinyin": "guī"
+  },
+  "蛛": {
+   "strokes": 12,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "朱",
+   "phoneticPinyin": "zhū"
+  },
+  "蜂": {
+   "strokes": 13,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "夆",
+   "phoneticPinyin": "féng"
+  },
+  "蜜": {
+   "strokes": 14,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "宓",
+   "phoneticPinyin": "mì"
+  },
+  "蜡": {
+   "strokes": 14,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "昔",
+   "phoneticPinyin": "xī"
+  },
+  "蝗": {
+   "strokes": 15,
+   "radical": "虫",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "虫",
+   "semanticMeaning": "insect",
+   "semanticThai": "แมลง",
+   "phonetic": "皇",
+   "phoneticPinyin": "huáng"
+  },
+  "血": {
+   "strokes": 6,
+   "radical": "血",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A chalice 皿 filled with blood 丿"
+  },
+  "褐": {
+   "strokes": 14,
+   "radical": "衤",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "衤",
+   "semanticMeaning": "cloth",
+   "semanticThai": "เสื้อผ้า",
+   "phonetic": "曷",
+   "phoneticPinyin": "hé"
+  },
+  "西": {
+   "strokes": 6,
+   "radical": "西",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A bird settling into its nest, representing sunset; compare 東"
+  },
+  "角": {
+   "strokes": 7,
+   "radical": "角",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A rhinoceros or other animal horn"
+  },
+  "豆": {
+   "strokes": 7,
+   "radical": "豆",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "An old serving dish 口 on a stand with a lid 一"
+  },
+  "贺": {
+   "strokes": 9,
+   "radical": "贝",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To add 加 to someone else's fortune 贝"
+  },
+  "贼": {
+   "strokes": 10,
+   "radical": "贝",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "戎",
+   "semanticMeaning": "weapons",
+   "semanticThai": "อาวุธ",
+   "phonetic": "贝",
+   "phoneticPinyin": "bèi"
+  },
+  "赛": {
+   "strokes": 14,
+   "radical": "贝",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "贝",
+   "semanticMeaning": "money",
+   "semanticThai": "เงินตรา (เปลือกหอย)",
+   "phonetic": "宀",
+   "phoneticPinyin": "gài"
+  },
+  "赤": {
+   "strokes": 7,
+   "radical": "赤",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A person 土 whose cheeks are burning 火"
+  },
+  "赭": {
+   "strokes": 15,
+   "radical": "赤",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "赤",
+   "semanticMeaning": "red",
+   "semanticThai": "สีแดง",
+   "phonetic": "者",
+   "phoneticPinyin": "zhě"
+  },
+  "足": {
+   "strokes": 7,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "The leg 口 above the foot"
+  },
+  "趾": {
+   "strokes": 11,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "足",
+   "semanticMeaning": "foot",
+   "semanticThai": "เท้า",
+   "phonetic": "止",
+   "phoneticPinyin": "zhǐ"
+  },
+  "距": {
+   "strokes": 12,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "足",
+   "semanticMeaning": "foot",
+   "semanticThai": "เท้า",
+   "phonetic": "巨",
+   "phoneticPinyin": "jù"
+  },
+  "路": {
+   "strokes": 13,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "足",
+   "semanticMeaning": "foot",
+   "semanticThai": "เท้า",
+   "phonetic": "各",
+   "phoneticPinyin": "gè"
+  },
+  "跷": {
+   "strokes": 13,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "足",
+   "semanticMeaning": "foot",
+   "semanticThai": "เท้า",
+   "phonetic": "尧",
+   "phoneticPinyin": "yáo"
+  },
+  "蹼": {
+   "strokes": 19,
+   "radical": "足",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "足",
+   "semanticMeaning": "foot",
+   "semanticThai": "เท้า",
+   "phonetic": "菐",
+   "phoneticPinyin": "pú"
+  },
+  "辉": {
+   "strokes": 12,
+   "radical": "⺌",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "光",
+   "semanticMeaning": "light",
+   "semanticThai": "แสง",
+   "phonetic": "军",
+   "phoneticPinyin": "jūn"
+  },
+  "辫": {
+   "strokes": 17,
+   "radical": "辛",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "纟",
+   "semanticMeaning": "thread",
+   "semanticThai": "ไหม / เส้นด้าย",
+   "phonetic": "辛",
+   "phoneticPinyin": "xīn"
+  },
+  "达": {
+   "strokes": 7,
+   "radical": "辶",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "辶",
+   "semanticMeaning": "movement",
+   "semanticThai": "การเดินทาง",
+   "phonetic": "大",
+   "phoneticPinyin": "dà"
+  },
+  "远": {
+   "strokes": 7,
+   "radical": "辶",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "辶",
+   "semanticMeaning": "walk",
+   "semanticThai": "การเดินทาง",
+   "phonetic": "元",
+   "phoneticPinyin": "yuán"
+  },
+  "通": {
+   "strokes": 11,
+   "radical": "辶",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "辶",
+   "semanticMeaning": "walk",
+   "semanticThai": "การเดินทาง",
+   "phonetic": "甬",
+   "phoneticPinyin": "yǒng"
+  },
+  "道": {
+   "strokes": 13,
+   "radical": "辶",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "辶",
+   "semanticMeaning": "walk",
+   "semanticThai": "การเดินทาง",
+   "phonetic": "首",
+   "phoneticPinyin": "shǒu"
+  },
+  "遗": {
+   "strokes": 12,
+   "radical": "辶",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "To leave 辶 something valuable 贵 behind"
+  },
+  "酒": {
+   "strokes": 10,
+   "radical": "酉",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A jar 酉 of wine 氵; 酉 also provides the pronunciation"
+  },
+  "里": {
+   "strokes": 7,
+   "radical": "里",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Unit of measure for farm 田 land 土"
+  },
+  "金": {
+   "strokes": 8,
+   "radical": "金",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A cast-iron bell"
+  },
+  "针": {
+   "strokes": 7,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A metal 钅 pin 十"
+  },
+  "钝": {
+   "strokes": 9,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "屯",
+   "phoneticPinyin": "tún"
+  },
+  "钩": {
+   "strokes": 9,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A metal 钅 hook 勾; 勾 also provides the pronunciation"
+  },
+  "钳": {
+   "strokes": 10,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "甘",
+   "phoneticPinyin": "gān"
+  },
+  "铁": {
+   "strokes": 10,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "失",
+   "phoneticPinyin": "shī"
+  },
+  "铜": {
+   "strokes": 11,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "同",
+   "phoneticPinyin": "tóng"
+  },
+  "银": {
+   "strokes": 11,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "money",
+   "semanticThai": "โลหะ",
+   "phonetic": "艮",
+   "phoneticPinyin": "gěn"
+  },
+  "锈": {
+   "strokes": 12,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "秀",
+   "phoneticPinyin": "xiù"
+  },
+  "锡": {
+   "strokes": 13,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "易",
+   "phoneticPinyin": "yì"
+  },
+  "锥": {
+   "strokes": 13,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "隹",
+   "phoneticPinyin": "zhuī"
+  },
+  "锦": {
+   "strokes": 13,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Silk 帛 inlaid with gold 钅; 钅 also provides the pronunciation"
+  },
+  "镰": {
+   "strokes": 18,
+   "radical": "钅",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "钅",
+   "semanticMeaning": "metal",
+   "semanticThai": "โลหะ",
+   "phonetic": "廉",
+   "phoneticPinyin": "lián"
+  },
+  "长": {
+   "strokes": 4,
+   "radical": "长",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 長; an old man with long hair and a cane"
+  },
+  "阔": {
+   "strokes": 12,
+   "radical": "门",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "门",
+   "semanticMeaning": "gate",
+   "semanticThai": "ประตู",
+   "phonetic": "活",
+   "phoneticPinyin": "huó"
+  },
+  "阳": {
+   "strokes": 6,
+   "radical": "阝",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The place 阝 of the sun 日; compare 阴"
+  },
+  "阿": {
+   "strokes": 8,
+   "radical": "阝",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "阝",
+   "semanticMeaning": "place",
+   "semanticThai": "สถานที่",
+   "phonetic": "可",
+   "phoneticPinyin": "kě"
+  },
+  "隼": {
+   "strokes": 10,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "隹",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "十",
+   "phoneticPinyin": "shí"
+  },
+  "雀": {
+   "strokes": 11,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A small 小 bird 隹"
+  },
+  "雁": {
+   "strokes": 12,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "隹",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก"
+  },
+  "雅": {
+   "strokes": 12,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "隹",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "牙",
+   "phoneticPinyin": "yá"
+  },
+  "雉": {
+   "strokes": 13,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "隹",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "矢",
+   "phoneticPinyin": "shǐ"
+  },
+  "雕": {
+   "strokes": 16,
+   "radical": "隹",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "隹",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "周",
+   "phoneticPinyin": "zhōu"
+  },
+  "雨": {
+   "strokes": 8,
+   "radical": "雨",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Rain drops falling from a cloud 帀"
+  },
+  "雪": {
+   "strokes": 11,
+   "radical": "雨",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "雨",
+   "semanticMeaning": "rain",
+   "semanticThai": "ฝน",
+   "phonetic": "彐",
+   "phoneticPinyin": "jì"
+  },
+  "雷": {
+   "strokes": 13,
+   "radical": "雨",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A storm 雨 over the fields 田"
+  },
+  "震": {
+   "strokes": 15,
+   "radical": "雨",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "雨",
+   "semanticMeaning": "rain",
+   "semanticThai": "ฝน",
+   "phonetic": "辰",
+   "phoneticPinyin": "chén"
+  },
+  "霍": {
+   "strokes": 16,
+   "radical": "雨",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Birds 隹 caught in a sudden storm 雨"
+  },
+  "青": {
+   "strokes": 8,
+   "radical": "青",
+   "source": "makemeahanzi"
+  },
+  "靴": {
+   "strokes": 13,
+   "radical": "革",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "革",
+   "semanticMeaning": "leather",
+   "semanticThai": "หนังฟอก",
+   "phonetic": "化",
+   "phoneticPinyin": "huà"
+  },
+  "韦": {
+   "strokes": 4,
+   "radical": "韦",
+   "source": "makemeahanzi"
+  },
+  "页": {
+   "strokes": 6,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A person's head"
+  },
+  "顶": {
+   "strokes": 8,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "页",
+   "semanticMeaning": "head",
+   "semanticThai": "ศีรษะ",
+   "phonetic": "丁",
+   "phoneticPinyin": "dīng"
+  },
+  "须": {
+   "strokes": 9,
+   "radical": "彡",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Hair 彡 growing on the face 页"
+  },
+  "领": {
+   "strokes": 11,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "页",
+   "semanticMeaning": "head",
+   "semanticThai": "ศีรษะ",
+   "phonetic": "令",
+   "phoneticPinyin": "lìng"
+  },
+  "颈": {
+   "strokes": 11,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "页",
+   "semanticMeaning": "head",
+   "semanticThai": "ศีรษะ"
+  },
+  "颊": {
+   "strokes": 12,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "The jaw in 夹 the head 页; 夹 also provides the pronunciation"
+  },
+  "颏": {
+   "strokes": 12,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "页",
+   "semanticMeaning": "head",
+   "semanticThai": "ศีรษะ",
+   "phonetic": "亥",
+   "phoneticPinyin": "hài"
+  },
+  "额": {
+   "strokes": 15,
+   "radical": "页",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "页",
+   "semanticMeaning": "head",
+   "semanticThai": "ศีรษะ",
+   "phonetic": "客",
+   "phoneticPinyin": "kè"
+  },
+  "风": {
+   "strokes": 4,
+   "radical": "风",
+   "source": "makemeahanzi"
+  },
+  "食": {
+   "strokes": 9,
+   "radical": "食",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A dish of food 良 with a lid on top 人"
+  },
+  "马": {
+   "strokes": 3,
+   "radical": "马",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Simplified form of 馬, a horse galloping to the left"
+  },
+  "骨": {
+   "strokes": 10,
+   "radical": "骨",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Flesh ⺼ and bones 冎"
+  },
+  "高": {
+   "strokes": 10,
+   "radical": "高",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A tall palace"
+  },
+  "鬼": {
+   "strokes": 10,
+   "radical": "鬼",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A ghost with a scary face"
+  },
+  "鱼": {
+   "strokes": 8,
+   "radical": "鱼",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A fish swimming upwards"
+  },
+  "鲣": {
+   "strokes": 15,
+   "radical": "鱼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鱼",
+   "semanticMeaning": "fish",
+   "semanticThai": "ปลา",
+   "phonetic": "坚",
+   "phoneticPinyin": "jiān"
+  },
+  "鳞": {
+   "strokes": 20,
+   "radical": "鱼",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鱼",
+   "semanticMeaning": "fish",
+   "semanticThai": "ปลา",
+   "phonetic": "粦",
+   "phoneticPinyin": "lín"
+  },
+  "鳽": {
+   "strokes": 15,
+   "radical": "鳥",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鳥",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "幵",
+   "phoneticPinyin": "jiān"
+  },
+  "鵙": {
+   "strokes": 18,
+   "radical": "鳥",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鳥",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "狊",
+   "phoneticPinyin": "jú"
+  },
+  "鵟": {
+   "strokes": 18,
+   "radical": "鳥",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鳥",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "狂",
+   "phoneticPinyin": "kuáng"
+  },
+  "鸟": {
+   "strokes": 5,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "Simplified form of 烏, a bird"
+  },
+  "鸠": {
+   "strokes": 7,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "九",
+   "phoneticPinyin": "jiǔ"
+  },
+  "鸡": {
+   "strokes": 7,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Another 又 kind of bird 鸟"
+  },
+  "鸢": {
+   "strokes": 8,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "弋",
+   "phoneticPinyin": "yì"
+  },
+  "鸥": {
+   "strokes": 9,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "区",
+   "phoneticPinyin": "qū"
+  },
+  "鸦": {
+   "strokes": 9,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "牙",
+   "phoneticPinyin": "yá"
+  },
+  "鸨": {
+   "strokes": 9,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "匕",
+   "phoneticPinyin": "bǐ"
+  },
+  "鸪": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "古",
+   "phoneticPinyin": "gǔ"
+  },
+  "鸫": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "东",
+   "phoneticPinyin": "dōng"
+  },
+  "鸬": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "卢",
+   "phoneticPinyin": "lú"
+  },
+  "鸭": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "甲",
+   "phoneticPinyin": "jiǎ"
+  },
+  "鸮": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "号",
+   "phoneticPinyin": "hào"
+  },
+  "鸯": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "央",
+   "phoneticPinyin": "yāng"
+  },
+  "鸰": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "令",
+   "phoneticPinyin": "lìng"
+  },
+  "鸱": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "氐",
+   "phoneticPinyin": "dī"
+  },
+  "鸲": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "句",
+   "phoneticPinyin": "jù"
+  },
+  "鸳": {
+   "strokes": 10,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "夗",
+   "phoneticPinyin": "yuàn"
+  },
+  "鸺": {
+   "strokes": 11,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "休",
+   "phoneticPinyin": "xiū"
+  },
+  "鸻": {
+   "strokes": 11,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A wading 行 bird 鸟; 鸟 also provides the pronunciation"
+  },
+  "鸽": {
+   "strokes": 11,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "合",
+   "phoneticPinyin": "hé"
+  },
+  "鸿": {
+   "strokes": 11,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "江",
+   "phoneticPinyin": "jiāng"
+  },
+  "鹀": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "无",
+   "phoneticPinyin": "wú"
+  },
+  "鹂": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "丽",
+   "phoneticPinyin": "lì"
+  },
+  "鹃": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "肙",
+   "phoneticPinyin": "yuàn"
+  },
+  "鹅": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "我",
+   "phoneticPinyin": "wǒ"
+  },
+  "鹇": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "闲",
+   "phoneticPinyin": "xián"
+  },
+  "鹈": {
+   "strokes": 12,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "弟",
+   "phoneticPinyin": "dì"
+  },
+  "鹉": {
+   "strokes": 13,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "武",
+   "phoneticPinyin": "wǔ"
+  },
+  "鹊": {
+   "strokes": 13,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "昔",
+   "phoneticPinyin": "xī"
+  },
+  "鹌": {
+   "strokes": 13,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "奄",
+   "phoneticPinyin": "yǎn"
+  },
+  "鹎": {
+   "strokes": 13,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "卑",
+   "phoneticPinyin": "bēi"
+  },
+  "鹑": {
+   "strokes": 13,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "享",
+   "phoneticPinyin": "xiǎng"
+  },
+  "鹕": {
+   "strokes": 14,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "胡",
+   "phoneticPinyin": "hú"
+  },
+  "鹗": {
+   "strokes": 14,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "咢",
+   "phoneticPinyin": "è"
+  },
+  "鹚": {
+   "strokes": 14,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "兹",
+   "phoneticPinyin": "zī"
+  },
+  "鹛": {
+   "strokes": 14,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "眉",
+   "phoneticPinyin": "méi"
+  },
+  "鹞": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก"
+  },
+  "鹟": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "翁",
+   "phoneticPinyin": "wēng"
+  },
+  "鹠": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "留",
+   "phoneticPinyin": "liú"
+  },
+  "鹡": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "脊",
+   "phoneticPinyin": "jí"
+  },
+  "鹤": {
+   "strokes": 15,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "隺",
+   "phoneticPinyin": "hú"
+  },
+  "鹦": {
+   "strokes": 16,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "婴",
+   "phoneticPinyin": "yīng"
+  },
+  "鹧": {
+   "strokes": 16,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "庶",
+   "phoneticPinyin": "shù"
+  },
+  "鹨": {
+   "strokes": 16,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "翏",
+   "phoneticPinyin": "liù"
+  },
+  "鹩": {
+   "strokes": 17,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "尞",
+   "phoneticPinyin": "liào"
+  },
+  "鹪": {
+   "strokes": 17,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "焦",
+   "phoneticPinyin": "jiāo"
+  },
+  "鹫": {
+   "strokes": 17,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "就",
+   "phoneticPinyin": "jiù"
+  },
+  "鹬": {
+   "strokes": 17,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "矞",
+   "phoneticPinyin": "yù"
+  },
+  "鹭": {
+   "strokes": 18,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "路",
+   "phoneticPinyin": "lù"
+  },
+  "鹮": {
+   "strokes": 18,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "睘",
+   "phoneticPinyin": "qióng"
+  },
+  "鹰": {
+   "strokes": 18,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก"
+  },
+  "鹱": {
+   "strokes": 18,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "蒦",
+   "phoneticPinyin": "huò"
+  },
+  "鹲": {
+   "strokes": 18,
+   "radical": "鸟",
+   "source": "authored",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "蒙",
+   "phoneticPinyin": "méng"
+  },
+  "鹳": {
+   "strokes": 22,
+   "radical": "鸟",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "鸟",
+   "semanticMeaning": "bird",
+   "semanticThai": "นก",
+   "phonetic": "雚",
+   "phoneticPinyin": "guàn"
+  },
+  "麦": {
+   "strokes": 7,
+   "radical": "麦",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Simplified form of 麦; grains 來 ready to be harvested 夂"
+  },
+  "麻": {
+   "strokes": 11,
+   "radical": "麻",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Hemp plants 林 growing in a greenhouse 广"
+  },
+  "黄": {
+   "strokes": 11,
+   "radical": "黄",
+   "source": "makemeahanzi",
+   "type": "pictographic",
+   "hint": "A jade pendant"
+  },
+  "黍": {
+   "strokes": 12,
+   "radical": "黍",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "Grain 禾 that can be fermented to make wine 氺"
+  },
+  "黑": {
+   "strokes": 12,
+   "radical": "黑",
+   "source": "makemeahanzi",
+   "type": "ideographic",
+   "hint": "A man's face blacked by soot from a fire 灬"
+  },
+  "鼻": {
+   "strokes": 14,
+   "radical": "鼻",
+   "source": "makemeahanzi",
+   "type": "pictophonetic",
+   "semantic": "自",
+   "semanticMeaning": "self",
+   "semanticThai": "ตนเอง",
+   "phonetic": "畀",
+   "phoneticPinyin": "bì"
+  }
+ }
+}

@@ -58,6 +58,27 @@ test('place names and other opaque words are read as one word, not character by 
  // Every name unit has an English and Thai meaning, and only matches names where it is that word.
  for(const w of guide.unitWords)if(guide.compounds[w].kind==='name'){assert.ok(guide.compounds[w].english,w);assert.ok(guide.compounds[w].thai,w);}
 });
+test('every name character has a Thai meaning and a sourced structure (meaning part, sound part, strokes)',async()=>{
+ const structure=JSON.parse(await read('data/character-structure.json'));
+ const chars=new Set([...birds,...groups].flatMap(b=>[...b.chinese]));
+ for(const c of chars){
+  assert.ok(guide.characters[c].thai,`Thai gloss for ${c}`);
+  const s=structure.characters[c];assert.ok(s&&s.strokes>0,`structure for ${c}`);
+  if(s.type==='pictophonetic')assert.ok(s.semantic&&s.semanticThai,`meaning part for ${c}`);
+ }
+ assert.equal(structure.meta.authored.length,11);
+ for(const [path,hash] of Object.entries(structure.meta.inputHashes))assert.match(hash,/^[0-9a-f]{64}$/,path);
+ const withStructure={...guide,structure:structure.characters};
+ const egret=renderNameAnalysis({chinese:'白鹭',pinyin:'bái lù'},withStructure);
+ assert.match(egret,/<strong lang="zh-Hans">路<\/strong> <span lang="zh-Latn-pinyin">lù<\/span> <span class="muted">\(เสียง\)<\/span>/);
+ assert.match(egret,/Make Me a Hanzi \(LGPL-3.0\)/);
+ assert.match(renderNameAnalysis({chinese:'鹟',pinyin:'wēng'},withStructure),/sound from 翁 \(wēng\)/);
+ // Inside a place name the character's own structure sits in the collapsed details.
+ const japan=renderNameAnalysis({chinese:'日本松雀鹰',pinyin:'rì běn sōng què yīng'},withStructure);
+ assert.ok(japan.indexOf('The sun')>japan.indexOf('This character on its own'));
+ assert.equal(nameAnalysis({chinese:'凤头鹰',pinyin:'fèng tóu yīng'},guide).characters[0].learningEnglish,'phoenix');
+ assert.ok(!renderNameAnalysis({chinese:'白鹭'},guide).includes('Make Me a Hanzi'),'no structure credit without structure data');
+});
 test('rendered meanings retain credits, distinguish unsupported history, escape text and reject unsafe links',()=>{
  const html=renderNameAnalysis({chinese:'褐耳鹰',pinyin:'hè ěr yīng'},guide);
  assert.match(html,/Naming-history notes are available for selected names/);assert.match(html,/CC BY-SA 4.0/);

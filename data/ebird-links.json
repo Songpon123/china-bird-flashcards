@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "version": "ebird-reference-2026-11-18-v2",
+    "version": "ebird-reference-2026-11-19-v3",
     "source": {
       "title": "eBird Taxonomy reference API · Cornell Lab of Ornithology",
       "url": "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json&cat=species",
@@ -22,7 +22,7 @@
     "limits": "Outbound reading references only, not equivalent taxon concepts. Exact common-name candidates are labelled separately. No fuzzy names, guessed species codes, or automatic taxonomy changes. Unmatched names open eBird Explore for manual lookup.",
     "inputHashes": {
       "source-notices/ebird-reference-identifiers.json": "7b8002c2257533909e8fee53ef4238df3d7c294842073a78bd3be635bc5e2d4e",
-      "data/birds.json": "9f065918e8295424919c380b405ae829579570588dd2578bf9c050470ccb29ed"
+      "data/birds.json": "8988cbebcc4a33d39c3cb03f1b95e1b6aaad3de626802b6a6c96a37189d32eac"
     }
   },
   "byScientific": {

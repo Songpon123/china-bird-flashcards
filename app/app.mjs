@@ -292,8 +292,9 @@ function bind(){
 }
 try{
  const responses=await Promise.all([fetch('./data/birds.json?v=2026-11-18-avilist'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
- const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-18-v6',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-18-v2',{cache:'no-cache'})]);
+ const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-19-v7',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-19-v3',{cache:'no-cache'}),fetch('./data/character-structure.json?v=2026-11-19-v1',{cache:'no-cache'})]);
  try{const response=optional[0].status==='fulfilled'?optional[0].value:null;if(!response?.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
+ try{const response=optional[2].status==='fulfilled'?optional[2].value:null;const data=response?.ok?await response.json():null;if(nameGuide&&data?.schemaVersion===1&&data.characters&&typeof data.characters==='object')nameGuide.structure=data.characters;}catch{/* Character structure is optional. */}
  try{const response=optional[1].status==='fulfilled'?optional[1].value:null;if(!response?.ok)throw new Error('Download failed');ebirdLinks=validateEBirdLinks(await response.json());}catch{/* Species cards still link to eBird Explore for a manual lookup. */}
  const bundled=validateDataset(await responses[0].json());groupDataset=validateGroups(await responses[1].json());
  let storedData=null,storedState=null,storedGroups=null;

@@ -79,3 +79,12 @@ Checked on 19 November 2026.
 - New cards and free practice use a stable seeded order stored in the progress settings; **⇄ Shuffle** sets a new seed. A test confirms that 20 new cards span at least 12 families, that the same seed gives the same order, that due reviews still come first, and that the seed survives a backup round trip.
 - Browser check: consecutive cards came from different families, Shuffle changed the next card, and **Reveal answer** opened the **Name meaning & history** panel below the card.
 - `npm test`: **24 passed, 0 failed**.
+
+### v0.5 character meanings
+
+- Thai learning glosses now cover all 475 characters (239 added) and 62 English learning glosses replace surname-first or out-of-context dictionary senses. All new Thai text was checked for the bird-name sense, for example 鹑 นกคุ่ม (quail) and 鹱 นกจมูกหลอด (shearwater).
+- Four more whole-word units: 苦恶 (the waterhen's call), 弄岗 (Nonggang), 萨岛 (Sakhalin) and 达乌里 (Dauria).
+- Character structure for all 475 characters: 464 from Make Me a Hanzi, 11 authored; stroke counts from Unihan 18.0.0 for all. Both input files are pinned by SHA-256.
+- Reading fix: 发冠卷尾 fā guān → fà guān.
+- Browser check: the Name guide tiles show the structure line (鹭 = 鸟 + 路 lù, radical and strokes), place-name characters keep their structure in the collapsed details, and no console errors were logged.
+- `npm test`: **25 passed, 0 failed**.
