@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {DAY,keyFor,matches,schedule,stateOf,makeQueue,toCSV,parseCSV,validateDataset,planUpdate,validateBackup,localDay} from '../app/core.mjs';
+import {DAY,keyFor,matches,schedule,stateOf,makeQueue,shuffleOrder,toCSV,parseCSV,validateDataset,planUpdate,validateBackup,localDay} from '../app/core.mjs';
 const raw=JSON.parse(await readFile(new URL('../data/birds.json',import.meta.url)));
 const dataset=validateDataset(raw);
 const now=new Date(2026,10,18,12).getTime();
@@ -28,6 +28,20 @@ test('due queue prioritizes reviews, excludes future/missing fields and respects
  const q=makeQueue([...birds,{...birds[0],id:'missing',english:''}],progress,'zh-en',{now,newLimit:2,history:[{id:'earlier',wasNew:true,direction:'zh-en',at:now}]});
  assert.deepEqual(q.map(b=>b.id),[birds[1].id,birds[2].id]);
  assert.equal(makeQueue(birds,{},'zh-en',{now,newLimit:0}).length,0);
+});
+test('a shuffle seed mixes new cards across families, stays stable, and keeps due reviews first',()=>{
+ const ready=dataset.birds.filter(b=>b.english);
+ assert.deepEqual(shuffleOrder(ready,'').map(b=>b.id),ready.map(b=>b.id));
+ const a=shuffleOrder(ready,'abc123').map(b=>b.id),again=shuffleOrder(ready,'abc123').map(b=>b.id),b=shuffleOrder(ready,'xyz789').map(b=>b.id);
+ assert.deepEqual(a,again);assert.notDeepEqual(a,b);assert.deepEqual([...a].sort(),ready.map(x=>x.id).sort());
+ const fresh=makeQueue(ready,{},'zh-en',{now,newLimit:20,seed:'abc123'});
+ assert.equal(fresh.length,20);
+ assert.ok(new Set(fresh.map(x=>x.family)).size>=12,'20 new cards should come from many families');
+ const progress={[keyFor(ready[0].id,'zh-en')]:{...schedule(null,'good',now-DAY),due:now-1}};
+ assert.equal(makeQueue(ready,progress,'zh-en',{now,newLimit:5,seed:'abc123'})[0].id,ready[0].id);
+ const restored=validateBackup({format:'china-bird-backup-v1',dataset:raw,state:{progress:{},history:[],settings:{shuffleSeed:'abc123'}}});
+ assert.equal(restored.state.settings.shuffleSeed,'abc123');
+ assert.equal(validateBackup({format:'china-bird-backup-v1',dataset:raw,state:{progress:{},history:[],settings:{shuffleSeed:'<bad>'}}}).state.settings.shuffleSeed,'');
 });
 test('CSV round trip preserves aliases, commas, quotes and metadata-independent records',()=>{
  const birds=[{...dataset.birds[0],english:'Name, with "quotes"',aliases:['old name','a,b','"quoted"']}];

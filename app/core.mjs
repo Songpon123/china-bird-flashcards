@@ -27,8 +27,19 @@ export function stateOf(p,now=Date.now()){
  return p.interval>=21?'mature':'learning';
 }
 export function localDay(timestamp){const d=new Date(timestamp);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
-export function makeQueue(birds,progress,direction,{now=Date.now(),newLimit=20,history=[]}={}){
- const ready=birds.filter(b=>b.english&&b.chinese&&b.pinyin);
+// Stable pseudo-random order: the same seed gives the same order on every reload,
+// and a new seed (the Shuffle button) mixes the cards again. No seed keeps list order.
+export function shuffleKey(seed,id){
+ let h=2166136261;const s=`${seed}:${id}`;
+ for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}
+ h^=h>>>16;h=Math.imul(h,2246822507)>>>0;h^=h>>>13;return h>>>0;
+}
+export function shuffleOrder(items,seed){
+ if(!seed)return items;
+ return items.map(item=>[shuffleKey(seed,item.id),item]).sort((a,b)=>a[0]-b[0]||(a[1].id<b[1].id?-1:1)).map(([,item])=>item);
+}
+export function makeQueue(birds,progress,direction,{now=Date.now(),newLimit=20,history=[],seed=''}={}){
+ const ready=shuffleOrder(birds.filter(b=>b.english&&b.chinese&&b.pinyin),seed);
  const introduced=new Set(history.filter(h=>h.direction===direction&&h.wasNew&&localDay(h.at)===localDay(now)).map(h=>h.id)).size;
  const due=ready.filter(b=>progress[keyFor(b.id,direction)]?.reviews&&progress[keyFor(b.id,direction)].due<=now).sort((a,b)=>progress[keyFor(a.id,direction)].due-progress[keyFor(b.id,direction)].due);
  const fresh=ready.filter(b=>!progress[keyFor(b.id,direction)]?.reviews).slice(0,Math.max(0,newLimit-introduced));
@@ -129,6 +140,6 @@ export function validateBackup(raw){
   return {id:h.id,direction:h.direction,rating:h.rating,at:h.at,wasNew:!!h.wasNew};
  });
  const s=state.settings||{};
- const settings={direction:DIRECTIONS.includes(s.direction)?s.direction:'zh-en',deck:s.deck==='groups'?'groups':'species',newLimit:Number.isFinite(s.newLimit)?Math.max(0,Math.min(500,Math.floor(s.newLimit))):20,showPinyin:!!s.showPinyin,voice:typeof s.voice==='string'?s.voice:''};
+ const settings={direction:DIRECTIONS.includes(s.direction)?s.direction:'zh-en',deck:s.deck==='groups'?'groups':'species',newLimit:Number.isFinite(s.newLimit)?Math.max(0,Math.min(500,Math.floor(s.newLimit))):20,showPinyin:!!s.showPinyin,voice:typeof s.voice==='string'?s.voice:'',shuffleSeed:typeof s.shuffleSeed==='string'&&/^[a-z0-9]{1,32}$/i.test(s.shuffleSeed)?s.shuffleSeed:''};
  return {dataset,state:{progress,history,settings},...(raw.groupDataset?{groupDataset:validateGroups(raw.groupDataset)}:{})};
 }

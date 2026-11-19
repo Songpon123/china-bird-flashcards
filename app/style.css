@@ -17,3 +17,4 @@
 
 .ebird-reference{margin-top:18px;max-width:470px;z-index:1}.ebird-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-height:44px;padding:9px 18px;border-radius:7px}.ebird-reference p{font:11px/1.6 var(--sans);color:var(--muted);margin:9px 0 0;overflow-wrap:anywhere}
 .character-tile.in-name-unit{background:var(--pale);border-color:var(--green)}.name-analysis .unit-note{margin-top:4px;font-size:11px}
+.queue-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.shuffle-button{padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--green);font-size:12px;font-weight:600;cursor:pointer}.shuffle-button:hover{border-color:var(--green)}

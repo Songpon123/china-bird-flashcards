@@ -8,7 +8,7 @@
     "license": "CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names; AviList v2026 corrections); CC BY 3.0 (IOC 13.1 historical names)",
     "sourceUrl": "https://doi.org/10.15468/ae6ush",
     "retrieved": "2026-11-18",
-    "coverage": "All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. 46 cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.",
+    "coverage": "All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. 48 cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.",
     "report": {
       "sourceSpecies": 1445,
       "bundledSpecies": 1445,
@@ -22,22 +22,23 @@
       "sourceSynonymRows": 1844,
       "rejectedAliasCount": 82,
       "nameMatchCounts": {
-        "IOC 13.1 exact historical name": 35,
+        "IOC 13.1 exact historical name": 33,
+        "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 48,
         "IOC 15.2 exact scientific name": 1252,
         "Unique Chinese name + family candidate; concept unreviewed": 100,
-        "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 46,
         "unresolved; excluded from study": 4,
         "Explicit genus-combination candidate; concept unreviewed": 7,
         "Historical Chinese name + family candidate; concept unreviewed": 1
       },
       "allChinaCurrentComplete": false,
       "nameCorrections": {
-        "total": 46,
+        "total": 48,
         "byKind": {
-          "concept": 38,
+          "concept": 40,
           "english": 2,
           "chinese": 6
         },
+        "aliasAdditions": 15,
         "prunedAliases": 11,
         "source": "source-notices/name-corrections-2026-11.json"
       }
@@ -103,18 +104,19 @@
       "sourceId": "c3db5777-5b55-495f-bb32-1b182c17f937",
       "chinese": "苍鹰",
       "pinyin": "cāng yīng",
-      "english": "Northern Goshawk",
-      "scientific": "Accipiter gentilis",
+      "english": "Eurasian Goshawk",
+      "scientific": "Astur gentilis",
       "order": "Accipitriformes",
       "family": "Accipitridae",
       "aliases": [
+        "Accipiter gentilis",
         "Falco gentilis"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 13.1 exact historical name",
-      "englishSource": "ioc-13.1",
-      "matchedScientific": "Accipiter gentilis"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Astur gentilis"
     },
     {
       "id": "colcn:596a3917-4ca7-4223-9d96-0d659da0815c",
@@ -2689,16 +2691,18 @@
       "sourceId": "810c08cf-f540-4762-98c7-beac708a9d30",
       "chinese": "蒙古沙鸻",
       "pinyin": "měng gǔ shā héng",
-      "english": "Lesser Sand Plover",
-      "scientific": "Charadrius mongolus",
+      "english": "Siberian Sand Plover",
+      "scientific": "Anarhynchus mongolus",
       "order": "Charadriiformes",
       "family": "Charadriidae",
-      "aliases": [],
+      "aliases": [
+        "Charadrius mongolus"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 13.1 exact historical name",
-      "englishSource": "ioc-13.1",
-      "matchedScientific": "Charadrius mongolus"
+      "nameMatch": "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2",
+      "englishSource": "avilist-v2026",
+      "matchedScientific": "Anarhynchus mongolus"
     },
     {
       "id": "colcn:680a02ea-677f-4b61-b43f-dc7e24688fd2",
@@ -9966,6 +9970,7 @@
       "order": "Passeriformes",
       "family": "Corvidae",
       "aliases": [
+        "Coloeus monedula",
         "Corvus collaris",
         "Corvus soemmerringii",
         "Corvus ultracollaris"
@@ -10876,7 +10881,8 @@
       "order": "Passeriformes",
       "family": "Emberizidae",
       "aliases": [
-        "Cynchramus pallasi"
+        "Cynchramus pallasi",
+        "Schoeniclus pallasi"
       ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -10944,7 +10950,8 @@
       "aliases": [
         "Emberiza passerina",
         "Emberiza pyrrhuloides",
-        "Fringilla schoeniclus"
+        "Fringilla schoeniclus",
+        "Schoeniclus schoeniclus"
       ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -11047,7 +11054,9 @@
       "scientific": "Emberiza variabilis",
       "order": "Passeriformes",
       "family": "Emberizidae",
-      "aliases": [],
+      "aliases": [
+        "Schoeniclus variabilis"
+      ],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "IOC 15.2 exact scientific name",
@@ -12946,6 +12955,7 @@
       "order": "Passeriformes",
       "family": "Leiothrichidae",
       "aliases": [
+        "Actinodura strigula",
         "Minla strigula"
       ],
       "taxonomyReview": true,
@@ -13030,7 +13040,8 @@
       "order": "Passeriformes",
       "family": "Leiothrichidae",
       "aliases": [
-        "Cinclosoma caerulatus"
+        "Cinclosoma caerulatus",
+        "Pterorhinus caerulatus"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -14289,6 +14300,7 @@
       "order": "Passeriformes",
       "family": "Locustellidae",
       "aliases": [
+        "Helopsaltes pleskei",
         "Locustella styani"
       ],
       "taxonomyReview": true,
@@ -16422,7 +16434,9 @@
       "scientific": "Rhyacornis fuliginosa",
       "order": "Passeriformes",
       "family": "Muscicapidae",
-      "aliases": [],
+      "aliases": [
+        "Phoenicurus fuliginosus"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",
@@ -18699,7 +18713,9 @@
       "scientific": "Seicercus poliogenys",
       "order": "Passeriformes",
       "family": "Phylloscopidae",
-      "aliases": [],
+      "aliases": [
+        "Phylloscopus poliogenys"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",
@@ -18731,7 +18747,9 @@
       "scientific": "Seicercus tephrocephalus",
       "order": "Passeriformes",
       "family": "Phylloscopidae",
-      "aliases": [],
+      "aliases": [
+        "Phylloscopus tephrocephalus"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",
@@ -20693,7 +20711,8 @@
       "order": "Passeriformes",
       "family": "Sylviidae",
       "aliases": [
-        "Paradoxornis przewalskii"
+        "Paradoxornis przewalskii",
+        "Suthora przewalskii"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -20729,7 +20748,8 @@
       "order": "Passeriformes",
       "family": "Sylviidae",
       "aliases": [
-        "Paradoxornis zappeyi"
+        "Paradoxornis zappeyi",
+        "Suthora zappeyi"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -20832,7 +20852,9 @@
       "scientific": "Sylvia communis",
       "order": "Passeriformes",
       "family": "Sylviidae",
-      "aliases": [],
+      "aliases": [
+        "Curruca communis"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",
@@ -22763,7 +22785,8 @@
       "order": "Pelecaniformes",
       "family": "Ardeidae",
       "aliases": [
-        "Ardea eurhythma"
+        "Ardea eurhythma",
+        "Botaurus eurhythmus"
       ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
@@ -23356,7 +23379,9 @@
       "scientific": "Dendrocopos canicapillus",
       "order": "Piciformes",
       "family": "Picidae",
-      "aliases": [],
+      "aliases": [
+        "Yungipicus canicapillus"
+      ],
       "taxonomyReview": true,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
       "nameMatch": "Unique Chinese name + family candidate; concept unreviewed",

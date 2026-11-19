@@ -3,7 +3,7 @@
 <head>
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
  <meta name="theme-color" content="#174d3e"><meta name="description" content="Learn the bird names of China in Chinese, Pinyin, English and scientific Latin, with a transparent sourced checklist.">
- <title>羽 Yǔ · China Bird Flashcards</title><link rel="manifest" href="./manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Yǔ Birds"><link rel="icon" href="./app/feather.svg" type="image/svg+xml"><link rel="stylesheet" href="./app/style.css?v=0.3.2">
+ <title>羽 Yǔ · China Bird Flashcards</title><link rel="manifest" href="./manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Yǔ Birds"><link rel="icon" href="./app/feather.svg" type="image/svg+xml"><link rel="stylesheet" href="./app/style.css?v=0.5.0">
 </head>
 <body>
  <a class="skip" href="#main">Skip to content</a>
@@ -13,12 +13,12 @@
   <div class="intro"><div><p class="eyebrow">A SMALL DAILY PRACTICE</p><h1 id="page-title">A whole new way to name birds.</h1><p id="page-subtitle">From 白鹭 to Little Egret. Build a vocabulary that stays with you.</p></div><div class="edition"><span class="edition-dot"></span><div><b id="edition-count">Loading checklist…</b><small>CAS 2023 archive · current coverage partial</small><button id="coverage-link" class="text-button">See coverage & provenance ↗</button></div></div></div>
   <section id="study-view" class="view" aria-label="Study flashcards">
    <div class="stats-strip"><div><span>Due now <small>this direction</small></span><strong id="due-count">0</strong></div><div><span>New today <small>remaining allowance</small></span><strong id="new-count">20</strong></div><div><span>Reviewed today <small>both directions</small></span><strong id="today-count">0</strong></div><div><span><span id="introduced-label">Species introduced</span> <small>at least one direction</small></span><strong id="learned-count">0</strong></div></div>
-   <div class="study-layout"><div class="study-main"><div class="section-line"><h2 id="next-heading">Your next bird</h2><span id="queue-label">Building your deck</span></div>
+   <div class="study-layout"><div class="study-main"><div class="section-line"><h2 id="next-heading">Your next bird</h2><span class="queue-tools"><span id="queue-label">Building your deck</span><button id="shuffle" class="shuffle-button" type="button" title="Mix the order of the cards in your focus">⇄ Shuffle</button></span></div>
     <article class="flashcard" id="flashcard"><div class="card-top"><span class="pill" id="card-family">Family</span><span id="card-stage" class="card-stage">NEW</span></div><div class="card-body" id="card-body" aria-live="polite"></div><div class="card-bottom"><span id="card-sequence"></span><button id="speak" class="speak" aria-label="Pronounce Chinese name">◖)) <span>Listen in Mandarin</span></button></div></article>
     <div class="study-actions"><button id="previous" class="icon-button" aria-label="Previous practice bird">←</button><button id="flip" class="primary">Reveal answer <kbd>space</kbd></button><button id="next" class="icon-button" aria-label="Skip to next bird">→</button></div>
     <div id="rating-area"><p id="rate-help" class="muted center">Reveal the answer, then tell yourself how it went.</p><div class="ratings"><button data-rating="again"><span>Again <kbd>1</kbd></span><small></small></button><button data-rating="hard"><span>Hard <kbd>2</kbd></span><small></small></button><button data-rating="good"><span>Good <kbd>3</kbd></span><small></small></button><button data-rating="easy"><span>Easy <kbd>4</kbd></span><small></small></button></div></div>
     <div class="below-card"><button id="undo" class="text-button" disabled>↶ Undo last review</button><button id="bird-details" class="text-button">Name meanings & sources ↗</button></div>
-    <details id="study-meanings" class="paper study-meanings" hidden><summary>Understand this name · meanings & story</summary><div id="study-meaning-content"></div></details>
+    <details id="study-meanings" class="paper study-meanings" hidden><summary>Name meaning & history</summary><div id="study-meaning-content"></div></details>
    </div><aside class="session-panel"><div class="section-line"><h2>Make it your practice</h2><span class="tiny-feather">❧</span></div>
     <label>Card deck<select id="deck"><option value="species">Species</option><option value="groups">Families & groups</option></select></label><label>Study direction<select id="direction"><option value="zh-en">Chinese → English</option><option value="en-zh">English → Chinese</option></select></label>
     <label>Session<select id="mode"><option value="review">Spaced review + new cards</option><option value="practice">Browse & practice freely</option></select></label>
@@ -64,5 +64,5 @@
  </main>
  <dialog id="details-dialog"><div class="section-line"><h2>Bird record</h2><button id="close-details" class="icon-button" aria-label="Close bird record">×</button></div><div id="details-content"></div></dialog>
  <div id="toast" role="status" aria-live="polite" hidden></div>
- <script type="module" src="./app/app.mjs?v=0.3.2"></script>
+ <script type="module" src="./app/app.mjs?v=0.5.0"></script>
 </body></html>

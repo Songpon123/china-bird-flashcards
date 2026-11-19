@@ -50,6 +50,6 @@ The generated link decisions are app-authored reading references against the alr
 
 ## Name corrections added in v0.4
 
-**AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026.** Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Scientific and English names of the 46 corrected cards, and the Avibase IDs and Cornell species codes recorded as evidence, are taken from this release. Changes: names applied to existing CAS records; no AviList species added.
+**AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026.** Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Scientific and English names of the 48 corrected cards, the 15 genus-combination aliases, and the Avibase IDs and Cornell species codes recorded as evidence, are taken from this release. Changes: names applied to existing CAS records; no AviList species added.
 
 Chinese names for checking come from the Simplified Chinese column of an avilist.org export of the same release, from IOC World Bird List 15.2 (CC BY 4.0, attributed above) and from the CBR Checklist of Birds of China v12.0. The CBR file states no reuse license; it is cited for individual facts in `source-notices/name-corrections-2026-11.json` and is not redistributed.

@@ -1,14 +1,15 @@
-import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs';
+import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,shuffleOrder,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs?v=0.5.0';
 import {familyKey,inGroup,familyLabel,validateGroups} from './taxonomy.mjs';
-import {validateEBirdLinks,renderEBirdReference} from './ebird.mjs?v=0.3.2';
-import {validateNameGuide,characterEntries} from './name-guide.mjs';
-import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.3.1';
+import {validateEBirdLinks,renderEBirdReference} from './ebird.mjs?v=0.5.0';
+import {validateNameGuide,characterEntries} from './name-guide.mjs?v=0.5.0';
+import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.5.0';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='yu-birds-state-v1',DATA='yu-birds-dataset-v1',GROUP_DATA='yu-birds-groups-v1';
 let dataset,groupDataset,state,view='study',mode='review',revealed=false,currentId=null,skipped=new Set(),page=0,lastUndo=null,pendingImport=null,pendingRestore=null,voices=[],storageOK=true,externalChange=false;
 let practiceIndex=0,nameGuide=null,guideSelection=null,ebirdLinks=null;
-const defaults={direction:'zh-en',deck:'species',newLimit:20,showPinyin:false,voice:''};
+const defaults={direction:'zh-en',deck:'species',newLimit:20,showPinyin:false,voice:'',shuffleSeed:''};
+const newSeed=()=>Math.random().toString(36).slice(2,12)||'mix';
 const titleCopy={guide:['What’s inside a Chinese bird name?','Explore characters, word meanings and the stories behind selected names.'],groups:['Know the families. Find your birds.','Learn the larger groups, then explore each species · Chinese, Pinyin, English & scientific scope.'],study:['A whole new way to name birds.','From 白鹭 to Little Egret. Build a vocabulary that stays with you.'],library:['Every bird has a story. Start with its name.','Explore the source checklist in Chinese, Pinyin, English and scientific Latin.'],progress:['A little practice. A growing vocabulary.','Watch your field notebook fill up, one review at a time.'],data:['A good name starts with a good source.','Understand the checklist, inspect its limits, and keep your notebook current.']};
 function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').hidden=true,6000);}
 function error(message){$('fatal').textContent=message;$('fatal').hidden=false;}
@@ -54,7 +55,8 @@ function studyBirds(){
  const cards=state.settings.deck==='groups'?groupDataset.cards.filter(c=>!$('study-search').value||matches(c,$('study-search').value)):focused('study');
  return cards.filter(b=>b.english&&(!hide||!b.taxonomyReview)&&(!status||stateOf(state.progress[keyFor(b.id,state.settings.direction)])===status));
 }
-function queue(){const birds=studyBirds();return mode==='practice'?birds:makeQueue(birds,state.progress,state.settings.direction,{newLimit:state.settings.newLimit,history:state.history}).filter(b=>!skipped.has(b.id));}
+function queue(){const birds=studyBirds(),seed=state.settings.shuffleSeed;return mode==='practice'?shuffleOrder(birds,seed):makeQueue(birds,state.progress,state.settings.direction,{newLimit:state.settings.newLimit,history:state.history,seed}).filter(b=>!skipped.has(b.id));}
+function shuffleDeck(){state.settings.shuffleSeed=newSeed();saveState();resetStudy();}
 function current(){return [...dataset.birds,...groupDataset.cards].find(b=>b.id===currentId);}
 function resetStudy(){currentId=null;revealed=false;skipped.clear();practiceIndex=0;renderStudy();}
 function fmtInterval(days){if(days<1/24)return `${Math.round(days*1440)} min`;if(days<1)return `${Math.round(days*24)} hr`;return `${Math.round(days)} day${Math.round(days)===1?'':'s'}`;}
@@ -96,7 +98,7 @@ function renderStudy(){
   btn.querySelector('small').textContent=b?fmtInterval(schedule(p,btn.dataset.rating).interval):'—';
  });
 }
-function flip(){if(!current())return;revealed=!revealed;renderStudy();}
+function flip(){if(!current())return;revealed=!revealed;renderStudy();if(revealed)$('study-meanings').open=true;}
 function rate(rating){
  if(!current()||!revealed||mode!=='review'||externalChange)return;
  const b=current(),k=keyFor(b.id,state.settings.direction),prev=state.progress[k]?{...state.progress[k]}:null,now=Date.now();
@@ -255,7 +257,7 @@ function applyRestore(){
 }
 function bind(){
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));$('coverage-link').onclick=()=>setView('data');
- $('flip').onclick=flip;$('next').onclick=()=>nextBird();$('previous').onclick=()=>nextBird(-1);$('undo').onclick=undo;$('speak').onclick=speak;$('bird-details').onclick=()=>showDetails(current());$('close-details').onclick=()=>$('details-dialog').close();
+ $('flip').onclick=flip;$('shuffle').onclick=shuffleDeck;$('next').onclick=()=>nextBird();$('previous').onclick=()=>nextBird(-1);$('undo').onclick=undo;$('speak').onclick=speak;$('bird-details').onclick=()=>showDetails(current());$('close-details').onclick=()=>$('details-dialog').close();
  $('details-dialog').onclick=e=>{if(e.target===$('details-dialog'))$('details-dialog').close();};
  document.querySelectorAll('[data-rating]').forEach(b=>b.onclick=()=>rate(b.dataset.rating));
  $('deck').onchange=()=>{state.settings.deck=$('deck').value;saveState();clearStudyFilters();setDeckControls();resetStudy();};
@@ -301,5 +303,7 @@ try{
  if(storedData){try{dataset=validateDataset(JSON.parse(storedData));}catch(e){error('The saved dataset could not be read. The bundled source is loaded; your saved copy has not been deleted.');}}
  state={progress:{},history:[],settings:{...defaults}};
  if(storedState){try{state=validateBackup({format:'china-bird-backup-v1',dataset,state:JSON.parse(storedState)}).state;}catch(e){externalChange=true;error('Saved progress is invalid. It has not been overwritten. Restore a valid full backup after reloading with browser storage repaired.');}}
+ // A per-browser seed mixes the deck across families from the first visit; Shuffle picks a new one.
+ if(!state.settings.shuffleSeed){state.settings.shuffleSeed=newSeed();if(storageOK&&!externalChange)saveState();}
  setupFilters();bind();updateVoices();if('speechSynthesis' in window)speechSynthesis.addEventListener('voiceschanged',updateVoices);setView(location.hash.slice(1)||'study');
 }catch(e){error('The app could not load its checklist: '+e.message+'. Check your connection and refresh; for a local copy, start it with “npm start”.');}

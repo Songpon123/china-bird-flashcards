@@ -1119,6 +1119,66 @@
       }
     },
     {
+      "id": "colcn:c3db5777-5b55-495f-bb32-1b182c17f937",
+      "kind": "concept",
+      "reason": "split; Northern Goshawk is now Eurasian Goshawk (China) and American Goshawk",
+      "was": {
+        "chinese": "苍鹰",
+        "scientific": "Accipiter gentilis",
+        "english": "Northern Goshawk"
+      },
+      "now": {
+        "chinese": "苍鹰",
+        "scientific": "Astur gentilis",
+        "english": "Eurasian Goshawk"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Astur gentilis",
+          "english": "Eurasian Goshawk",
+          "avibaseId": "avibase-95DD1855",
+          "cornellCode": "norgos1",
+          "chineseSimplified": "苍鹰"
+        },
+        "cbr12": {
+          "no": "246",
+          "scientific": "Astur gentilis",
+          "chinese": "苍鹰"
+        },
+        "ioc152Chinese": "苍鹰"
+      }
+    },
+    {
+      "id": "colcn:810c08cf-f540-4762-98c7-beac708a9d30",
+      "kind": "concept",
+      "reason": "split; Lesser Sand Plover is now Siberian Sand Plover (蒙古沙鸻) and Tibetan Sand Plover (青藏沙鸻)",
+      "was": {
+        "chinese": "蒙古沙鸻",
+        "scientific": "Charadrius mongolus",
+        "english": "Lesser Sand Plover"
+      },
+      "now": {
+        "chinese": "蒙古沙鸻",
+        "scientific": "Anarhynchus mongolus",
+        "english": "Siberian Sand Plover"
+      },
+      "evidence": {
+        "avilist": {
+          "scientific": "Anarhynchus mongolus",
+          "english": "Siberian Sand Plover",
+          "avibaseId": "avibase-66DA1FB3",
+          "cornellCode": "lessap2",
+          "chineseSimplified": "蒙古沙鸻"
+        },
+        "cbr12": {
+          "no": "329",
+          "scientific": "Anarhynchus mongolus",
+          "chinese": "蒙古沙鸻"
+        },
+        "ioc152Chinese": "蒙古沙鸻"
+      }
+    },
+    {
       "id": "colcn:7207303a-d1a7-45a2-bb41-d2af9706f443",
       "kind": "concept",
       "reason": "split; Javan Shortwing (蓝短翅鸫) is Javan. The CAS concept covers three China species; the card keeps the China-endemic Chinese Shortwing, a CAS synonym of the record",
@@ -1389,6 +1449,128 @@
         },
         "ioc152Chinese": "蓝须夜蜂虎"
       }
+    }
+  ],
+  "aliasAdditions": [
+    {
+      "id": "colcn:af188849-13a2-4af6-b689-8e0150337188",
+      "scientific": "Corvus monedula",
+      "alias": "Coloeus monedula",
+      "avibaseId": "avibase-D4C32F8E",
+      "cornellCode": "eurjac",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:feea3941-1459-4119-bdc3-fd47cb224119",
+      "scientific": "Emberiza pallasi",
+      "alias": "Schoeniclus pallasi",
+      "avibaseId": "avibase-C6D6D547",
+      "cornellCode": "palbun",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:db65c33d-7c26-41cc-9d64-c8e6d7f9ea42",
+      "scientific": "Emberiza schoeniclus",
+      "alias": "Schoeniclus schoeniclus",
+      "avibaseId": "avibase-C0B97874",
+      "cornellCode": "reebun",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:f27757c3-1a33-4651-9069-a6a78f7962bf",
+      "scientific": "Emberiza variabilis",
+      "alias": "Schoeniclus variabilis",
+      "avibaseId": "avibase-DB4D5342",
+      "cornellCode": "grybun",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:7839d298-2708-410c-884e-270a3b45c835",
+      "scientific": "Chrysominla strigula",
+      "alias": "Actinodura strigula",
+      "avibaseId": "avibase-55B3A7AF",
+      "cornellCode": "chtmin1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:2a579b5e-a07f-4028-ac17-cfdf5cc55fe9",
+      "scientific": "Garrulax caerulatus",
+      "alias": "Pterorhinus caerulatus",
+      "avibaseId": "avibase-DB7534FA",
+      "cornellCode": "gyslau",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:f8ac40d4-5257-4e31-8101-b2fc807a5332",
+      "scientific": "Locustella pleskei",
+      "alias": "Helopsaltes pleskei",
+      "avibaseId": "avibase-4AADBF95",
+      "cornellCode": "plewar1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:e5a62797-fd28-44c0-b83f-b5495624fc05",
+      "scientific": "Rhyacornis fuliginosa",
+      "alias": "Phoenicurus fuliginosus",
+      "avibaseId": "avibase-1850B440",
+      "cornellCode": "plured1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:0801b0f3-3e71-411d-9ded-aee4d284fd0e",
+      "scientific": "Seicercus poliogenys",
+      "alias": "Phylloscopus poliogenys",
+      "avibaseId": "avibase-C8AB31F2",
+      "cornellCode": "gycwar2",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:adc9abd2-b027-462d-a37d-2760391d1717",
+      "scientific": "Seicercus tephrocephalus",
+      "alias": "Phylloscopus tephrocephalus",
+      "avibaseId": "avibase-5ED14FEA",
+      "cornellCode": "gycwar1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:cb58ef85-6403-43cd-9247-93ec8570cf01",
+      "scientific": "Sinosuthora przewalskii",
+      "alias": "Suthora przewalskii",
+      "avibaseId": "avibase-7164CABB",
+      "cornellCode": "rutpar2",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:0c258949-7754-4515-8c2a-de3fcbe27dfa",
+      "scientific": "Sinosuthora zappeyi",
+      "alias": "Suthora zappeyi",
+      "avibaseId": "avibase-7B96A290",
+      "cornellCode": "gyhpar4",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:dbb2d6b4-1177-4558-bb42-6c8e98ad2c40",
+      "scientific": "Sylvia communis",
+      "alias": "Curruca communis",
+      "avibaseId": "avibase-14AFBA82",
+      "cornellCode": "grewhi1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:5dd12875-52b7-4c11-9e36-beecaf11fe15",
+      "scientific": "Ixobrychus eurhythmus",
+      "alias": "Botaurus eurhythmus",
+      "avibaseId": "avibase-E04AFC71",
+      "cornellCode": "schbit1",
+      "reason": "AviList v2026 genus combination; names unchanged"
+    },
+    {
+      "id": "colcn:9f6f630e-8962-4dbd-aa17-2e8f030d8d33",
+      "scientific": "Dendrocopos canicapillus",
+      "alias": "Yungipicus canicapillus",
+      "avibaseId": "avibase-5A4F2DF6",
+      "cornellCode": "gycwoo1",
+      "reason": "AviList v2026 genus combination; names unchanged"
     }
   ]
 }

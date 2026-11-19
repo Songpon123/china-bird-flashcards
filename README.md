@@ -4,11 +4,18 @@
 
 A runnable, local-first prototype for learning bird names in Simplified Chinese, tone-marked Hanyu Pinyin, English and scientific Latin. No API key, account, database server, package installation or internet connection is needed to study the bundled data.
 
-**Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the 38 cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
+**Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
+
+## What's new in v0.5 (19 November 2026)
+
+- **Name meaning & history opens on the Study page.** After **Reveal answer**, the panel with the word-by-word meaning, Thai glosses and naming notes opens directly below the card. Collapse it at any time.
+- **Mixed order and a Shuffle button.** New cards and free practice no longer follow the taxonomic sequence; each browser gets its own mixed order across families, which stays the same between visits. **⇄ Shuffle** mixes the cards in your focus again. Due reviews still come first.
+- **Goshawk and sand plover follow the split.** 苍鹰 is now Eurasian Goshawk (*Astur gentilis*) and 蒙古沙鸻 is Siberian Sand Plover (*Anarhynchus mongolus*); both link to their eBird pages.
+- **17 more direct eBird links.** Cards whose genus changed in AviList v2026 and eBird (for example 苇鹀 *Schoeniclus pallasi*) now carry the current name as an alias and open their eBird species page. Ten cards still use eBird search: four without an English name and six that AviList and eBird merge into a broader species.
 
 ## What's new in v0.4 (18 November 2026)
 
-- **Names checked against the latest lists.** Every card was checked against AviList v2026 (October 2026) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 and IOC 15.2 Chinese names. 46 cards whose names belonged to another bird were corrected, for example 喜鹊 is now Oriental Magpie (*Pica serica*) and 牛背鹭 is Eastern Cattle Egret (*Ardea coromanda*). Card IDs are unchanged, so saved progress carries over. See [Name corrections](#name-corrections-avilist-v2026).
+- **Names checked against the latest lists.** Every card was checked against AviList v2026 (October 2026) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 and IOC 15.2 Chinese names. 46 cards whose names belonged to another bird were corrected (48 after v0.5), for example 喜鹊 is now Oriental Magpie (*Pica serica*) and 牛背鹭 is Eastern Cattle Egret (*Ardea coromanda*). Card IDs are unchanged, so saved progress carries over. See [Name corrections](#name-corrections-avilist-v2026).
 - **Place names and set words read as whole words.** The Name guide reads 48 words as units, so 日本松雀鹰 is Japan + sparrowhawk, 四川 is Sichuan, 喜山 is the Himalayas, 八哥 is myna and 孔雀 is peafowl. A character before 氏 is shown as part of a person's name.
 - **Clearer name notes.** The ten naming notes state each meaning and its source directly.
 - **eBird links follow the corrected names**, including the populations recorded in China for broad species.
@@ -40,7 +47,7 @@ Use the same address each time. `localhost` and `127.0.0.1`, different ports, an
 ## Study
 
 - Choose **Chinese → English** or **English → Chinese**. Progress is separate for each direction.
-- **Spaced review + new cards** presents due cards first, followed by up to 20 new cards per day per direction by default. Set the limit to zero for reviews only. New allowances reset at local midnight; existing due times use elapsed time.
+- **Spaced review + new cards** presents due cards first, followed by up to 20 new cards per day per direction by default. New cards come in a mixed order across families; **⇄ Shuffle** mixes them again, and the order is kept in your progress and backups. Set the limit to zero for reviews only. New allowances reset at local midnight; existing due times use elapsed time.
 - Reveal a card, then choose Again, Hard, Good or Easy. The proposed interval appears on each button. The app does not grade typed answers or automatically claim that a word is mastered.
 - After revealing a species card (when the toggle says **Show question**), **View on eBird ↗** opens a species reference in a new tab. It is hidden on the question side, in both directions. Family/group cards do not link to an arbitrary species. Unmatched species use **Find on eBird ↗** to open Explore for manual search.
 - **Browse & practice freely** explores the filtered checklist without changing schedules. Library rows can open individual birds in practice mode.
@@ -55,7 +62,7 @@ The prototype uses a small, documented SM-2-inspired heuristic, not FSRS and not
 
 ### eBird reading references
 
-The app bundles **1,418 outbound species references** from a retained snapshot of the official eBird Taxonomy API: **1,274 exact scientific-name matches**, **22 unique scientific-alias matches**, and **122 exact English common-name candidates** (case and punctuation normalized). The last category is labelled **Name-based reference**, with the destination name visible. Matching is for reading links; it does not assert equivalent taxon concepts, resolve splits/lumps, update the checklist, or move progress. **27 source names remain manual lookups**; no eBird code is invented. eBird names and species limits may differ from the retained CAS baseline.
+The app bundles **1,435 outbound species references** from a retained snapshot of the official eBird Taxonomy API: **1,276 exact scientific-name matches**, **37 unique scientific-alias matches**, and **122 exact English common-name candidates** (case and punctuation normalized). The last category is labelled **Name-based reference**, with the destination name visible. Matching is for reading links; it does not assert equivalent taxon concepts, resolve splits/lumps, update the checklist, or move progress. **10 source names remain manual lookups**; no eBird code is invented. eBird names and species limits may differ from the retained CAS baseline.
 
 Imported names receive direct references only when supported by this snapshot. Changed English names invalidate old common-name candidates; removed aliases invalidate alias-based references. If the reference file cannot load, the cards still link to eBird Explore. eBird runs no code in the app and receives no request until you follow an external link. No API key is used by visitors; no eBird media, range maps, descriptive text or observations are bundled. Language and eBird reference packs are app resources, separate from notebook backups.
 
@@ -79,7 +86,7 @@ Search a Chinese name, English bird name, Pinyin, or a character. Example button
 
 Authored explanations show tone-marked Pinyin directly after Chinese references, for example **白 (bái)** and **鹭 (lù)**. All 78 curated word units also display a complete-word reading. 48 of them are place names or words read as a whole, such as 日本 (Japan), 四川 (Sichuan), 喜山 (Himalayas), 伯劳 (shrike), 八哥 (myna) and 孔雀 (peafowl): their characters show the whole word's meaning, so 日本松雀鹰 reads as Japan + sparrowhawk. A character before 氏 is treated as part of a person's name (理氏 = “Richard's”). 藏, 滇 and 胡 carry the senses used in bird names: Tibet, Yunnan and beard. These readings are retained explicitly in the editorial source; they are not produced by concatenating arbitrary character readings at runtime.
 
-After revealing a flashcard, expand **Understand this name · meanings & story**. Definitions are hidden while the answer is hidden, in both study directions. Library and family/group details also include the guide. The language pack changes no bird IDs, schedules, dataset membership or saved progress. Imported/restored names use the bundled guide and explicitly identify any uncovered characters. Notebook backups retain datasets and progress; the app-bundled language pack is not copied into backups. Preserve `data/name-guide.json` and `source-notices/name-guide/` separately to keep an exact guide edition.
+After revealing a flashcard, the **Name meaning & history** panel opens below the card. Definitions are hidden while the answer is hidden, in both study directions. Library and family/group details also include the guide. The language pack changes no bird IDs, schedules, dataset membership or saved progress. Imported/restored names use the bundled guide and explicitly identify any uncovered characters. Notebook backups retain datasets and progress; the app-bundled language pack is not copied into backups. Preserve `data/name-guide.json` and `source-notices/name-guide/` separately to keep an exact guide edition.
 
 Rebuild the guide without downloads or third-party Python packages:
 
@@ -140,9 +147,9 @@ The four unresolved source records are Caprimulgus centralasicus, Garrulax owsto
 
 ## Name corrections (AviList v2026)
 
-**46 cards were corrected** because one of their names belonged to a different bird from the one recorded in China. The CAS baseline uses broad species; matching their scientific names to IOC gave English names of populations outside China, such as *Western* Cattle Egret for 牛背鹭 or Eurasian Magpie for 喜鹊. Each card keeps its ID, so saved progress stays with it.
+**48 cards were corrected** because one of their names belonged to a different bird from the one recorded in China. The CAS baseline uses broad species; matching their scientific names to IOC gave English names of populations outside China, such as *Western* Cattle Egret for 牛背鹭 or Eurasian Magpie for 喜鹊. Each card keeps its ID, so saved progress stays with it.
 
-- **38 concept corrections**: the scientific and English names become the AviList v2026 species recorded in China, e.g. 喜鹊 → *Pica serica*, Oriental Magpie; 牛背鹭 → *Ardea coromanda*, Eastern Cattle Egret. The previous scientific name stays as an alias and the card is flagged for taxonomy review.
+- **40 concept corrections**: the scientific and English names become the AviList v2026 species recorded in China, e.g. 喜鹊 → *Pica serica*, Oriental Magpie; 牛背鹭 → *Ardea coromanda*, Eastern Cattle Egret; 苍鹰 → *Astur gentilis*, Eurasian Goshawk. The previous scientific name stays as an alias and the card is flagged for taxonomy review.
 - **2 English-only corrections**: AviList keeps the broad species (紫水鸡 Purple Swamphen, 赤红山椒鸟 Scarlet Minivet); their eBird links point to the population recorded in China.
 - **6 Chinese-name corrections**: the card's Chinese name was another species' name, e.g. 田鹨 is the Paddyfield Pipit, so *Anthus richardi* becomes 理氏鹨.
 

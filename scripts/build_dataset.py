@@ -125,7 +125,8 @@ rows=wb['AviList v2026'].iter_rows(values_only=True); header=[str(h) for h in ne
 for r in rows:
     r=dict(zip(header,r))
     if r['RANK']=='species': avilist[norm(r['SCIENTIFIC NAME'])]={'english':norm(r['ENGLISH NAME: AVILIST']),'avibaseId':r['AVIBASE ID']}
-corrections=json.loads(CORRECTIONS.read_text())['corrections']
+correction_doc=json.loads(CORRECTIONS.read_text())
+corrections=correction_doc['corrections']
 by_id={b['id']:b for b in birds}; pruned_aliases=0
 for c in corrections:
     b=by_id[c['id']]; was,now,ev=c['was'],c['now'],c['evidence']['avilist']
@@ -147,12 +148,18 @@ for c in corrections:
              nameMatch='Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2',
              englishSource='avilist-v2026' if c['kind']!='chinese' else b['englishSource'],
              taxonomyReview=b['taxonomyReview'] or c['kind']=='concept')
+# Current AviList genus combinations for cards whose names are otherwise unchanged.
+for x in correction_doc.get('aliasAdditions',[]):
+    b=by_id[x['id']]; a=avilist.get(x['alias'])
+    if b['scientific']!=x['scientific'] or not a or a['avibaseId']!=x['avibaseId']:
+        raise ValueError(f"Alias addition {x['id']} does not match the record or AviList v2026")
+    b['aliases']=sorted(set(b['aliases'])|{x['alias']})
 names_in_use={b['scientific'] for b in birds}
 for b in birds:
     kept=[x for x in b['aliases'] if x not in names_in_use]
     pruned_aliases+=len(b['aliases'])-len(kept); b['aliases']=kept
 if len(names_in_use)!=len(birds) or len({b['chinese'] for b in birds})!=len(birds): raise ValueError('Corrections created a duplicate name')
-report={'sourceSpecies':len(species),'bundledSpecies':len(birds),'sourceCoverageComplete':len(species)==len(birds),'studyReady':sum(bool(b['english']) for b in birds),'chinese':sum(bool(b['chinese']) for b in birds),'pinyin':sum(bool(b['pinyin']) for b in birds),'english':sum(bool(b['english']) for b in birds),'taxonomyReview':sum(b['taxonomyReview'] for b in birds),'excludedSubspecies':sum(r['taxonomicStatus']=='Accepted' for r in aves)-len(species),'sourceSynonymRows':sum(r['taxonomicStatus']=='Synonym' for r in aves),'rejectedAliasCount':len(rejected),'unmatchedEnglish':unmatched,'nameMatchCounts':dict(Counter(b['nameMatch'] for b in birds)),'rejectedAliases':rejected,'allChinaCurrentComplete':False,'nameCorrections':{'total':len(corrections),'byKind':dict(Counter(c['kind'] for c in corrections)),'prunedAliases':pruned_aliases,'source':'source-notices/name-corrections-2026-11.json'}}
+report={'sourceSpecies':len(species),'bundledSpecies':len(birds),'sourceCoverageComplete':len(species)==len(birds),'studyReady':sum(bool(b['english']) for b in birds),'chinese':sum(bool(b['chinese']) for b in birds),'pinyin':sum(bool(b['pinyin']) for b in birds),'english':sum(bool(b['english']) for b in birds),'taxonomyReview':sum(b['taxonomyReview'] for b in birds),'excludedSubspecies':sum(r['taxonomicStatus']=='Accepted' for r in aves)-len(species),'sourceSynonymRows':sum(r['taxonomicStatus']=='Synonym' for r in aves),'rejectedAliasCount':len(rejected),'unmatchedEnglish':unmatched,'nameMatchCounts':dict(Counter(b['nameMatch'] for b in birds)),'rejectedAliases':rejected,'allChinaCurrentComplete':False,'nameCorrections':{'total':len(corrections),'byKind':dict(Counter(c['kind'] for c in corrections)),'aliasAdditions':len(correction_doc.get('aliasAdditions',[])),'prunedAliases':pruned_aliases,'source':'source-notices/name-corrections-2026-11.json'}}
 meta={'title':'Catalogue of Life China 2023 · bird species','version':VERSION,'taxonomy':'CoL China 2023 v1.1 (source concepts retained)','scope':'China as defined by the CAS source; no independent border, occurrence-status, or Taiwan completeness audit','license':'CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names; AviList v2026 corrections); CC BY 3.0 (IOC 13.1 historical names)','sourceUrl':'https://doi.org/10.15468/ae6ush','retrieved':'2026-11-18','coverage':'All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. '+f'{len(corrections)} cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.','report':{k:v for k,v in report.items() if k not in ['unmatchedEnglish','rejectedAliases']},'sources':[{'id':'colcn-2023','title':'The Biodiversity Committee of CAS, Xu Z (2024). Catalogue of Life China 2023 Annual Checklist. Version 1.1.','url':'https://doi.org/10.15468/ae6ush','download':'https://www.gbifchina.org.cn/archive.do?r=chinacol2023','license':'CC BY-NC 4.0','sha256':digest(src/'col-china-2023.zip')},{'id':'ioc-15.2','title':'Gill F, Donsker D & Rasmussen P (eds). 2026. IOC World Bird List v15.2. GBIF/CoLDP distribution.','url':'https://www.gbif.org/dataset/c696e5ee-9088-4d11-bdae-ab88daffab78','download':'https://hosted-datasets.gbif.org/datasets/ioc.zip','license':'CC BY 4.0','sha256':digest(src/'ioc-gbif-15.2.zip')},{'id':'ioc-13.1','title':'Gill F, Donsker D & Rasmussen P (eds). 2023. IOC World Bird List v13.1, multilingual version. Historical English-name fallback.','url':'https://doi.org/10.14344/IOC.ML.13.1','download':'https://worldbirdnames.org/Multiling%20IOC%2013.1_c.xlsx','license':'CC BY 3.0','sha256':digest(src/'ioc-13.1-multilingual.xlsx')},{'id':'avilist-v2026','title':'AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026 (extended version, 20 Oct 2026). Used for reviewed name corrections only.','url':'https://doi.org/10.2173/avilist.v2026','download':'https://www.avilist.org/checklist/v2026/','license':'CC BY 4.0','sha256':digest(src/'avilist-v2026-extended.xlsx')}]}
 (ROOT/'data/birds.json').write_text(json.dumps({'schemaVersion':1,'meta':meta,'birds':birds},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'data/coverage-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

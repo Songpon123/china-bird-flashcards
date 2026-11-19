@@ -191,6 +191,12 @@
       "category": "species"
     },
     {
+      "sciName": "Actinodura strigula",
+      "comName": "Chestnut-tailed Minla",
+      "speciesCode": "chtmin1",
+      "category": "species"
+    },
+    {
       "sciName": "Actinodura waldeni",
       "comName": "Streak-throated Barwing",
       "speciesCode": "sttbar1",
@@ -458,6 +464,12 @@
       "sciName": "Anarhynchus leschenaultii",
       "comName": "Greater Sand-Plover",
       "speciesCode": "grsplo",
+      "category": "species"
+    },
+    {
+      "sciName": "Anarhynchus mongolus",
+      "comName": "Siberian Sand-Plover",
+      "speciesCode": "lessap2",
       "category": "species"
     },
     {
@@ -905,6 +917,12 @@
       "category": "species"
     },
     {
+      "sciName": "Astur gentilis",
+      "comName": "Eurasian Goshawk",
+      "speciesCode": "norgos1",
+      "category": "species"
+    },
+    {
       "sciName": "Athene brama",
       "comName": "Spotted Owlet",
       "speciesCode": "spoowl1",
@@ -1010,6 +1028,12 @@
       "sciName": "Botaurus cinnamomeus",
       "comName": "Cinnamon Bittern",
       "speciesCode": "cinbit1",
+      "category": "species"
+    },
+    {
+      "sciName": "Botaurus eurhythmus",
+      "comName": "Schrenck's Bittern",
+      "speciesCode": "schbit1",
       "category": "species"
     },
     {
@@ -1997,6 +2021,12 @@
       "category": "species"
     },
     {
+      "sciName": "Coloeus monedula",
+      "comName": "Eurasian Jackdaw",
+      "speciesCode": "eurjac",
+      "category": "species"
+    },
+    {
       "sciName": "Columba eversmanni",
       "comName": "Yellow-eyed Pigeon",
       "speciesCode": "pabpig1",
@@ -2210,6 +2240,12 @@
       "sciName": "Culicicapa ceylonensis",
       "comName": "Gray-headed Canary-Flycatcher",
       "speciesCode": "gyhcaf1",
+      "category": "species"
+    },
+    {
+      "sciName": "Curruca communis",
+      "comName": "Greater Whitethroat",
+      "speciesCode": "grewhi1",
       "category": "species"
     },
     {
@@ -3476,6 +3512,12 @@
       "sciName": "Helopsaltes ochotensis",
       "comName": "Middendorff's Grasshopper Warbler",
       "speciesCode": "migwar",
+      "category": "species"
+    },
+    {
+      "sciName": "Helopsaltes pleskei",
+      "comName": "Pleske's Grasshopper Warbler",
+      "speciesCode": "plewar1",
       "category": "species"
     },
     {
@@ -5675,6 +5717,12 @@
       "category": "species"
     },
     {
+      "sciName": "Phoenicurus fuliginosus",
+      "comName": "Plumbeous Redstart",
+      "speciesCode": "plured1",
+      "category": "species"
+    },
+    {
       "sciName": "Phoenicurus hodgsoni",
       "comName": "Hodgson's Redstart",
       "speciesCode": "hodred1",
@@ -5891,6 +5939,12 @@
       "category": "species"
     },
     {
+      "sciName": "Phylloscopus poliogenys",
+      "comName": "Gray-cheeked Warbler",
+      "speciesCode": "gycwar2",
+      "category": "species"
+    },
+    {
       "sciName": "Phylloscopus proregulus",
       "comName": "Pallas's Leaf Warbler",
       "speciesCode": "palwar5",
@@ -5948,6 +6002,12 @@
       "sciName": "Phylloscopus tenellipes",
       "comName": "Pale-legged Leaf Warbler",
       "speciesCode": "pllwar1",
+      "category": "species"
+    },
+    {
+      "sciName": "Phylloscopus tephrocephalus",
+      "comName": "Gray-crowned Warbler",
+      "speciesCode": "gycwar1",
       "category": "species"
     },
     {
@@ -6545,6 +6605,12 @@
       "category": "species"
     },
     {
+      "sciName": "Pterorhinus caerulatus",
+      "comName": "Gray-sided Laughingthrush",
+      "speciesCode": "gyslau",
+      "category": "species"
+    },
+    {
       "sciName": "Pterorhinus chinensis",
       "comName": "Black-throated Laughingthrush",
       "speciesCode": "bltlau1",
@@ -7013,6 +7079,12 @@
       "category": "species"
     },
     {
+      "sciName": "Schoeniclus pallasi",
+      "comName": "Pallas's Bunting",
+      "speciesCode": "palbun",
+      "category": "species"
+    },
+    {
       "sciName": "Schoeniclus pusillus",
       "comName": "Little Bunting",
       "speciesCode": "litbun",
@@ -7028,6 +7100,12 @@
       "sciName": "Schoeniclus rutilus",
       "comName": "Chestnut Bunting",
       "speciesCode": "chebun1",
+      "category": "species"
+    },
+    {
+      "sciName": "Schoeniclus schoeniclus",
+      "comName": "Reed Bunting",
+      "speciesCode": "reebun",
       "category": "species"
     },
     {
@@ -7052,6 +7130,12 @@
       "sciName": "Schoeniclus tristrami",
       "comName": "Tristram's Bunting",
       "speciesCode": "tribun1",
+      "category": "species"
+    },
+    {
+      "sciName": "Schoeniclus variabilis",
+      "comName": "Gray Bunting",
+      "speciesCode": "grybun",
       "category": "species"
     },
     {
@@ -7535,6 +7619,12 @@
       "category": "species"
     },
     {
+      "sciName": "Suthora przewalskii",
+      "comName": "Rusty-throated Parrotbill",
+      "speciesCode": "rutpar2",
+      "category": "species"
+    },
+    {
       "sciName": "Suthora verreauxi",
       "comName": "Golden Parrotbill",
       "speciesCode": "golpar2",
@@ -7544,6 +7634,12 @@
       "sciName": "Suthora webbiana",
       "comName": "Vinous-throated Parrotbill",
       "speciesCode": "vitpar1",
+      "category": "species"
+    },
+    {
+      "sciName": "Suthora zappeyi",
+      "comName": "Gray-hooded Parrotbill",
+      "speciesCode": "gyhpar4",
       "category": "species"
     },
     {
@@ -8411,6 +8507,12 @@
       "category": "species"
     },
     {
+      "sciName": "Yungipicus canicapillus",
+      "comName": "Gray-capped Pygmy Woodpecker",
+      "speciesCode": "gycwoo1",
+      "category": "species"
+    },
+    {
       "sciName": "Yungipicus kizuki",
       "comName": "Japanese Pygmy Woodpecker",
       "speciesCode": "pygwoo1",
@@ -8533,7 +8635,7 @@
   ],
   "commonNameCounts": {
     "shikra": 1,
-    "northerngoshawk": 0,
+    "eurasiangoshawk": 1,
     "japanesesparrowhawk": 1,
     "eurasiansparrowhawk": 1,
     "chinesesparrowhawk": 1,
@@ -8680,7 +8782,7 @@
     "littleringedplover": 1,
     "commonringedplover": 1,
     "greatersandplover": 1,
-    "lessersandplover": 0,
+    "siberiansandplover": 1,
     "longbilledplover": 1,
     "orientalplover": 1,
     "eurasiandotterel": 1,

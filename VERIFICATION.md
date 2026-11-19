@@ -69,3 +69,13 @@ Checked on 18 November 2026. Sources: AviList v2026 extended (20 Oct 2026, SHA-2
 - Browser check (built-in Chromium, local server): the baseline edition label and footer version load, the Name guide shows 喜鹊 · Oriental Magpie · *Pica serica*, and no console errors were logged. Study-flow reviews were not repeated.
 
 Not verified: expert review of the 38 concept choices (in particular 蓝短翅鸫 → 中华短翅鸫, where the CAS record covers three China species), physical-device layout, and browsers holding an imported or restored dataset, which keep their stored copy.
+
+## v0.5 study page, shuffle and eBird links
+
+Checked on 19 November 2026.
+
+- 苍鹰 had no direct eBird link because eBird and AviList split Northern Goshawk; the card is now Eurasian Goshawk (*Astur gentilis*, `norgos1`). 蒙古沙鸻 follows the same kind of split to Siberian Sand Plover (*Anarhynchus mongolus*). Corrections now total 48.
+- 15 cards whose genus changed in AviList v2026 and eBird carry the current combination as an alias; each one now links to the Cornell code that AviList lists. eBird references: 1,435 links (1,276 scientific / 37 alias / 122 common-name), 10 manual lookups (4 unresolved names, 6 AviList/eBird lumps).
+- New cards and free practice use a stable seeded order stored in the progress settings; **⇄ Shuffle** sets a new seed. A test confirms that 20 new cards span at least 12 families, that the same seed gives the same order, that due reviews still come first, and that the seed survives a backup round trip.
+- Browser check: consecutive cards came from different families, Shuffle changed the next card, and **Reveal answer** opened the **Name meaning & history** panel below the card.
+- `npm test`: **24 passed, 0 failed**.
