@@ -1,4 +1,111 @@
 {
-  "description": "English names supplied for cards that have no eBird match. Filled from the project owner's spreadsheet; applied by scripts/build_dataset.py.",
-  "names": []
+  "description": "English names for cards that have no eBird species of their own: the eBird name of the broader species eBird includes them in. Supplied by the project owner and checked against the pinned eBird Taxonomy snapshot; applied by scripts/build_dataset.py.",
+  "names": [
+    {
+      "id": "colcn:5f6f188c-7d3b-4dcf-a9fe-9c70b4a2e634",
+      "chinese": "小白腰雨燕",
+      "scientific": "Apus nipalensis",
+      "english": "Little Swift",
+      "ebirdCode": "y00960",
+      "ebirdScientific": "Apus affinis",
+      "treatment": "eBird includes this taxon in Apus affinis (Little Swift)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot"
+    },
+    {
+      "id": "colcn:90c93fd3-7bde-4889-9f90-05a43e17efee",
+      "chinese": "中亚夜鹰",
+      "scientific": "Caprimulgus centralasicus",
+      "english": "Eurasian Nightjar",
+      "ebirdCode": "eurnig1",
+      "ebirdScientific": "Caprimulgus europaeus",
+      "treatment": "eBird includes this taxon in Caprimulgus europaeus (Eurasian Nightjar); ssp. plumipes",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ยุบรวม (Lump) เข้ากับนกตบยุงยุโรป"
+    },
+    {
+      "id": "colcn:95c19847-4bb3-4d3f-8f18-164032510022",
+      "chinese": "黑眉长尾山雀",
+      "scientific": "Aegithalos bonvaloti",
+      "english": "Black-browed Tit",
+      "ebirdCode": "bkbtit3",
+      "ebirdScientific": "Aegithalos iouschistos",
+      "treatment": "eBird includes this taxon in Aegithalos iouschistos (Black-browed Tit)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot"
+    },
+    {
+      "id": "colcn:05f373ba-cc91-43c6-a337-d70e2c30bb36",
+      "chinese": "极北朱顶雀",
+      "scientific": "Acanthis hornemanni",
+      "english": "Redpoll",
+      "ebirdCode": "redpol1",
+      "ebirdScientific": "Acanthis flammea",
+      "treatment": "eBird includes this taxon in Acanthis flammea (Redpoll)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot"
+    },
+    {
+      "id": "colcn:f8d52e7d-baa8-4c8e-8b9c-59e1839a68fc",
+      "chinese": "斑腰燕",
+      "scientific": "Cecropis striolata",
+      "english": "Eastern Red-rumped Swallow",
+      "ebirdCode": "y00621",
+      "ebirdScientific": "Cecropis daurica",
+      "treatment": "eBird includes this taxon in Cecropis daurica (Eastern Red-rumped Swallow)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot"
+    },
+    {
+      "id": "colcn:7393d33a-920c-4c63-984b-eaba33bc241a",
+      "chinese": "海南画眉",
+      "scientific": "Garrulax owstoni",
+      "english": "Chinese Hwamei",
+      "ebirdCode": "melthr",
+      "ebirdScientific": "Garrulax canorus",
+      "treatment": "eBird includes this taxon in Garrulax canorus (Chinese Hwamei)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ถูกยุบรวม (Lump) กลับเข้าเป็นชนิดย่อย Garrulax canorus owstoni ของ นกซอฮู้"
+    },
+    {
+      "id": "colcn:28844eec-ac6a-483f-8f08-75d7e9e6cac1",
+      "chinese": "华西柳莺",
+      "scientific": "Phylloscopus occisinensis",
+      "english": "Tickell's Leaf Warbler",
+      "ebirdCode": "y00989",
+      "ebirdScientific": "Phylloscopus affinis",
+      "treatment": "eBird includes this taxon in Phylloscopus affinis (Tickell's Leaf Warbler)",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ยุบรวม (Lump) กลับเข้าเป็นชนิดย่อยของนกกระจิ๊ดท้องเหลือง (เดิมแยกเป็น Alpine Leaf Warbler)"
+    },
+    {
+      "id": "colcn:555bf83c-02e8-4687-9955-154347d960bc",
+      "chinese": "休氏白喉林莺",
+      "scientific": "Sylvia althaea",
+      "english": "Lesser Whitethroat",
+      "ebirdCode": "leswhi4",
+      "ebirdScientific": "Curruca curruca",
+      "treatment": "eBird includes this taxon in Curruca curruca (Lesser Whitethroat); ssp. althaea",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ย้ายสกุลไป Curruca และ ยุบรวม (Lump) เข้ากับนกกระจิบคอขาวเล็ก (เดิมแยกเป็น Hume's Whitethroat)"
+    },
+    {
+      "id": "colcn:85faa91c-c529-439e-b1da-e1187ecf3eec",
+      "chinese": "漠白喉林莺",
+      "scientific": "Sylvia minula",
+      "english": "Lesser Whitethroat",
+      "ebirdCode": "leswhi4",
+      "ebirdScientific": "Curruca curruca",
+      "treatment": "eBird includes this taxon in Curruca curruca (Lesser Whitethroat); ssp. minula",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ย้ายสกุลไป Curruca และ ยุบรวม (Lump) เข้ากับนกกระจิบคอขาวเล็ก (เดิมแยกเป็น Desert Whitethroat)"
+    },
+    {
+      "id": "colcn:ac3ea3f0-8595-4a4a-aa0b-80f5a5b9254f",
+      "chinese": "四川林鸮",
+      "scientific": "Strix davidi",
+      "english": "Ural Owl",
+      "ebirdCode": "uraowl1",
+      "ebirdScientific": "Strix uralensis",
+      "treatment": "eBird includes this taxon in Strix uralensis (Ural Owl); ssp. davidi",
+      "source": "Project owner, 19 Nov 2026 (ebird-names-to-fill.xlsx); checked against the eBird Taxonomy snapshot",
+      "ownerNote": "ยุบรวม (Lump) เข้าเป็นชนิดย่อยของนกเค้ายูราล (เดิมแยกเป็น Sichuan Wood Owl)"
+    }
+  ]
 }

@@ -6,8 +6,9 @@ import {validateEBirdLinks,ebirdReference,renderEBirdReference} from '../app/ebi
 const read=path=>readFile(new URL('../'+path,import.meta.url));
 const pack=validateEBirdLinks(JSON.parse(await read('data/ebird-links.json')));
 test('eBird references preserve source matches and identify candidate and manual-lookup coverage',async()=>{
- assert.deepEqual(pack.meta.matches,{scientific:1276,alias:37,'common-name':122});
- assert.equal(Object.keys(pack.byScientific).length,1435);assert.equal(pack.unmatched.length,10);
+ // 132 name-based references = 122 unique eBird names + 10 cards eBird includes in a broader species.
+ assert.deepEqual(pack.meta.matches,{scientific:1276,alias:37,'common-name':132});
+ assert.equal(Object.keys(pack.byScientific).length,1445);assert.equal(pack.unmatched.length,0);
  const egret=ebirdReference({scientific:'Egretta garzetta',english:'Little Egret'},pack);
  assert.equal(egret.href,'https://ebird.org/species/litegr');assert.equal(egret.kind,'scientific');
  const shikra=ebirdReference({scientific:'Accipiter badius',english:'Shikra'},pack);

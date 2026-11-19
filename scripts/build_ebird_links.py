@@ -23,7 +23,7 @@ def main():
     links, unmatched = {}, []
     counts = {'scientific':0, 'alias':0, 'common-name':0}
     for bird in birds:
-        row, method = ref.match(bird)
+        row, method = ref.link(bird)
         if not row:
             unmatched.append(bird['scientific'])
             continue

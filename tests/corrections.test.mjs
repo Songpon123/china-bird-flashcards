@@ -65,20 +65,28 @@ test('eBird references follow the corrected names, including the China populatio
  }
 });
 
-test('English names follow eBird for every card with an eBird species; the rest are listed for manual names',async()=>{
+test('English names follow eBird for every card, including taxa eBird includes in a broader species',async()=>{
  const changes=JSON.parse(await read('source-notices/english-names-ebird.json')),manual=JSON.parse(await read('source-notices/english-names-manual.json'));
- assert.deepEqual(changes.counts,{ebird:1435,changed:241,manual:manual.names.length,noEBirdMatch:10-manual.names.length});
+ assert.deepEqual(changes.counts,{ebird:1435,changed:241,broaderEBirdSpecies:10,noEBirdMatch:0});
+ assert.equal(manual.names.length,10);
  for(const b of dataset.birds){
   const row=pack.byScientific[b.scientific];
   if(row){assert.equal(b.english,row.english,b.chinese);assert.equal(b.englishSource,'ebird-taxonomy',b.chinese);}
-  else assert.ok(changes.noEBirdMatch.some(x=>x.id===b.id)||manual.names.some(x=>x.id===b.id),b.chinese);
+  else assert.fail(`${b.chinese} has no eBird reference`);
  }
+ assert.equal(dataset.birds.filter(b=>b.english).length,1445,'every card is study-ready');
  const card=c=>dataset.birds.find(b=>b.chinese===c);
  assert.equal(card('黑头䴓').english,'Snowy-browed Nuthatch');assert.equal(card('黑头䴓').scientific,'Sitta villosa');
  assert.match(card('黑头䴓').nameMatch,/English from eBird \(snbnut1\); IOC\/AviList: Chinese Nuthatch$/);
  assert.equal(card('戴胜').english,'Common Hoopoe');assert.equal(card('原鸽').english,'Rock Pigeon');assert.equal(card('大山雀').english,'Asian Tit');
  assert.equal(ebirdReference(card('黑头䴓'),pack).href,'https://ebird.org/species/snbnut1');
  assert.ok(raw.meta.sources.some(s=>s.id==='ebird-taxonomy'));
- // Cards eBird folds into a broader species keep their IOC name until a name is supplied.
- for(const c of ['小白腰雨燕','斑腰燕','极北朱顶雀'])assert.equal(pack.byScientific[card(c).scientific],undefined,c);
+ // Taxa eBird includes in a broader species take that species' name and link to it as a name-based reference.
+ for(const x of manual.names){
+  const b=byId.get(x.id),ref=ebirdReference(b,pack);
+  assert.equal(b.english,x.english,x.chinese);assert.equal(b.scientific,x.scientific,x.chinese);assert.equal(b.taxonomyReview,true,x.chinese);
+  assert.equal(ref.href,`https://ebird.org/species/${x.ebirdCode}`,x.chinese);assert.equal(ref.kind,'common-name',x.chinese);
+  assert.match(b.nameMatch,new RegExp(`eBird includes this taxon in ${x.ebirdScientific}`),x.chinese);
+ }
+ assert.deepEqual(['小白腰雨燕','中亚夜鹰','休氏白喉林莺','漠白喉林莺','四川林鸮'].map(c=>card(c).english),['Little Swift','Eurasian Nightjar','Lesser Whitethroat','Lesser Whitethroat','Ural Owl']);
 });

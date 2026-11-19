@@ -21,3 +21,4 @@
 .char-structure-block{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}.name-analysis .structure-kind{font-size:11px;color:var(--green);font-weight:650;margin:0 0 4px}.name-analysis .char-structure{margin:0 0 3px}.name-analysis .structure-en,.name-analysis .structure-meta{font-size:11px;margin:2px 0}
 #guide-record-heading .ebird-reference,#details-content .ebird-reference{margin:10px 0 16px}
 .bird-thai{display:flex;align-items:baseline;justify-content:center;gap:9px;flex-wrap:wrap;margin:-5px 0 14px;color:var(--forest)}.bird-thai span{font-size:9px;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}.bird-thai b{font-size:17px;font-weight:500}td small.library-thai{color:var(--forest);font-size:12px}.guide-result small[lang=th]{color:var(--forest)}
+.shared-name{font:italic 16px var(--serif);color:var(--muted);margin:-4px 0 12px}.shared-name small{display:block;font:normal 10px var(--sans);letter-spacing:.3px;margin-top:4px}

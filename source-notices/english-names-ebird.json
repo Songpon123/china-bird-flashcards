@@ -3,71 +3,10 @@
  "counts": {
   "ebird": 1435,
   "changed": 241,
-  "manual": 0,
-  "noEBirdMatch": 10
+  "broaderEBirdSpecies": 10,
+  "noEBirdMatch": 0
  },
- "noEBirdMatch": [
-  {
-   "id": "colcn:5f6f188c-7d3b-4dcf-a9fe-9c70b4a2e634",
-   "chinese": "小白腰雨燕",
-   "scientific": "Apus nipalensis",
-   "english": "House Swift"
-  },
-  {
-   "id": "colcn:90c93fd3-7bde-4889-9f90-05a43e17efee",
-   "chinese": "中亚夜鹰",
-   "scientific": "Caprimulgus centralasicus",
-   "english": ""
-  },
-  {
-   "id": "colcn:95c19847-4bb3-4d3f-8f18-164032510022",
-   "chinese": "黑眉长尾山雀",
-   "scientific": "Aegithalos bonvaloti",
-   "english": "Black-browed Bushtit"
-  },
-  {
-   "id": "colcn:05f373ba-cc91-43c6-a337-d70e2c30bb36",
-   "chinese": "极北朱顶雀",
-   "scientific": "Acanthis hornemanni",
-   "english": "Arctic Redpoll"
-  },
-  {
-   "id": "colcn:f8d52e7d-baa8-4c8e-8b9c-59e1839a68fc",
-   "chinese": "斑腰燕",
-   "scientific": "Cecropis striolata",
-   "english": "Striated Swallow"
-  },
-  {
-   "id": "colcn:7393d33a-920c-4c63-984b-eaba33bc241a",
-   "chinese": "海南画眉",
-   "scientific": "Garrulax owstoni",
-   "english": ""
-  },
-  {
-   "id": "colcn:28844eec-ac6a-483f-8f08-75d7e9e6cac1",
-   "chinese": "华西柳莺",
-   "scientific": "Phylloscopus occisinensis",
-   "english": ""
-  },
-  {
-   "id": "colcn:555bf83c-02e8-4687-9955-154347d960bc",
-   "chinese": "休氏白喉林莺",
-   "scientific": "Sylvia althaea",
-   "english": "Hume's Whitethroat"
-  },
-  {
-   "id": "colcn:85faa91c-c529-439e-b1da-e1187ecf3eec",
-   "chinese": "漠白喉林莺",
-   "scientific": "Sylvia minula",
-   "english": "Desert Whitethroat"
-  },
-  {
-   "id": "colcn:ac3ea3f0-8595-4a4a-aa0b-80f5a5b9254f",
-   "chinese": "四川林鸮",
-   "scientific": "Strix davidi",
-   "english": ""
-  }
- ],
+ "noEBirdMatch": [],
  "changes": [
   {
    "id": "colcn:02d13afa-1ede-496e-b620-826e840f951d",
@@ -321,6 +260,28 @@
    "ebirdCode": "y00731",
    "ebirdScientific": "Aerodramus fuciphagus",
    "method": "scientific"
+  },
+  {
+   "id": "colcn:5f6f188c-7d3b-4dcf-a9fe-9c70b4a2e634",
+   "chinese": "小白腰雨燕",
+   "scientific": "Apus nipalensis",
+   "previous": "House Swift",
+   "english": "Little Swift",
+   "source": "manual",
+   "ebirdCode": "y00960",
+   "ebirdScientific": "Apus affinis",
+   "method": "broader eBird species"
+  },
+  {
+   "id": "colcn:90c93fd3-7bde-4889-9f90-05a43e17efee",
+   "chinese": "中亚夜鹰",
+   "scientific": "Caprimulgus centralasicus",
+   "previous": "",
+   "english": "Eurasian Nightjar",
+   "source": "manual",
+   "ebirdCode": "eurnig1",
+   "ebirdScientific": "Caprimulgus europaeus",
+   "method": "broader eBird species"
   },
   {
    "id": "colcn:442e2e2f-ebe0-4517-a721-2a436456254e",
@@ -939,6 +900,17 @@
    "method": "scientific"
   },
   {
+   "id": "colcn:95c19847-4bb3-4d3f-8f18-164032510022",
+   "chinese": "黑眉长尾山雀",
+   "scientific": "Aegithalos bonvaloti",
+   "previous": "Black-browed Bushtit",
+   "english": "Black-browed Tit",
+   "source": "manual",
+   "ebirdCode": "bkbtit3",
+   "ebirdScientific": "Aegithalos iouschistos",
+   "method": "broader eBird species"
+  },
+  {
    "id": "colcn:298ebbd2-d829-4016-99ec-d60f8b02ea67",
    "chinese": "红头长尾山雀",
    "scientific": "Aegithalos concinnus",
@@ -1280,6 +1252,17 @@
    "method": "alias"
   },
   {
+   "id": "colcn:05f373ba-cc91-43c6-a337-d70e2c30bb36",
+   "chinese": "极北朱顶雀",
+   "scientific": "Acanthis hornemanni",
+   "previous": "Arctic Redpoll",
+   "english": "Redpoll",
+   "source": "manual",
+   "ebirdCode": "redpol1",
+   "ebirdScientific": "Acanthis flammea",
+   "method": "broader eBird species"
+  },
+  {
    "id": "colcn:3b211856-0db5-49bc-b329-3c31e3fde351",
    "chinese": "红额金翅雀",
    "scientific": "Carduelis caniceps",
@@ -1388,6 +1371,17 @@
    "ebirdCode": "fifser1",
    "ebirdScientific": "Serinus pusillus",
    "method": "scientific"
+  },
+  {
+   "id": "colcn:f8d52e7d-baa8-4c8e-8b9c-59e1839a68fc",
+   "chinese": "斑腰燕",
+   "scientific": "Cecropis striolata",
+   "previous": "Striated Swallow",
+   "english": "Eastern Red-rumped Swallow",
+   "source": "manual",
+   "ebirdCode": "y00621",
+   "ebirdScientific": "Cecropis daurica",
+   "method": "broader eBird species"
   },
   {
    "id": "colcn:76220033-956a-4237-ab77-7e7adaa7251c",
@@ -1531,6 +1525,17 @@
    "ebirdCode": "grylau1",
    "ebirdScientific": "Garrulax maesi",
    "method": "scientific"
+  },
+  {
+   "id": "colcn:7393d33a-920c-4c63-984b-eaba33bc241a",
+   "chinese": "海南画眉",
+   "scientific": "Garrulax owstoni",
+   "previous": "",
+   "english": "Chinese Hwamei",
+   "source": "manual",
+   "ebirdCode": "melthr",
+   "ebirdScientific": "Garrulax canorus",
+   "method": "broader eBird species"
   },
   {
    "id": "colcn:dc3485f9-63e0-4d59-95a4-9fb5463f7960",
@@ -1896,6 +1901,17 @@
    "method": "scientific"
   },
   {
+   "id": "colcn:28844eec-ac6a-483f-8f08-75d7e9e6cac1",
+   "chinese": "华西柳莺",
+   "scientific": "Phylloscopus occisinensis",
+   "previous": "",
+   "english": "Tickell's Leaf Warbler",
+   "source": "manual",
+   "ebirdCode": "y00989",
+   "ebirdScientific": "Phylloscopus affinis",
+   "method": "broader eBird species"
+  },
+  {
    "id": "colcn:7b9b578b-fe2f-4032-b503-66f60f332ffc",
    "chinese": "灰头柳莺",
    "scientific": "Phylloscopus xanthoschistos",
@@ -2083,6 +2099,17 @@
    "method": "alias"
   },
   {
+   "id": "colcn:555bf83c-02e8-4687-9955-154347d960bc",
+   "chinese": "休氏白喉林莺",
+   "scientific": "Sylvia althaea",
+   "previous": "Hume's Whitethroat",
+   "english": "Lesser Whitethroat",
+   "source": "manual",
+   "ebirdCode": "leswhi4",
+   "ebirdScientific": "Curruca curruca",
+   "method": "broader eBird species"
+  },
+  {
    "id": "colcn:dbb2d6b4-1177-4558-bb42-6c8e98ad2c40",
    "chinese": "灰白喉林莺",
    "scientific": "Sylvia communis",
@@ -2092,6 +2119,17 @@
    "ebirdCode": "grewhi1",
    "ebirdScientific": "Curruca communis",
    "method": "alias"
+  },
+  {
+   "id": "colcn:85faa91c-c529-439e-b1da-e1187ecf3eec",
+   "chinese": "漠白喉林莺",
+   "scientific": "Sylvia minula",
+   "previous": "Desert Whitethroat",
+   "english": "Lesser Whitethroat",
+   "source": "manual",
+   "ebirdCode": "leswhi4",
+   "ebirdScientific": "Curruca curruca",
+   "method": "broader eBird species"
   },
   {
    "id": "colcn:5a1ece66-3207-435a-8c53-10f20a8399f0",
@@ -2653,6 +2691,17 @@
    "ebirdCode": "orsowl",
    "ebirdScientific": "Otus sunia",
    "method": "scientific"
+  },
+  {
+   "id": "colcn:ac3ea3f0-8595-4a4a-aa0b-80f5a5b9254f",
+   "chinese": "四川林鸮",
+   "scientific": "Strix davidi",
+   "previous": "",
+   "english": "Ural Owl",
+   "source": "manual",
+   "ebirdCode": "uraowl1",
+   "ebirdScientific": "Strix uralensis",
+   "method": "broader eBird species"
   },
   {
    "id": "colcn:1efb241c-bedd-4451-a231-186c9d4d8361",
