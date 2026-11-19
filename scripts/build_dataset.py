@@ -8,6 +8,8 @@ from pathlib import Path
 from zipfile import ZipFile
 import openpyxl
 from pypinyin import lazy_pinyin, Style, load_single_dict
+import sys; sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ebird_reference import EBirdReference
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -154,23 +156,43 @@ for x in correction_doc.get('aliasAdditions',[]):
     if b['scientific']!=x['scientific'] or not a or a['avibaseId']!=x['avibaseId']:
         raise ValueError(f"Alias addition {x['id']} does not match the record or AviList v2026")
     b['aliases']=sorted(set(b['aliases'])|{x['alias']})
-# English names taken from eBird at the project owner's request; scientific names stay as above.
-ebird_ref=json.loads((ROOT/'source-notices/ebird-reference-identifiers.json').read_text())
-ebird_by_code={r['speciesCode']:r for r in ebird_ref['identifiers']}
-english_from_ebird=correction_doc.get('englishFromEBird',[])
-for x in english_from_ebird:
-    b=by_id[x['id']]; r=ebird_by_code.get(x['ebirdCode'])
-    if b['scientific']!=x['scientific'] or b['english']!=x['was'] or not r or r['sciName']!=x['scientific'] or r['comName']!=x['now']:
-        raise ValueError(f"eBird English name {x['id']} does not match the record or the eBird snapshot")
-    b.update(english=x['now'],englishSource='ebird-taxonomy',
-             nameMatch=f"eBird common name ({x['ebirdCode']}), chosen for this card; AviList v2026 and IOC 15.2 use {x['was']}")
 names_in_use={b['scientific'] for b in birds}
 for b in birds:
     kept=[x for x in b['aliases'] if x not in names_in_use]
     pruned_aliases+=len(b['aliases'])-len(kept); b['aliases']=kept
 if len(names_in_use)!=len(birds) or len({b['chinese'] for b in birds})!=len(birds): raise ValueError('Corrections created a duplicate name')
-report={'sourceSpecies':len(species),'bundledSpecies':len(birds),'sourceCoverageComplete':len(species)==len(birds),'studyReady':sum(bool(b['english']) for b in birds),'chinese':sum(bool(b['chinese']) for b in birds),'pinyin':sum(bool(b['pinyin']) for b in birds),'english':sum(bool(b['english']) for b in birds),'taxonomyReview':sum(b['taxonomyReview'] for b in birds),'excludedSubspecies':sum(r['taxonomicStatus']=='Accepted' for r in aves)-len(species),'sourceSynonymRows':sum(r['taxonomicStatus']=='Synonym' for r in aves),'rejectedAliasCount':len(rejected),'unmatchedEnglish':unmatched,'nameMatchCounts':dict(Counter(b['nameMatch'] for b in birds)),'rejectedAliases':rejected,'allChinaCurrentComplete':False,'nameCorrections':{'total':len(corrections),'byKind':dict(Counter(c['kind'] for c in corrections)),'aliasAdditions':len(correction_doc.get('aliasAdditions',[])),'englishFromEBird':len(english_from_ebird),'prunedAliases':pruned_aliases,'source':'source-notices/name-corrections-2026-11.json'}}
-meta={'title':'Catalogue of Life China 2023 · bird species','version':VERSION,'taxonomy':'CoL China 2023 v1.1 (source concepts retained)','scope':'China as defined by the CAS source; no independent border, occurrence-status, or Taiwan completeness audit','license':'CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names; AviList v2026 corrections); CC BY 3.0 (IOC 13.1 historical names)','sourceUrl':'https://doi.org/10.15468/ae6ush','retrieved':'2026-11-18','coverage':'All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. '+f'{len(corrections)} cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.','report':{k:v for k,v in report.items() if k not in ['unmatchedEnglish','rejectedAliases']},'sources':[{'id':'colcn-2023','title':'The Biodiversity Committee of CAS, Xu Z (2024). Catalogue of Life China 2023 Annual Checklist. Version 1.1.','url':'https://doi.org/10.15468/ae6ush','download':'https://www.gbifchina.org.cn/archive.do?r=chinacol2023','license':'CC BY-NC 4.0','sha256':digest(src/'col-china-2023.zip')},{'id':'ioc-15.2','title':'Gill F, Donsker D & Rasmussen P (eds). 2026. IOC World Bird List v15.2. GBIF/CoLDP distribution.','url':'https://www.gbif.org/dataset/c696e5ee-9088-4d11-bdae-ab88daffab78','download':'https://hosted-datasets.gbif.org/datasets/ioc.zip','license':'CC BY 4.0','sha256':digest(src/'ioc-gbif-15.2.zip')},{'id':'ioc-13.1','title':'Gill F, Donsker D & Rasmussen P (eds). 2023. IOC World Bird List v13.1, multilingual version. Historical English-name fallback.','url':'https://doi.org/10.14344/IOC.ML.13.1','download':'https://worldbirdnames.org/Multiling%20IOC%2013.1_c.xlsx','license':'CC BY 3.0','sha256':digest(src/'ioc-13.1-multilingual.xlsx')},{'id':'avilist-v2026','title':'AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026 (extended version, 20 Oct 2026). Used for reviewed name corrections only.','url':'https://doi.org/10.2173/avilist.v2026','download':'https://www.avilist.org/checklist/v2026/','license':'CC BY 4.0','sha256':digest(src/'avilist-v2026-extended.xlsx')}]+([{'id':'ebird-taxonomy','title':f"eBird Taxonomy (Cornell Lab of Ornithology), retrieved {ebird_ref['source']['retrieved']}. Common name used for {len(english_from_ebird)} card by the project's choice.",'url':'https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy','license':'Factual common name; no open license asserted','sha256':ebird_ref['source']['snapshotSHA256']}] if english_from_ebird else [])}
+# English names follow eBird (project policy since v0.7). Each card takes the common name of its eBird
+# species, matched as in build_ebird_links.py; scientific names stay as above. Cards with no eBird match
+# keep their IOC/AviList name unless source-notices/english-names-manual.json supplies one.
+ebird=EBirdReference(ROOT)
+manual_doc=json.loads((ROOT/'source-notices/english-names-manual.json').read_text())
+manual={x['id']:x for x in manual_doc['names']}
+english_changes,ebird_unmatched=[],[]
+for b in birds:
+    row,method=ebird.match(b)
+    if b['id'] in manual:
+        x=manual[b['id']]
+        if x['scientific']!=b['scientific'] or not norm(x['english']): raise ValueError(f"Manual English name {b['id']} does not match the record")
+        if row: raise ValueError(f"Manual English name {b['id']}: the card already matches eBird {row['speciesCode']}")
+        previous=b['english']
+        b.update(english=norm(x['english']),englishSource='manual-english',nameMatch=b['nameMatch']+f" · English supplied for this project ({x.get('source') or 'manual'})")
+        english_changes.append({'id':b['id'],'chinese':b['chinese'],'scientific':b['scientific'],'previous':previous,'english':b['english'],'source':'manual'})
+        continue
+    if not row:
+        ebird_unmatched.append(b['id']); continue
+    previous=b['english']
+    if previous!=row['comName']:
+        english_changes.append({'id':b['id'],'chinese':b['chinese'],'scientific':b['scientific'],'previous':previous,'english':row['comName'],
+                                'source':'ebird','ebirdCode':row['speciesCode'],'ebirdScientific':row['sciName'],'method':method})
+    b.update(english=row['comName'],englishSource='ebird-taxonomy',
+             nameMatch=b['nameMatch']+f" · English from eBird ({row['speciesCode']})"+(f"; IOC/AviList: {previous}" if previous and previous!=row['comName'] else ''))
+(ROOT/'source-notices/english-names-ebird.json').write_text(json.dumps({
+    'policy':'English names follow the eBird Taxonomy snapshot in source-notices/ebird-reference-identifiers.json. Scientific names follow CAS 2023 with the AviList v2026 corrections. Built by scripts/build_dataset.py.',
+    'counts':{'ebird':len(birds)-len(ebird_unmatched)-len(manual),'changed':sum(c['source']=='ebird' for c in english_changes),'manual':len(manual),'noEBirdMatch':len(ebird_unmatched)},
+    'noEBirdMatch':[{'id':b['id'],'chinese':b['chinese'],'scientific':b['scientific'],'english':b['english']} for b in birds if b['id'] in set(ebird_unmatched)],
+    'changes':english_changes},ensure_ascii=False,indent=1)+'\n')
+report={'sourceSpecies':len(species),'bundledSpecies':len(birds),'sourceCoverageComplete':len(species)==len(birds),'studyReady':sum(bool(b['english']) for b in birds),'chinese':sum(bool(b['chinese']) for b in birds),'pinyin':sum(bool(b['pinyin']) for b in birds),'english':sum(bool(b['english']) for b in birds),'taxonomyReview':sum(b['taxonomyReview'] for b in birds),'excludedSubspecies':sum(r['taxonomicStatus']=='Accepted' for r in aves)-len(species),'sourceSynonymRows':sum(r['taxonomicStatus']=='Synonym' for r in aves),'rejectedAliasCount':len(rejected),'unmatchedEnglish':unmatched,'nameMatchCounts':dict(Counter(b['nameMatch'] for b in birds)),'rejectedAliases':rejected,'allChinaCurrentComplete':False,'nameCorrections':{'total':len(corrections),'byKind':dict(Counter(c['kind'] for c in corrections)),'aliasAdditions':len(correction_doc.get('aliasAdditions',[])),'englishFromEBird':sum(b['englishSource']=='ebird-taxonomy' for b in birds),'englishChangedToEBird':sum(c['source']=='ebird' for c in english_changes),'englishManual':len(manual),'englishNoEBirdMatch':len(ebird_unmatched),'prunedAliases':pruned_aliases,'source':'source-notices/name-corrections-2026-11.json'}}
+meta={'title':'Catalogue of Life China 2023 · bird species','version':VERSION,'taxonomy':'CoL China 2023 v1.1 (source concepts retained)','scope':'China as defined by the CAS source; no independent border, occurrence-status, or Taiwan completeness audit','license':'CC BY-NC 4.0 (CAS baseline); CC BY 4.0 (IOC 15.2 names; AviList v2026 corrections); CC BY 3.0 (IOC 13.1 historical names)','sourceUrl':'https://doi.org/10.15468/ae6ush','retrieved':'2026-11-18','coverage':'All 1,445 accepted species binomials in the downloaded CAS archive. Partial against current China checklists; not a complete 2026 inventory. '+f'{len(corrections)} cards whose names belonged to another bird were corrected against AviList v2026, keeping their IDs.','report':{k:v for k,v in report.items() if k not in ['unmatchedEnglish','rejectedAliases']},'sources':[{'id':'colcn-2023','title':'The Biodiversity Committee of CAS, Xu Z (2024). Catalogue of Life China 2023 Annual Checklist. Version 1.1.','url':'https://doi.org/10.15468/ae6ush','download':'https://www.gbifchina.org.cn/archive.do?r=chinacol2023','license':'CC BY-NC 4.0','sha256':digest(src/'col-china-2023.zip')},{'id':'ioc-15.2','title':'Gill F, Donsker D & Rasmussen P (eds). 2026. IOC World Bird List v15.2. GBIF/CoLDP distribution.','url':'https://www.gbif.org/dataset/c696e5ee-9088-4d11-bdae-ab88daffab78','download':'https://hosted-datasets.gbif.org/datasets/ioc.zip','license':'CC BY 4.0','sha256':digest(src/'ioc-gbif-15.2.zip')},{'id':'ioc-13.1','title':'Gill F, Donsker D & Rasmussen P (eds). 2023. IOC World Bird List v13.1, multilingual version. Historical English-name fallback.','url':'https://doi.org/10.14344/IOC.ML.13.1','download':'https://worldbirdnames.org/Multiling%20IOC%2013.1_c.xlsx','license':'CC BY 3.0','sha256':digest(src/'ioc-13.1-multilingual.xlsx')},{'id':'avilist-v2026','title':'AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026 (extended version, 20 Oct 2026). Used for reviewed name corrections only.','url':'https://doi.org/10.2173/avilist.v2026','download':'https://www.avilist.org/checklist/v2026/','license':'CC BY 4.0','sha256':digest(src/'avilist-v2026-extended.xlsx')}]+[{'id':'ebird-taxonomy','title':f"eBird Taxonomy (Cornell Lab of Ornithology), retrieved {ebird.retained['source']['retrieved']}. English names for {sum(b['englishSource']=='ebird-taxonomy' for b in birds):,} cards.",'url':'https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy','license':'Factual common names; no open license asserted','sha256':ebird.retained['source']['snapshotSHA256']}]+([{'id':'manual-english','title':f'English names supplied for this project ({len(manual)} cards); see source-notices/english-names-manual.json.','url':'https://github.com/Songpon123/china-bird-flashcards/blob/main/source-notices/english-names-manual.json','license':'Project data'}] if manual else [])}
 (ROOT/'data/birds.json').write_text(json.dumps({'schemaVersion':1,'meta':meta,'birds':birds},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'data/coverage-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 with (ROOT/'source-notices/cas-aves-raw.tsv').open('w') as f:

@@ -61,3 +61,7 @@ Chinese names for checking come from the Simplified Chinese column of an avilist
 ## Thai bird names added in v0.6
 
 `data/thai-names.json` holds the Thai names of 813 species from the *Revised Checklist of Thai birds, February 2025* (sheet “Listing”; workbook author in its metadata: Wachara Sanguansombat), each with the checklist's scientific and English name used for matching. One name, นกเดินดงหลังเทา for Grey-backed Thrush, was supplied for this project because the checklist lists the species without a Thai name. The workbook states no licence, so only these names are used, with attribution, and the workbook itself is not redistributed. If you reuse the file, credit the checklist and check reuse terms with its compilers. The app code's MIT license does not apply to this file.
+
+## English names from eBird added in v0.7
+
+English names of 1,435 cards are the common names in the eBird Taxonomy (Cornell Lab of Ornithology), taken from the reference snapshot described above. They are used as factual names with attribution; the eBird taxonomy itself, observations, maps, media and text are not redistributed, and no open license is asserted for them.

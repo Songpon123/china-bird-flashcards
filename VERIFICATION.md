@@ -108,3 +108,11 @@ Checked on 19 November 2026.
 - 黑头䴓 *Sitta villosa*: English name set to Snowy-browed Nuthatch from the pinned eBird snapshot (snbnut1). The builder stops if the card or the snapshot no longer matches. The rebuilt `birds.json` differs from v0.6 only in this card, the name-match count and the added eBird source entry; `ebird-links.json` and `name-guide.json` changed only in that card's source name and the dataset hash.
 - 灰背鸫 Grey-backed Thrush: Thai name นกเดินดงหลังเทา supplied for this project; 813 Thai names (746 scientific, 64 English, 3 reviewed). 黄爪隼 Lesser Kestrel stays without a Thai name.
 - `npm test`: **29 passed, 0 failed**, including a test that 黑头䴓 keeps its scientific name and eBird link.
+
+## v0.7 English names from eBird
+
+- English names: 1,435 cards take the eBird common name of the species their eBird link opens; 241 changed, 10 have no eBird match. The 75 changes that are more than spelling were reviewed one by one (same eBird code and species). A test checks that every card with an eBird link shows that link's English name, that every other card is listed for a manual name, and the examples 黑头䴓 Snowy-browed Nuthatch, 戴胜 Common Hoopoe, 原鸽 Rock Pigeon and 大山雀 Asian Tit.
+- The eBird link builder and the dataset builder share one matcher; rebuilt links are unchanged (1,276 scientific, 37 alias, 122 common name, 10 manual lookups). Thai names are unchanged (813), and the Thai builder now also tries the replaced IOC/AviList name.
+- Search: a test checks that grey and gray find the same birds.
+- Browser check: library search for hoopoe finds 戴胜 Common Hoopoe; grey bunting finds 灰颈鹀 Gray-necked Bunting and 灰鹀 Gray Bunting; the details for 戴胜 show the eBird name, the Thai name and “IOC/AviList: Eurasian Hoopoe”; Data & sources lists “English names (eBird)”; 1,441 cards remain study-ready; no console errors.
+- `npm test`: **30 passed, 0 failed**.

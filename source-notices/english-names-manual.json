@@ -1,0 +1,4 @@
+{
+  "description": "English names supplied for cards that have no eBird match. Filled from the project owner's spreadsheet; applied by scripts/build_dataset.py.",
+  "names": []
+}

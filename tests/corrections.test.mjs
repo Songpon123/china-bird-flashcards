@@ -17,7 +17,10 @@ test('reviewed name corrections are applied to the same card IDs, keeping the pr
  for(const c of corrections){
   const b=byId.get(c.id);
   assert.ok(b,c.id);
-  assert.deepEqual({chinese:b.chinese,scientific:b.scientific,english:b.english},c.now,c.id);
+  assert.deepEqual({chinese:b.chinese,scientific:b.scientific},{chinese:c.now.chinese,scientific:c.now.scientific},c.id);
+  // English names follow eBird; the corrected AviList English name is kept in the card's name-matching note.
+  assert.equal(b.english,pack.byScientific[b.scientific].english,c.id);
+  if(b.english!==c.now.english)assert.ok(b.nameMatch.endsWith(`IOC/AviList: ${c.now.english}`),c.id);
   if(c.now.scientific!==c.was.scientific)assert.ok(b.aliases.includes(c.was.scientific),`${b.scientific} keeps ${c.was.scientific}`);
   if(c.kind==='concept')assert.equal(b.taxonomyReview,true,b.scientific);
   assert.match(b.pinyin.normalize('NFD'),/[̀́̄̌]/,b.chinese);
@@ -27,11 +30,11 @@ test('reviewed name corrections are applied to the same card IDs, keeping the pr
 test('corrected cards name the birds recorded in China',()=>{
  const card=sci=>{const b=bySci.get(sci);assert.ok(b,sci);return [b.chinese,b.english];};
  assert.deepEqual(card('Pica serica'),['喜鹊','Oriental Magpie']);
- assert.deepEqual(card('Ardea coromanda'),['牛背鹭','Eastern Cattle Egret']);
+ assert.deepEqual(card('Ardea coromanda'),['牛背鹭','Eastern Cattle-Egret']);
  assert.deepEqual(card('Tyto javanica'),['仓鸮','Eastern Barn Owl']);
  assert.deepEqual(card('Butorides atricapilla'),['绿鹭','Little Heron']);
- assert.deepEqual(card('Porphyrio porphyrio'),['紫水鸡','Purple Swamphen']);
- assert.deepEqual(card('Fulvetta cinereiceps'),['灰头雀鹛','Grey-hooded Fulvetta']);
+ assert.deepEqual(card('Porphyrio porphyrio'),['紫水鸡','Gray-headed Swamphen']);
+ assert.deepEqual(card('Fulvetta cinereiceps'),['灰头雀鹛','Gray-hooded Fulvetta']);
  // The pipit names were swapped; both cards keep their own scientific identity.
  assert.deepEqual(card('Anthus richardi'),['理氏鹨',"Richard's Pipit"]);
  assert.deepEqual(card('Anthus rufulus'),['田鹨','Paddyfield Pipit']);
@@ -62,11 +65,20 @@ test('eBird references follow the corrected names, including the China populatio
  }
 });
 
-test('黑头䴓 uses the eBird common name and keeps its scientific name and eBird link',async()=>{
- const raw=JSON.parse(await read('data/birds.json')),dataset=validateDataset(raw),links=validateEBirdLinks(JSON.parse(await read('data/ebird-links.json')));
- const b=dataset.birds.find(x=>x.chinese==='黑头䴓');
- assert.equal(b.english,'Snowy-browed Nuthatch');assert.equal(b.scientific,'Sitta villosa');assert.equal(b.englishSource,'ebird-taxonomy');
- assert.match(b.nameMatch,/eBird common name \(snbnut1\).*Chinese Nuthatch/);
+test('English names follow eBird for every card with an eBird species; the rest are listed for manual names',async()=>{
+ const changes=JSON.parse(await read('source-notices/english-names-ebird.json')),manual=JSON.parse(await read('source-notices/english-names-manual.json'));
+ assert.deepEqual(changes.counts,{ebird:1435,changed:241,manual:manual.names.length,noEBirdMatch:10-manual.names.length});
+ for(const b of dataset.birds){
+  const row=pack.byScientific[b.scientific];
+  if(row){assert.equal(b.english,row.english,b.chinese);assert.equal(b.englishSource,'ebird-taxonomy',b.chinese);}
+  else assert.ok(changes.noEBirdMatch.some(x=>x.id===b.id)||manual.names.some(x=>x.id===b.id),b.chinese);
+ }
+ const card=c=>dataset.birds.find(b=>b.chinese===c);
+ assert.equal(card('黑头䴓').english,'Snowy-browed Nuthatch');assert.equal(card('黑头䴓').scientific,'Sitta villosa');
+ assert.match(card('黑头䴓').nameMatch,/English from eBird \(snbnut1\); IOC\/AviList: Chinese Nuthatch$/);
+ assert.equal(card('戴胜').english,'Common Hoopoe');assert.equal(card('原鸽').english,'Rock Pigeon');assert.equal(card('大山雀').english,'Asian Tit');
+ assert.equal(ebirdReference(card('黑头䴓'),pack).href,'https://ebird.org/species/snbnut1');
  assert.ok(raw.meta.sources.some(s=>s.id==='ebird-taxonomy'));
- assert.equal(ebirdReference(b,links).href,'https://ebird.org/species/snbnut1');
+ // Cards eBird folds into a broader species keep their IOC name until a name is supplied.
+ for(const c of ['小白腰雨燕','斑腰燕','极北朱顶雀'])assert.equal(pack.byScientific[card(c).scientific],undefined,c);
 });

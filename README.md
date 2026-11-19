@@ -6,6 +6,12 @@ A runnable, local-first prototype for learning bird names in Simplified Chinese,
 
 **Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
 
+## What's new in v0.7 (19 November 2026)
+
+- **English names follow eBird.** Every card whose species is on eBird (1,435 of 1,445) now uses the eBird common name; 241 names changed. About 166 are spelling only (Grey → Gray, Sand Plover → Sand-Plover); the rest are different names for the same bird, for example 戴胜 Common Hoopoe (was Eurasian Hoopoe), 原鸽 Rock Pigeon (Rock Dove), 灰鸻 Black-bellied Plover (Grey Plover), 大山雀 Asian Tit (Cinereous Tit) and 紫水鸡 Gray-headed Swamphen (Purple Swamphen). Scientific names, eBird links, Thai names and saved progress are unchanged, and each card's details still show the IOC/AviList name it replaced.
+- **Grey and gray find the same birds** in every search box.
+- **Ten cards have no eBird match** and keep their IOC/AviList name for now: four without any English name (中亚夜鹰, 海南画眉, 华西柳莺, 四川林鸮) and six that eBird includes in a broader species (小白腰雨燕, 黑眉长尾山雀, 极北朱顶雀, 斑腰燕, 休氏白喉林莺, 漠白喉林莺). Names supplied for them go into `source-notices/english-names-manual.json`.
+
 ## What's new in v0.6.1 (19 November 2026)
 
 - **黑头䴓 is now Snowy-browed Nuthatch**, the eBird name, instead of Chinese Nuthatch (AviList, IOC and CBR). The scientific name *Sitta villosa* and the eBird link are unchanged, and the card's details note the other name.
@@ -167,6 +173,12 @@ The four unresolved source records are Caprimulgus centralasicus, Garrulax owsto
 
 Sources: AviList v2026 (scientific and English names, CC BY 4.0) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 for China occurrence, and IOC 15.2 Chinese names. The full list with evidence is `source-notices/name-corrections-2026-11.json`. Not changed: genus moves (for example *Accipiter* → *Tachyspiza*), spelling differences, alternative Chinese names that belong to no other species, and species that are new or split off in the newer lists. Browsers that restored a backup or imported a dataset keep their stored copy until they import the new one.
 
+## English names (eBird)
+
+Since v0.7 the English name on each card is the common name of its species in the eBird Taxonomy snapshot that also drives the eBird links (`source-notices/ebird-reference-identifiers.json`, retrieved 18 November 2026). `scripts/build_dataset.py` matches each card exactly as the links do (`scripts/ebird_reference.py`): by scientific name (1,276 cards), by the China population for the two broad species above or a current genus combination kept as an alias (37), or by an English name that is unique in the whole eBird taxonomy (122). No fuzzy names are used. 241 of the 1,435 matched names changed; every change, with the IOC/AviList name it replaced, is listed in `source-notices/english-names-ebird.json`, and the replaced name also appears in the card's details. Scientific names still follow CAS 2023 with the AviList v2026 corrections, so a card can show an eBird English name next to a different genus (for example 寒鸦 Eurasian Jackdaw, *Corvus monedula*; eBird uses *Coloeus*).
+
+Ten cards have no eBird match and keep their IOC/AviList English name, or none. Names for them can be added to `source-notices/english-names-manual.json` (`id`, `scientific`, `english`, `source`); the builder rejects an entry for a card that already matches eBird.
+
 ## Thai bird names
 
 `data/thai-names.json` gives the Thai name for 813 cards from the *Revised Checklist of Thai birds* (February 2025; 1,099 species, 1,096 with a Thai name). `scripts/build_thai_names.py` matches each card in three steps and records which one was used:
@@ -185,7 +197,7 @@ Run the dependency-free application tests:
 npm test
 ```
 
-Twenty-nine tests cover the complete source extraction count, name/search behavior, directional scheduling and the 1 / 2 / 4 / 7-day intervals, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, the reviewed name corrections, and the Thai-name matches, search and storage. `VERIFICATION.md` records browser checks and limits.
+Thirty tests cover the complete source extraction count, name/search behavior (including grey/gray), directional scheduling and the 1 / 2 / 4 / 7-day intervals, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, the reviewed name corrections, eBird English names for every matched card, and the Thai-name matches, search and storage. `VERIFICATION.md` records browser checks and limits.
 
 To reproduce the bundled dataset, create a Python environment and install the build-only dependencies:
 

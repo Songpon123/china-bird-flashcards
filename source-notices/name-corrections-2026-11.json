@@ -1572,17 +1572,5 @@
       "cornellCode": "gycwoo1",
       "reason": "AviList v2026 genus combination; names unchanged"
     }
-  ],
-  "englishFromEBird": [
-    {
-      "id": "colcn:c5b5022c-37f7-4fb4-aa12-c7cc8378a91a",
-      "chinese": "黑头䴓",
-      "scientific": "Sitta villosa",
-      "was": "Chinese Nuthatch",
-      "now": "Snowy-browed Nuthatch",
-      "ebirdCode": "snbnut1",
-      "requested": "2026-11-19",
-      "reason": "Project owner's choice: use the eBird common name. AviList v2026, IOC 15.2 and CBR v12.0 use Chinese Nuthatch; the scientific name is unchanged."
-    }
   ]
 }

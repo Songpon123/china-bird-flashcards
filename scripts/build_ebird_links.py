@@ -9,45 +9,24 @@ import json
 from pathlib import Path
 import re
 
+from ebird_reference import EBirdReference
+
 ROOT = Path(__file__).resolve().parent.parent
 normal = lambda value: re.sub(r'[^a-z0-9]', '', value.lower())
 
 
 def main():
-    source = ROOT / 'source-notices/ebird-reference-identifiers.json'
+    ref = EBirdReference(ROOT)
+    source, retained = ref.path, ref.retained
     birds_path = ROOT / 'data/birds.json'
-    retained = json.loads(source.read_text())
     birds = json.loads(birds_path.read_text())['birds']
-    by_scientific, by_common = {}, {}
-    for row in retained['identifiers']:
-        if row['category'] != 'species' or not re.fullmatch(r'[a-z0-9]{2,20}', row['speciesCode']):
-            raise ValueError('Invalid eBird reference identifier')
-        by_scientific.setdefault(row['sciName'], []).append(row)
-        by_common.setdefault(normal(row['comName']), []).append(row)
-    # Reviewed corrections where eBird splits a species that AviList keeps broad:
-    # the reference points to the population recorded in China (shown as an alias match).
-    corrections = json.loads((ROOT / 'source-notices/name-corrections-2026-11.json').read_text())['corrections']
-    china_population = {c['now']['scientific']: c['ebirdChinaPopulation'] for c in corrections if c.get('ebirdChinaPopulation')}
     links, unmatched = {}, []
     counts = {'scientific':0, 'alias':0, 'common-name':0}
     for bird in birds:
-        candidates = by_scientific.get(bird['scientific'], [])
-        method = 'scientific'
-        if bird['scientific'] in china_population:
-            candidates = by_scientific.get(china_population[bird['scientific']], [])
-            method = 'alias'
-            if len(candidates) != 1:
-                raise ValueError(f"Missing eBird identifier for {china_population[bird['scientific']]}")
-        if not candidates:
-            candidates = list({r['speciesCode']:r for a in bird['aliases'] for r in by_scientific.get(a, [])}.values())
-            method = 'alias'
-        if not candidates and bird['english'] and retained['commonNameCounts'].get(normal(bird['english'])) == 1:
-            candidates = by_common.get(normal(bird['english']), [])
-            method = 'common-name'
-        if len(candidates) != 1:
+        row, method = ref.match(bird)
+        if not row:
             unmatched.append(bird['scientific'])
             continue
-        row = candidates[0]
         links[bird['scientific']] = {
             'code':row['speciesCode'], 'scientific':row['sciName'],
             'english':row['comName'], 'sourceEnglish':bird['english'], 'method':method,

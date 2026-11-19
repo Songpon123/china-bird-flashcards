@@ -96,6 +96,10 @@ def main():
             by_english.setdefault(key, []).append(r)
 
     birds = json.loads((ROOT / 'data/birds.json').read_text())['birds']
+    # Cards use eBird English names; the IOC/AviList name they replaced is also tried, so a renamed
+    # card still finds the same checklist species.
+    previous_english = {c['id']: c['previous'] for c in json.loads(
+        (ROOT / 'source-notices/english-names-ebird.json').read_text())['changes'] if c.get('previous')}
     names, english_epithet_changes, reviewed_seen = {}, {}, set()
     for b in birds:
         found, method, note = None, None, None
@@ -105,8 +109,9 @@ def main():
             sci, note = REVIEWED_BY_CHINESE[b['chinese']]
             found, method = by_sci[sci], 'reviewed'
             reviewed_seen.add(b['chinese'])
-        elif b['english'] and len(by_english.get(english_key(b['english']), [])) == 1:
-            found, method = by_english[english_key(b['english'])][0], 'english'
+        elif len(english_candidates := {r['sci']: r for name in (b['english'], previous_english.get(b['id']))
+                                         if name for r in by_english.get(english_key(name), [])}) == 1:
+            found, method = next(iter(english_candidates.values())), 'english'
             if stem(found['sci'].split()[1]) != stem(b['scientific'].split()[1]):
                 english_epithet_changes[b['chinese']] = found['sci']
                 note = ENGLISH_REVIEWED.get(b['chinese'], (None, None))[1]

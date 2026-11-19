@@ -75,3 +75,8 @@ test('full backup validates archived schedules, zero new limit, and rejects corr
  const bad=structuredClone(state);bad.progress[keyFor('archived','en-zh')].due=-1;assert.throws(()=>validateBackup({format:'china-bird-backup-v1',dataset,state:bad}),/Invalid progress/);
  const badHistory={...state,history:[{at:now,id:'a',rating:'made-up',direction:'en-zh'}]};assert.throws(()=>validateBackup({format:'china-bird-backup-v1',dataset,state:badHistory}),/history/);
 });
+
+test('search treats grey and gray as the same spelling',()=>{
+ const bird={chinese:'灰鹀',pinyin:'huī wú',english:'Gray Bunting',scientific:'Emberiza variabilis',family:'Emberizidae',order:'Passeriformes',aliases:[]};
+ assert.ok(matches(bird,'grey bunting'));assert.ok(matches(bird,'Gray'));assert.ok(!matches(bird,'green'));
+});

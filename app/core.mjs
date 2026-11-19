@@ -6,8 +6,10 @@ export function fold(text='') {
  return String(text).toLowerCase().replaceAll('u:','ü').replaceAll('v','ü').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
 }
 export function matches(bird,query) {
- const hay=fold([bird.chinese,bird.pinyin,bird.english,bird.scientific,bird.family,bird.order,bird.thai||'',...bird.aliases].join(' '));
- return fold(query).split(' ').every(term=>hay.includes(term)||hay.replaceAll(' ','').includes(term));
+ // English names follow eBird (American spelling), so grey and gray find the same birds.
+ const spell=s=>s.replaceAll('grey','gray');
+ const hay=spell(fold([bird.chinese,bird.pinyin,bird.english,bird.scientific,bird.family,bird.order,bird.thai||'',...bird.aliases].join(' ')));
+ return spell(fold(query)).split(' ').every(term=>hay.includes(term)||hay.replaceAll(' ','').includes(term));
 }
 export function initialProgress(){return {reviews:0,lapses:0,streak:0,interval:0,ease:2.5,due:0,lastReview:0};}
 export function schedule(previous,rating,now=Date.now()) {

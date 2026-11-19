@@ -4,6 +4,12 @@
 
 **[เปิดแอปบนมือถือ / iPad / คอมพิวเตอร์](https://songpon123.github.io/china-bird-flashcards/)** · [โค้ดบน GitHub](https://github.com/Songpon123/china-bird-flashcards) · [คู่มือและรายละเอียดทางเทคนิค](README.md)
 
+## มีอะไรใหม่ในรุ่น 0.7 (19 พฤศจิกายน 2026)
+
+- **ชื่ออังกฤษใช้ตาม eBird ทั้งหมด** การ์ดที่มีชนิดตรงกับ eBird (1,435 จาก 1,445 ใบ) ใช้ชื่อสามัญตาม eBird แล้ว เปลี่ยนไป 241 ชื่อ ราว 166 ชื่อต่างกันแค่การสะกด เช่น Grey เป็น Gray หรือ Sand Plover เป็น Sand-Plover ที่เหลือเป็นชื่อเรียกต่างกันของนกชนิดเดียวกัน เช่น 戴胜 Common Hoopoe (เดิม Eurasian Hoopoe), 原鸽 Rock Pigeon (เดิม Rock Dove), 灰鸻 Black-bellied Plover (เดิม Grey Plover), 大山雀 Asian Tit (เดิม Cinereous Tit) และ 紫水鸡 Gray-headed Swamphen (เดิม Purple Swamphen) ชื่อวิทยาศาสตร์ ลิงก์ eBird ชื่อไทย และความคืบหน้าที่บันทึกไว้ไม่เปลี่ยน หน้ารายละเอียดของนกยังบอกชื่อเดิมตาม IOC/AviList ไว้
+- **ค้นหาด้วย grey หรือ gray ก็เจอนกตัวเดียวกัน**
+- **มี 10 การ์ดที่ eBird ไม่มีชนิดตรงกัน** จึงยังใช้ชื่อเดิมไปก่อน คือ 4 ชนิดที่ยังไม่มีชื่ออังกฤษ (中亚夜鹰, 海南画眉, 华西柳莺, 四川林鸮) และ 6 ชนิดที่ eBird รวมไว้ในชนิดที่กว้างกว่า (小白腰雨燕, 黑眉长尾山雀, 极北朱顶雀, 斑腰燕, 休氏白喉林莺, 漠白喉林莺) ชื่อที่จะเติมให้ใส่ใน `source-notices/english-names-manual.json`
+
 ## มีอะไรใหม่ในรุ่น 0.6.1 (19 พฤศจิกายน 2026)
 
 - **黑头䴓 ใช้ชื่ออังกฤษตาม eBird ว่า Snowy-browed Nuthatch** แทน Chinese Nuthatch ที่ AviList, IOC และ CBR ใช้ ชื่อวิทยาศาสตร์ *Sitta villosa* และลิงก์ eBird เหมือนเดิม หน้ารายละเอียดของนกยังบอกชื่อเดิมไว้
@@ -100,6 +106,8 @@ npm test
 | `data/groups.json` | ชื่อวงศ์และกลุ่มพร้อมขอบเขตสมาชิก |
 | `data/name-guide.json` | ความหมายอักษร พินอิน และคำอธิบายชื่อ |
 | `data/ebird-links.json` | ลิงก์อ้างอิงชนิดนกบน eBird |
+| `source-notices/english-names-ebird.json` | รายการชื่ออังกฤษที่เปลี่ยนตาม eBird พร้อมชื่อเดิม |
+| `source-notices/english-names-manual.json` | ชื่ออังกฤษที่เติมเองสำหรับการ์ดที่ eBird ไม่มีชนิดตรงกัน |
 | `data/thai-names.json` | ชื่อไทยของนก 813 ชนิดจาก Revised Checklist of Thai birds และวิธีจับคู่ |
 | `scripts/` | โปรแกรมเปิดเว็บและสร้างข้อมูลซ้ำ |
 | `source-notices/` | ข้อมูลอ้างอิง เครดิต และเงื่อนไขแหล่งข้อมูล |
