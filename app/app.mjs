@@ -131,7 +131,7 @@ function showDetails(b){
  if(!b)return;document.querySelector('#details-dialog h2').textContent='Bird name & record';if(b.kind){showTermDetails(b);return;}const source=dataset.meta.sources?.find(s=>s.id===b.englishSource);
  const pairs=[['Chinese',b.chinese],['Pinyin',b.pinyin],['English',b.english||'Unresolved · excluded from study'],['Scientific',b.scientific],['Family / order',familyLabel(b.family,groupDataset.cards)+' / '+b.order],['Stable ID',b.id],['Aliases',b.aliases.join('; ')||'No safe aliases in this snapshot'],['English source',source?.title||b.englishSource||'Unresolved'],['Matched name',b.matchedScientific||'—'],['Name matching',b.nameMatch],['Pinyin status',b.pinyinStatus]];
  const sourceUrl=b.id.startsWith('colcn:')?`https://www.gbif.org/dataset/7e276a96-73ea-4efc-8ffb-e74ef573ef6c/taxon/${encodeURIComponent(b.sourceId)}`:dataset.meta.sourceUrl;
- $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">Scientific-name equality is a name match, not a guarantee that taxon concepts agree after splits or lumps.</p><p><a href="${safeUrl(sourceUrl)}" target="_blank" rel="noreferrer">Source record / checklist ↗</a></p>`;
+ $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">Scientific-name equality is a name match, not a guarantee that taxon concepts agree after splits or lumps.</p><p><a href="${safeUrl(sourceUrl)}" target="_blank" rel="noreferrer">Source record / checklist ↗</a></p>${renderEBirdReference(b,ebirdLinks,{revealed:true})}`;
  $('details-content').insertAdjacentHTML('beforeend','<h3 class="details-meaning-title">Name meanings & story</h3>'+renderNameAnalysis(b,nameGuide));
  $('details-dialog').showModal();
 }
@@ -169,7 +169,7 @@ function renderGuide(){
  else if(!b)b=found[0];
  if(!b){$('guide-record-heading').innerHTML='<h2>Choose a name or character</h2>';$('guide-content').innerHTML='<p class="muted">Search above to explore its meaning.</p>';return;}
  $('guide-results').querySelectorAll('[data-guide-record]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.guideRecord===b.id)));
- $('guide-record-heading').innerHTML=`<h2 lang="zh-Hans">${esc(b.chinese)}</h2><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</p><p>${esc(b.english||'English name unresolved')}${b.scientific?` · <em>${esc(b.scientific)}</em>`:''}</p>`;
+ $('guide-record-heading').innerHTML=`<h2 lang="zh-Hans">${esc(b.chinese)}</h2><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</p><p>${esc(b.english||'English name unresolved')}${b.scientific?` · <em>${esc(b.scientific)}</em>`:''}</p>${b.scientific&&!b.kind?renderEBirdReference(b,ebirdLinks,{revealed:true}):''}`;
  $('guide-content').innerHTML=renderNameAnalysis(b,nameGuide);
 }
 function membershipCompatible(){return dataset.meta.taxonomy===groupDataset.meta.membershipTaxonomy;}

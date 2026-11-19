@@ -19,3 +19,4 @@
 .character-tile.in-name-unit{background:var(--pale);border-color:var(--green)}.name-analysis .unit-note{margin-top:4px;font-size:11px}
 .queue-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.shuffle-button{padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--green);font-size:12px;font-weight:600;cursor:pointer}.shuffle-button:hover{border-color:var(--green)}
 .char-structure-block{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}.name-analysis .structure-kind{font-size:11px;color:var(--green);font-weight:650;margin:0 0 4px}.name-analysis .char-structure{margin:0 0 3px}.name-analysis .structure-en,.name-analysis .structure-meta{font-size:11px;margin:2px 0}
+#guide-record-heading .ebird-reference,#details-content .ebird-reference{margin:10px 0 16px}
