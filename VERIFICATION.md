@@ -88,3 +88,10 @@ Checked on 19 November 2026.
 - Reading fix: 发冠卷尾 fā guān → fà guān.
 - Browser check: the Name guide tiles show the structure line (鹭 = 鸟 + 路 lù, radical and strokes), place-name characters keep their structure in the collapsed details, and no console errors were logged.
 - `npm test`: **25 passed, 0 failed**.
+
+### v0.5.1 pinyin and English structure text
+
+- Character structure is shown in English with pinyin after every Chinese character, including radicals and components; bird words carry the Thai name (bird → นก, crow → อีกา, swallow → นกนางแอ่น). The build stops if any Chinese character in the structure text lacks a reading.
+- 72 authored Thai and English glosses that mention Chinese words now give their pinyin, taken from the card reading for bird names and from pypinyin with the app's reading overrides otherwise; all were checked by hand.
+- Corrected Make Me a Hanzi's hint for 鸟 (simplified from 鳥, not 烏) and removed stray whitespace in the sound part of 瓣.
+- `npm test`: **25 passed, 0 failed**; a test checks that every Chinese character in structure text and authored glosses is followed by a reading.

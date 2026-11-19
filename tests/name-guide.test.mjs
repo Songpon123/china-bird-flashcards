@@ -54,7 +54,7 @@ test('place names and other opaque words are read as one word, not character by 
  assert.equal(nameAnalysis({chinese:'红嘴蓝鹊',pinyin:'hóng zuǐ lán què'},guide).characters[0].unit,null);
  for(const [name,word] of [['喜山点翅朱雀','喜山'],['四川柳莺','四川'],['海南孔雀雉','海南'],['里海银鸥','里海'],['红背伯劳','伯劳']])
   assert.equal(nameAnalysis({chinese:name},guide).characters[0+(name==='红背伯劳'?2:0)].unit?.word,word,name);
- assert.equal(nameAnalysis({chinese:'藏雪鸡',pinyin:'zàng xuě jī'},guide).characters[0].learningEnglish,'Tibet (short for 西藏)');
+ assert.equal(nameAnalysis({chinese:'藏雪鸡',pinyin:'zàng xuě jī'},guide).characters[0].learningEnglish,'Tibet (short for 西藏 (xī zàng))');
  // Every name unit has an English and Thai meaning, and only matches names where it is that word.
  for(const w of guide.unitWords)if(guide.compounds[w].kind==='name'){assert.ok(guide.compounds[w].english,w);assert.ok(guide.compounds[w].thai,w);}
 });
@@ -64,18 +64,28 @@ test('every name character has a Thai meaning and a sourced structure (meaning p
  for(const c of chars){
   assert.ok(guide.characters[c].thai,`Thai gloss for ${c}`);
   const s=structure.characters[c];assert.ok(s&&s.strokes>0,`structure for ${c}`);
-  if(s.type==='pictophonetic')assert.ok(s.semantic&&s.semanticThai,`meaning part for ${c}`);
+  if(s.type==='pictophonetic')assert.ok(s.semantic&&s.semanticPinyin&&s.semanticMeaning,`meaning part for ${c}`);
+  assert.ok(s.radicalPinyin,`radical reading for ${c}`);
  }
  assert.equal(structure.meta.authored.length,11);
  for(const [path,hash] of Object.entries(structure.meta.inputHashes))assert.match(hash,/^[0-9a-f]{64}$/,path);
  const withStructure={...guide,structure:structure.characters};
  const egret=renderNameAnalysis({chinese:'白鹭',pinyin:'bái lù'},withStructure);
- assert.match(egret,/<strong lang="zh-Hans">路<\/strong> <span lang="zh-Latn-pinyin">lù<\/span> <span class="muted">\(เสียง\)<\/span>/);
+ assert.match(egret,/Meaning: <strong lang="zh-Hans">鸟<\/strong> <span lang="zh-Latn-pinyin">\(niǎo\)<\/span> bird \(นก\) · Sound: <strong lang="zh-Hans">路<\/strong> <span lang="zh-Latn-pinyin">\(lù\)<\/span>/);
+ assert.match(egret,/Radical <strong lang="zh-Hans">白<\/strong> <span lang="zh-Latn-pinyin">\(bái\)<\/span> · 5 strokes/);
+ // Every Chinese character in the structure text carries its pinyin.
+ for(const [c,s] of Object.entries(structure.characters))for(const f of ['hint','semanticMeaning'])
+  for(const m of (s[f]||'').matchAll(/[\u2e80-\u2fdf\u3400-\u9fff]/gu))assert.ok(s[f].includes(`${m[0]} (`),`${c} ${f}: ${m[0]}`);
+ assert.equal(structure.characters['尾'].hint,'A furry 毛 (máo) tail behind a body 尸 (shī)');
+ assert.equal(structure.characters['鸟'].hint,'Simplified form of 鳥 (niǎo), a bird (นก)');
  assert.match(egret,/Make Me a Hanzi \(LGPL-3.0\)/);
- assert.match(renderNameAnalysis({chinese:'鹟',pinyin:'wēng'},withStructure),/sound from 翁 \(wēng\)/);
+ assert.match(renderNameAnalysis({chinese:'鹟',pinyin:'wēng'},withStructure),/Sound: <strong lang="zh-Hans">翁<\/strong> <span lang="zh-Latn-pinyin">\(wēng\)<\/span>/);
  // Inside a place name the character's own structure sits in the collapsed details.
  const japan=renderNameAnalysis({chinese:'日本松雀鹰',pinyin:'rì běn sōng què yīng'},withStructure);
  assert.ok(japan.indexOf('The sun')>japan.indexOf('This character on its own'));
+ // Authored glosses give pinyin for every Chinese word they mention.
+ for(const c of Object.values(guide.characters))for(const text of [c.thai,c.learningEnglish])
+  for(const m of (text||'').matchAll(/[\u3400-\u9fff]+/gu))assert.match(text.slice(m.index+m[0].length),/^\s?\(/,text);
  assert.equal(nameAnalysis({chinese:'凤头鹰',pinyin:'fèng tóu yīng'},guide).characters[0].learningEnglish,'phoenix');
  assert.ok(!renderNameAnalysis({chinese:'白鹭'},guide).includes('Make Me a Hanzi'),'no structure credit without structure data');
 });

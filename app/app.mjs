@@ -2,7 +2,7 @@ import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,s
 import {familyKey,inGroup,familyLabel,validateGroups} from './taxonomy.mjs';
 import {validateEBirdLinks,renderEBirdReference} from './ebird.mjs?v=0.5.0';
 import {validateNameGuide,characterEntries} from './name-guide.mjs?v=0.5.0';
-import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.5.0';
+import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.5.1';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='yu-birds-state-v1',DATA='yu-birds-dataset-v1',GROUP_DATA='yu-birds-groups-v1';
@@ -292,7 +292,7 @@ function bind(){
 }
 try{
  const responses=await Promise.all([fetch('./data/birds.json?v=2026-11-18-avilist'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
- const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-19-v7',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-19-v3',{cache:'no-cache'}),fetch('./data/character-structure.json?v=2026-11-19-v1',{cache:'no-cache'})]);
+ const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-19-v8',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-19-v3',{cache:'no-cache'}),fetch('./data/character-structure.json?v=2026-11-19-v2',{cache:'no-cache'})]);
  try{const response=optional[0].status==='fulfilled'?optional[0].value:null;if(!response?.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
  try{const response=optional[2].status==='fulfilled'?optional[2].value:null;const data=response?.ok?await response.json():null;if(nameGuide&&data?.schemaVersion===1&&data.characters&&typeof data.characters==='object')nameGuide.structure=data.characters;}catch{/* Character structure is optional. */}
  try{const response=optional[1].status==='fulfilled'?optional[1].value:null;if(!response?.ok)throw new Error('Download failed');ebirdLinks=validateEBirdLinks(await response.json());}catch{/* Species cards still link to eBird Explore for a manual lookup. */}

@@ -14,6 +14,7 @@ source-notices/character-structure/README.md into that folder):
 """
 import hashlib
 import json
+import re
 import zipfile
 from pathlib import Path
 
@@ -38,6 +39,15 @@ COMPONENT_THAI = {
     '门': 'ประตู', '阝': 'สถานที่', '革': 'หนังฟอก', '自': 'ตนเอง',
 }
 COMPONENT_ENGLISH = {'辶': 'movement'}
+# Shown in English with pinyin after every Chinese character; bird words also get the Thai name.
+BIRD_PARTS = {'鸟', '鳥', '隹', '又'}
+BIRD_WORDS_THAI = {'bird': 'นก', 'birds': 'นก', "bird's": 'นก', 'crow': 'อีกา', 'swallow': 'นกนางแอ่น'}
+# Corrections to Make Me a Hanzi hints (鸟 is the simplified form of 鳥, not 烏).
+HINT_FIXES = {'鸟': 'Simplified form of 鳥, a bird'}
+# Readings for radical variants that Make Me a Hanzi lists without pinyin (the full forms 肉 and 小).
+VARIANT_READINGS = {'⺼': 'ròu', '⺌': 'xiǎo', '⺈': 'dāo', '辡': 'biàn'}
+CJK = re.compile(r'[\u2e80-\u2fdf\u31c0-\u31ef\u3400-\u9fff\U00020000-\U0002ffff]')
+BIRD_WORD = re.compile(r"\b(bird's|birds|bird|crow|swallow)\b", re.I)
 # Bird-name characters missing from Make Me a Hanzi: meaning part + sound part, checked by reading.
 AUTHORED = {
     '䳭': ('鸟', '即', 'jí'), '䴓': ('鸟', '师', 'shī'), '䴕': ('鸟', '列', 'liè'), '䴘': ('鸟', '虒', 'sī'),
@@ -52,6 +62,12 @@ def digest(data):
 
 def clean(text):
     return ' '.join(str(text or '').replace('\xa0', ' ').split())
+
+
+def annotate(text, reading):
+    """Add pinyin after each Chinese character and the Thai name after bird words."""
+    text = CJK.sub(lambda m: f'{m.group()} ({reading(m.group())})' if reading(m.group()) else m.group(), text)
+    return BIRD_WORD.sub(lambda m: f'{m.group()} ({BIRD_WORDS_THAI[m.group().lower()]})', text)
 
 
 def main():
@@ -71,6 +87,9 @@ def main():
             if line.startswith('U+') and '\tkTotalStrokes\t' in line:
                 cp, _, value = line.split('\t', 2)
                 unihan[chr(int(cp[2:], 16))] = int(value.split()[0])
+    def reading(ch):
+        return ((mmh.get(ch) or {}).get('pinyin') or [VARIANT_READINGS.get(ch, '')])[0] or VARIANT_READINGS.get(ch, '')
+
     out = {}
     for c in chars:
         record = {'strokes': unihan[c]}
@@ -81,29 +100,32 @@ def main():
             record['source'] = 'makemeahanzi'
             kind = etymology.get('type')
             if kind == 'pictophonetic' and etymology.get('semantic'):
-                semantic, phonetic = etymology['semantic'], etymology.get('phonetic')
-                record.update(type=kind, semantic=semantic,
-                              semanticMeaning=clean(etymology.get('hint')) or COMPONENT_ENGLISH.get(semantic, ''),
-                              semanticThai=COMPONENT_THAI.get(semantic, ''))
+                semantic, phonetic = etymology['semantic'], clean(etymology.get('phonetic')) or None
+                record.update(type=kind, semantic=semantic, semanticPinyin=reading(semantic),
+                              semanticMeaning=annotate(clean(etymology.get('hint')) or COMPONENT_ENGLISH.get(semantic, ''), reading))
+                if semantic in BIRD_PARTS:
+                    record['semanticThai'] = COMPONENT_THAI[semantic]
                 if phonetic:
-                    record.update(phonetic=phonetic, phoneticPinyin=(mmh.get(phonetic, {}).get('pinyin') or [''])[0])
+                    record.update(phonetic=phonetic, phoneticPinyin=reading(phonetic))
             elif kind in ('ideographic', 'pictographic') and etymology.get('hint'):
-                record.update(type=kind, hint=clean(etymology['hint']))
+                record.update(type=kind, hint=annotate(HINT_FIXES.get(c) or clean(etymology['hint']), reading))
         elif c in AUTHORED:
-            semantic, phonetic, reading = AUTHORED[c]
+            semantic, phonetic, sound = AUTHORED[c]
             record.update(radical=semantic, source='authored', type='pictophonetic', semantic=semantic,
-                          semanticMeaning='bird', semanticThai=COMPONENT_THAI[semantic],
-                          phonetic=phonetic, phoneticPinyin=reading)
+                          semanticPinyin='niǎo', semanticMeaning='bird (นก)', semanticThai=COMPONENT_THAI[semantic],
+                          phonetic=phonetic, phoneticPinyin=sound)
         else:
             raise ValueError(f'No structure source for {c}')
+        record['radicalPinyin'] = reading(record['radical']) or ('niǎo' if record['radical'] in ('鸟', '鳥') else '')
         out[c] = record
-    missing_thai = sorted({r['semantic'] for r in out.values() if r.get('semantic') and not r.get('semanticThai')})
-    if missing_thai:
-        raise ValueError(f'Meaning parts without a Thai gloss: {missing_thai}')
+    bare = sorted({ch for r in out.values() for f in ('hint', 'semanticMeaning') for ch in CJK.findall(r.get(f, ''))
+                   if f'{ch} (' not in r.get(f, '')})
+    if bare:
+        raise ValueError(f'Chinese without pinyin in hints: {bare}')
     doc = {
         'schemaVersion': 1,
         'meta': {
-            'version': 'character-structure-2026-11-19-v1',
+            'version': 'character-structure-2026-11-19-v2',
             'characterCount': len(out),
             'counts': {k: sum(1 for r in out.values() if r.get('type') == k) for k in ('pictophonetic', 'ideographic', 'pictographic')},
             'authored': sorted(c for c, r in out.items() if r['source'] == 'authored'),

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "version": "name-guide-2026-11-19-v7",
+    "version": "name-guide-2026-11-19-v8",
     "characterCount": 475,
     "dictionaryCharacters": 474,
     "thaiCharacterCount": 475,
@@ -67,7 +67,7 @@
     },
     "inputHashes": {
       "source-notices/name-guide/cc-cedict-subset.txt": "c502fa92147e254ef2e9eaf005d0458eeae3ce59f48e11a1f722087542c1e1c3",
-      "source-notices/name-guide/editorial.json": "6df6bd40b04d0019cc23c8472ed18a02744e671504871b8935d11c45e48772b2",
+      "source-notices/name-guide/editorial.json": "9eed2c891eddf1018aaf717a4f49db42790e1b823f68c86c0cd8f217a1457118",
       "data/birds.json": "8988cbebcc4a33d39c3cb03f1b95e1b6aaad3de626802b6a6c96a37189d32eac",
       "data/groups.json": "b4ef1132c53f0938ca4e1e8741de3b3d746df17383c3c5f54884632d651e57f8"
     }
@@ -720,8 +720,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "สูงตระหง่าน / โล้น; 兀鹫 คือแร้ง",
-      "learningEnglish": "towering; bald (兀鹫 vulture)"
+      "thai": "สูงตระหง่าน / โล้น; 兀鹫 (wù jiù) คือแร้ง",
+      "learningEnglish": "towering; bald (兀鹫 (wù jiù) vulture)"
     },
     "光": {
       "entries": [
@@ -955,7 +955,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "คม / ประโยชน์; ใช้ถอดเสียงใน 西伯利亚",
+      "thai": "คม / ประโยชน์; ใช้ถอดเสียงใน 西伯利亚 (xī bó lì yà)",
       "learningEnglish": ""
     },
     "剑": {
@@ -1030,8 +1030,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "เพิ่ม; ใน 加拿大 คือแคนาดา",
-      "learningEnglish": "to add; Canada (in 加拿大)"
+      "thai": "เพิ่ม; ใน 加拿大 (jiā ná dà) คือแคนาดา",
+      "learningEnglish": "to add; Canada (in 加拿大 (jiā ná dà))"
     },
     "劳": {
       "entries": [
@@ -1252,7 +1252,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ม้วน / งอ; 卷尾 คือนกแซงแซว",
+      "thai": "ม้วน / งอ; 卷尾 (juǎn wěi) คือนกแซงแซว",
       "learningEnglish": ""
     },
     "历": {
@@ -1297,7 +1297,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ผ่านมา; ใช้ถอดเสียงใน 亚历山大",
+      "thai": "ผ่านมา; ใช้ถอดเสียงใน 亚历山大 (yà lì shān dà)",
       "learningEnglish": ""
     },
     "厚": {
@@ -1410,7 +1410,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ถึง; ใน 埃及 คืออียิปต์",
+      "thai": "ถึง; ใน 埃及 (āi jí) คืออียิปต์",
       "learningEnglish": ""
     },
     "双": {
@@ -1761,7 +1761,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "กัด; 咬鹃 คือนกขุนแผน",
+      "thai": "กัด; 咬鹃 (yǎo juān) คือนกขุนแผน",
       "learningEnglish": ""
     },
     "哇": {
@@ -2074,8 +2074,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "ฝุ่น; ใน 埃及 คืออียิปต์",
-      "learningEnglish": "dust; Egypt (in 埃及)"
+      "thai": "ฝุ่น; ใน 埃及 (āi jí) คืออียิปต์",
+      "learningEnglish": "dust; Egypt (in 埃及 (āi jí))"
     },
     "塍": {
       "entries": [
@@ -2096,7 +2096,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "คันนา; 塍鹬 คือนกปากแอ่น",
+      "thai": "คันนา; 塍鹬 (chéng yù) คือนกปากแอ่น",
       "learningEnglish": ""
     },
     "塔": {
@@ -2348,8 +2348,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "รู; 孔雀 คือนกยูง",
-      "learningEnglish": "hole; (孔雀) peafowl"
+      "thai": "รู; 孔雀 (kǒng què) คือนกยูง",
+      "learningEnglish": "hole; peafowl in 孔雀 (kǒng què)"
     },
     "孤": {
       "entries": [
@@ -2458,7 +2458,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "แขก; ใช้ถอดเสียงใน 菲律宾",
+      "thai": "แขก; ใช้ถอดเสียงใน 菲律宾 (fēi lǜ bīn)",
       "learningEnglish": ""
     },
     "寒": {
@@ -2544,7 +2544,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 เนปาล",
+      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 (ní bó ěr) เนปาล",
       "learningEnglish": ""
     },
     "尖": {
@@ -2578,7 +2578,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 เนปาล",
+      "thai": "ใช้ถอดเสียง เช่น 尼泊尔 (ní bó ěr) เนปาล",
       "learningEnglish": ""
     },
     "尾": {
@@ -2761,7 +2761,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "สูงตระหง่าน (ใน 峨眉)",
+      "thai": "สูงตระหง่าน (ใน 峨眉 (é méi))",
       "learningEnglish": ""
     },
     "崖": {
@@ -3030,7 +3030,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ระดับ / ข้าม (ใน 印度 อินเดีย)",
+      "thai": "ระดับ / ข้าม (ใน 印度 (yìn dù) อินเดีย)",
       "learningEnglish": ""
     },
     "异": {
@@ -3098,7 +3098,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ตรอก; ใช้ในชื่อสถานที่ 弄岗",
+      "thai": "ตรอก; ใช้ในชื่อสถานที่ 弄岗 (nòng gǎng)",
       "learningEnglish": ""
     },
     "弗": {
@@ -3242,7 +3242,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "กฎ; ใช้ถอดเสียงใน 菲律宾",
+      "thai": "กฎ; ใช้ถอดเสียงใน 菲律宾 (fēi lǜ bīn)",
       "learningEnglish": "law; rule"
     },
     "思": {
@@ -3296,7 +3296,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ร้าย; ใน 苦恶 เป็นคำเลียนเสียงร้อง",
+      "thai": "ร้าย; ใน 苦恶 (kǔ è) เป็นคำเลียนเสียงร้อง",
       "learningEnglish": ""
     },
     "戴": {
@@ -3480,7 +3480,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "หยิบ; ใช้ถอดเสียงใน 加拿大",
+      "thai": "หยิบ; ใช้ถอดเสียงใน 加拿大 (jiā ná dà)",
       "learningEnglish": ""
     },
     "捕": {
@@ -3922,7 +3922,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ด้ามทัพพี; 杓鹬 คือนกอีก๋อย",
+      "thai": "ด้ามทัพพี; 杓鹬 (biāo yù) คือนกอีก๋อย",
       "learningEnglish": ""
     },
     "杜": {
@@ -4269,7 +4269,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกเอี้ยงและนกกิ้งโครง (ใน 椋鸟)",
+      "thai": "นกเอี้ยงและนกกิ้งโครง (ใน 椋鸟 (liáng niǎo))",
       "learningEnglish": ""
     },
     "椒": {
@@ -4283,7 +4283,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "พริกไทย; 山椒鸟 คือนกพญาไฟ",
+      "thai": "พริกไทย; 山椒鸟 (shān jiāo niǎo) คือนกพญาไฟ",
       "learningEnglish": ""
     },
     "楔": {
@@ -4666,7 +4666,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "จอดเรือ; ใช้ถอดเสียงใน 尼泊尔",
+      "thai": "จอดเรือ; ใช้ถอดเสียงใน 尼泊尔 (ní bó ěr)",
       "learningEnglish": ""
     },
     "法": {
@@ -4766,7 +4766,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "สงบ; ใช้ถอดเสียงใน 阿尔泰",
+      "thai": "สงบ; ใช้ถอดเสียงใน 阿尔泰 (ā ěr tài)",
       "learningEnglish": "peaceful"
     },
     "泽": {
@@ -5562,7 +5562,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ลูกกลม (ใน 琉球 ริวกิว)",
+      "thai": "ลูกกลม (ใน 琉球 (liú qiú) ริวกิว)",
       "learningEnglish": ""
     },
     "理": {
@@ -6619,7 +6619,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "งานปัก; 绣眼鸟 คือนกแว่นตาขาว",
+      "thai": "งานปัก; 绣眼鸟 (xiù yǎn niǎo) คือนกแว่นตาขาว",
       "learningEnglish": ""
     },
     "绯": {
@@ -6837,7 +6837,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "สีเขียวมรกต; 翠鸟 คือนกกระเต็น",
+      "thai": "สีเขียวมรกต; 翠鸟 (cuì niǎo) คือนกกระเต็น",
       "learningEnglish": ""
     },
     "翡": {
@@ -6922,7 +6922,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "เคร่งขรึม (ใน 甘肃)",
+      "thai": "เคร่งขรึม (ใน 甘肃 (gān sù))",
       "learningEnglish": ""
     },
     "肉": {
@@ -7091,8 +7091,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "เครา (ในชื่อนี้ 胡 ใช้แทน 鬍)",
-      "learningEnglish": "beard (in 胡兀鹫, 胡 stands for 鬍)"
+      "thai": "เครา (ในชื่อนี้ 胡 (hú) ใช้แทน 鬍 (hú))",
+      "learningEnglish": "beard (in 胡兀鹫 (hú wù jiù), 胡 (hú) stands for 鬍 (hú))"
     },
     "胸": {
       "entries": [
@@ -7479,8 +7479,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "พู่ (ใน 流苏)",
-      "learningEnglish": "tassel (in 流苏)"
+      "thai": "พู่ (ใน 流苏 (liú sū))",
+      "learningEnglish": "tassel (in 流苏 (liú sū))"
     },
     "苦": {
       "entries": [
@@ -7648,7 +7648,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ถอดเสียง (萨岛 = เกาะซาคาลิน)",
+      "thai": "ใช้ถอดเสียง (萨岛 (sà dǎo) = เกาะซาคาลิน)",
       "learningEnglish": "used to write foreign names"
     },
     "董": {
@@ -7672,7 +7672,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ในชื่อ 董鸡 นกอีลุ้ม",
+      "thai": "ใช้ในชื่อ 董鸡 (dǒng jī) นกอีลุ้ม",
       "learningEnglish": "used in 董鸡 (watercock)"
     },
     "蒂": {
@@ -7900,7 +7900,7 @@
         }
       ],
       "thai": "ทิเบต (ชื่อย่อ)",
-      "learningEnglish": "Tibet (short for 西藏)"
+      "learningEnglish": "Tibet (short for 西藏 (xī zàng))"
     },
     "虎": {
       "entries": [
@@ -8257,7 +8257,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "โจร; 贼鸥 คือนกสกัว",
+      "thai": "โจร; 贼鸥 (zéi ōu) คือนกสกัว",
       "learningEnglish": ""
     },
     "赛": {
@@ -8483,7 +8483,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ถึง; ใช้ถอดเสียงใน 达乌里",
+      "thai": "ถึง; ใช้ถอดเสียงใน 达乌里 (dá wū lǐ)",
       "learningEnglish": "to reach"
     },
     "远": {
@@ -8538,7 +8538,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ผ่าน / ทั่ว (普通 = ทั่วไป)",
+      "thai": "ผ่าน / ทั่ว (普通 (pǔ tōng) = ทั่วไป)",
       "learningEnglish": ""
     },
     "道": {
@@ -8559,8 +8559,8 @@
           "source": "cedict"
         }
       ],
-      "thai": "ทาง; ใช้นับแถบ เช่น 三道眉 คิ้วสามแถบ",
-      "learningEnglish": "path; counter for stripes (三道眉 three brow stripes)"
+      "thai": "ทาง; ใช้นับแถบ เช่น 三道眉 (sān dào méi) คิ้วสามแถบ",
+      "learningEnglish": "path; counter for stripes (三道眉 (sān dào méi) three brow stripes)"
     },
     "遗": {
       "entries": [
@@ -8636,7 +8636,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ข้างใน; ใช้ถอดเสียงใน 达乌里 และ 里海",
+      "thai": "ข้างใน; ใช้ถอดเสียงใน 达乌里 (dá wū lǐ) และ 里海 (lǐ hǎi)",
       "learningEnglish": ""
     },
     "金": {
@@ -8876,7 +8876,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "สว่าน / ทรงกรวย; 沙锥 คือนกปากซ่อม",
+      "thai": "สว่าน / ทรงกรวย; 沙锥 (shā zhuī) คือนกปากซ่อม",
       "learningEnglish": ""
     },
     "锦": {
@@ -8892,7 +8892,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ผ้าแพรปัก; 锦鸡 คือไก่ฟ้าสีทอง",
+      "thai": "ผ้าแพรปัก; 锦鸡 (jǐn jī) คือไก่ฟ้าสีทอง",
       "learningEnglish": ""
     },
     "镰": {
@@ -8995,7 +8995,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ดวงอาทิตย์ (太阳)",
+      "thai": "ดวงอาทิตย์ (太阳 (tài yáng))",
       "learningEnglish": ""
     },
     "阿": {
@@ -9018,7 +9018,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ถอดเสียง เช่น 阿尔泰 อัลไต",
+      "thai": "ใช้ถอดเสียง เช่น 阿尔泰 (ā ěr tài) อัลไต",
       "learningEnglish": ""
     },
     "隼": {
@@ -9680,7 +9680,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ปลาโอ (bonito); 鲣鸟 คือนกบูบี้",
+      "thai": "ปลาโอ (bonito); 鲣鸟 (jiān niǎo) คือนกบูบี้",
       "learningEnglish": ""
     },
     "鳞": {
@@ -9723,7 +9723,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกอีเสือ; ใน 鹃鵙 หมายถึงนกขี้เถ้า",
+      "thai": "นกอีเสือ; ใน 鹃鵙 (juān jú) หมายถึงนกขี้เถ้า",
       "learningEnglish": ""
     },
     "鵟": {
@@ -9885,7 +9885,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ใน 鹧鸪 นกกระทากลุ่ม francolin และ partridge",
+      "thai": "ใช้ใน 鹧鸪 (zhè gū) นกกระทากลุ่ม francolin และ partridge",
       "learningEnglish": ""
     },
     "鸫": {
@@ -9913,7 +9913,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกกาน้ำ (ใน 鸬鹚)",
+      "thai": "นกกาน้ำ (ใน 鸬鹚 (lú cí))",
       "learningEnglish": ""
     },
     "鸭": {
@@ -10026,7 +10026,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกเค้าแคระ (ใน 鸺鹠)",
+      "thai": "นกเค้าแคระ (ใน 鸺鹠 (xiū liú))",
       "learningEnglish": ""
     },
     "鸻": {
@@ -10167,7 +10167,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ไก่ฟ้ากลุ่ม Lophura เช่น 白鹇 ไก่ฟ้าหลังขาว",
+      "thai": "ไก่ฟ้ากลุ่ม Lophura เช่น 白鹇 (bái xián) ไก่ฟ้าหลังขาว",
       "learningEnglish": ""
     },
     "鹈": {
@@ -10181,7 +10181,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกกระทุง (ใน 鹈鹕)",
+      "thai": "นกกระทุง (ใน 鹈鹕 (tí hú))",
       "learningEnglish": ""
     },
     "鹉": {
@@ -10195,7 +10195,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกแก้ว (ใน 鹦鹉)",
+      "thai": "นกแก้ว (ใน 鹦鹉 (yīng wǔ))",
       "learningEnglish": ""
     },
     "鹊": {
@@ -10223,7 +10223,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกคุ่ม (ใน 鹌鹑)",
+      "thai": "นกคุ่ม (ใน 鹌鹑 (ān chún))",
       "learningEnglish": ""
     },
     "鹎": {
@@ -10265,7 +10265,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกกระทุง (ใน 鹈鹕)",
+      "thai": "นกกระทุง (ใน 鹈鹕 (tí hú))",
       "learningEnglish": ""
     },
     "鹗": {
@@ -10301,7 +10301,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกกาน้ำ (ใน 鸬鹚)",
+      "thai": "นกกาน้ำ (ใน 鸬鹚 (lú cí))",
       "learningEnglish": ""
     },
     "鹛": {
@@ -10358,7 +10358,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกเค้าแคระ (ใน 鸺鹠)",
+      "thai": "นกเค้าแคระ (ใน 鸺鹠 (xiū liú))",
       "learningEnglish": ""
     },
     "鹡": {
@@ -10400,7 +10400,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกแก้ว (ใน 鹦鹉)",
+      "thai": "นกแก้ว (ใน 鹦鹉 (yīng wǔ))",
       "learningEnglish": ""
     },
     "鹧": {
@@ -10415,7 +10415,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "ใช้ใน 鹧鸪 นกกระทากลุ่ม francolin และ partridge",
+      "thai": "ใช้ใน 鹧鸪 (zhè gū) นกกระทากลุ่ม francolin และ partridge",
       "learningEnglish": ""
     },
     "鹨": {
@@ -10443,7 +10443,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกเรน (ใน 鹪鹩)",
+      "thai": "นกเรน (ใน 鹪鹩 (jiāo liáo))",
       "learningEnglish": ""
     },
     "鹪": {
@@ -10457,7 +10457,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกขนาดเล็ก ใช้ใน 鹪鹩 นกเรน และ 鹪莺 นกกระจิบหญ้า",
+      "thai": "นกขนาดเล็ก ใช้ใน 鹪鹩 (jiāo liáo) นกเรน และ 鹪莺 (jiāo yīng) นกกระจิบหญ้า",
       "learningEnglish": ""
     },
     "鹫": {
@@ -12684,7 +12684,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "นกแว็กซ์วิง (waxwing); 太平 แปลว่าสงบสุข",
+      "thai": "นกแว็กซ์วิง (waxwing); 太平 (tài píng) แปลว่าสงบสุข",
       "pinyin": "tài píng niǎo",
       "english": "waxwing (literally 'peace bird')",
       "kind": "name"
@@ -20707,7 +20707,7 @@
           "source": "cedict"
         }
       ],
-      "thai": "คิดถึงกัน; 相思鸟 คือ “นกคู่รัก”",
+      "thai": "คิดถึงกัน; 相思鸟 (xiāng sī niǎo) คือ “นกคู่รัก”",
       "pinyin": "xiāng sī",
       "english": "longing for each other (as in 'lovebird')",
       "kind": "name"
@@ -29717,9 +29717,9 @@
     },
     "喜山": {
       "entries": [],
-      "thai": "หิมาลัย (ชื่อย่อของ 喜马拉雅山)",
+      "thai": "หิมาลัย (ชื่อย่อของ 喜马拉雅山 (xǐ mǎ lā yǎ shān))",
       "pinyin": "xǐ shān",
-      "english": "Himalayas (short for 喜马拉雅山)",
+      "english": "Himalayas (short for 喜马拉雅山 (xǐ mǎ lā yǎ shān))",
       "kind": "name"
     },
     "叽喳": {
@@ -29733,7 +29733,7 @@
       "entries": [],
       "thai": "เสียงร้องของนกกวักที่เขียนเป็นคำว่า 苦恶 (คำเลียนเสียง)",
       "pinyin": "kǔ è",
-      "english": "the call of the waterhen, written as 苦恶",
+      "english": "the call of the waterhen, written as 苦恶 (kǔ è)",
       "kind": "name"
     },
     "弄岗": {
@@ -29745,9 +29745,9 @@
     },
     "萨岛": {
       "entries": [],
-      "thai": "เกาะซาคาลิน (ชื่อย่อของ 萨哈林岛)",
+      "thai": "เกาะซาคาลิน (ชื่อย่อของ 萨哈林岛 (sà hā lín dǎo))",
       "pinyin": "sà dǎo",
-      "english": "Sakhalin (short for 萨哈林岛)",
+      "english": "Sakhalin (short for 萨哈林岛 (sà hā lín dǎo))",
       "kind": "name"
     },
     "达乌里": {
@@ -29908,8 +29908,8 @@
       "match": "戴胜",
       "kind": "interpretation",
       "title": "Wearing a head ornament",
-      "thai": "戴 (dài) แปลว่าสวม และ 胜 (shèng) ซึ่งรูปเต็มคือ 勝 มีความหมายดั้งเดิมว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายว่าชื่อนี้มาจากหงอนที่โดดเด่นของนกกะรางหัวขวาน ซึ่งดูคล้ายเครื่องประดับบนศีรษะ",
-      "english": "戴 (dài) means to wear, and 胜 (shèng, traditional 勝) has an old sense of a head ornament. The cited article explains the hoopoe’s name by its conspicuous crest, worn like an ornament.",
+      "thai": "戴 (dài) แปลว่าสวม และ 胜 (shèng) ซึ่งรูปเต็มคือ 勝 (shèng) มีความหมายดั้งเดิมว่าเครื่องประดับศีรษะ บทความที่อ้างอิงอธิบายว่าชื่อนี้มาจากหงอนที่โดดเด่นของนกกะรางหัวขวาน ซึ่งดูคล้ายเครื่องประดับบนศีรษะ",
+      "english": "戴 (dài) means to wear, and 胜 (shèng), traditionally written 勝 (shèng), has an old sense of a head ornament. The cited article explains the hoopoe’s name by its conspicuous crest, worn like an ornament.",
       "sources": [
         "kinmen-hoopoe"
       ]
@@ -29928,7 +29928,7 @@
       "match": "鹡鸰",
       "kind": "usage",
       "title": "Two characters, one bird word",
-      "thai": "鹡鸰 (jí líng) คือนกเด้าลม (wagtail) อักษรทั้งสองตัวใช้เฉพาะในคำนี้ พจนานุกรมจึงอธิบายแต่ละตัวผ่านคำ 鹡鸰",
+      "thai": "鹡鸰 (jí líng) คือนกเด้าลม (wagtail) อักษรทั้งสองตัวใช้เฉพาะในคำนี้ พจนานุกรมจึงอธิบายแต่ละตัวผ่านคำ 鹡鸰 (jí líng)",
       "english": "鹡鸰 (jí líng) means wagtail. Both characters exist for this word, and the dictionary defines each through it.",
       "sources": [
         "cedict"
@@ -29946,7 +29946,7 @@
     }
   ],
   "personalNameUnit": {
-    "thai": "ชื่อบุคคล + 氏 (’s)",
-    "english": "a person's name + 氏 (’s)"
+    "thai": "ชื่อบุคคล + 氏 (shì) = ’s",
+    "english": "a person's name + 氏 (shì) = ’s"
   }
 }
