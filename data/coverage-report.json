@@ -31,10 +31,11 @@
   "nameMatchCounts": {
     "IOC 13.1 exact historical name": 33,
     "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 48,
-    "IOC 15.2 exact scientific name": 1252,
+    "IOC 15.2 exact scientific name": 1251,
     "Unique Chinese name + family candidate; concept unreviewed": 100,
     "unresolved; excluded from study": 4,
     "Explicit genus-combination candidate; concept unreviewed": 7,
+    "eBird common name (snbnut1), chosen for this card; AviList v2026 and IOC 15.2 use Chinese Nuthatch": 1,
     "Historical Chinese name + family candidate; concept unreviewed": 1
   },
   "rejectedAliases": [
@@ -540,6 +541,7 @@
       "chinese": 6
     },
     "aliasAdditions": 15,
+    "englishFromEBird": 1,
     "prunedAliases": 11,
     "source": "source-notices/name-corrections-2026-11.json"
   }

@@ -46,6 +46,10 @@ REVIEWED_BY_CHINESE = {
     '蓝枕花蜜鸟': ('Kurochkinegramma hypogrammicum', 'Same species; the checklist uses the newer genus and the English name Purple-naped Sunbird.'),
     '绿鹭': ('Butorides striata', 'The checklist keeps Striated Heron in the wide sense; the birds of Thailand and China are the Old World Little Heron, Butorides atricapilla.'),
 }
+# Thai names supplied by the project owner for checklist species listed without one.
+SUPPLIED_THAI = {
+    'Turdus hortulorum': ('นกเดินดงหลังเทา', 'Thai name supplied by the project owner (19 Nov 2026); the checklist lists Grey-backed Thrush without a Thai name.'),
+}
 BINOMIAL = re.compile(r'\b[A-Z][a-z]+ [a-z]{3,}\b')
 
 
@@ -76,6 +80,9 @@ def main():
             continue
         record['sci'] = clean(record['Scientific name'])
         record['thai'] = clean(record.get('Thai name'))
+        record['supplied'] = None
+        if not record['thai'] and record['sci'] in SUPPLIED_THAI:
+            record['thai'], record['supplied'] = SUPPLIED_THAI[record['sci']]
         record['english'] = clean(record.get('Common name'))
         record['englishKeys'] = {english_key(record['english'])} | {
             english_key(record[c]) for c in ENGLISH_COLUMNS if clean(record.get(c)) and not BINOMIAL.search(clean(record[c]))}
@@ -106,12 +113,15 @@ def main():
         if not found or not found['thai']:
             continue
         entry = {'thai': found['thai'], 'checklistScientific': found['sci'], 'checklistEnglish': found['english'], 'match': method}
+        note = '; '.join(n for n in (note, found['supplied']) if n)
         if note:
             entry['note'] = note
         names[b['id']] = entry
     expected = {k: v[0] for k, v in ENGLISH_REVIEWED.items()}
     if english_epithet_changes != expected:
         raise ValueError(f'English matches with a different epithet changed: {english_epithet_changes} != {expected}')
+    if {e['checklistScientific'] for e in names.values() if 'supplied by the project owner' in e.get('note', '')} != set(SUPPLIED_THAI):
+        raise ValueError('A supplied Thai name was not used')
     if reviewed_seen != set(REVIEWED_BY_CHINESE):
         raise ValueError(f'Reviewed cards missing: {set(REVIEWED_BY_CHINESE) - reviewed_seen}')
     used = {}
@@ -123,7 +133,7 @@ def main():
     doc = {
         'schemaVersion': 1,
         'meta': {
-            'version': 'thai-names-2026-11-19-v1',
+            'version': 'thai-names-2026-11-19-v2',
             'title': 'Thai bird names for cards on the Thai checklist',
             'source': {
                 'title': 'Revised Checklist of Thai birds, February 2025 (sheet “Listing”)',
@@ -133,7 +143,8 @@ def main():
             },
             'cardCount': len(names),
             'checklistSpecies': len(checklist),
-            'checklistSpeciesWithThaiName': sum(1 for r in checklist if r['thai']),
+            'checklistSpeciesWithThaiName': sum(1 for r in checklist if r['thai'] and not r['supplied']),
+            'suppliedThaiNames': sorted(SUPPLIED_THAI),
             'counts': counts,
         },
         'names': dict(sorted(names.items())),

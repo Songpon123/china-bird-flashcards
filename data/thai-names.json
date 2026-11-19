@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "meta": {
-  "version": "thai-names-2026-11-19-v1",
+  "version": "thai-names-2026-11-19-v2",
   "title": "Thai bird names for cards on the Thai checklist",
   "source": {
    "title": "Revised Checklist of Thai birds, February 2025 (sheet “Listing”)",
@@ -9,11 +9,14 @@
    "sha256": "ab09607f5698d9549f3c7e549b381f56ab6b8a5b37f4cc0bfacde74c635d9b5e",
    "license": "No licence statement in the workbook. Only the Thai names of matched species are used, with attribution; the workbook is not redistributed."
   },
-  "cardCount": 812,
+  "cardCount": 813,
   "checklistSpecies": 1099,
   "checklistSpeciesWithThaiName": 1096,
+  "suppliedThaiNames": [
+   "Turdus hortulorum"
+  ],
   "counts": {
-   "scientific": 745,
+   "scientific": 746,
    "english": 64,
    "reviewed": 3
   }
@@ -4863,6 +4866,13 @@
    "checklistScientific": "Cochoa purpurea",
    "checklistEnglish": "Purple Cochoa",
    "match": "scientific"
+  },
+  "colcn:fe66c15b-1423-4ec8-b443-29155bf500c8": {
+   "thai": "นกเดินดงหลังเทา",
+   "checklistScientific": "Turdus hortulorum",
+   "checklistEnglish": "Grey-backed Thrush",
+   "match": "scientific",
+   "note": "Thai name supplied by the project owner (19 Nov 2026); the checklist lists Grey-backed Thrush without a Thai name."
   },
   "colcn:fe870372-c6bb-428b-b1a9-6b1189f8133a": {
    "thai": "นกเขนท้องแดง",

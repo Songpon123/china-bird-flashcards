@@ -61,3 +61,12 @@ test('eBird references follow the corrected names, including the China populatio
   assert.equal(ebirdReference(b,pack).href,`https://ebird.org/species/${x.cornellCode}`,b.chinese);
  }
 });
+
+test('黑头䴓 uses the eBird common name and keeps its scientific name and eBird link',async()=>{
+ const raw=JSON.parse(await read('data/birds.json')),dataset=validateDataset(raw),links=validateEBirdLinks(JSON.parse(await read('data/ebird-links.json')));
+ const b=dataset.birds.find(x=>x.chinese==='黑头䴓');
+ assert.equal(b.english,'Snowy-browed Nuthatch');assert.equal(b.scientific,'Sitta villosa');assert.equal(b.englishSource,'ebird-taxonomy');
+ assert.match(b.nameMatch,/eBird common name \(snbnut1\).*Chinese Nuthatch/);
+ assert.ok(raw.meta.sources.some(s=>s.id==='ebird-taxonomy'));
+ assert.equal(ebirdReference(b,links).href,'https://ebird.org/species/snbnut1');
+});

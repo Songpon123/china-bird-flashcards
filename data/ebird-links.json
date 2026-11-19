@@ -22,7 +22,7 @@
     "limits": "Outbound reading references only, not equivalent taxon concepts. Exact common-name candidates are labelled separately. No fuzzy names, guessed species codes, or automatic taxonomy changes. Unmatched names open eBird Explore for manual lookup.",
     "inputHashes": {
       "source-notices/ebird-reference-identifiers.json": "7b8002c2257533909e8fee53ef4238df3d7c294842073a78bd3be635bc5e2d4e",
-      "data/birds.json": "8988cbebcc4a33d39c3cb03f1b95e1b6aaad3de626802b6a6c96a37189d32eac"
+      "data/birds.json": "4c21031f32564d545d6f20ba8f8d328a57233f074e9c7c989b28b07b1275ab54"
     }
   },
   "byScientific": {
@@ -7926,7 +7926,7 @@
       "code": "snbnut1",
       "scientific": "Sitta villosa",
       "english": "Snowy-browed Nuthatch",
-      "sourceEnglish": "Chinese Nuthatch",
+      "sourceEnglish": "Snowy-browed Nuthatch",
       "method": "scientific"
     },
     "Sitta yunnanensis": {

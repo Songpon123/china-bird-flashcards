@@ -24,10 +24,11 @@
       "nameMatchCounts": {
         "IOC 13.1 exact historical name": 33,
         "Reviewed correction: AviList v2026 species; Chinese per AviList Simplified, CBR v12.0 and IOC 15.2": 48,
-        "IOC 15.2 exact scientific name": 1252,
+        "IOC 15.2 exact scientific name": 1251,
         "Unique Chinese name + family candidate; concept unreviewed": 100,
         "unresolved; excluded from study": 4,
         "Explicit genus-combination candidate; concept unreviewed": 7,
+        "eBird common name (snbnut1), chosen for this card; AviList v2026 and IOC 15.2 use Chinese Nuthatch": 1,
         "Historical Chinese name + family candidate; concept unreviewed": 1
       },
       "allChinaCurrentComplete": false,
@@ -39,6 +40,7 @@
           "chinese": 6
         },
         "aliasAdditions": 15,
+        "englishFromEBird": 1,
         "prunedAliases": 11,
         "source": "source-notices/name-corrections-2026-11.json"
       }
@@ -75,6 +77,13 @@
         "download": "https://www.avilist.org/checklist/v2026/",
         "license": "CC BY 4.0",
         "sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d"
+      },
+      {
+        "id": "ebird-taxonomy",
+        "title": "eBird Taxonomy (Cornell Lab of Ornithology), retrieved 2026-11-18. Common name used for 1 card by the project's choice.",
+        "url": "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy",
+        "license": "Factual common name; no open license asserted",
+        "sha256": "ab3fc668f84e7c45befbe4aad9dede65ffad0dcb9829b0656f1d6b34fcbde80d"
       }
     ]
   },
@@ -19860,15 +19869,15 @@
       "sourceId": "c5b5022c-37f7-4fb4-aa12-c7cc8378a91a",
       "chinese": "黑头䴓",
       "pinyin": "hēi tóu shī",
-      "english": "Chinese Nuthatch",
+      "english": "Snowy-browed Nuthatch",
       "scientific": "Sitta villosa",
       "order": "Passeriformes",
       "family": "Sittidae",
       "aliases": [],
       "taxonomyReview": false,
       "pinyinStatus": "dictionary-generated; not expert reviewed",
-      "nameMatch": "IOC 15.2 exact scientific name",
-      "englishSource": "ioc-15.2",
+      "nameMatch": "eBird common name (snbnut1), chosen for this card; AviList v2026 and IOC 15.2 use Chinese Nuthatch",
+      "englishSource": "ebird-taxonomy",
       "matchedScientific": "Sitta villosa"
     },
     {

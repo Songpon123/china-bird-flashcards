@@ -102,3 +102,9 @@ Checked on 19 November 2026.
 - Thai names: the build checks the workbook hash and title, that each checklist species is used once, and that the English-name matches with a different epithet are exactly the twelve reviewed ones. Tests check the counts (812 = 745 + 64 + 3), that every name is Thai script and every card ID exists, examples (喜鹊 นกสาลิกาปากดำ, 戴胜 นกกะรางหัวขวาน, 牛背鹭 นกยางควาย, 绿鹭 นกยางเขียว), cards that must stay without a Thai name (蒙古沙鸻, 弄岗穗鹛, 黄爪隼, 松鸦, 白头鵙鹛), Thai search, and that Thai names never enter saved datasets, CSV exports or backups.
 - Browser check: the rating buttons read Again 1 day, Hard 2 days, Good 4 days, Easy 7 days; a revealed card shows “Thai นกสาลิกาเขียว” for 蓝绿鹊; library search for สาลิกา finds the three magpies; the Name guide finds 牛背鹭 from นกยางควาย; the details for 喜鹊 show the Thai name with the checklist names; the Data & sources page credits the checklist; no console errors were logged.
 - `npm test`: **28 passed, 0 failed**.
+
+## v0.6.1 eBird name for 黑头䴓 and one supplied Thai name
+
+- 黑头䴓 *Sitta villosa*: English name set to Snowy-browed Nuthatch from the pinned eBird snapshot (snbnut1). The builder stops if the card or the snapshot no longer matches. The rebuilt `birds.json` differs from v0.6 only in this card, the name-match count and the added eBird source entry; `ebird-links.json` and `name-guide.json` changed only in that card's source name and the dataset hash.
+- 灰背鸫 Grey-backed Thrush: Thai name นกเดินดงหลังเทา supplied for this project; 813 Thai names (746 scientific, 64 English, 3 reviewed). 黄爪隼 Lesser Kestrel stays without a Thai name.
+- `npm test`: **29 passed, 0 failed**, including a test that 黑头䴓 keeps its scientific name and eBird link.

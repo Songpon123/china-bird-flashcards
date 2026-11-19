@@ -8,14 +8,16 @@ const read=async path=>JSON.parse(await readFile(new URL('../'+path,import.meta.
 test('Thai names file matches cards one to one and keeps checked examples',async()=>{
  const raw=await read('data/thai-names.json'),birds=(await read('data/birds.json')).birds,byId=new Map(birds.map(b=>[b.id,b]));
  const thai=validateThaiNames(raw);
- assert.equal(thai.names.size,812);assert.equal(raw.meta.cardCount,812);
- assert.deepEqual(raw.meta.counts,{scientific:745,english:64,reviewed:3});
- assert.equal(new Set([...thai.names.values()].map(e=>e.checklistScientific)).size,812,'each checklist species is used once');
+ assert.equal(thai.names.size,813);assert.equal(raw.meta.cardCount,813);
+ assert.deepEqual(raw.meta.counts,{scientific:746,english:64,reviewed:3});
+ assert.equal(new Set([...thai.names.values()].map(e=>e.checklistScientific)).size,813,'each checklist species is used once');
  for(const [id,e] of thai.names){assert.ok(byId.has(id),id);assert.match(e.thai,/^[฀-๿ ,]+$/u);if(e.match==='scientific')assert.equal(byId.get(id).scientific,e.checklistScientific);}
  const byChinese=c=>thai.names.get(birds.find(b=>b.chinese===c).id);
  assert.equal(byChinese('喜鹊').thai,'นกสาลิกาปากดำ');assert.equal(byChinese('戴胜').thai,'นกกะรางหัวขวาน');
  assert.equal(byChinese('牛背鹭').thai,'นกยางควาย');assert.equal(byChinese('牛背鹭').match,'english');
  assert.equal(byChinese('绿鹭').thai,'นกยางเขียว');assert.equal(byChinese('绿鹭').match,'reviewed');assert.ok(byChinese('绿鹭').note);
+ // Listed without a Thai name in the checklist; name supplied by the project owner.
+ assert.equal(byChinese('灰背鸫').thai,'นกเดินดงหลังเทา');assert.match(byChinese('灰背鸫').note,/supplied by the project owner/);
  // Not on the Thai checklist, or listed there without a Thai name.
  for(const c of ['蒙古沙鸻','弄岗穗鹛','黄爪隼','松鸦','白头鵙鹛'])assert.equal(byChinese(c),undefined,c);
 });

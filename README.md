@@ -6,6 +6,11 @@ A runnable, local-first prototype for learning bird names in Simplified Chinese,
 
 **Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
 
+## What's new in v0.6.1 (19 November 2026)
+
+- **黑头䴓 is now Snowy-browed Nuthatch**, the eBird name, instead of Chinese Nuthatch (AviList, IOC and CBR). The scientific name *Sitta villosa* and the eBird link are unchanged, and the card's details note the other name.
+- **灰背鸫 Grey-backed Thrush has its Thai name, นกเดินดงหลังเทา.** The Thai checklist lists this species without one; the name was supplied for this project. 813 cards now have a Thai name.
+
 ## What's new in v0.6 (19 November 2026)
 
 - **Thai bird names.** 812 cards now show the Thai name below the scientific name after **Reveal answer**, and in the Bird library, the Name guide and the bird details. Search accepts Thai too, for example นกยาง or สาลิกา. The names come from the *Revised Checklist of Thai birds* (February 2025), matched to the cards by scientific name (745 cards), by English name where only the genus or spelling differs (64 cards, each checked) and by hand for three cards whose species is split differently in the two lists: 紫水鸡 นกอีโก้ง, 蓝枕花蜜鸟 นกกินปลีท้ายทอยน้ำเงิน and 绿鹭 นกยางเขียว. Birds that are not on the Thai list, such as 弄岗穗鹛, have no Thai name.
@@ -158,18 +163,19 @@ The four unresolved source records are Caprimulgus centralasicus, Garrulax owsto
 - **40 concept corrections**: the scientific and English names become the AviList v2026 species recorded in China, e.g. 喜鹊 → *Pica serica*, Oriental Magpie; 牛背鹭 → *Ardea coromanda*, Eastern Cattle Egret; 苍鹰 → *Astur gentilis*, Eurasian Goshawk. The previous scientific name stays as an alias and the card is flagged for taxonomy review.
 - **2 English-only corrections**: AviList keeps the broad species (紫水鸡 Purple Swamphen, 赤红山椒鸟 Scarlet Minivet); their eBird links point to the population recorded in China.
 - **6 Chinese-name corrections**: the card's Chinese name was another species' name, e.g. 田鹨 is the Paddyfield Pipit, so *Anthus richardi* becomes 理氏鹨.
+- **1 English name from eBird** (v0.6.1, by choice rather than as a correction): 黑头䴓 *Sitta villosa* uses the eBird name Snowy-browed Nuthatch; AviList, IOC and CBR call it Chinese Nuthatch. The builder checks the name against the pinned eBird snapshot.
 
 Sources: AviList v2026 (scientific and English names, CC BY 4.0) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 for China occurrence, and IOC 15.2 Chinese names. The full list with evidence is `source-notices/name-corrections-2026-11.json`. Not changed: genus moves (for example *Accipiter* → *Tachyspiza*), spelling differences, alternative Chinese names that belong to no other species, and species that are new or split off in the newer lists. Browsers that restored a backup or imported a dataset keep their stored copy until they import the new one.
 
 ## Thai bird names
 
-`data/thai-names.json` gives the Thai name for 812 cards from the *Revised Checklist of Thai birds* (February 2025; 1,099 species, 1,096 with a Thai name). `scripts/build_thai_names.py` matches each card in three steps and records which one was used:
+`data/thai-names.json` gives the Thai name for 813 cards from the *Revised Checklist of Thai birds* (February 2025; 1,099 species, 1,096 with a Thai name). `scripts/build_thai_names.py` matches each card in three steps and records which one was used:
 
-1. **scientific** (745): the card's scientific name equals the checklist's.
+1. **scientific** (746): the card's scientific name equals the checklist's. For Grey-backed Thrush (灰背鸫), which the checklist lists without a Thai name, the name นกเดินดงหลังเทา was supplied for this project and is marked as such in the file.
 2. **english** (64): the card's English name equals exactly one English name in the checklist, its own or one it lists from IOC, HBW-BirdLife, Clements or Howard & Moore. Most of these are genus changes (*Accipiter badius* → *Tachyspiza badia*). The twelve where the epithet differs too were checked one by one and are listed in the script, so any new case stops the build.
 3. **reviewed** (3): 紫水鸡 (AviList keeps one swamphen species; the Thai list names the birds of Thailand and southern China Grey-headed Swamphen), 蓝枕花蜜鸟 (same species, newer genus) and 绿鹭 (the Thai list keeps Striated Heron in the wide sense; Asian birds are Little Heron).
 
-Each checklist species is used once. Where the two lists divide a species differently, the card gets no Thai name rather than the name of another bird: for example 松鸦 Eurasian Jay is not given the name of White-faced Jay, and 蒙古沙鸻 Siberian Sand Plover is not given the name of Tibetan Sand Plover. Lesser Kestrel (黄爪隼) and Grey-backed Thrush (灰背鸫) are on the checklist without a Thai name, so they stay blank. The Thai name is shown and searchable but is not part of saved datasets, CSV exports or backups.
+Each checklist species is used once. Where the two lists divide a species differently, the card gets no Thai name rather than the name of another bird: for example 松鸦 Eurasian Jay is not given the name of White-faced Jay, and 蒙古沙鸻 Siberian Sand Plover is not given the name of Tibetan Sand Plover. Lesser Kestrel (黄爪隼) is on the checklist without a Thai name, so it stays blank. The Thai name is shown and searchable but is not part of saved datasets, CSV exports or backups.
 
 ## Verify or rebuild
 
@@ -179,7 +185,7 @@ Run the dependency-free application tests:
 npm test
 ```
 
-Twenty-eight tests cover the complete source extraction count, name/search behavior, directional scheduling and the 1 / 2 / 4 / 7-day intervals, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, the reviewed name corrections, and the Thai-name matches, search and storage. `VERIFICATION.md` records browser checks and limits.
+Twenty-nine tests cover the complete source extraction count, name/search behavior, directional scheduling and the 1 / 2 / 4 / 7-day intervals, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, the reviewed name corrections, and the Thai-name matches, search and storage. `VERIFICATION.md` records browser checks and limits.
 
 To reproduce the bundled dataset, create a Python environment and install the build-only dependencies:
 
