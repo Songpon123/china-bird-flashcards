@@ -57,3 +57,7 @@ Chinese names for checking come from the Simplified Chinese column of an avilist
 ## Character structure added in v0.5
 
 `data/character-structure.json` is a modified subset of **Make Me a Hanzi** `dictionary.txt` (© Shaunak Kishore and contributors; derived from Unihan and CJKlib), distributed under the [GNU LGPL 3.0 or later](source-notices/character-structure/LGPL-3.0.txt) together with the [GPL 3.0 text](source-notices/character-structure/GPL-3.0.txt) it incorporates. Changes: selected the 475 characters in the bundled names, kept the radical and etymology fields, added Unihan stroke counts, Thai meanings of meaning parts and entries for 11 missing characters. Stroke counts come from the **Unicode Han Database (Unihan) 18.0.0**, © Unicode, Inc., under the [Unicode License V3](source-notices/character-structure/UNICODE-LICENSE-V3.txt). The app code's MIT license does not apply to this file.
+
+## Thai bird names added in v0.6
+
+`data/thai-names.json` holds the Thai names of 812 species from the *Revised Checklist of Thai birds, February 2025* (sheet “Listing”; workbook author in its metadata: Wachara Sanguansombat), each with the checklist's scientific and English name used for matching. The workbook states no licence, so only these names are used, with attribution, and the workbook itself is not redistributed. If you reuse the file, credit the checklist and check reuse terms with its compilers. The app code's MIT license does not apply to this file.

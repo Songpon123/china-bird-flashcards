@@ -16,10 +16,14 @@ test('Pinyin includes tone marks and search accepts tone-free, compact and v/u: 
  assert.equal(bird.pinyin,'lǜ tóu yā');assert.ok(matches(bird,'lvtouya'));assert.ok(matches(bird,'lu: tou'));assert.ok(matches(bird,'Mallard'));assert.ok(matches(bird,'绿头'));
 });
 test('review intervals, lapses, maturity and directional independence',()=>{
- const a=schedule(null,'again',now);assert.equal(a.due,now+60000);assert.equal(a.lapses,1);assert.equal(a.streak,0);
- const g=schedule(null,'good',now);assert.equal(g.interval,1);const g2=schedule(g,'good',now+DAY);assert.equal(g2.interval,6);
- const g3=schedule(g2,'good',now+7*DAY);assert.equal(g3.interval,15);assert.equal(schedule(g3,'good',now+22*DAY).interval,37.5);
- assert.equal(schedule(null,'easy',now).interval,4);assert.equal(stateOf({...g,due:now},now),'due');assert.equal(stateOf({...g,interval:25,due:now+DAY},now),'mature');
+ const a=schedule(null,'again',now);assert.equal(a.due,now+DAY);assert.equal(a.lapses,1);assert.equal(a.streak,0);
+ // First answers: Again 1 day, Hard 2, Good 4, Easy 7.
+ assert.deepEqual(['again','hard','good','easy'].map(r=>schedule(null,r,now).interval),[1,2,4,7]);
+ const g=schedule(null,'good',now);assert.equal(g.interval,4);const g2=schedule(g,'good',now+4*DAY);assert.equal(g2.interval,10);
+ const g3=schedule(g2,'good',now+14*DAY);assert.equal(g3.interval,25);
+ // Later answers keep Hard < Good < Easy, and Again restarts from the first-answer intervals.
+ for(const prev of [g,g2,g3,{...g3,ease:1.3}]){const [h,gd,e]=['hard','good','easy'].map(r=>schedule(prev,r,now).interval);assert.ok(h<gd&&gd<e,`${h} ${gd} ${e}`);}
+ const lapse=schedule(g3,'again',now);assert.equal(lapse.interval,1);assert.equal(schedule(lapse,'good',now+DAY).interval,4);assert.equal(stateOf({...g,due:now},now),'due');assert.equal(stateOf({...g,interval:25,due:now+DAY},now),'mature');
  const progress={[keyFor('bird','zh-en')]:g};assert.equal(progress[keyFor('bird','en-zh')],undefined);
 });
 test('due queue prioritizes reviews, excludes future/missing fields and respects daily new cap',()=>{
@@ -67,7 +71,7 @@ test('update preserves IDs and detects unsafe renames, ID replacement and taxono
 test('full backup validates archived schedules, zero new limit, and rejects corrupted history',()=>{
  const state={progress:{[keyFor('archived','en-zh')]:schedule(null,'good',now)},history:[{id:'archived',direction:'en-zh',rating:'good',at:now,wasNew:true}],settings:{direction:'en-zh',newLimit:0,showPinyin:true}};
  const saved=validateBackup({format:'china-bird-backup-v1',dataset,state});assert.equal(saved.state.settings.newLimit,0);assert.equal(saved.state.history.length,1);
- assert.equal(saved.state.progress[keyFor('archived','en-zh')].due,now+DAY);
+ assert.equal(saved.state.progress[keyFor('archived','en-zh')].due,now+4*DAY);
  const bad=structuredClone(state);bad.progress[keyFor('archived','en-zh')].due=-1;assert.throws(()=>validateBackup({format:'china-bird-backup-v1',dataset,state:bad}),/Invalid progress/);
  const badHistory={...state,history:[{at:now,id:'a',rating:'made-up',direction:'en-zh'}]};assert.throws(()=>validateBackup({format:'china-bird-backup-v1',dataset,state:badHistory}),/history/);
 });

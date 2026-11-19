@@ -6,6 +6,11 @@ A runnable, local-first prototype for learning bird names in Simplified Chinese,
 
 **Coverage is deliberately limited and visible: this is not a complete inventory of every species recorded in China as of 2026.** It includes every one of the **1,445 accepted species binomials** in the downloaded **Catalogue of Life China 2023 v1.1** archive. **1,441 have all four study fields**; four unresolved English names remain in the library and are excluded from study. There are **185 records flagged for taxonomy review**, including those four and the cards whose species concept was narrowed by the reviewed name corrections below. Pinyin is dictionary-generated, with reading overrides, and has not had a complete expert audit.
 
+## What's new in v0.6 (19 November 2026)
+
+- **Thai bird names.** 812 cards now show the Thai name below the scientific name after **Reveal answer**, and in the Bird library, the Name guide and the bird details. Search accepts Thai too, for example นกยาง or สาลิกา. The names come from the *Revised Checklist of Thai birds* (February 2025), matched to the cards by scientific name (745 cards), by English name where only the genus or spelling differs (64 cards, each checked) and by hand for three cards whose species is split differently in the two lists: 紫水鸡 นกอีโก้ง, 蓝枕花蜜鸟 นกกินปลีท้ายทอยน้ำเงิน and 绿鹭 นกยางเขียว. Birds that are not on the Thai list, such as 弄岗穗鹛, have no Thai name.
+- **Clearly separated review intervals.** The first answer on a card sets **Again 1 day · Hard 2 days · Good 4 days · Easy 7 days**. Later answers grow from the previous interval and always keep Hard shorter than Good and Good shorter than Easy. Again brings the card back the next day and starts it again from 2 / 4 / 7 days. Dates already saved stay as they are; new answers use the new intervals.
+
 ## What's new in v0.5 (19 November 2026)
 
 - **Name meaning & history opens on the Study page.** After **Reveal answer**, the panel with the word-by-word meaning, Thai glosses and naming notes opens directly below the card. Collapse it at any time.
@@ -59,7 +64,7 @@ Use the same address each time. `localhost` and `127.0.0.1`, different ports, an
 
 ### Schedule
 
-The prototype uses a small, documented SM-2-inspired heuristic, not FSRS and not the original SM-2 algorithm. Again returns in one minute and resets the success streak; Hard starts at one day, then multiplies the previous interval by 1.2; Good starts at one day, then six days, then multiplies by ease; Easy starts at four days, then multiplies by ease × 1.3. Ease starts at 2.5, is bounded to 1.3–4, decreases on Again/Hard and increases on Easy. Intervals are shown before grading. “Mature” means a 21-day-or-longer interval.
+The prototype uses a small, documented SM-2-inspired heuristic, not FSRS and not the original SM-2 algorithm. The first answer on a card sets a clear, separate gap: **Again 1 day · Hard 2 days · Good 4 days · Easy 7 days**. After that, Hard multiplies the previous interval by 1.2 (at least 2 days), Good by ease (at least 4 days) and Easy by ease × 1.3 (at least 7 days), so Hard is always shorter than Good and Good shorter than Easy. Again always returns in 1 day and resets the success streak, so the next answer starts again from 2 / 4 / 7 days. Ease starts at 2.5, is bounded to 1.3–4, decreases on Again/Hard and increases on Easy. Intervals are shown before grading. “Mature” means a 21-day-or-longer interval.
 
 ### eBird reading references
 
@@ -156,6 +161,16 @@ The four unresolved source records are Caprimulgus centralasicus, Garrulax owsto
 
 Sources: AviList v2026 (scientific and English names, CC BY 4.0) with its Simplified Chinese names, the CBR Checklist of Birds of China v12.0 for China occurrence, and IOC 15.2 Chinese names. The full list with evidence is `source-notices/name-corrections-2026-11.json`. Not changed: genus moves (for example *Accipiter* → *Tachyspiza*), spelling differences, alternative Chinese names that belong to no other species, and species that are new or split off in the newer lists. Browsers that restored a backup or imported a dataset keep their stored copy until they import the new one.
 
+## Thai bird names
+
+`data/thai-names.json` gives the Thai name for 812 cards from the *Revised Checklist of Thai birds* (February 2025; 1,099 species, 1,096 with a Thai name). `scripts/build_thai_names.py` matches each card in three steps and records which one was used:
+
+1. **scientific** (745): the card's scientific name equals the checklist's.
+2. **english** (64): the card's English name equals exactly one English name in the checklist, its own or one it lists from IOC, HBW-BirdLife, Clements or Howard & Moore. Most of these are genus changes (*Accipiter badius* → *Tachyspiza badia*). The twelve where the epithet differs too were checked one by one and are listed in the script, so any new case stops the build.
+3. **reviewed** (3): 紫水鸡 (AviList keeps one swamphen species; the Thai list names the birds of Thailand and southern China Grey-headed Swamphen), 蓝枕花蜜鸟 (same species, newer genus) and 绿鹭 (the Thai list keeps Striated Heron in the wide sense; Asian birds are Little Heron).
+
+Each checklist species is used once. Where the two lists divide a species differently, the card gets no Thai name rather than the name of another bird: for example 松鸦 Eurasian Jay is not given the name of White-faced Jay, and 蒙古沙鸻 Siberian Sand Plover is not given the name of Tibetan Sand Plover. Lesser Kestrel (黄爪隼) and Grey-backed Thrush (灰背鸫) are on the checklist without a Thai name, so they stay blank. The Thai name is shown and searchable but is not part of saved datasets, CSV exports or backups.
+
 ## Verify or rebuild
 
 Run the dependency-free application tests:
@@ -164,7 +179,7 @@ Run the dependency-free application tests:
 npm test
 ```
 
-Twenty-two tests cover the complete source extraction count, name/search behavior, directional scheduling, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, and the reviewed name corrections. `VERIFICATION.md` records browser checks and limits.
+Twenty-eight tests cover the complete source extraction count, name/search behavior, directional scheduling and the 1 / 2 / 4 / 7-day intervals, new-card limits, CSV round trips, import conflicts and backup validation, group membership and group-progress backups, Name guide coverage, readings and attribution, and eBird reference matching, fallbacks and link placement, the reviewed name corrections, and the Thai-name matches, search and storage. `VERIFICATION.md` records browser checks and limits.
 
 To reproduce the bundled dataset, create a Python environment and install the build-only dependencies:
 
@@ -178,14 +193,15 @@ The full local download package supplies the pinned original files in `source-no
 ```sh
 .venv/bin/python scripts/build_dataset.py
 .venv/bin/python scripts/build_groups.py
+.venv/bin/python scripts/build_thai_names.py
 npm test
 ```
 
-Use `--sources-dir /absolute/path/to/inputs` to read the same pinned filenames from another directory. The build records SHA-256 hashes and uses no network access. Refreshing a source is a separate, explicit research step: inspect its license and version, adapt the extractor if needed, review unmatched concepts, and compare counts before importing the resulting file. No unreviewed automatic live update is performed.
+`build_thai_names.py` needs the Thai checklist workbook in `source-notices/thai-names/` (see the README there); it is not in the GitHub tree. Use `--sources-dir /absolute/path/to/inputs` to read the same pinned filenames from another directory. The build records SHA-256 hashes and uses no network access. Refreshing a source is a separate, explicit research step: inspect its license and version, adapt the extractor if needed, review unmatched concepts, and compare counts before importing the resulting file. No unreviewed automatic live update is performed.
 
 ## Files
 
-`index.html` and `app/` contain the buildless application. `data/` holds the normalized learning dataset and coverage report. `scripts/` contains the local server and reproducible data extraction. `source-notices/` preserves metadata, the raw Aves extract, family-label snapshot and build-tool notices. Original ZIP/XLSX downloads are also included in the full local package, while the GitHub tree omits those three large files and retains their publisher URLs and hashes. `tests/` contains focused integrity and behavior checks. All visible bird names originate from those sources; there are no generated placeholder species, photos, or scraped bird images.
+`index.html` and `app/` contain the buildless application. `data/` holds the normalized learning dataset, coverage report, name guide, eBird links, character structure and Thai names. `scripts/` contains the local server and reproducible data extraction. `source-notices/` preserves metadata, the raw Aves extract, family-label snapshot and build-tool notices. Original ZIP/XLSX downloads are also included in the full local package, while the GitHub tree omits those three large files and retains their publisher URLs and hashes. `tests/` contains focused integrity and behavior checks. All visible bird names originate from those sources; there are no generated placeholder species, photos, or scraped bird images.
 
 ## GitHub Pages publishing
 

@@ -1,13 +1,14 @@
-import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,shuffleOrder,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs?v=0.5.0';
+import {DAY,DIRECTIONS,keyFor,fold,matches,schedule,stateOf,localDay,makeQueue,shuffleOrder,parseCSV,toCSV,validateDataset,planUpdate,validateBackup} from './core.mjs?v=0.6.0';
 import {familyKey,inGroup,familyLabel,validateGroups} from './taxonomy.mjs';
 import {validateEBirdLinks,renderEBirdReference} from './ebird.mjs?v=0.5.0';
 import {validateNameGuide,characterEntries} from './name-guide.mjs?v=0.5.0';
 import {renderNameAnalysis} from './name-guide-ui.mjs?v=0.5.1';
+import {validateThaiNames,attachThaiNames,thaiDetails} from './thai-names.mjs?v=0.6.0';
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='yu-birds-state-v1',DATA='yu-birds-dataset-v1',GROUP_DATA='yu-birds-groups-v1';
 let dataset,groupDataset,state,view='study',mode='review',revealed=false,currentId=null,skipped=new Set(),page=0,lastUndo=null,pendingImport=null,pendingRestore=null,voices=[],storageOK=true,externalChange=false;
-let practiceIndex=0,nameGuide=null,guideSelection=null,ebirdLinks=null;
+let practiceIndex=0,nameGuide=null,guideSelection=null,ebirdLinks=null,thaiNames=null;
 const defaults={direction:'zh-en',deck:'species',newLimit:20,showPinyin:false,voice:'',shuffleSeed:''};
 const newSeed=()=>Math.random().toString(36).slice(2,12)||'mix';
 const titleCopy={guide:['What’s inside a Chinese bird name?','Explore characters, word meanings and the stories behind selected names.'],groups:['Know the families. Find your birds.','Learn the larger groups, then explore each species · Chinese, Pinyin, English & scientific scope.'],study:['A whole new way to name birds.','From 白鹭 to Little Egret. Build a vocabulary that stays with you.'],library:['Every bird has a story. Start with its name.','Explore the source checklist in Chinese, Pinyin, English and scientific Latin.'],progress:['A little practice. A growing vocabulary.','Watch your field notebook fill up, one review at a time.'],data:['A good name starts with a good source.','Understand the checklist, inspect its limits, and keep your notebook current.']};
@@ -86,7 +87,7 @@ function renderStudy(){
   const zhFront=state.settings.direction==='zh-en';
   const main=zhFront?`<div class="chinese" lang="zh-Hans">${esc(b.chinese)}</div>${state.settings.showPinyin||revealed?`<div class="pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</div>`:''}`:`<div class="english">${esc(b.english)}</div>`;
   const answer=zhFront?`<div class="small-english">${esc(b.english)}</div>`:`<div class="small-zh" lang="zh-Hans">${esc(b.chinese)}</div><div class="pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</div>`;
-  $('card-body').innerHTML=`<div class="card-hint">${revealed?'THE FOUR NAMES':zhFront?(b.kind?'WHAT IS THIS TERM IN ENGLISH?':'WHAT IS THIS BIRD IN ENGLISH?'):'HOW DO YOU SAY IT IN CHINESE?'}</div>${main}${revealed?`<div class="answer-rule"></div>${answer}<div class="scientific">${esc(b.scientific)}</div>${b.kind?`<div class="term-thai" lang="th">${esc(b.thai)}</div><p class="term-scope">${b.kind==='family'?'科 (kē) = taxonomic family':'An informal learning group · open its details to see the scope'}</p>`:''}${b.taxonomyReview?'<span class="review-note">Name crosswalk needs taxonomy review</span>':''}${renderEBirdReference(b,ebirdLinks,{revealed})}`:''}`;
+  $('card-body').innerHTML=`<div class="card-hint">${revealed?(b.thai&&!b.kind?'THE FOUR NAMES · THAI NAME':'THE FOUR NAMES'):zhFront?(b.kind?'WHAT IS THIS TERM IN ENGLISH?':'WHAT IS THIS BIRD IN ENGLISH?'):'HOW DO YOU SAY IT IN CHINESE?'}</div>${main}${revealed?`<div class="answer-rule"></div>${answer}<div class="scientific">${esc(b.scientific)}</div>${b.thai&&!b.kind?`<div class="bird-thai"><span>Thai</span><b lang="th">${esc(b.thai)}</b></div>`:''}${b.kind?`<div class="term-thai" lang="th">${esc(b.thai)}</div><p class="term-scope">${b.kind==='family'?'科 (kē) = taxonomic family':'An informal learning group · open its details to see the scope'}</p>`:''}${b.taxonomyReview?'<span class="review-note">Name crosswalk needs taxonomy review</span>':''}${renderEBirdReference(b,ebirdLinks,{revealed})}`:''}`;
   $('card-sequence').textContent=mode==='practice'?`Card ${q.findIndex(x=>x.id===b.id)+1} of ${q.length}`:p?.reviews?`${p.reviews} previous review${p.reviews===1?'':'s'} in this direction`:'A new name to get to know';
  }
  $('study-meanings').hidden=!b||!revealed;
@@ -123,13 +124,13 @@ function renderLibrary(){
  birds=birds.filter(b=>!quality||quality==='ready'&&b.english||quality==='review'&&b.taxonomyReview||quality==='missing'&&!b.english);
  page=Math.min(page,Math.max(0,Math.ceil(birds.length/40)-1));
  $('library-count').textContent=`${birds.length.toLocaleString()} species`;
- $('library-body').innerHTML=birds.slice(page*40,(page+1)*40).map(b=>`<tr><td><strong lang="zh-Hans">${esc(b.chinese)}</strong><small lang="zh-Latn-pinyin">${esc(b.pinyin)}</small></td><td>${esc(b.english||'English name unresolved')}<small><em>${esc(b.scientific)}</em></small>${b.taxonomyReview?'<small>△ Taxonomy review</small>':''}</td><td>${esc(familyLabel(b.family,groupDataset.cards))}<small>${esc(b.order)}</small></td><td><span class="status-pill">${stateOf(state.progress[keyFor(b.id,state.settings.direction)])}</span></td><td><button class="text-button" data-details="${esc(b.id)}">Details ↗</button>${b.english?`<br><button class="text-button" data-practice="${esc(b.id)}">Practice →</button>`:''}</td></tr>`).join('')||'<tr><td colspan="5" class="empty">No species match these filters.</td></tr>';
+ $('library-body').innerHTML=birds.slice(page*40,(page+1)*40).map(b=>`<tr><td><strong lang="zh-Hans">${esc(b.chinese)}</strong><small lang="zh-Latn-pinyin">${esc(b.pinyin)}</small></td><td>${esc(b.english||'English name unresolved')}${b.thai?`<small lang="th" class="library-thai">${esc(b.thai)}</small>`:''}<small><em>${esc(b.scientific)}</em></small>${b.taxonomyReview?'<small>△ Taxonomy review</small>':''}</td><td>${esc(familyLabel(b.family,groupDataset.cards))}<small>${esc(b.order)}</small></td><td><span class="status-pill">${stateOf(state.progress[keyFor(b.id,state.settings.direction)])}</span></td><td><button class="text-button" data-details="${esc(b.id)}">Details ↗</button>${b.english?`<br><button class="text-button" data-practice="${esc(b.id)}">Practice →</button>`:''}</td></tr>`).join('')||'<tr><td colspan="5" class="empty">No species match these filters.</td></tr>';
  $('page-label').textContent=`${birds.length?page*40+1:0}–${Math.min((page+1)*40,birds.length)} of ${birds.length}`;
  $('page-prev').disabled=page===0;$('page-next').disabled=(page+1)*40>=birds.length;
 }
 function showDetails(b){
  if(!b)return;document.querySelector('#details-dialog h2').textContent='Bird name & record';if(b.kind){showTermDetails(b);return;}const source=dataset.meta.sources?.find(s=>s.id===b.englishSource);
- const pairs=[['Chinese',b.chinese],['Pinyin',b.pinyin],['English',b.english||'Unresolved · excluded from study'],['Scientific',b.scientific],['Family / order',familyLabel(b.family,groupDataset.cards)+' / '+b.order],['Stable ID',b.id],['Aliases',b.aliases.join('; ')||'No safe aliases in this snapshot'],['English source',source?.title||b.englishSource||'Unresolved'],['Matched name',b.matchedScientific||'—'],['Name matching',b.nameMatch],['Pinyin status',b.pinyinStatus]];
+ const pairs=[['Chinese',b.chinese],['Pinyin',b.pinyin],['English',b.english||'Unresolved · excluded from study'],['Scientific',b.scientific],...(b.thai?[['Thai name',thaiDetails(b,thaiNames)]]:[]),['Family / order',familyLabel(b.family,groupDataset.cards)+' / '+b.order],['Stable ID',b.id],['Aliases',b.aliases.join('; ')||'No safe aliases in this snapshot'],['English source',source?.title||b.englishSource||'Unresolved'],['Matched name',b.matchedScientific||'—'],['Name matching',b.nameMatch],['Pinyin status',b.pinyinStatus]];
  const sourceUrl=b.id.startsWith('colcn:')?`https://www.gbif.org/dataset/7e276a96-73ea-4efc-8ffb-e74ef573ef6c/taxon/${encodeURIComponent(b.sourceId)}`:dataset.meta.sourceUrl;
  $('details-content').innerHTML=`<dl class="dialog-meta">${pairs.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><p class="muted">Scientific-name equality is a name match, not a guarantee that taxon concepts agree after splits or lumps.</p><p><a href="${safeUrl(sourceUrl)}" target="_blank" rel="noreferrer">Source record / checklist ↗</a></p>${renderEBirdReference(b,ebirdLinks,{revealed:true})}`;
  $('details-content').insertAdjacentHTML('beforeend','<h3 class="details-meaning-title">Name meanings & story</h3>'+renderNameAnalysis(b,nameGuide));
@@ -161,7 +162,7 @@ function renderGuide(){
  const meta=nameGuide.meta;
  $('guide-coverage').textContent=`Bundled names: ${meta.characterCount} distinct characters covered (${meta.dictionaryCharacters} from CC-CEDICT + 1 modern-usage entry); ${meta.thaiCharacterCount} with Thai glosses. ${meta.notesCount||nameGuide.notes.length} selected name notes. New imported characters may be uncovered.`;
  $('guide-result-count').textContent=`${found.length.toLocaleString()} matching names`;
- $('guide-results').innerHTML=found.slice(0,20).map(b=>`<button class="guide-result" data-guide-record="${esc(b.id)}" aria-pressed="${guideSelection===b.id}"><strong lang="zh-Hans">${esc(b.chinese)}</strong><span>${esc(b.english||b.scientific)}</span><small lang="zh-Latn-pinyin">${esc(b.pinyin)}</small></button>`).join('')+(found.length>20?'<p class="muted">Showing the first 20. Refine your search for more names.</p>':found.length?'':'<p class="muted">No matching names. Try Chinese, Pinyin, or an English bird name.</p>');
+ $('guide-results').innerHTML=found.slice(0,20).map(b=>`<button class="guide-result" data-guide-record="${esc(b.id)}" aria-pressed="${guideSelection===b.id}"><strong lang="zh-Hans">${esc(b.chinese)}</strong><span>${esc(b.english||b.scientific)}</span>${b.thai?`<small lang="th">${esc(b.thai)}</small>`:''}<small lang="zh-Latn-pinyin">${esc(b.pinyin)}</small></button>`).join('')+(found.length>20?'<p class="muted">Showing the first 20. Refine your search for more names.</p>':found.length?'':'<p class="muted">No matching names. Try Chinese, Pinyin, or an English or Thai bird name.</p>');
  $('guide-character-results').innerHTML=characters.length?'<h3>Matching characters</h3><div class="character-choices">'+characters.map(([c])=>`<button class="secondary" data-guide-character="${esc(c)}" lang="zh-Hans">${esc(c)}</button>`).join('')+'</div>':'';
  let b=all.find(b=>b.id===guideSelection);
  const character=guideSelection?.startsWith('char:')?guideSelection.slice(5):!b&&[...q].length===1&&nameGuide.characters[q]?q:null;
@@ -169,14 +170,14 @@ function renderGuide(){
  else if(!b)b=found[0];
  if(!b){$('guide-record-heading').innerHTML='<h2>Choose a name or character</h2>';$('guide-content').innerHTML='<p class="muted">Search above to explore its meaning.</p>';return;}
  $('guide-results').querySelectorAll('[data-guide-record]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.guideRecord===b.id)));
- $('guide-record-heading').innerHTML=`<h2 lang="zh-Hans">${esc(b.chinese)}</h2><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</p><p>${esc(b.english||'English name unresolved')}${b.scientific?` · <em>${esc(b.scientific)}</em>`:''}</p>${b.scientific&&!b.kind?renderEBirdReference(b,ebirdLinks,{revealed:true}):''}`;
+ $('guide-record-heading').innerHTML=`<h2 lang="zh-Hans">${esc(b.chinese)}</h2><p class="term-pinyin" lang="zh-Latn-pinyin">${esc(b.pinyin)}</p><p>${esc(b.english||'English name unresolved')}${b.scientific?` · <em>${esc(b.scientific)}</em>`:''}</p>${b.thai?`<p class="term-thai" lang="th">${esc(b.thai)}</p>`:''}${b.scientific&&!b.kind?renderEBirdReference(b,ebirdLinks,{revealed:true}):''}`;
  $('guide-content').innerHTML=renderNameAnalysis(b,nameGuide);
 }
 function membershipCompatible(){return dataset.meta.taxonomy===groupDataset.meta.membershipTaxonomy;}
 function setDeckControls(){
  const terms=state.settings.deck==='groups';
  document.querySelectorAll('[data-species-filter]').forEach(el=>el.hidden=terms);
- $('study-search').placeholder=terms?'hawks, 鸭科, yā kē, Anatidae…':'白鹭, bái lù, egret…';
+ $('study-search').placeholder=terms?'hawks, 鸭科, yā kē, Anatidae…':'白鹭, bái lù, egret, นกยาง…';
 }
 function renderGroups(){
  const query=$('groups-search').value,kind=$('groups-kind').value,compatible=membershipCompatible();
@@ -212,7 +213,7 @@ function renderData(){
  $('coverage-description').textContent=baseline?dataset.meta.coverage:'Coverage and reuse terms are supplied by the importer and have not been independently audited.'+(dataset.meta.coverage?' Importer’s coverage statement: '+dataset.meta.coverage:'');
  $('coverage-numbers').innerHTML=`<div><strong>${dataset.birds.length.toLocaleString()}</strong><span>source species in library</span></div><div><strong>${ready.toLocaleString()}</strong><span>with all four study fields</span></div>`;
  const sources=dataset.meta.sources||[{title:dataset.meta.title,url:dataset.meta.sourceUrl,license:dataset.meta.license}];
- $('source-cards').innerHTML=sources.map(s=>`<article class="source-card"><span class="license">${esc(s.license)}</span><h3>${esc(s.id==='colcn-2023'?'National coverage baseline':s.id==='ioc-15.2'?'English-name reference':'Historical names / imported source')}</h3><p>${esc(s.title)}</p><a href="${safeUrl(s.url)}" target="_blank" rel="noreferrer">Source & attribution ↗</a></article>`).join('');
+ $('source-cards').innerHTML=sources.map(s=>`<article class="source-card"><span class="license">${esc(s.license)}</span><h3>${esc(s.id==='colcn-2023'?'National coverage baseline':s.id==='ioc-15.2'?'English-name reference':'Historical names / imported source')}</h3><p>${esc(s.title)}</p><a href="${safeUrl(s.url)}" target="_blank" rel="noreferrer">Source & attribution ↗</a></article>`).join('')+(thaiNames?`<article class="source-card"><span class="license">Thai names · attribution</span><h3>Thai bird names</h3><p>${esc(thaiNames.meta.source?.title||'Thai checklist')} · ${thaiNames.names.size.toLocaleString()} cards. ${esc(thaiNames.meta.source?.license||'')}</p><a href="./data/thai-names.json" target="_blank">Thai names & matching ↗</a></article>`:'');
  $('import-taxonomy').value=dataset.meta.taxonomy;
 }
 function updateVoices(){
@@ -242,7 +243,7 @@ async function previewImport(){
 function applyImport(){
  if(!pendingImport||externalChange)return;backup();
  try{localStorage.setItem(DATA,JSON.stringify(pendingImport));}catch(e){error('Dataset was not applied: browser storage is full or unavailable. Your existing dataset is unchanged.');return;}
- dataset=pendingImport;pendingImport=null;lastUndo=null;$('apply-import').hidden=true;$('import-preview').textContent='Update applied. Source credits and archived progress are retained.';setupFilters();resetStudy();renderData();toast('Dataset updated. A pre-update backup was downloaded.');
+ dataset=pendingImport;attachThaiNames(dataset.birds,thaiNames);pendingImport=null;lastUndo=null;$('apply-import').hidden=true;$('import-preview').textContent='Update applied. Source credits and archived progress are retained.';setupFilters();resetStudy();renderData();toast('Dataset updated. A pre-update backup was downloaded.');
 }
 async function previewRestore(){
  pendingRestore=null;$('apply-restore').hidden=true;
@@ -253,7 +254,7 @@ function applyRestore(){
  const oldData=localStorage.getItem(DATA),oldState=localStorage.getItem(STORE),oldGroups=localStorage.getItem(GROUP_DATA);
  try{localStorage.setItem(DATA,JSON.stringify(pendingRestore.dataset));localStorage.setItem(STORE,JSON.stringify(pendingRestore.state));localStorage.setItem(GROUP_DATA,JSON.stringify(pendingRestore.groupDataset||groupDataset));}
  catch(e){try{if(oldData===null)localStorage.removeItem(DATA);else localStorage.setItem(DATA,oldData);if(oldState===null)localStorage.removeItem(STORE);else localStorage.setItem(STORE,oldState);if(oldGroups===null)localStorage.removeItem(GROUP_DATA);else localStorage.setItem(GROUP_DATA,oldGroups);}catch{}error('Restore failed because browser storage is unavailable or full. Keep the downloaded backup.');return;}
- dataset=pendingRestore.dataset;state=pendingRestore.state;groupDataset=pendingRestore.groupDataset||groupDataset;pendingRestore=null;lastUndo=null;setupFilters();resetStudy();renderData();updateVoices();$('apply-restore').hidden=true;$('restore-preview').textContent='Notebook restored.';toast('Dataset and progress restored.');
+ dataset=pendingRestore.dataset;attachThaiNames(dataset.birds,thaiNames);state=pendingRestore.state;groupDataset=pendingRestore.groupDataset||groupDataset;pendingRestore=null;lastUndo=null;setupFilters();resetStudy();renderData();updateVoices();$('apply-restore').hidden=true;$('restore-preview').textContent='Notebook restored.';toast('Dataset and progress restored.');
 }
 function bind(){
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));$('coverage-link').onclick=()=>setView('data');
@@ -292,16 +293,18 @@ function bind(){
 }
 try{
  const responses=await Promise.all([fetch('./data/birds.json?v=2026-11-18-avilist'),fetch('./data/groups.json')]);if(responses.some(r=>!r.ok))throw new Error('A dataset download failed');
- const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-19-v8',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-19-v3',{cache:'no-cache'}),fetch('./data/character-structure.json?v=2026-11-19-v2',{cache:'no-cache'})]);
+ const optional=await Promise.allSettled([fetch('./data/name-guide.json?v=2026-11-19-v8',{cache:'no-cache'}),fetch('./data/ebird-links.json?v=2026-11-19-v3',{cache:'no-cache'}),fetch('./data/character-structure.json?v=2026-11-19-v2',{cache:'no-cache'}),fetch('./data/thai-names.json?v=2026-11-19-v1',{cache:'no-cache'})]);
  try{const response=optional[0].status==='fulfilled'?optional[0].value:null;if(!response?.ok)throw new Error('Download failed');nameGuide=validateNameGuide(await response.json());}catch{toast('The name guide could not load. Flashcards remain available; reload to retry.');}
  try{const response=optional[2].status==='fulfilled'?optional[2].value:null;const data=response?.ok?await response.json():null;if(nameGuide&&data?.schemaVersion===1&&data.characters&&typeof data.characters==='object')nameGuide.structure=data.characters;}catch{/* Character structure is optional. */}
  try{const response=optional[1].status==='fulfilled'?optional[1].value:null;if(!response?.ok)throw new Error('Download failed');ebirdLinks=validateEBirdLinks(await response.json());}catch{/* Species cards still link to eBird Explore for a manual lookup. */}
+ try{const response=optional[3].status==='fulfilled'?optional[3].value:null;if(!response?.ok)throw new Error('Download failed');thaiNames=validateThaiNames(await response.json());}catch{/* Thai names are optional; cards show the four names. */}
  const bundled=validateDataset(await responses[0].json());groupDataset=validateGroups(await responses[1].json());
  let storedData=null,storedState=null,storedGroups=null;
  try{storedData=localStorage.getItem(DATA);storedState=localStorage.getItem(STORE);storedGroups=localStorage.getItem(GROUP_DATA);}catch{storageOK=false;error('Browser storage is unavailable. You can study in this tab and export a backup.');}
  if(storedGroups){try{groupDataset=validateGroups(JSON.parse(storedGroups));}catch{error('Saved family/group vocabulary could not be read. The bundled terms are loaded.');}}
  dataset=bundled;
  if(storedData){try{dataset=validateDataset(JSON.parse(storedData));}catch(e){error('The saved dataset could not be read. The bundled source is loaded; your saved copy has not been deleted.');}}
+ attachThaiNames(dataset.birds,thaiNames);
  state={progress:{},history:[],settings:{...defaults}};
  if(storedState){try{state=validateBackup({format:'china-bird-backup-v1',dataset,state:JSON.parse(storedState)}).state;}catch(e){externalChange=true;error('Saved progress is invalid. It has not been overwritten. Restore a valid full backup after reloading with browser storage repaired.');}}
  // A per-browser seed mixes the deck across families from the first visit; Shuffle picks a new one.

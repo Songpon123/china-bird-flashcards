@@ -95,3 +95,10 @@ Checked on 19 November 2026.
 - 72 authored Thai and English glosses that mention Chinese words now give their pinyin, taken from the card reading for bird names and from pypinyin with the app's reading overrides otherwise; all were checked by hand.
 - Corrected Make Me a Hanzi's hint for 鸟 (simplified from 鳥, not 烏) and removed stray whitespace in the sound part of 瓣.
 - `npm test`: **25 passed, 0 failed**; a test checks that every Chinese character in structure text and authored glosses is followed by a reading.
+
+## v0.6 Thai names and review intervals
+
+- Review intervals: a test checks that the first answer gives Again 1, Hard 2, Good 4 and Easy 7 days, that Good grows 4 → 10 → 25 days, that Hard < Good < Easy for every later state including the lowest ease, and that Again returns in 1 day and restarts from the first-answer intervals.
+- Thai names: the build checks the workbook hash and title, that each checklist species is used once, and that the English-name matches with a different epithet are exactly the twelve reviewed ones. Tests check the counts (812 = 745 + 64 + 3), that every name is Thai script and every card ID exists, examples (喜鹊 นกสาลิกาปากดำ, 戴胜 นกกะรางหัวขวาน, 牛背鹭 นกยางควาย, 绿鹭 นกยางเขียว), cards that must stay without a Thai name (蒙古沙鸻, 弄岗穗鹛, 黄爪隼, 松鸦, 白头鵙鹛), Thai search, and that Thai names never enter saved datasets, CSV exports or backups.
+- Browser check: the rating buttons read Again 1 day, Hard 2 days, Good 4 days, Easy 7 days; a revealed card shows “Thai นกสาลิกาเขียว” for 蓝绿鹊; library search for สาลิกา finds the three magpies; the Name guide finds 牛背鹭 from นกยางควาย; the details for 喜鹊 show the Thai name with the checklist names; the Data & sources page credits the checklist; no console errors were logged.
+- `npm test`: **28 passed, 0 failed**.

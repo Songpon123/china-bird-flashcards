@@ -6,7 +6,7 @@ export function fold(text='') {
  return String(text).toLowerCase().replaceAll('u:','ü').replaceAll('v','ü').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
 }
 export function matches(bird,query) {
- const hay=fold([bird.chinese,bird.pinyin,bird.english,bird.scientific,bird.family,bird.order,...bird.aliases].join(' '));
+ const hay=fold([bird.chinese,bird.pinyin,bird.english,bird.scientific,bird.family,bird.order,bird.thai||'',...bird.aliases].join(' '));
  return fold(query).split(' ').every(term=>hay.includes(term)||hay.replaceAll(' ','').includes(term));
 }
 export function initialProgress(){return {reviews:0,lapses:0,streak:0,interval:0,ease:2.5,due:0,lastReview:0};}
@@ -14,10 +14,13 @@ export function schedule(previous,rating,now=Date.now()) {
  if(!['again','hard','good','easy'].includes(rating))throw new Error('Unknown rating');
  const p={...initialProgress(),...previous};
  let interval,ease=p.ease,streak=p.streak;
- if(rating==='again'){interval=1/1440;ease=Math.max(1.3,ease-0.2);streak=0;}
- if(rating==='hard'){interval=p.interval>=1?Math.max(1,p.interval*1.2):1;ease=Math.max(1.3,ease-0.15);streak++;}
- if(rating==='good'){interval=streak===0?1:streak===1?6:Math.max(1,p.interval*ease);streak++;}
- if(rating==='easy'){interval=p.interval>=1?Math.max(4,p.interval*ease*1.3):4;ease+=0.15;streak++;}
+ // First answers (and the first answer after Again) use 1 / 2 / 4 / 7 days. Later answers grow
+ // from the previous interval and never drop below those floors, so Hard < Good < Easy.
+ const base=p.reviews&&p.streak>0?p.interval:0;
+ if(rating==='again'){interval=1;ease=Math.max(1.3,ease-0.2);streak=0;}
+ if(rating==='hard'){interval=base?Math.max(2,base*1.2):2;ease=Math.max(1.3,ease-0.15);streak++;}
+ if(rating==='good'){interval=base?Math.max(4,base*ease):4;streak++;}
+ if(rating==='easy'){interval=base?Math.max(7,base*ease*1.3):7;ease+=0.15;streak++;}
  interval=Math.min(36500,Math.round(interval*1440)/1440);
  return {reviews:p.reviews+1,lapses:p.lapses+(rating==='again'?1:0),streak,interval,ease:Math.min(4,ease),due:now+interval*DAY,lastReview:now};
 }
